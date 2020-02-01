@@ -1,68 +1,118 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
+
 
 public class PipesPuzzleScript : MonoBehaviour
 {
+
+    public static Node[,] nodes = new Node[7,7];
     // Start is called before the first frame update
     void Start()
     {
         //generate an 2d array of nodes
-        Node[][] nodes = new Node[6][]; 
+        
 
-        for(int i = 0; i<6; i++)
+        for (int i = 0; i <= 6; i++)
         {
-            for(int j = 0; j<6; j++)
+            for (int j = 0; j <= 6; j++)
             {
-                nodes[i][j] = new Node(new Vector2Int(i, j));
+                print("i = " + i + ";  j = " + j);
+                nodes[i,j] = new Node(new Vector2Int(i, j));
             }
         }
+
+        for (int i = 0; i <= 6; i++)
+        {
+            for (int j = 0; j <= 6; j++)
+            {
+                print("i = " + i + ";  j = " + j);
+                nodes[i,j].updateNeighbours();
+            }
+        }
+
 
         //randomly generate start and end nodes
 
 
-        Node start;
-        Node end;
+        Node start, end = nodes[0,0];
+        
         int randomStart = Random.Range(0, 6);
         int randomEnd = Random.Range(0, 6);
 
         //randomly generate start node
         if (Random.value > .5)
         {
-            start = nodes[0][randomStart];
+            start = nodes[0,randomStart];
         }
         else
         {
-            start = nodes[randomStart][0];
+            start = nodes[randomStart,0];
         }
 
         //randomly generate end node
         if (Random.value > .5)
         {
-            end = nodes[0][randomEnd];
+            end = nodes[6,randomEnd];
         }
         else
         {
-            start = nodes[randomEnd][0];
+            start = nodes[randomEnd,6];
         }
 
 
 
         //find a path through the pipes that uses every pipe once at maximum
 
-        List<Vector2Int> visited = new List<Vector2Int>();
+        List<Node> visited = new List<Node>();
 
 
 
         //start at the starting node
         Node current = start;
 
-        //pick a random connected node
+        visited.Add(current);
+
+
+        while (!current.Equals(end))
+        {
+
+
+            //pick a random connected node
+            //check to see if we have moved to it before
+            //if not, move to that node
+            if (!visited.Contains(current.getConnections()[Random.Range(0, 3)])) // if we have not visited the randomly selected node
+            {
+                current = current.getConnections()[Random.Range(0, 3)]; //move to the randomly selected node
+            }
+
+            visited.Add(current);
+
+            //go back to the start if we run in to a dead end
+
+            int length = current.getConnections().Count();
+            int collissions = 0;
+
+            for(int i = 0; i< length; i++)
+            {
+                if (visited.Contains(current.getConnections()[i])) { collissions++; }
+            }
+            if (collissions == length)
+            {
+                print("pathfinding resetting");
+                //set the current node to the start
+                current = start;
+                //clear the visited list
+                visited.Clear();
+            }
+
+        }
+
+        foreach (Node n in visited) {
+            print(n.getPosition().ToString() + "\n");
+        }
         
-        //check to see if we have moved to it before
-
-        //if not, move to that node
-
         //check to see if we are at the end node -- loop if not
 
         //if all of the connected nodes have been visited, reset the list of visited nodes and start again
@@ -95,24 +145,54 @@ public class PipesPuzzleScript : MonoBehaviour
 public class Node
 {
     private Vector2Int position;
-    private List<Vector2Int> connections;
+    private List<Node> connections = new List<Node>();
 
     public Node(Vector2Int position)
     {
         this.position = position;
 
-        //add connected nodes to list of connections
-        this.connections.Add(this.position + new Vector2Int(1,0));
-        this.connections.Add(this.position + new Vector2Int(-1, 0));
-        this.connections.Add(this.position + new Vector2Int(0, -1));
-        this.connections.Add(this.position + new Vector2Int(0, 1));
+       
     }
 
-    public List<Vector2Int> getConnections()
+
+    public void updateNeighbours()
+    {
+        //add connected nodes to list of connections
+        
+        if(this.position.x > 0)
+        {
+            this.connections.Add(PipesPuzzleScript.nodes[this.position.x - 1,this.position.y]);
+        }
+
+        if (this.position.x < 6)
+        {
+            Debug.Log(this.position.x);
+            this.connections.Add(PipesPuzzleScript.nodes[this.position.x + 1,this.position.y]);
+        }
+        if (this.position.y > 0)
+        {
+            this.connections.Add(PipesPuzzleScript.nodes[this.position.x,this.position.y - 1]);
+        }
+
+        if (this.position.y < 6)
+        {
+            this.connections.Add(PipesPuzzleScript.nodes[this.position.x,this.position.y + 1]);
+        }
+
+        
+        
+        
+        
+    }
+    public List<Node> getConnections()
     {
         return this.connections;
     }
 
+    public Vector2Int getPosition()
+    {
+        return this.position;
+    }
 }
 
 public class Tile
