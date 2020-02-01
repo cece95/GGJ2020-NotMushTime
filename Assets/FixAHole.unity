@@ -524,86 +524,6 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3560209360584531735, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3560209360584531735, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582100259987729561, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: piecesPool.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582100259987729561, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: TimeBetweenAddingPieces
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582100259987729561, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: FirstPieceXOffset
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582100259987729561, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: NextPieceXOffset
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582100259987729561, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: piecesPool.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 96f7e6ccdb1ce432893e5d819bc276c0,
-        type: 2}
-    - target: {fileID: 3582100259987729561, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: piecesPool.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: 4da5e8f65b8544d91a913a9cac5a5ede,
-        type: 2}
-    - target: {fileID: 3582100259987729561, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: piecesPool.Array.data[5]
-      value: 
-      objectReference: {fileID: 11400000, guid: b15728c12e1b2426f97b074d48f7cbe3,
-        type: 2}
-    - target: {fileID: 3582100259987729561, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: piecesPool.Array.data[6]
-      value: 
-      objectReference: {fileID: 11400000, guid: 949aa9435e3b444ddbfe66db95346b7e,
-        type: 2}
-    - target: {fileID: 3582100259987729561, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: piecesPool.Array.data[7]
-      value: 
-      objectReference: {fileID: 11400000, guid: eb312d4200f9743a8a85b5d649d930dc,
-        type: 2}
-    - target: {fileID: 4784277975785272868, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: m_ClearFlags
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4784277975785272868, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4784277975785272868, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4784277975785272868, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4784277976274583733, guid: c61114cf2988248318a623f1d148af94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -663,31 +583,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Puzzle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6795860882040535042, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: BoardWidth
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6795860882040535042, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: BoardHeight
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6795860882040535042, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: PerlinThreshold
-      value: 0.46
-      objectReference: {fileID: 0}
-    - target: {fileID: 6795860882040535042, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: DigThreshold
-      value: 76
-      objectReference: {fileID: 0}
-    - target: {fileID: 6795860882040535042, guid: c61114cf2988248318a623f1d148af94,
-        type: 3}
-      propertyPath: BlockSize
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c61114cf2988248318a623f1d148af94, type: 3}

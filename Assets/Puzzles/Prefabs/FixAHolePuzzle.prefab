@@ -121,8 +121,8 @@ Camera:
   m_GameObject: {fileID: 4784277975785272890}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -244,14 +244,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1badd66e93e2f4e79931e93a12992c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoardWidth: 0
-  BoardHeight: 0
-  BlockSize: 0.75
-  PerlinThreshold: 0.5
-  DigThreshold: 0.65
+  BoardWidth: 10
+  BoardHeight: 8
+  BlockSize: 1
+  DigThreshold: 76
   DesiredHoles: 20
   BoardPiecePrefab: {fileID: -97738889537194930, guid: 765322e8ed4c046d688221fa7376f45b,
     type: 3}
+  TimeBetweenMoves: 0.3
   pickingArea: {fileID: 3582100259987729561}
 --- !u!1 &7046573354993942010
 GameObject:
@@ -332,14 +332,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanPickPiece: 0
   piecesPool:
+  - {fileID: 11400000, guid: f3d5b92cce3ab4bd39908276fb2da855, type: 2}
+  - {fileID: 11400000, guid: 744b4412a9bbb4e51a0e0db116fbdcdd, type: 2}
+  - {fileID: 11400000, guid: 4da5e8f65b8544d91a913a9cac5a5ede, type: 2}
   - {fileID: 11400000, guid: 5994d03208dba469aaebf7f041daa5b6, type: 2}
+  - {fileID: 11400000, guid: 949aa9435e3b444ddbfe66db95346b7e, type: 2}
+  - {fileID: 11400000, guid: eb312d4200f9743a8a85b5d649d930dc, type: 2}
   - {fileID: 11400000, guid: 3a75dc25a2ff44da4a4a2f7243a1059a, type: 2}
+  - {fileID: 11400000, guid: 81f6b8dbc92474d199b1ea5c50da95a1, type: 2}
   - {fileID: 11400000, guid: 3e9da467aa8d54e0e90e67e535978639, type: 2}
+  - {fileID: 11400000, guid: b15728c12e1b2426f97b074d48f7cbe3, type: 2}
+  - {fileID: 11400000, guid: 96f7e6ccdb1ce432893e5d819bc276c0, type: 2}
   piecePrefab: {fileID: 7937951620368984978, guid: 9548fbc6ea7cd45808b5f885c32e7c79,
     type: 3}
-  TimeBetweenAddingPieces: 1
-  FirstPieceXOffset: -5
-  NextPieceXOffset: 2.5
+  TimeBetweenAddingPieces: 0.3
+  FirstPieceXOffset: -4
+  NextPieceXOffset: 2
 --- !u!1 &8951429682893957624
 GameObject:
   m_ObjectHideFlags: 0
