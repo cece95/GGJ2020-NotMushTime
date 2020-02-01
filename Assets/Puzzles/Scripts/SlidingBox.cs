@@ -21,7 +21,6 @@ public class SlidingBox : MonoBehaviour{
         block = (GameObject) Resources.Load("prefabs/Block");
 
         // create a set of positions so we check that there's no repetition
-        int gridPos = 0;
         for (int i = -1; i < 2; i++)
         {
             for (int j = -1; j < 2; j++)
