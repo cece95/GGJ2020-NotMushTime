@@ -35,7 +35,7 @@ public class FixAHole_PickingArea : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-
+        piecesPool = new List<FixAHole_PieceAsset>(Resources.LoadAll<FixAHole_PieceAsset>("FixAHolePieces"));
     }
 
     public void SelectPiece(int pieceId)
