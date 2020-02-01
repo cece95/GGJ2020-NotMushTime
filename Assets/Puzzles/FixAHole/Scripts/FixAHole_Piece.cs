@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FixAHole_Piece : MonoBehaviour
 {
-    public int PieceHeight { get { return pieceHeight; } }
-    public int PieceWidth { get { return pieceWidth; } }
+    public int PieceHeight { get; private set; }
+    public int PieceWidth { get; private set; }
 
     [SerializeField]
     public FixAHole_PieceAsset PieceAsset;
@@ -13,9 +13,6 @@ public class FixAHole_Piece : MonoBehaviour
     private bool[,] PieceStructure;
 
     private SpriteRenderer spriteRenderer;
-
-    private int pieceWidth;
-    private int pieceHeight;
 
     // Start is called before the first frame update
     void Awake()
@@ -33,8 +30,8 @@ public class FixAHole_Piece : MonoBehaviour
         int w = PieceAsset.PieceStructure[0].Length;
         int h = PieceAsset.PieceStructure.Count;
 
-        pieceWidth = w;
-        pieceHeight = h;
+        PieceWidth = w;
+        PieceHeight = h;
 
         bool[,] structure = new bool[h, w];
 
@@ -51,8 +48,8 @@ public class FixAHole_Piece : MonoBehaviour
 
     public void RotatePiece(bool rotateRight)
     {
-        int w = pieceHeight;
-        int h = pieceWidth;
+        int w = PieceHeight;
+        int h = PieceWidth;
 
         bool[,] structure = new bool[h, w];
 
@@ -71,8 +68,8 @@ public class FixAHole_Piece : MonoBehaviour
             }
         }
 
-        pieceWidth = w;
-        pieceHeight = h;
+        PieceWidth = w;
+        PieceHeight = h;
 
         PieceStructure = structure;
     }
@@ -88,6 +85,11 @@ public class FixAHole_Piece : MonoBehaviour
         {
             spriteRenderer.color = isHighlighted ? Color.white : Color.gray;
         }
+    }
+
+    public void Chuck()
+    {
+        ///TODO: Play animation
     }
 
     // Update is called once per frame

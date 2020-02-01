@@ -13,6 +13,15 @@ public class FixAHole_Board : MonoBehaviour
     [SerializeField]
     private float BlockSize;
 
+    [SerializeField]
+    private float PerlinThreshold = 0.5f;
+
+    [SerializeField]
+    private float DigThreshold = 0.65f;
+
+    [SerializeField]
+    private int DesiredHoles = 20;
+
     public byte[,] Board = new byte[,] {{ 1, 1, 1, 1, 1, 1 },
                                         { 1, 1, 0, 0, 0, 1 },
                                         { 1, 0, 0, 0, 0, 1 },
@@ -27,6 +36,8 @@ public class FixAHole_Board : MonoBehaviour
     private int selectionX;
     private int selectionY;
 
+    private int currentHoles;
+
     private FixAHole_Piece selectedPiece;
 
     [SerializeField]
@@ -38,6 +49,68 @@ public class FixAHole_Board : MonoBehaviour
         InitializeBoard();
 
         pickingArea.OnPieceSelected += OnPieceSelected;
+    }
+
+    void RandomizeBoard(int width, int height)
+    {
+        int xOffset = Random.Range(0, 1000);
+        int yOffset = Random.Range(0, 1000);
+
+        Board = new byte[height, width];
+        for(int x = 0; x < width; ++x)
+        {
+            for(int y = 0; y < height; ++y)
+            {
+                byte value = 1;
+                if( x > 0 && y > 0 && x < width - 1 && y < height - 1)
+                {
+                    if(Mathf.PerlinNoise((float)(x + xOffset) / width, (float)(y + yOffset) / height) > PerlinThreshold)
+                    {
+                        value = 0;
+                    }
+                }
+
+                Board[y, x] = 1;
+            }
+        }
+
+        currentHoles = 0;
+
+        while (currentHoles < DesiredHoles)
+        {
+            int holeSize = Random.Range(3, 5);
+            DigHole(Random.Range(1, width - 1), Random.Range(1, height - 1), holeSize);
+        }
+    }
+
+    void DigHole(int x, int y, int size)
+    {
+        if (x > 0 && y > 0 && x < BoardWidth - 1 && y < BoardHeight - 1 && currentHoles < DesiredHoles)
+        {
+            if (Board[y, x] == 1)
+            {
+                Board[y, x] = 0;
+                ++currentHoles;
+                --size;
+            }
+
+            if (size > 0 && Random.Range(0.0f, 100.0f) <= DigThreshold)
+            {
+                DigHole(x - 1, y, size--);
+            }
+            if (size > 0 && Random.Range(0.0f, 100.0f) <= DigThreshold)
+            {
+                DigHole(x + 1, y, size--);
+            }
+            if (size > 0 && Random.Range(0.0f, 100.0f) <= DigThreshold)
+            {
+                DigHole(x, y - 1, size--);
+            }
+            if (size > 0 && Random.Range(0.0f, 100.0f) <= DigThreshold)
+            {
+                DigHole(x, y + 1, size--);
+            }
+        }
     }
 
     private void OnPieceSelected(FixAHole_Piece piece)
@@ -111,6 +184,13 @@ public class FixAHole_Board : MonoBehaviour
                 HighlightSelection();
             }
         }
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            if(selectedPiece)
+            {
+                ChuckCurrentPiece();
+            }
+        }
     }
 
     void EvaluateBoard()
@@ -120,6 +200,8 @@ public class FixAHole_Board : MonoBehaviour
 
     void InitializeBoard()
     {
+        RandomizeBoard(BoardWidth, BoardHeight);
+
         BoardWidth = Board.GetLength(1);
         BoardHeight = Board.GetLength(0);
 
@@ -219,6 +301,16 @@ public class FixAHole_Board : MonoBehaviour
             {
                 selectionY--;
             }
+        }
+    }
+
+    void ChuckCurrentPiece()
+    {
+        if(selectedPiece)
+        {
+            selectedPiece.Chuck();
+            selectedPiece = null;
+            HighlightSelection();
         }
     }
 }
