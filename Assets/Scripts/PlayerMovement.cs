@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     static float MOVEMENT_SPEED_MODIFIER = 1.75f;
     static float PLAYER_BOUNCE_MODIFIER = 4.00f;
+    static float PLAYER_BOUNCE_THRESHOLD = 3.0f;
     [Header("Player Variables")]
     public float Horizontal;
     public float Vertical;
@@ -20,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rigidbody_;
     public PlayerInput input_;
     private bool mush;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
             mush = true;
         else
             mush = false;
+
+        animator = GetComponent<Animator>();
     }
 
 
@@ -95,8 +99,12 @@ public class PlayerMovement : MonoBehaviour
     /// <param name="other">The Collision2D data associated with this collision.</param>
     void OnCollisionEnter2D(Collision2D other)
     {
+        // Bounce between players
         if(other.gameObject.tag == "Player")
-        {
+        {            
+            if(other.GetContact(0).relativeVelocity.magnitude > PLAYER_BOUNCE_THRESHOLD)
+                animator.SetTrigger("Bounce");
+            
             rigidbody_.AddForce(other.GetContact(0).relativeVelocity * PLAYER_BOUNCE_MODIFIER);
         }
     }
