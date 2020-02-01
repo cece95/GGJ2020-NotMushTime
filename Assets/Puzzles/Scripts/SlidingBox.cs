@@ -60,7 +60,7 @@ public class SlidingBox : MonoBehaviour{
     // Update is called once per frame
     void Update() {
 
-        if (checkWin_flag == true)
+        if (checkWin_flag)
         {
             checkWin();
             checkWin_flag = false;
@@ -124,7 +124,7 @@ public class SlidingBox : MonoBehaviour{
         }
     }
 
-    private bool checkWin()
+    private void checkWin()
     {
         int checkNumber = 1;
         bool win = true;
@@ -133,9 +133,10 @@ public class SlidingBox : MonoBehaviour{
             for (int i2 = 0; i2 < SIZE; i2++)
             {
                 GameObject bl = blocks[i2, i1];
-                if (bl != null && checkNumber < SIZE*SIZE)
+                if (bl != null && checkNumber <= SIZE*SIZE)
                 {
                     string blockNumber = bl.GetComponentInChildren<TextMeshProUGUI>().text;
+                    Debug.Log(blockNumber + " | " + checkNumber.ToString());
                     if (blockNumber != checkNumber.ToString())
                     {
                         win = false;
@@ -144,6 +145,6 @@ public class SlidingBox : MonoBehaviour{
                 checkNumber++;
             }
         }
-        return win;
+        Debug.Log(win);
     }
 }
