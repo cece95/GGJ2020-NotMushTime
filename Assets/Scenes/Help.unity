@@ -583,7 +583,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "After picking up their family business, Shroom and Mush are ready to push
     some buttons. Only\u2026 They are the wrong ones. Help Shroom and Mush avoid
-    catastrophe, repair their spaceship, and save their own caps!"
+    catastrophe, repair their spaceship, and save their own caps! \n\nTo save the
+    two engineers and their ship from otherwise inevitable doom, you\u2019ll have
+    to find items, solve puzzles, and repair the nuclear plant, but be quick! You
+    don\u2019t have mush time\u2026 \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -652,12 +655,12 @@ MonoBehaviour:
   m_margin: {x: -254.53717, y: 0, z: -61.973145, w: -240.74875}
   m_textInfo:
     textComponent: {fileID: 1021986897}
-    characterCount: 207
+    characterCount: 396
     spriteCount: 0
-    spaceCount: 34
-    wordCount: 35
+    spaceCount: 69
+    wordCount: 67
     linkCount: 0
-    lineCount: 5
+    lineCount: 10
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
