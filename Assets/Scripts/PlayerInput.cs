@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerInput : MonoBehaviour
 {
 
     //player 1 controls
-    [HideInInspector] public float P1Vertical;
-    [HideInInspector] public float P1Horizontal;
-    [HideInInspector] public bool P1Red;
-    [HideInInspector] public bool P1Green;
+     public float P1Vertical;
+     public float P1Horizontal;
+     public bool P1Red;
+     public bool P1Green;
     [HideInInspector] public bool P1Yellow;
     [HideInInspector] public bool P1Blue;
 
