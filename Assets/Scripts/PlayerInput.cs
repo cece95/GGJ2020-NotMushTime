@@ -20,6 +20,8 @@ public class PlayerController
     public bool BluePressedFlag;
     public bool RedPressedFlag;
 
+    public float StickPressDowntime;
+
     /// <summary>
     /// Returns true if key was pressed during this frame
     /// </summary>
@@ -67,14 +69,28 @@ public class PlayerController
 
 public class PlayerInput : MonoBehaviour
 {
-    public static PlayerInput Instance { get { if (instance == null) instance = FindObjectOfType<PlayerInput>(); return instance; } }
+    public static PlayerInput Instance {
+                            get {
+                                instance = FindObjectOfType<PlayerInput>();
+                                if (instance == null)
+                                {
+                                    GameObject go = new GameObject();
+                                    instance = go.AddComponent<PlayerInput>();
+                                }
+                                return instance;
+                            } }
     private static PlayerInput instance;
 
+    [SerializeField]
+    private float stickPressDowntime = 0.3f;
+
+    public float StickPressDowntime { get { return stickPressDowntime; } }
+
     //player 1 controls
-    public float P1Vertical;
-    public float P1Horizontal;
-    public bool P1Red;
-    public bool P1Green;
+    [HideInInspector] public float P1Vertical;
+    [HideInInspector] public float P1Horizontal;
+    [HideInInspector] public bool P1Red;
+    [HideInInspector] public bool P1Green;
     [HideInInspector] public bool P1Yellow;
     [HideInInspector] public bool P1Blue;
 
@@ -86,74 +102,78 @@ public class PlayerInput : MonoBehaviour
     [HideInInspector] public bool P2Yellow;
     [HideInInspector] public bool P2Blue;
 
-    public PlayerController Player1 = new PlayerController();
-    public PlayerController Player2 = new PlayerController();
+    public PlayerController Player1 { get { return player1Controller; } }
+    public PlayerController Player2 { get { return player2Controller; } }
+
+    private PlayerController player1Controller;
+    private PlayerController player2Controller;
 
     void Awake()
     {
+        player1Controller = new PlayerController();
+        player2Controller = new PlayerController();
+    }
 
+    void UpdatePlayerInput(ref PlayerController controller, string playerId)
+    {
+        if(controller == null)
+        {
+            return;
+        }
+
+        // Get all inputs
+        controller.StickPressDowntime -= Time.fixedDeltaTime;
+        if (controller.StickPressDowntime <= 0.0f)
+        {
+            controller.HorizontalPress = (int)Input.GetAxis(playerId + " Horizontal Press");
+            controller.VerticalPress = (int)Input.GetAxis(playerId + " Vertical Press");
+
+            if (controller.HorizontalPress != 0.0f || controller.VerticalPress != 0.0f)
+            {
+                controller.StickPressDowntime = stickPressDowntime;
+            }
+        }
+        else
+        {
+            if ((int)Input.GetAxis(playerId + " Horizontal Press") == 0 && (int)Input.GetAxis(playerId + " Vertical Press") == 0)
+            {
+                controller.StickPressDowntime = 0.0f;
+            }
+
+            controller.HorizontalPress = 0;
+            controller.VerticalPress = 0;
+        }
+
+        controller.Horizontal = Input.GetAxis(playerId + " Horizontal");
+        controller.Vertical = Input.GetAxis(playerId + " Vertical");
+        controller.Yellow = Input.GetButton(playerId + " Yellow");
+        controller.Green = Input.GetButton(playerId + " Green");
+        controller.Blue = Input.GetButton(playerId + " Blue");
+        controller.Red = Input.GetButton(playerId + " Red");
+
+        // Reset pressed flags
+        if (controller.YellowPressedFlag && !controller.Yellow)
+        {
+            controller.YellowPressedFlag = false;
+        }
+        if (controller.GreenPressedFlag && !controller.Green)
+        {
+            controller.GreenPressedFlag = false;
+        }
+        if (controller.BluePressedFlag && !controller.Blue)
+        {
+            controller.BluePressedFlag = false;
+        }
+        if (controller.RedPressedFlag && !controller.Red)
+        {
+            controller.RedPressedFlag = false;
+        }
     }
 
     void FixedUpdate()
     {
-        // Get all inputs
-        Player1.HorizontalPress = (int)Input.GetAxis("P1 Horizontal Press");
-        Player1.VerticalPress = (int)Input.GetAxis("P1 Vertical Press");
-
-        Player1.Horizontal = Input.GetAxis("P1 Horizontal");
-        Player1.Vertical = Input.GetAxis("P1 Vertical");
-        Player1.Yellow = Input.GetButton("P1 Yellow");
-        Player1.Green = Input.GetButton("P1 Green");
-        Player1.Blue = Input.GetButton("P1 Blue");
-        Player1.Red = Input.GetButton("P1 Red");
-
-        // Reset pressed flags
-        if (Player1.YellowPressedFlag && !Player1.Yellow)
-        {
-            Player1.YellowPressedFlag = false;
-        }
-        if (Player1.GreenPressedFlag && !Player1.Green)
-        {
-            Player1.GreenPressedFlag = false;
-        }
-        if (Player1.BluePressedFlag && !Player1.Blue)
-        {
-            Player1.BluePressedFlag = false;
-        }
-        if (Player1.RedPressedFlag && !Player1.Red)
-        {
-            Player1.RedPressedFlag = false;
-        }
-
-        // Get all inputs
-        Player2.HorizontalPress = (int)Input.GetAxis("P2 Horizontal Press");
-        Player2.VerticalPress = (int)Input.GetAxis("P2 Vertical Press");
-
-        Player2.Horizontal = Input.GetAxis("P2 Horizontal");
-        Player2.Vertical = Input.GetAxis("P2 Vertical");
-        Player2.Yellow = Input.GetButton("P2 Yellow");
-        Player2.Green = Input.GetButton("P2 Green");
-        Player2.Blue = Input.GetButton("P2 Blue");
-        Player2.Red = Input.GetButton("P2 Red");
-
-        // Reset pressed flags
-        if (Player2.YellowPressedFlag && !Player2.Yellow)
-        {
-            Player2.YellowPressedFlag = false;
-        }
-        if (Player2.GreenPressedFlag && !Player2.Green)
-        {
-            Player2.GreenPressedFlag = false;
-        }
-        if (Player2.BluePressedFlag && !Player2.Blue)
-        {
-            Player2.BluePressedFlag = false;
-        }
-        if (Player2.RedPressedFlag && !Player2.Red)
-        {
-            Player2.RedPressedFlag = false;
-        }
-
+        UpdatePlayerInput(ref player1Controller, "P1");
+        UpdatePlayerInput(ref player2Controller, "P2");
 
         // TODO: Deprecated stuff - to remove
         P1Horizontal = Input.GetAxis("P1 Horizontal");

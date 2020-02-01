@@ -46,8 +46,7 @@ public class FixAHole_Board : MonoBehaviour
 
     private FixAHole_Piece selectedPiece;
 
-    public PlayerController Setter;
-    public PlayerController Picker;
+    private PlayerController setter;
 
     [SerializeField]
     private FixAHole_PickingArea pickingArea;
@@ -58,6 +57,12 @@ public class FixAHole_Board : MonoBehaviour
         InitializeBoard();
 
         pickingArea.OnPieceSelected += OnPieceSelected;
+    }
+
+    public void SetPlayerControllers(PlayerController setter, PlayerController picker)
+    {
+        this.setter = setter;
+        pickingArea.Picker = picker;
     }
 
     void RandomizeBoard(int width, int height)
@@ -161,18 +166,14 @@ public class FixAHole_Board : MonoBehaviour
         {
             moveTimer -= Time.fixedDeltaTime;
         }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
         pickingArea.CanPickPiece = (selectedPiece == null && !isCompleted);
 
         if (selectedPiece && !isCompleted)
         {
-            if(moveTimer <= 0.0f)
+            //if(moveTimer <= 0.0f)
             {
-                if(Setter.HorizontalPress > 0)
+                if(setter.HorizontalPress > 0)
                 {
                     selectionX++;
                     if (selectionX + selectedPiece.PieceWidth >= BoardWidth)
@@ -182,7 +183,7 @@ public class FixAHole_Board : MonoBehaviour
                     HighlightSelection();
                     moveTimer = TimeBetweenMoves;
                 }
-                if (Setter.HorizontalPress < 0)
+                if (setter.HorizontalPress < 0)
                 {
                     selectionX--;
                     if (selectionX < 0)
@@ -192,7 +193,7 @@ public class FixAHole_Board : MonoBehaviour
                     HighlightSelection();
                     moveTimer = TimeBetweenMoves;
                 }
-                if(Setter.VerticalPress > 0)
+                if(setter.VerticalPress > 0)
                 {
                     selectionY--;
                     if (selectionY < 0)
@@ -202,7 +203,7 @@ public class FixAHole_Board : MonoBehaviour
                     HighlightSelection();
                     moveTimer = TimeBetweenMoves;
                 }
-                if(Setter.VerticalPress < 0)
+                if(setter.VerticalPress < 0)
                 {
                     selectionY++;
                     if (selectionY + selectedPiece.PieceHeight >= BoardHeight)
@@ -213,28 +214,28 @@ public class FixAHole_Board : MonoBehaviour
                     moveTimer = TimeBetweenMoves;
                 }
             }
-            else if( Setter.HorizontalPress == 0 && Setter.VerticalPress == 0 )
+            //else if( Setter.HorizontalPress == 0 && Setter.VerticalPress == 0 )
             {
                 moveTimer = 0.0f;
             }
 
-            if (Setter.IsBlueDown())
+            if (setter.IsBlueDown())
             {
                 InsertPiece();
             }
-            if (Setter.IsYellowDown())
+            if (setter.IsYellowDown())
             {
                 selectedPiece.RotatePiece(false);
                 EnsurePieceInBounds();
                 HighlightSelection();
             }
-            if (Setter.IsGreenDown())
+            if (setter.IsGreenDown())
             {
                 selectedPiece.RotatePiece(true);
                 EnsurePieceInBounds();
                 HighlightSelection();
             }
-            if (Setter.IsRedDown())
+            if (setter.IsRedDown())
             {
                 ChuckCurrentPiece();
             }

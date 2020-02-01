@@ -34,8 +34,6 @@ public class FixAHole_Piece : MonoBehaviour
     void Awake()
     {
         discardAnimation = GetComponent<Animation>();
-
-        Debug.Log(PieceAsset);
     }
 
     public void Initialize(FixAHole_PieceAsset pieceAsset)

@@ -11,12 +11,12 @@ public class FixAHole : Puzzle
         puzzleBoard = GetComponentInChildren<FixAHole_Board>();
         puzzleBoard.OnPuzzleCompleted += PuzzleBoard_OnPuzzleCompleted;
 
-        puzzleBoard.Setter = PlayerInput.Instance.Player2;
+        StartPuzzle(PlayerInput.Instance.Player1, PlayerInput.Instance.Player2);
     }
 
     public void StartPuzzle(PlayerController picker, PlayerController setter)
     {
-
+        puzzleBoard.SetPlayerControllers(setter, picker);
     }
 
     private void PuzzleBoard_OnPuzzleCompleted()
