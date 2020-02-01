@@ -13,10 +13,8 @@ public class FixAHole_PickingArea : MonoBehaviour
 
     private List<FixAHole_Piece> pieces = new List<FixAHole_Piece>();
 
-    [SerializeField]
     private List<FixAHole_PieceAsset> piecesPool;
 
-    [SerializeField]
     private FixAHole_Piece piecePrefab;
 
     [SerializeField]
@@ -30,10 +28,13 @@ public class FixAHole_PickingArea : MonoBehaviour
 
     float pieceAddTimer = 0.0f;
 
+    public PlayerController Picker;
+
     // Start is called before the first frame update
     void Awake()
     {
-
+        piecesPool = new List<FixAHole_PieceAsset>(Resources.LoadAll<FixAHole_PieceAsset>("FixAHole/Pieces"));
+        piecePrefab = Resources.Load<FixAHole_Piece>("FixAHole/Prefabs/Piece");
     }
 
     public void SelectPiece(int pieceId)
@@ -92,22 +93,17 @@ public class FixAHole_PickingArea : MonoBehaviour
                 piece.transform.localPosition = new Vector3(Mathf.Lerp(piece.transform.localPosition.x, desiredX, Mathf.SmoothStep(0.0f, 1.0f, Mathf.SmoothStep(0.0f, 1.0f, 0.3f))), 0.0f, 0.0f);
             }
         }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.A))
+        if(Picker.HorizontalPress < 0)
         {
             SelectPiece(selectedPiece - 1);
         }
-
-        if(Input.GetKeyDown(KeyCode.D))
+        if(Picker.HorizontalPress > 0)
         {
             SelectPiece(selectedPiece + 1);
         }
 
-        if(CanPickPiece && Input.GetKeyDown(KeyCode.Space))
+        if(CanPickPiece && Picker.IsGreenDown())
         {
             if(OnPieceSelected != null)
             {

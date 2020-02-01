@@ -28,10 +28,9 @@ public class FixAHole_Board : MonoBehaviour
                                         { 1, 0, 0, 1, 0, 1 },
                                         { 1, 1, 1, 1, 1, 1 }};
 
-    public FixAHole_BoardPiece[,] PieceBoard;
+    private FixAHole_BoardPiece[,] pieceBoard;
 
-    [SerializeField]
-    private FixAHole_BoardPiece BoardPiecePrefab;
+    private FixAHole_BoardPiece boardPiecePrefab;
 
     private int selectionX;
     private int selectionY;
@@ -41,23 +40,27 @@ public class FixAHole_Board : MonoBehaviour
     private bool isCompleted = false;
 
     private float moveTimer;
-    [SerializeField]
-    private float TimeBetweenMoves = 0.3f;
 
     private FixAHole_Piece selectedPiece;
 
-    public PlayerController Setter;
-    public PlayerController Picker;
-
-    [SerializeField]
     private FixAHole_PickingArea pickingArea;
 
-    // Start is called before the first frame update
-    void Awake()
+    private PlayerController setter;
+
+    public void Initialize()
     {
+        boardPiecePrefab = Resources.Load<FixAHole_BoardPiece>("FixAHole/Prefabs/Hole");
+        pickingArea = transform.parent.gameObject.GetComponentInChildren<FixAHole_PickingArea>();
+
         InitializeBoard();
 
         pickingArea.OnPieceSelected += OnPieceSelected;
+    }
+
+    public void SetPlayerControllers(PlayerController setter, PlayerController picker)
+    {
+        this.setter = setter;
+        pickingArea.Picker = picker;
     }
 
     void RandomizeBoard(int width, int height)
@@ -154,87 +157,67 @@ public class FixAHole_Board : MonoBehaviour
     {
         if (selectedPiece)
         {
-            selectedPiece.transform.position = Vector3.Lerp(selectedPiece.transform.position, PieceBoard[selectionY, selectionX].transform.position + new Vector3(0.0f, 0.0f, -2.0f), 0.5f);
+            selectedPiece.transform.position = Vector3.Lerp(selectedPiece.transform.position, pieceBoard[selectionY, selectionX].transform.position + new Vector3(0.0f, 0.0f, -2.0f), 0.5f);
         }
 
-        if (moveTimer > 0.0f)
-        {
-            moveTimer -= Time.fixedDeltaTime;
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         pickingArea.CanPickPiece = (selectedPiece == null && !isCompleted);
 
         if (selectedPiece && !isCompleted)
         {
-            if(moveTimer <= 0.0f)
+            if (setter.HorizontalPress > 0)
             {
-                if(Setter.HorizontalPress > 0)
+                selectionX++;
+                if (selectionX + selectedPiece.PieceWidth >= BoardWidth)
                 {
-                    selectionX++;
-                    if (selectionX + selectedPiece.PieceWidth >= BoardWidth)
-                    {
-                        selectionX = BoardWidth - selectedPiece.PieceWidth;
-                    }
-                    HighlightSelection();
-                    moveTimer = TimeBetweenMoves;
+                    selectionX = BoardWidth - selectedPiece.PieceWidth;
                 }
-                if (Setter.HorizontalPress < 0)
-                {
-                    selectionX--;
-                    if (selectionX < 0)
-                    {
-                        selectionX = 0;
-                    }
-                    HighlightSelection();
-                    moveTimer = TimeBetweenMoves;
-                }
-                if(Setter.VerticalPress > 0)
-                {
-                    selectionY--;
-                    if (selectionY < 0)
-                    {
-                        selectionY = 0;
-                    }
-                    HighlightSelection();
-                    moveTimer = TimeBetweenMoves;
-                }
-                if(Setter.VerticalPress < 0)
-                {
-                    selectionY++;
-                    if (selectionY + selectedPiece.PieceHeight >= BoardHeight)
-                    {
-                        selectionY = BoardHeight - selectedPiece.PieceHeight;
-                    }
-                    HighlightSelection();
-                    moveTimer = TimeBetweenMoves;
-                }
+                HighlightSelection();
             }
-            else if( Setter.HorizontalPress == 0 && Setter.VerticalPress == 0 )
+            if (setter.HorizontalPress < 0)
             {
-                moveTimer = 0.0f;
+                selectionX--;
+                if (selectionX < 0)
+                {
+                    selectionX = 0;
+                }
+                HighlightSelection();
+            }
+            if (setter.VerticalPress > 0)
+            {
+                selectionY--;
+                if (selectionY < 0)
+                {
+                    selectionY = 0;
+                }
+                HighlightSelection();
+            }
+            if (setter.VerticalPress < 0)
+            {
+                selectionY++;
+                if (selectionY + selectedPiece.PieceHeight >= BoardHeight)
+                {
+                    selectionY = BoardHeight - selectedPiece.PieceHeight;
+                }
+                HighlightSelection();
             }
 
-            if (Setter.IsBlueDown())
+            if (setter.IsBlueDown())
             {
                 InsertPiece();
             }
-            if (Setter.IsYellowDown())
+            if (setter.IsYellowDown())
             {
                 selectedPiece.RotatePiece(false);
                 EnsurePieceInBounds();
                 HighlightSelection();
             }
-            if (Setter.IsGreenDown())
+            if (setter.IsGreenDown())
             {
                 selectedPiece.RotatePiece(true);
                 EnsurePieceInBounds();
                 HighlightSelection();
             }
-            if (Setter.IsRedDown())
+            if (setter.IsRedDown())
             {
                 ChuckCurrentPiece();
             }
@@ -278,18 +261,18 @@ public class FixAHole_Board : MonoBehaviour
 
         Debug.Log("Board width: " + BoardWidth + " Board Height: " + BoardHeight);
 
-        PieceBoard = new FixAHole_BoardPiece[BoardHeight, BoardWidth];
+        pieceBoard = new FixAHole_BoardPiece[BoardHeight, BoardWidth];
 
         for( int x = 0; x < BoardWidth; ++x )
         {
             for(int y = 0; y < BoardHeight; ++y )
             {
-                FixAHole_BoardPiece NewPiece = Instantiate(BoardPiecePrefab, transform.Find("BoardPieces"));
+                FixAHole_BoardPiece NewPiece = Instantiate(boardPiecePrefab, transform.Find("BoardPieces"));
 
                 NewPiece.transform.localPosition = new Vector3(x, -y, 0) * BlockSize + Offset;
                 NewPiece.SetFilled(Board[y, x] == 1);
 
-                PieceBoard[y, x] = NewPiece;
+                pieceBoard[y, x] = NewPiece;
             }
         }
 
@@ -299,9 +282,9 @@ public class FixAHole_Board : MonoBehaviour
             {
                 int neighbours = CalculateNeighbours(x, y);
 
-                if (PieceBoard[y, x] != null)
+                if (pieceBoard[y, x] != null)
                 {
-                    PieceBoard[y, x].SetNeighbours((byte)neighbours);
+                    pieceBoard[y, x].SetNeighbours((byte)neighbours);
                 }
             }
         }
@@ -332,11 +315,11 @@ public class FixAHole_Board : MonoBehaviour
                     {
                         if (canPlace)
                         {
-                            PieceBoard[currentY, currentX].SetHighlight(pieceBlock[y, x]);
+                            pieceBoard[currentY, currentX].SetHighlight(pieceBlock[y, x]);
                         }
                         else
                         {
-                            PieceBoard[currentY, currentX].SetBlocked(pieceBlock[y, x]);
+                            pieceBoard[currentY, currentX].SetBlocked(pieceBlock[y, x]);
                         }
                     }
                 }
@@ -350,8 +333,8 @@ public class FixAHole_Board : MonoBehaviour
         {
             for (int y = 0; y < BoardHeight; ++y)
             {
-                PieceBoard[y, x].SetHighlight(false);
-                PieceBoard[y, x].SetBlocked(false);
+                pieceBoard[y, x].SetHighlight(false);
+                pieceBoard[y, x].SetBlocked(false);
             }
         }
     }
@@ -371,10 +354,10 @@ public class FixAHole_Board : MonoBehaviour
 
                     if (currentX < BoardWidth && currentY < BoardHeight)
                     {
-                        bool currentFill = PieceBoard[currentY, currentX].IsFilled;
+                        bool currentFill = pieceBoard[currentY, currentX].IsFilled;
                         bool isFilled = currentFill || pieceBlock[y, x];
                         Board[currentY, currentX] = (byte)(isFilled ? 1 : 0);
-                        PieceBoard[currentY, currentX].SetFilled(isFilled);
+                        pieceBoard[currentY, currentX].SetFilled(isFilled);
                     }
                 }
             }
@@ -403,7 +386,7 @@ public class FixAHole_Board : MonoBehaviour
 
                     if (currentX < BoardWidth && currentY < BoardHeight)
                     {
-                        bool currentFill = PieceBoard[currentY, currentX].IsFilled;
+                        bool currentFill = pieceBoard[currentY, currentX].IsFilled;
                         if(currentFill && pieceBlock[y,x])
                         {
                             return false;
