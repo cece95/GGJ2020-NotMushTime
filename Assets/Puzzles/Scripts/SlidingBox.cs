@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -8,7 +9,9 @@ public class SlidingBox : MonoBehaviour{
     // block prefab
     GameObject block;
 
-    static int SIZE = 2;
+    static int SIZE = 3;
+    static int N_EMPTY_CELLS = 1;
+    static int N_SCRAMBLE = 10;
 
     GameObject[,] blocks = new GameObject[SIZE,SIZE];
     List<Vector3> possiblePositions = new List<Vector3>();
@@ -37,11 +40,12 @@ public class SlidingBox : MonoBehaviour{
         // generate blocks in random postiions
         List<int> alreadyExtractedNumbers = new List<int>();
         int n;
-        for (int i = 0; i < SIZE * SIZE - 1; i++)
+        for (int i = 0; i < SIZE * SIZE - N_EMPTY_CELLS; i++)
         {
             do
             {
-                n = Random.Range(0, SIZE*SIZE - 1);
+                n = i;
+                //n = Random.Range(0, SIZE*SIZE - N_EMPTY_CELLS);
             } while (alreadyExtractedNumbers.Contains(n));
 
             alreadyExtractedNumbers.Add(n);
@@ -55,6 +59,8 @@ public class SlidingBox : MonoBehaviour{
             int y = n / SIZE;
             blocks[x, y] = b;
         }
+
+        scramblePuzzle();
     }
 
     // Update is called once per frame
@@ -66,60 +72,28 @@ public class SlidingBox : MonoBehaviour{
             checkWin_flag = false;
         }
 
-        // get the coordinates of the empty cell
-        int x = 0, y = 0;
-
-        for(int i=0; i<SIZE; i++) { 
-            for(int j=0; j<SIZE; j++){
-                if (blocks[i,j] == null){
-                    x = i;
-                    y = j;
-                }
-            }
-        }
+        Tuple<int, int> emptyCell = getEmptyCell();
+        int x = emptyCell.Item1;
+        int y = emptyCell.Item2;
 
         // move the only box that can move in that direction. If none can move, do nothing
         if (Input.GetKeyDown(KeyCode.UpArrow)){
-            if (y < SIZE-1) {
-                blocks[x, y] = blocks[x, y + 1];
-                blocks[x, y + 1] = null;
-                blocks[x, y].transform.Translate(0, 3, 0);
-
-                // check for victory conditions
-                checkWin_flag = true;
-            }
+            moveUp(x,y);
+            checkWin_flag = true;
         }
 
         if (Input.GetKeyDown(KeyCode.DownArrow)){
-            if (y > 0){
-                blocks[x, y] = blocks[x, y - 1];
-                blocks[x, y - 1] = null;
-                blocks[x, y].transform.Translate(0, -3, 0);
-
-                // check for victory conditions
-                checkWin_flag = true;
-            }
+            moveDown(x, y);
+            checkWin_flag = true;
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow)){
-            if (x > 0){
-                blocks[x, y] = blocks[x - 1, y];
-                blocks[x - 1, y] = null;
-                blocks[x, y].transform.Translate(3, 0, 0);
-
-                // check for victory conditions
-                checkWin_flag = true;
-            }
+            moveRight(x, y);
+            checkWin_flag = true;
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow)){
-            if (x < SIZE-1){
-                blocks[x, y] = blocks[x + 1, y];
-                blocks[x + 1, y] = null;
-                blocks[x, y].transform.Translate(-3, 0, 0);
-            }
-
-            // check for victory conditions
+            moveLeft(x, y);
             checkWin_flag = true;
         }
     }
@@ -146,5 +120,103 @@ public class SlidingBox : MonoBehaviour{
             }
         }
         Debug.Log(win);
+    }
+
+    private Tuple<int,int> getEmptyCell()
+    {
+        int x = 0, y = 0;
+
+        for (int i = 0; i < SIZE; i++)
+        {
+            for (int j = 0; j < SIZE; j++)
+            {
+                if (blocks[i, j] == null)
+                {
+                    x = i;
+                    y = j;
+                }
+            }
+        }
+        return new Tuple<int, int>(x, y);
+    }
+
+    private void moveUp(int x, int y)
+    {
+        if (y < SIZE - 1)
+        {
+            blocks[x, y] = blocks[x, y + 1];
+            blocks[x, y + 1] = null;
+            blocks[x, y].transform.Translate(0, 3, 0);
+        }
+    }
+
+    private void moveDown(int x, int y)
+    {
+        if (y > 0)
+        {
+            blocks[x, y] = blocks[x, y - 1];
+            blocks[x, y - 1] = null;
+            blocks[x, y].transform.Translate(0, -3, 0);
+        }
+    }
+
+    private void moveRight(int x, int y)
+    {
+        if (x > 0)
+        {
+            blocks[x, y] = blocks[x - 1, y];
+            blocks[x - 1, y] = null;
+            blocks[x, y].transform.Translate(3, 0, 0);
+        }
+    }
+
+    private void moveLeft(int x, int y)
+    {
+        if (x < SIZE - 1)
+        {
+            blocks[x, y] = blocks[x + 1, y];
+            blocks[x + 1, y] = null;
+            blocks[x, y].transform.Translate(-3, 0, 0);
+        }
+    }
+
+    private void scramblePuzzle()
+    {
+        for (int k = 1; k < N_SCRAMBLE; k++)
+        {
+            Tuple<int, int> empty = getEmptyCell();
+            int x = empty.Item1;
+            int y = empty.Item2;
+            
+            int r = UnityEngine.Random.Range(0, 4);
+            
+            switch (r)
+            {
+                case 0:
+                    {
+                        moveUp(x, y);
+                        Debug.Log("Up");
+                    }
+                    break;
+                case 1:
+                    {
+                        moveRight(x, y);
+                        Debug.Log("Right");
+                    }
+                    break;
+                case 2:
+                    {
+                        moveDown(x, y);
+                        Debug.Log("Down");
+                    }
+                    break;
+                case 3:
+                    {
+                        moveLeft(x, y);
+                        Debug.Log("Left");
+                    }
+                    break;
+            }
+        }
     }
 }
