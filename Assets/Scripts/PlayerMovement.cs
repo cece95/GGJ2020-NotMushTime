@@ -5,41 +5,38 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-
+    static float MOVEMENT_SPEED_MODIFIER = 1.75f;
+    static float PLAYER_BOUNCE_MODIFIER = 4.00f;
     [Header("Player Variables")]
-    public int player = 0;
     public float Horizontal;
     public float Vertical;
     public bool Red;
     public bool Green;
     public bool Yellow;
     public bool Blue;
-    public Vector3 Speed = new Vector3 (0,0,0);
+    public Vector2 Speed = new Vector3(0, 0);
 
     [Header("Linked Scripts")]
-    public Rigidbody rigidbody_ ;
+    public Rigidbody2D rigidbody_;
     public PlayerInput input_;
-
+    private bool mush;
 
     // Start is called before the first frame update
     void Start()
     {
-
-
-    //get which player we are
-
-     
+        if (rigidbody_.name.Contains("Mush"))
+            mush = true;
+        else
+            mush = false;
     }
-    
+
 
     // Update is called once per frame
     void FixedUpdate()
     {
-
-        if (rigidbody_.name.Contains("Mush"))
+        if (mush)
         {
-            player = 1;
-            //if we are mush, then we are player one
+            // If we are mush, then we are player one
             Vertical = input_.P1Vertical;
             Horizontal = input_.P1Horizontal;
 
@@ -52,8 +49,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            player = 2;
-            //otherwise we are player 2
+            // otherwise we are player 2
             Vertical = input_.P2Vertical;
             Horizontal = input_.P2Horizontal;
 
@@ -65,16 +61,15 @@ public class PlayerMovement : MonoBehaviour
 
         Speed.x = Horizontal;
         Speed.y = Vertical;
-        //move the player based on the player input
-        rigidbody_.velocity.Set(input_.P1Horizontal, input_.P1Vertical, 0);
-        rigidbody_.transform.SetPositionAndRotation((rigidbody_.position + Speed), rigidbody_.rotation);
         
+        rigidbody_.AddForce(Speed.normalized * MOVEMENT_SPEED_MODIFIER);
+
 
         //if the player is near a grabbable object, pick it up
 
-        if(Green) //green button will be used for interaction, anything in these brackets will be called when the green button is pressed 
+        if (Green) //green button will be used for interaction, anything in these brackets will be called when the green button is pressed 
         {
-            
+
         }
 
         if (Red) // if the red button is being pressed for the player
@@ -91,6 +86,19 @@ public class PlayerMovement : MonoBehaviour
         {
 
         }
-     }
+    }
+    
+    /// <summary>
+    /// Sent when an incoming collider makes contact with this object's
+    /// collider (2D physics only).
+    /// </summary>
+    /// <param name="other">The Collision2D data associated with this collision.</param>
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            rigidbody_.AddForce(other.GetContact(0).relativeVelocity * PLAYER_BOUNCE_MODIFIER);
+        }
+    }
 
 }
