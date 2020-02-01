@@ -53,7 +53,7 @@ public class SlidingBox : Puzzle {
             Vector3 pos = possiblePositions[n];
             GameObject b = Instantiate(block, pos, Quaternion.identity);
             int nToShow = i + 1;
-            b.GetComponentInChildren<TextMeshProUGUI>().text = nToShow.ToString();
+            b.tag = nToShow.ToString();
 
             //add block as children of the prefab
             b.transform.SetParent(gameObject.transform);
@@ -113,7 +113,7 @@ public class SlidingBox : Puzzle {
                 GameObject bl = blocks[i2, i1];
                 if (bl != null && checkNumber <= SIZE*SIZE)
                 {
-                    string blockNumber = bl.GetComponentInChildren<TextMeshProUGUI>().text;
+                    string blockNumber = bl.tag;
                     Debug.Log(blockNumber + " | " + checkNumber.ToString());
                     if (blockNumber != checkNumber.ToString())
                     {
