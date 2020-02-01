@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    static float MOVEMENT_SPEED_MODIFIER = 1f;
+    static float MOVEMENT_SPEED_MODIFIER = 1.75f;
     [Header("Player Variables")]
     public float Horizontal;
     public float Vertical;
