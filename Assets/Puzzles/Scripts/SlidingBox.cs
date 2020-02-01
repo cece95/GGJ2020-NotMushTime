@@ -12,12 +12,19 @@ public class SlidingBox : MonoBehaviour{
     List<Vector3> possiblePositions = new List<Vector3>();
 
     //controls
-    [HideInInspector] public float P1Vertical;
-    [HideInInspector] public float P1Horizontal;
+    [Header("Player Variables")]
+    public float Horizontal;
+    public float Vertical;
+
+    [Header("Linked Scripts")]
+    public PlayerInput input_;
 
     // Start is called before the first frame update
     void Start()
     {
+        Vertical = input_.P1Vertical;
+        Horizontal = input_.P1Horizontal;
+
         block = (GameObject) Resources.Load("prefabs/Block");
 
         // create a set of positions so we check that there's no repetition
@@ -68,7 +75,7 @@ public class SlidingBox : MonoBehaviour{
         }
 
         // move the only box that can move in that direction. If none can move, do nothing
-        if (P1Vertical > 0){
+        if (Vertical > 0){
             if (y < 2) {
                 blocks[x, y] = blocks[x, y + 1];
                 blocks[x, y + 1] = null;
@@ -76,7 +83,7 @@ public class SlidingBox : MonoBehaviour{
             }
         }
 
-        if (P1Vertical < 0){
+        if (Vertical < 0){
             if (y > 0){
                 blocks[x, y] = blocks[x, y - 1];
                 blocks[x, y - 1] = null;
@@ -84,7 +91,7 @@ public class SlidingBox : MonoBehaviour{
             }
         }
 
-        if (P1Horizontal > 0){
+        if (Horizontal > 0){
             if (x > 0){
                 blocks[x, y] = blocks[x - 1, y];
                 blocks[x - 1, y] = null;
@@ -92,7 +99,7 @@ public class SlidingBox : MonoBehaviour{
             }
         }
 
-        if (P1Horizontal < 0){
+        if (Horizontal < 0){
             if (x < 2){
                 blocks[x, y] = blocks[x + 1, y];
                 blocks[x + 1, y] = null;
