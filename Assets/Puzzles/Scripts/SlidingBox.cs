@@ -11,28 +11,18 @@ public class SlidingBox : MonoBehaviour{
     GameObject[,] blocks = new GameObject[3,3];
     List<Vector3> possiblePositions = new List<Vector3>();
 
-    //controls
-    [Header("Player Variables")]
-    public float Horizontal;
-    public float Vertical;
-
-    [Header("Linked Scripts")]
-    public PlayerInput input_;
-
     // Start is called before the first frame update
     void Start()
     {
-        Vertical = input_.P1Vertical;
-        Horizontal = input_.P1Horizontal;
 
-        block = (GameObject) Resources.Load("prefabs/Block");
+        block = (GameObject) Resources.Load("Prefabs/Block");
 
         // create a set of positions so we check that there's no repetition
-        for (int i = -1; i < 2; i++)
+        for (int pi = 1; pi > -2; pi--)
         {
-            for (int j = -1; j < 2; j++)
+            for (int pj = -1; pj < 2; pj++)
             {
-                Vector2 p = new Vector3(3 * i, 3 * j, 0);
+                Vector3 p = new Vector3(3 * pj, 3 * pi, 0);
                 possiblePositions.Add(p);
             }
         }
@@ -75,7 +65,7 @@ public class SlidingBox : MonoBehaviour{
         }
 
         // move the only box that can move in that direction. If none can move, do nothing
-        if (Vertical > 0){
+        if (Input.GetKeyDown(KeyCode.UpArrow)){
             if (y < 2) {
                 blocks[x, y] = blocks[x, y + 1];
                 blocks[x, y + 1] = null;
@@ -83,7 +73,7 @@ public class SlidingBox : MonoBehaviour{
             }
         }
 
-        if (Vertical < 0){
+        if (Input.GetKeyDown(KeyCode.DownArrow)){
             if (y > 0){
                 blocks[x, y] = blocks[x, y - 1];
                 blocks[x, y - 1] = null;
@@ -91,7 +81,7 @@ public class SlidingBox : MonoBehaviour{
             }
         }
 
-        if (Horizontal > 0){
+        if (Input.GetKeyDown(KeyCode.RightArrow)){
             if (x > 0){
                 blocks[x, y] = blocks[x - 1, y];
                 blocks[x - 1, y] = null;
@@ -99,7 +89,7 @@ public class SlidingBox : MonoBehaviour{
             }
         }
 
-        if (Horizontal < 0){
+        if (Input.GetKeyDown(KeyCode.LeftArrow)){
             if (x < 2){
                 blocks[x, y] = blocks[x + 1, y];
                 blocks[x + 1, y] = null;
