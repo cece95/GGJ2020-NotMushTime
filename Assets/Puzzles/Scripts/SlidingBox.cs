@@ -4,14 +4,14 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class SlidingBox : MonoBehaviour{
+public class SlidingBox : Puzzle {
 
     // block prefab
     GameObject block;
 
     static int SIZE = 3;
     static int N_EMPTY_CELLS = 1;
-    static int N_SCRAMBLE = 10;
+    static int N_SCRAMBLE = 20;
 
     GameObject[,] blocks = new GameObject[SIZE,SIZE];
     List<Vector3> possiblePositions = new List<Vector3>();
@@ -120,6 +120,10 @@ public class SlidingBox : MonoBehaviour{
             }
         }
         Debug.Log(win);
+        if (win)
+        {
+           
+        }
     }
 
     private Tuple<int,int> getEmptyCell()
