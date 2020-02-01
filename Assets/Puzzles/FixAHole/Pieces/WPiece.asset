@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de57e75041edb40749c0d16f6a2cb95d, type: 3}
-  m_Name: TPiece
+  m_Name: WPiece
   m_EditorClassIdentifier: 
   PieceWidth: 3
-  PieceHeight: 2
-  PieceName: T-Piece
+  PieceHeight: 3
+  PieceName: W-Piece
   PieceStructure:
-  - 10
-  - 11
-  - 10
+  - 100
+  - 110
+  - 011
   SpriteAsset: {fileID: 0}

@@ -22,6 +22,12 @@ public class FixAHole_PickingArea : MonoBehaviour
     [SerializeField]
     private float TimeBetweenAddingPieces = 1.0f;
 
+    [SerializeField]
+    private float FirstPieceXOffset = -5.0f;
+
+    [SerializeField]
+    private float NextPieceXOffset = 2.5f;
+
     float pieceAddTimer = 0.0f;
 
     // Start is called before the first frame update
@@ -44,7 +50,7 @@ public class FixAHole_PickingArea : MonoBehaviour
     private FixAHole_Piece GenerateNewPiece()
     {
         FixAHole_Piece newPiece = Instantiate(piecePrefab);
-        newPiece.Initialize(piecesPool[Random.Range(0, piecesPool.Count - 1)]);
+        newPiece.Initialize(piecesPool[Random.Range(0, piecesPool.Count)]);
 
         return newPiece;
     }
@@ -52,7 +58,7 @@ public class FixAHole_PickingArea : MonoBehaviour
     private void AddNewPiece(FixAHole_Piece newPiece)
     {
         // Make sure scale is properly set
-        newPiece.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        newPiece.transform.localScale = new Vector3(0.5f, 0.5f, 1.0f);
         newPiece.transform.SetParent(transform);
         pieces.Add(newPiece);
 
@@ -80,7 +86,7 @@ public class FixAHole_PickingArea : MonoBehaviour
         for(int i = 0; i < pieces.Count; ++i)
         {
             FixAHole_Piece piece = pieces[i];
-            float desiredX = -0.05f + i * 0.025f;
+            float desiredX = FirstPieceXOffset + i * NextPieceXOffset;
             if (piece.transform.localPosition.x > desiredX)
             {
                 piece.transform.localPosition = new Vector3(Mathf.Lerp(piece.transform.localPosition.x, desiredX, Mathf.SmoothStep(0.0f, 1.0f, Mathf.SmoothStep(0.0f, 1.0f, 0.3f))), 0.0f, 0.0f);
@@ -106,6 +112,7 @@ public class FixAHole_PickingArea : MonoBehaviour
             if(OnPieceSelected != null)
             {
                 OnPieceSelected.Invoke(pieces[selectedPiece]);
+                pieces[selectedPiece].IsHeld = true;
                 pieces.Remove(pieces[selectedPiece]);
             }
         }
