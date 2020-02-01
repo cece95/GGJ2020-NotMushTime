@@ -387,6 +387,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6381165867449936931, guid: 25719087d75693b488e532a5a45b354a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6381165868588582315, guid: 25719087d75693b488e532a5a45b354a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6381165868749215062, guid: 25719087d75693b488e532a5a45b354a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -400,7 +410,7 @@ PrefabInstance:
     - target: {fileID: 6381165868749215062, guid: 25719087d75693b488e532a5a45b354a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 6381165868749215062, guid: 25719087d75693b488e532a5a45b354a,
         type: 3}
@@ -446,6 +456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TwoPlayerPuzzleScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6381165868749215063, guid: 25719087d75693b488e532a5a45b354a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25719087d75693b488e532a5a45b354a, type: 3}
