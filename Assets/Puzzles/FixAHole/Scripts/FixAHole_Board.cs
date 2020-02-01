@@ -172,7 +172,7 @@ public class FixAHole_Board : MonoBehaviour
         {
             if(moveTimer <= 0.0f)
             {
-                if(Setter.Horizontal > 0)
+                if(Setter.HorizontalPress > 0)
                 {
                     selectionX++;
                     if (selectionX + selectedPiece.PieceWidth >= BoardWidth)
@@ -182,7 +182,7 @@ public class FixAHole_Board : MonoBehaviour
                     HighlightSelection();
                     moveTimer = TimeBetweenMoves;
                 }
-                if (Setter.Horizontal < 0)
+                if (Setter.HorizontalPress < 0)
                 {
                     selectionX--;
                     if (selectionX < 0)
@@ -192,51 +192,49 @@ public class FixAHole_Board : MonoBehaviour
                     HighlightSelection();
                     moveTimer = TimeBetweenMoves;
                 }
-
-
-            }
-            if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-            }
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-            }
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                selectionY--;
-                if (selectionY < 0)
+                if(Setter.VerticalPress > 0)
                 {
-                    selectionY = 0;
+                    selectionY--;
+                    if (selectionY < 0)
+                    {
+                        selectionY = 0;
+                    }
+                    HighlightSelection();
+                    moveTimer = TimeBetweenMoves;
                 }
-                HighlightSelection();
-            }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
-            {
-                selectionY++;
-                if (selectionY + selectedPiece.PieceHeight >= BoardHeight)
+                if(Setter.VerticalPress < 0)
                 {
-                    selectionY = BoardHeight - selectedPiece.PieceHeight;
+                    selectionY++;
+                    if (selectionY + selectedPiece.PieceHeight >= BoardHeight)
+                    {
+                        selectionY = BoardHeight - selectedPiece.PieceHeight;
+                    }
+                    HighlightSelection();
+                    moveTimer = TimeBetweenMoves;
                 }
-                HighlightSelection();
+            }
+            else if( Setter.HorizontalPress == 0 && Setter.VerticalPress == 0 )
+            {
+                moveTimer = 0.0f;
             }
 
-            if (Input.GetKeyDown(KeyCode.L))
+            if (Setter.IsBlueDown())
             {
                 InsertPiece();
             }
-            if (Input.GetKeyDown(KeyCode.N))
+            if (Setter.IsYellowDown())
             {
                 selectedPiece.RotatePiece(false);
                 EnsurePieceInBounds();
                 HighlightSelection();
             }
-            if (Input.GetKeyDown(KeyCode.M))
+            if (Setter.IsGreenDown())
             {
                 selectedPiece.RotatePiece(true);
                 EnsurePieceInBounds();
                 HighlightSelection();
             }
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Setter.IsRedDown())
             {
                 ChuckCurrentPiece();
             }
