@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public PlayerInput input_;
     private bool mush;
     Animator animator;
+    AnimationCurve depth_scale_curve;
 
     // Start is called before the first frame update
     void Start()
@@ -31,11 +32,23 @@ public class PlayerMovement : MonoBehaviour
         else
             mush = false;
 
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
+
+        // Set-Up Depth scale curve
+        depth_scale_curve = new AnimationCurve();
+        depth_scale_curve.AddKey(-2.4f, 1.15f);
+        depth_scale_curve.AddKey(2.4f, 0.85f);
     }
 
 
     // Update is called once per frame
+    void Update()
+    {
+        // -2.4 = biggest | 2.4 = smallest 
+
+        // Scale based on Y-Axis position in order to give perception of deapth
+        transform.localScale = Vector3.one * depth_scale_curve.Evaluate(transform.position.y);
+    }
     void FixedUpdate()
     {
         if (mush)

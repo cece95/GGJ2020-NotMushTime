@@ -121,20 +121,20 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &892942025 stripped
+--- !u!1 &174478266 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2517851644354358516, guid: d5631e2e05e90214c9a2ed2f1f020db1,
+  m_CorrespondingSourceObject: {fileID: 570418783006903815, guid: 66755c56089fdf648b615604cc502919,
     type: 3}
-  m_PrefabInstance: {fileID: 2517851643053968883}
+  m_PrefabInstance: {fileID: 570418783125094119}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &892942026
+--- !u!95 &174478269
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 892942025}
+  m_GameObject: {fileID: 174478266}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a52cfe6ca0dd0ab4487d43048f50e3f2, type: 2}
@@ -216,20 +216,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997215702}
   m_CullTransparentMesh: 0
---- !u!1 &1403692648 stripped
+--- !u!1 &2001097105 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 570418781925369472, guid: 66755c56089fdf648b615604cc502919,
+  m_CorrespondingSourceObject: {fileID: 2517851642469190119, guid: d5631e2e05e90214c9a2ed2f1f020db1,
     type: 3}
-  m_PrefabInstance: {fileID: 570418783125094119}
+  m_PrefabInstance: {fileID: 2517851643053968883}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1403692654
+--- !u!95 &2001097108
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403692648}
+  m_GameObject: {fileID: 2001097105}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a52cfe6ca0dd0ab4487d43048f50e3f2, type: 2}
@@ -386,12 +386,12 @@ PrefabInstance:
     - target: {fileID: 570418781925369484, guid: 66755c56089fdf648b615604cc502919,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.229
+      value: -0.035
       objectReference: {fileID: 0}
     - target: {fileID: 570418781925369484, guid: 66755c56089fdf648b615604cc502919,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.193
+      value: -1.126
       objectReference: {fileID: 0}
     - target: {fileID: 570418781925369484, guid: 66755c56089fdf648b615604cc502919,
         type: 3}
