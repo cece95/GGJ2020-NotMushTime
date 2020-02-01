@@ -122,7 +122,7 @@ public class SlidingBox : Puzzle {
         Debug.Log(win);
         if (win)
         {
-           
+            OnCompleted();
         }
     }
 
