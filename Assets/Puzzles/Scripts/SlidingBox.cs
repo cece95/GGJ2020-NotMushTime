@@ -44,7 +44,8 @@ public class SlidingBox : MonoBehaviour{
             alreadyExtractedNumbers.Add(n);
             Vector3 pos = possiblePositions[n];
             GameObject b = Instantiate(block, pos, Quaternion.identity);
-            b.GetComponentInChildren<TextMeshProUGUI>().text = i.ToString();
+            int nToShow = i + 1;
+            b.GetComponentInChildren<TextMeshProUGUI>().text = nToShow.ToString();
             
             // save the blocks in the position matrix
             int x = n % 3;
