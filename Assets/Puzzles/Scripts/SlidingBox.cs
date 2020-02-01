@@ -54,6 +54,9 @@ public class SlidingBox : Puzzle {
             GameObject b = Instantiate(block, pos, Quaternion.identity);
             int nToShow = i + 1;
             b.GetComponentInChildren<TextMeshProUGUI>().text = nToShow.ToString();
+
+            //add block as children of the prefab
+            b.transform.SetParent(gameObject.transform);
             
             // save the blocks in the position matrix
             int x = n % SIZE;
