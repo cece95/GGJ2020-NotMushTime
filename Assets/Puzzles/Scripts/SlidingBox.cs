@@ -100,5 +100,20 @@ public class SlidingBox : MonoBehaviour{
                 blocks[x, y].transform.Translate(-3, 0, 0);
             }
         }
+
+        // check for victory conditions
+        int checkNumber = 1;
+        bool win = true;
+        for (int i1 = 0; i1<3; i1++)
+        {
+            for (int i2 = 0; i2<3; i2++)
+            {
+                GameObject bl = blocks[i1, i2];
+                if (bl.GetComponentInChildren<TextMeshProUGUI>().text != checkNumber.ToString())
+                {
+                    win = false;
+                }
+            }
+        }
     }
 }
