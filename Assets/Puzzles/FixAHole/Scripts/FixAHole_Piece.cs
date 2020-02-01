@@ -8,13 +8,15 @@ public class FixAHole_Piece : MonoBehaviour
     public int PieceWidth { get; private set; }
     public bool IsHeld;
 
+    public bool IsHighlighted { get; private set; }
+    public bool IsBlocked { get; private set; }
+
     [SerializeField]
     public FixAHole_PieceAsset PieceAsset;
 
     private bool[,] PieceStructure;
 
-    private SpriteRenderer spriteRenderer;
-    private Animation animation;
+    private Animation discardAnimation;
 
     [SerializeField]
     private Sprite[] sprites;
@@ -26,11 +28,12 @@ public class FixAHole_Piece : MonoBehaviour
 
     private Transform rootTransform;
 
+    private SpriteRenderer[] spriteRenderers;
+
     // Start is called before the first frame update
     void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        animation = GetComponent<Animation>();
+        discardAnimation = GetComponent<Animation>();
 
         Debug.Log(PieceAsset);
     }
@@ -143,15 +146,30 @@ public class FixAHole_Piece : MonoBehaviour
 
     public void SetHighlight(bool isHighlighted)
     {
-        if (spriteRenderer)
+        IsHighlighted = isHighlighted;
+        UpdateSprite();
+    }
+
+    public void SetBlocked(bool isBlocked)
+    {
+        IsBlocked = isBlocked;
+        UpdateSprite();
+    }
+
+    void UpdateSprite()
+    {
+        foreach (SpriteRenderer sr in spriteRenderers)
         {
-            spriteRenderer.color = isHighlighted ? Color.white : Color.gray;
+            if (sr)
+            {
+                sr.color = IsBlocked ? Color.red : ( IsHighlighted ? Color.white : Color.gray );
+            }
         }
     }
 
     public void Chuck()
     {
-        animation.Play();
+        discardAnimation.Play();
     }
 
     void GenerateBlockTiles()
@@ -173,7 +191,8 @@ public class FixAHole_Piece : MonoBehaviour
                 spriteObject.transform.localPosition = new Vector3(x, -y);
             }
         }
-        
+
+        spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
     }
 
     int CalculateNeighbours(int x, int y)
@@ -316,6 +335,10 @@ public class FixAHole_Piece : MonoBehaviour
                     Vector3 rootPosition = rootTransform.localPosition;
                     rootTransform.localPosition = Vector3.Lerp(rootPosition, new Vector3(spriteOffset.x, spriteOffset.y), 0.2f);
                 }
+            }
+            else
+            {
+                rootTransform.localPosition = new Vector3(rootTransform.localPosition.x, rootTransform.localPosition.y, 0.0f);
             }
         }
     }

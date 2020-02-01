@@ -134,9 +134,9 @@ public class FixAHole_Board : MonoBehaviour
     {
         selectedPiece = piece;
         selectedPiece.transform.SetParent(null);
+        selectedPiece.transform.position = new Vector3(selectedPiece.transform.position.x, selectedPiece.transform.position.y, -20.0f);
 
-        selectionX = 0;
-        selectionY = 0;
+        EnsurePieceInBounds();
 
         HighlightSelection();
     }
@@ -145,7 +145,7 @@ public class FixAHole_Board : MonoBehaviour
     {
         if (selectedPiece)
         {
-            selectedPiece.transform.position = Vector3.Lerp(selectedPiece.transform.position, PieceBoard[selectionY, selectionX].transform.position, 0.5f);
+            selectedPiece.transform.position = Vector3.Lerp(selectedPiece.transform.position, PieceBoard[selectionY, selectionX].transform.position + new Vector3(0.0f, 0.0f, -2.0f), 0.5f);
         }
     }
 
@@ -273,6 +273,7 @@ public class FixAHole_Board : MonoBehaviour
             int height = pieceBlock.GetLength(0);
 
             bool canPlace = CanPlacePiece();
+            selectedPiece.SetBlocked(!canPlace);
 
             for (int x = 0; x < width; ++x)
             {

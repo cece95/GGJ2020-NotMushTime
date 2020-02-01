@@ -72,7 +72,7 @@ Material:
     - _DstBlend: 0
     - _EmissionEnabled: 0
     - _Exponent: 0.5
-    - _FadeRadius: 5.26
+    - _FadeRadius: 11.9
     - _FlipbookMode: 0
     - _GlossMapScale: 1
     - _Glossiness: 1
