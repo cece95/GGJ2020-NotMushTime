@@ -11,6 +11,20 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Ambience" ID="{5293C358-8EAB-4A4B-A783-C3685E63115A}"/>
+						<Bus Name="Alarm_Syren" ID="{D4638861-60C3-4833-A427-ED6BE2682A5A}"/>
+						<Bus Name="Players" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}"/>
+						<Bus Name="UI_Puzzles" ID="{096EE929-33E0-44A0-B2D8-2A90DA4833E4}"/>
+						<AuxBus Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+						<Bus Name="Interactive_Music" ID="{9DB30AF7-8268-4BAF-8D16-405E57AB1784}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

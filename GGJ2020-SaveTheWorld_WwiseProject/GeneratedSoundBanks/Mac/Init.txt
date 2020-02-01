@@ -1,6 +1,21 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2017233915	Happy_Days_Are_Over			\Default Work Unit\Happy_Days_Are_Over	
+
+State	ID	Name	State Group			Notes
+	0	None	Happy_Days_Are_Over			
+	1353553046	Alarm_Syren	Happy_Days_Are_Over			
+	3498417625	Happy_Days	Happy_Days_Are_Over			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
+	1353553046	Alarm_Syren			\Default Work Unit\Master Audio Bus\Alarm_Syren	
+	2188949101	Players			\Default Work Unit\Master Audio Bus\Players	
+	2423156673	UI_Puzzles			\Default Work Unit\Master Audio Bus\UI_Puzzles	
+	3734989563	Interactive_Music			\Default Work Unit\Master Audio Bus\Interactive_Music	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

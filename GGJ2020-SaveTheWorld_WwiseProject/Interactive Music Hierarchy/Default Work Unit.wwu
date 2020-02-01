@@ -1,6 +1,331 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{65346142-43E8-4CF7-B11B-B75EA90191F9}" SchemaVersion="94">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{65346142-43E8-4CF7-B11B-B75EA90191F9}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{65346142-43E8-4CF7-B11B-B75EA90191F9}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="Interactive_Music" ID="{12B668A2-8F0D-4305-9202-E326D206EFB7}" ShortID="593444694">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Interactive_Music" ID="{9DB30AF7-8268-4BAF-8D16-405E57AB1784}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicPlaylistContainer Name="Happy_Days" ID="{8AAABAEB-D816-40F0-AE87-8C033B06832E}" ShortID="440496116">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="overcooked" ID="{2860E011-47AE-4AE6-BF95-9C77CFFA85FC}" ShortID="966011256">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="44307.7097505669"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="overcooked" ID="{5BCB2A9D-7AC6-417D-BEF4-5CE171F9BB4C}" ShortID="1014140099">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="overcooked" ID="{5DACCAC8-F59C-4948-8B0C-4BD7DAFBF9D3}" ShortID="1012585534">
+													<Language>SFX</Language>
+													<AudioFile>overcooked.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{AF31CDA5-0751-4C73-B70A-A66D514A928C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{D6285DB9-C54F-4A93-B314-AB39CCABB5BD}">
+													<ClipList>
+														<MusicClip Name="overcooked" ID="{14351CC2-72BA-469E-9A9F-4F41C7447404}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="44307.7097505669"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="overcooked" ID="{5DACCAC8-F59C-4948-8B0C-4BD7DAFBF9D3}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{E196D9EB-840D-4864-83D4-A6DB0962B86D}"/>
+										<MusicCue Name="Exit Cue" ID="{9F6040C1-3B8A-41AF-9ABB-6A53DE7E174B}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="44307.7097505669"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{EB28BD8F-5827-49FD-B7B3-811535E5F892}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{0701B108-94A0-4190-973A-C35CE27A9815}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{C03C824C-0E95-4543-8A48-2929F608A3B7}" ShortID="63460540">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{7958BEE1-B7CA-4D9F-A8E2-13183A0400C8}" ShortID="831537737">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="overcooked" ID="{2860E011-47AE-4AE6-BF95-9C77CFFA85FC}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Alarm_Syren" ID="{3AA1A67B-2675-4100-B784-970913B50BD8}" ShortID="29238220">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Alram_Syren" ID="{ADEB0567-F89A-4510-BDEA-1A9D39F70095}" ShortID="685506858">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Interactive_Music" ID="{9DB30AF7-8268-4BAF-8D16-405E57AB1784}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Alram_Syren" ID="{80AD0549-EAA0-452E-BE0A-3347082780BB}" ShortID="19897224">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Alram_Syren" ID="{B5027FA4-306B-4584-BA55-2C05BEDF84E0}" ShortID="1039887605">
+													<Language>SFX</Language>
+													<AudioFile>Alram_Syren.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{B0D6805E-E231-492C-B964-9CEF2B00C92C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{9DD5CCD7-8CBB-4DF2-90BC-0BB35EAE4E62}">
+													<ClipList>
+														<MusicClip Name="Alram_Syren" ID="{065D8883-86E3-4933-A53D-F3ED063C563B}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="Alram_Syren" ID="{B5027FA4-306B-4584-BA55-2C05BEDF84E0}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{B54E0BE8-B4D1-47C0-9342-B67538E0D418}"/>
+										<MusicCue Name="Exit Cue" ID="{A6FC6B68-606F-4012-8B33-BDC31558EC04}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="4000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Happy_Days_Are_Over" ID="{A7A9E0F1-F607-485A-A94A-9FBAED229BBC}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Alarm_Syren" ID="{8AE6C00B-7034-43DE-875B-69A73C3FDC28}"/>
+										<CustomState Name="" ID="{144EE960-0427-4E5E-B7B1-97CA01494FE8}" ShortID="385311927"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Happy_Days" ID="{36A710D6-9A67-4E94-9BC9-E0A32C66A9DD}"/>
+										<CustomState Name="" ID="{F7E7D9F0-97A6-47DD-B60D-E4D51A14685D}" ShortID="410336538"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{F771C94C-CD1D-427C-BA37-0D0FC58752C4}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{3A7CB32F-D68D-4CD6-B5FC-9F4102A80D5F}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{7B8867BB-EFF4-4F00-B1C3-71AF76558EB6}" ShortID="241139598">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{17871825-B9C1-4752-BA76-E0CF4F033E99}" ShortID="1058320788">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="2"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Alram_Syren" ID="{ADEB0567-F89A-4510-BDEA-1A9D39F70095}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Happy_Days_Are_Over" ID="{A7A9E0F1-F607-485A-A94A-9FBAED229BBC}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Alarm_Syren" ID="{8AE6C00B-7034-43DE-875B-69A73C3FDC28}"/>
+								<CustomState Name="" ID="{218FADD4-D7E2-40BB-9CC8-0F3FF3B3C8E3}" ShortID="573358843"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Happy_Days" ID="{36A710D6-9A67-4E94-9BC9-E0A32C66A9DD}"/>
+								<CustomState Name="" ID="{77208BEE-398B-450C-AFFB-3AAC497380DE}" ShortID="547126385"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{C0F07C1A-9147-4D4C-9121-114E26C6CDCC}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{1E093D0E-35C3-4FEB-BF47-0AC6E03D9253}">
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{252F8FCF-FC24-4992-AD4D-3631D0B01D06}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Alarm_Syren" ID="{3AA1A67B-2675-4100-B784-970913B50BD8}" WorkUnitID="{65346142-43E8-4CF7-B11B-B75EA90191F9}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Happy_Days" ID="{8AAABAEB-D816-40F0-AE87-8C033B06832E}" WorkUnitID="{65346142-43E8-4CF7-B11B-B75EA90191F9}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{7097FA85-E8E6-4D17-A3FB-B7A9B4D5E694}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Happy_Days" ID="{8AAABAEB-D816-40F0-AE87-8C033B06832E}" WorkUnitID="{65346142-43E8-4CF7-B11B-B75EA90191F9}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Alarm_Syren" ID="{3AA1A67B-2675-4100-B784-970913B50BD8}" WorkUnitID="{65346142-43E8-4CF7-B11B-B75EA90191F9}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ArgumentList>
+						<ArgumentRef Name="Happy_Days_Are_Over" ID="{A7A9E0F1-F607-485A-A94A-9FBAED229BBC}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Happy_Days" ID="{36A710D6-9A67-4E94-9BC9-E0A32C66A9DD}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Happy_Days" ID="{8AAABAEB-D816-40F0-AE87-8C033B06832E}" WorkUnitID="{65346142-43E8-4CF7-B11B-B75EA90191F9}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Alarm_Syren" ID="{8AE6C00B-7034-43DE-875B-69A73C3FDC28}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Alarm_Syren" ID="{3AA1A67B-2675-4100-B784-970913B50BD8}" WorkUnitID="{65346142-43E8-4CF7-B11B-B75EA90191F9}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

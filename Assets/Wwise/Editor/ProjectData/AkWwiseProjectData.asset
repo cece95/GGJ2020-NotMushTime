@@ -24,14 +24,25 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4d87d1d28f13964985243f7dbc5d5e82
     GuidInternal: 
-    m_lastTime: -8586210144524775808
-    List: []
+    m_lastTime: -8586210097424775808
+    List:
+    - name: Reverb
+      guid: a01721411f4c2541a0228710a74f5e53
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Reverb
+        ObjectType: 1
+      Path: Default Work Unit/Master Audio Bus/Reverb
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 2e563b88421c0c4189e8c672fb883ad1
     GuidInternal: 
-    m_lastTime: -8586210144164775808
+    m_lastTime: -8586210081244775808
     List:
     - name: Ambience
       guid: 5ef76c1bc2fc334f9669bcd90cfe662b
@@ -42,13 +53,34 @@ MonoBehaviour:
       - ElementName: Ambience
         ObjectType: 7
       Path: Default Work Unit/Ambience
+    - name: Interactive_Music
+      guid: 8bbc24cd16cda74691b2264e98ab7cd5
+      id: 3734989563
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Interactive_Music
+        ObjectType: 7
+      Path: Default Work Unit/Interactive_Music
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 2af0d1b482278845bbee084276577987
     GuidInternal: 
-    m_lastTime: -8586210144164775808
+    m_lastTime: -8586210082044775808
     List:
+    - name: Interactive_Music
+      guid: 6d2c3d1c86d9fc4b8c1a0669a6ba4d78
+      id: 3734989563
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Interactive_Music
+        ObjectType: 3
+      Path: Default Work Unit/Interactive_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Main_Reactor
       guid: 62d2b37be379e845aaf684b060d6e749
       id: 658170097
@@ -73,14 +105,45 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b4e3e64815f2e0439d58e97aa9c44a7b
     GuidInternal: 
-    m_lastTime: -8586210147014775808
-    List: []
+    m_lastTime: -8586210088194775808
+    List:
+    - name: Happy_Days_Are_Over
+      guid: f1e0a9a707f65a48a94a9fbaed229bbc
+      id: 2017233915
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Happy_Days_Are_Over
+        ObjectType: 9
+      Path: Default Work Unit/Happy_Days_Are_Over
+      values:
+      - name: Alarm_Syren
+        guid: 0bc0e68a3470de43875b69a73c3fdc28
+        id: 1353553046
+        PathAndIcons:
+        - ElementName: Alarm_Syren
+          ObjectType: 8
+      - name: Happy_Days
+        guid: d610a736679a944e9bc9e0a32c66a9dd
+        id: 3498417625
+        PathAndIcons:
+        - ElementName: Happy_Days
+          ObjectType: 8
+      - name: None
+        guid: 5a1ddb6f0ccfdb4d868845b64dd02223
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: bf89a347018a9841b4a34b8e84e71b51
     GuidInternal: 
-    m_lastTime: -8586210147014775808
+    m_lastTime: -8586210088194775808
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu

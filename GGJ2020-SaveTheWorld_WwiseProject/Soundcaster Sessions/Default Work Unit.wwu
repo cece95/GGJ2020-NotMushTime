@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C423D044-ACA6-4C2A-9BD8-977252D85E40}" SchemaVersion="94">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{C423D044-ACA6-4C2A-9BD8-977252D85E40}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C423D044-ACA6-4C2A-9BD8-977252D85E40}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="GGJ_2020_Save_The_Wordl" ID="{A34A9060-55EC-4B03-B8BC-96C7ED85D80D}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Interactive_Music" ID="{12B668A2-8F0D-4305-9202-E326D206EFB7}" WorkUnitID="{65346142-43E8-4CF7-B11B-B75EA90191F9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Alarm_Syren" ID="{8AE6C00B-7034-43DE-875B-69A73C3FDC28}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

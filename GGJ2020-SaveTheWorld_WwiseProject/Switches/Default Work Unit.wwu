@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{47A389BF-8A01-4198-B4A3-4B8E84E71B51}" SchemaVersion="94">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{47A389BF-8A01-4198-B4A3-4B8E84E71B51}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{47A389BF-8A01-4198-B4A3-4B8E84E71B51}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Happy_Days" ID="{D9609245-B7E8-4726-B2A8-88A091136A4A}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

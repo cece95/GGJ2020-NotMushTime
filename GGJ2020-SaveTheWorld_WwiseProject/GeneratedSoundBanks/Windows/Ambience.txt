@@ -2,7 +2,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	658170097	Main_Reactor			\Default Work Unit\Main_Reactor	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	15782557	Power_Plant_Ambience_02	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Windows\SFX\Power_Plant_Ambience_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main_Reactor\Power_Plant_Ambience_02		492220
-	428038605	Power_Plant_Ambience	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Windows\SFX\Power_Plant_Ambience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main_Reactor\Power_Plant_Ambience		619228
-	1053373926	Power_Plant_Ambience_01	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Windows\SFX\Power_Plant_Ambience_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main_Reactor\Power_Plant_Ambience_01		619228
+	15782557	Power_Plant_Ambience_03	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Windows\SFX\Power_Plant_Ambience_02_D178875F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main_Reactor\Power_Plant_Ambience_03		384724
+	115617734	Power_Plant_Ambience_01	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Windows\SFX\Power_Plant_Ambience_01_13D6DC3D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main_Reactor\Power_Plant_Ambience_01		619228
+	685501041	Power_Plant_Ambience_02	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Windows\SFX\Power_Plant_Ambience_02_56016EC3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main_Reactor\Power_Plant_Ambience_02		492220
+	1053373926	Power_Plant_Ambience_04	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Windows\SFX\Power_Plant_Ambience_01_F00B0F01.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main_Reactor\Power_Plant_Ambience_04		132376
 

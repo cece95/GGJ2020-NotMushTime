@@ -21,15 +21,19 @@
 			<IncludedMemoryFiles>
 				<File Id="15782557" Language="SFX">
 					<ShortName>Power_Plant_Ambience_02.wav</ShortName>
-					<Path>SFX/Power_Plant_Ambience_02_10C4C929.wem</Path>
+					<Path>SFX/Power_Plant_Ambience_02_D178875F.wem</Path>
 				</File>
-				<File Id="428038605" Language="SFX">
-					<ShortName>Power_Plant_Ambience.wav</ShortName>
-					<Path>SFX/Power_Plant_Ambience_10C4C929.wem</Path>
+				<File Id="115617734" Language="SFX">
+					<ShortName>Power_Plant_Ambience_01.wav</ShortName>
+					<Path>SFX/Power_Plant_Ambience_01_13D6DC3D.wem</Path>
+				</File>
+				<File Id="685501041" Language="SFX">
+					<ShortName>Power_Plant_Ambience_02.wav</ShortName>
+					<Path>SFX/Power_Plant_Ambience_02_56016EC3.wem</Path>
 				</File>
 				<File Id="1053373926" Language="SFX">
 					<ShortName>Power_Plant_Ambience_01.wav</ShortName>
-					<Path>SFX/Power_Plant_Ambience_01_10C4C929.wem</Path>
+					<Path>SFX/Power_Plant_Ambience_01_F00B0F01.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -37,6 +41,24 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3734989563" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Interactive_Music</ObjectPath>
+			<ShortName>Interactive_Music</ShortName>
+			<Path>Interactive_Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3734989563" Name="Interactive_Music" ObjectPath="\Events\Default Work Unit\Interactive_Music" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="1012585534" Language="SFX">
+					<ShortName>overcooked.wav</ShortName>
+					<Path>SFX/overcooked_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1039887605" Language="SFX">
+					<ShortName>Alram_Syren.wav</ShortName>
+					<Path>SFX/Alram_Syren_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

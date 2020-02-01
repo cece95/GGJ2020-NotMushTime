@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{48E6E3B4-F215-43E0-9D58-E97AA9C44A7B}" SchemaVersion="94">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{48E6E3B4-F215-43E0-9D58-E97AA9C44A7B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{48E6E3B4-F215-43E0-9D58-E97AA9C44A7B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Happy_Days_Are_Over" ID="{A7A9E0F1-F607-485A-A94A-9FBAED229BBC}">
+					<ChildrenList>
+						<State Name="None" ID="{6FDB1D5A-CF0C-4DDB-8688-45B64DD02223}"/>
+						<State Name="Happy_Days" ID="{36A710D6-9A67-4E94-9BC9-E0A32C66A9DD}"/>
+						<State Name="Alarm_Syren" ID="{8AE6C00B-7034-43DE-875B-69A73C3FDC28}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
