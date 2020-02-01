@@ -457,16 +457,6 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 6130ecc86363c3b47bd023ee4eee423e, type: 2}
-    - target: {fileID: 8515052925126068614, guid: fad88d9407ac6974e8d9f186ca7cf6be,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8515052925839219633, guid: fad88d9407ac6974e8d9f186ca7cf6be,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8885735870734634520, guid: fad88d9407ac6974e8d9f186ca7cf6be,
         type: 3}
       propertyPath: m_Controller
