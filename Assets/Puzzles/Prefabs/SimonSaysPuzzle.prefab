@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6631361468511619187}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361468588850590}
   - component: {fileID: 6631361468588850577}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GKeyOn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361468674275956}
   - component: {fileID: 6631361468674275959}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RKeyOn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361468705631718}
   - component: {fileID: 6631361468705631719}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GKeyOff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361468784950957}
   - component: {fileID: 6631361468784950954}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: YKeyOff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361469168390553}
   - component: {fileID: 6631361469168390630}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WrongCode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6631361469287198728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,7 +484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361469431290712}
   - component: {fileID: 6631361469431290713}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Locked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -565,7 +565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361469434615025}
   - component: {fileID: 6631361469434615038}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BKeyOff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,7 +646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361469471694748}
   - component: {fileID: 6631361469471694749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PuzzleCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -720,7 +720,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361469592516138}
   - component: {fileID: 6631361469592516139}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SimonBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,7 +805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361469659526280}
   - component: {fileID: 6631361469659526281}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RKeyOff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -886,7 +886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361469764811927}
   - component: {fileID: 6631361469764811926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: YKeyOn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -967,7 +967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361469889796759}
   - component: {fileID: 6631361469889796756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightCode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1048,7 +1048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361470094334184}
   - component: {fileID: 6631361470094334187}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BKeyOn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1129,7 +1129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361470373798946}
   - component: {fileID: 6631361470373798947}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KeypadBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1211,8 +1211,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6631361470465805108}
   - component: {fileID: 6631361470465805111}
-  m_Layer: 0
-  m_Name: SimonSays
+  m_Layer: 8
+  m_Name: SimonSaysPuzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
