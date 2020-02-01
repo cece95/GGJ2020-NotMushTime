@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class FixAHole_Board : MonoBehaviour
 {
+    public delegate void PuzzleCompleted();
+    public event PuzzleCompleted OnPuzzleCompleted;
+
     [SerializeField]
     private int BoardWidth;
 
@@ -12,9 +15,6 @@ public class FixAHole_Board : MonoBehaviour
 
     [SerializeField]
     private float BlockSize;
-
-    [SerializeField]
-    private float PerlinThreshold = 0.5f;
 
     [SerializeField]
     private float DigThreshold = 0.65f;
@@ -38,7 +38,16 @@ public class FixAHole_Board : MonoBehaviour
 
     private int currentHoles;
 
+    private bool isCompleted = false;
+
+    private float moveTimer;
+    [SerializeField]
+    private float TimeBetweenMoves = 0.3f;
+
     private FixAHole_Piece selectedPiece;
+
+    public PlayerController Setter;
+    public PlayerController Picker;
 
     [SerializeField]
     private FixAHole_PickingArea pickingArea;
@@ -147,32 +156,50 @@ public class FixAHole_Board : MonoBehaviour
         {
             selectedPiece.transform.position = Vector3.Lerp(selectedPiece.transform.position, PieceBoard[selectionY, selectionX].transform.position + new Vector3(0.0f, 0.0f, -2.0f), 0.5f);
         }
+
+        if (moveTimer > 0.0f)
+        {
+            moveTimer -= Time.fixedDeltaTime;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        pickingArea.CanPickPiece = selectedPiece == null;
+        pickingArea.CanPickPiece = (selectedPiece == null && !isCompleted);
 
-        if (selectedPiece)
+        if (selectedPiece && !isCompleted)
         {
+            if(moveTimer <= 0.0f)
+            {
+                if(Setter.Horizontal > 0)
+                {
+                    selectionX++;
+                    if (selectionX + selectedPiece.PieceWidth >= BoardWidth)
+                    {
+                        selectionX = BoardWidth - selectedPiece.PieceWidth;
+                    }
+                    HighlightSelection();
+                    moveTimer = TimeBetweenMoves;
+                }
+                if (Setter.Horizontal < 0)
+                {
+                    selectionX--;
+                    if (selectionX < 0)
+                    {
+                        selectionX = 0;
+                    }
+                    HighlightSelection();
+                    moveTimer = TimeBetweenMoves;
+                }
+
+
+            }
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                selectionX++;
-                if (selectionX + selectedPiece.PieceWidth >= BoardWidth)
-                {
-                    selectionX = BoardWidth - selectedPiece.PieceWidth;
-                }
-                HighlightSelection();
             }
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                selectionX--;
-                if (selectionX < 0)
-                {
-                    selectionX = 0;
-                }
-                HighlightSelection();
             }
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
@@ -218,7 +245,28 @@ public class FixAHole_Board : MonoBehaviour
 
     void EvaluateBoard()
     {
+        bool completed = true;
+        for(int x = 0; x < BoardWidth; ++x)
+        {
+            for(int y = 0; y < BoardHeight; ++y)
+            {
+                if(Board[y,x] == 0)
+                {
+                    completed = false;
+                    break;
+                }
+            }
+        }
 
+        isCompleted = completed;
+
+        if(completed)
+        {
+            if(OnPuzzleCompleted != null)
+            {
+                OnPuzzleCompleted();
+            }
+        }
     }
 
     void InitializeBoard()
@@ -326,13 +374,16 @@ public class FixAHole_Board : MonoBehaviour
                     if (currentX < BoardWidth && currentY < BoardHeight)
                     {
                         bool currentFill = PieceBoard[currentY, currentX].IsFilled;
-                        PieceBoard[currentY, currentX].SetFilled(currentFill || pieceBlock[y, x]);
+                        bool isFilled = currentFill || pieceBlock[y, x];
+                        Board[currentY, currentX] = (byte)(isFilled ? 1 : 0);
+                        PieceBoard[currentY, currentX].SetFilled(isFilled);
                     }
                 }
             }
 
             selectedPiece = null;
             ResetHighlight();
+            EvaluateBoard();
         }
     }
 
