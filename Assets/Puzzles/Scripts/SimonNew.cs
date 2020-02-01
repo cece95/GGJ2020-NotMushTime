@@ -8,7 +8,12 @@ public class SimonNew : MonoBehaviour
 {
     [SerializeField] private KeyCode Red1, Red2, Blue1, Blue2, Yellow1, Yellow2, Green1, Green2;
     public SpriteRenderer red, blue, green, yellow;//0,1,2,3
-    int[] puzzle = new int[5];
+    int[] puzzle = new int[4];
+    int[] answer = new int[4];
+    int[] puzzle1 = new int[5];
+    int[] answer1 = new int[5];
+    int[] puzzle2 = new int[6];
+    int[] answer2 = new int[6];
     bool play = false;
     bool displayswitch = true;
     public bool hit = false;
@@ -16,7 +21,7 @@ public class SimonNew : MonoBehaviour
     private static System.Timers.Timer aTimer, aTimer2;
     int puzzleposition = 0;
     int puztrack = 0;
-    int[] answer = new int[5];
+    public int timervalue = 800;
     int movecount = 0;
 
     // Start is called before the first frame update
@@ -31,25 +36,60 @@ public class SimonNew : MonoBehaviour
         blue.color = new Color(1f, 1f, 1f, 0f);
         green.color = new Color(1f, 1f, 1f, 0f); 
         yellow.color = new Color(1f, 1f, 1f, 0f);
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 4; i++)
         {
             puzzle[i] = RandomNumber(0, 4);
-
-
+        }
+        for (int i = 0; i < 5; i++)
+        {
+            puzzle1[i] = RandomNumber(0, 4);
+        }
+        for (int i = 0; i < 6; i++)
+        {
+            puzzle2[i] = RandomNumber(0, 4);
         }
         Debug.Log(puzzle[0]);
         Debug.Log(puzzle[1]);
         Debug.Log(puzzle[2]);
         Debug.Log(puzzle[3]);
-        Debug.Log(puzzle[4]);
+
+        Debug.Log("puzzle 2");
+
+        Debug.Log(puzzle1[0]);
+        Debug.Log(puzzle1[1]);
+        Debug.Log(puzzle1[2]);
+        Debug.Log(puzzle1[3]);
+        Debug.Log(puzzle1[4]);
+
+        Debug.Log("puzzle 3");
+
+        Debug.Log(puzzle2[0]);
+        Debug.Log(puzzle2[1]);
+        Debug.Log(puzzle2[2]);
+        Debug.Log(puzzle2[3]);
+        Debug.Log(puzzle2[4]);
+        Debug.Log(puzzle2[5]);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        PuzzleGo(puzzle);
-        SimonInput(puzzle);
-        //Clearer();
+        if (puztrack == 0)
+        {
+            PuzzleGo(puzzle);
+            SimonInput(puzzle, answer);
+        }
+        if (puztrack == 1)
+        {
+            PuzzleGo(puzzle1);
+            SimonInput(puzzle1, answer1);
+        }
+        if (puztrack == 2)
+        {
+            PuzzleGo(puzzle2);
+            SimonInput(puzzle2, answer2);
+        }
     }
     public int RandomNumber(int min, int max)
     {
@@ -59,7 +99,7 @@ public class SimonNew : MonoBehaviour
     private void SetTimer()
     {
         // Create a timer with a two second interval.
-        aTimer = new System.Timers.Timer(500);
+        aTimer = new System.Timers.Timer(timervalue);
         // Hook up the Elapsed event for the timer.
         aTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
         aTimer.AutoReset = true;
@@ -79,11 +119,32 @@ public class SimonNew : MonoBehaviour
             {
                 displayswitch = false;
             }
-            if (puzzleposition == puzzle.Length)
+            if (puztrack == 0)
             {
-                puzzleposition = 0;
-                play = true;
-                displayswitch = false;
+                if (puzzleposition == puzzle.Length)
+                {
+                    puzzleposition = 0;
+                    play = true;
+                    displayswitch = false;
+                }
+            }
+            if (puztrack == 1)
+            {
+                if (puzzleposition == puzzle1.Length)
+                {
+                    puzzleposition = 0;
+                    play = true;
+                    displayswitch = false;
+                }
+            }
+            if (puztrack == 2)
+            {
+                if (puzzleposition == puzzle2.Length)
+                {
+                    puzzleposition = 0;
+                    play = true;
+                    displayswitch = false;
+                }
             }
         }
         //Clearer();
@@ -154,35 +215,35 @@ public class SimonNew : MonoBehaviour
 
     }
 
-    private void SimonInput(int[] puz) 
+    private void SimonInput(int[] puz, int[] ans) 
     {
         if (play == true)
         {
             if (Input.GetKeyDown(Red1) || Input.GetKeyDown(Red2))
             {
-                answer.SetValue(0, movecount);
+                ans.SetValue(0, movecount);
                 movecount++;
             }
             if (Input.GetKeyDown(Blue1) || Input.GetKeyDown(Blue2))
             {
-                answer.SetValue(1, movecount);
+                ans.SetValue(1, movecount);
                 movecount++;
             }
             if (Input.GetKeyDown(Green1) || Input.GetKeyDown(Green2))
             {
-                answer.SetValue(3, movecount);
+                ans.SetValue(3, movecount);
                 movecount++;
             }
             if (Input.GetKeyDown(Yellow1) || Input.GetKeyDown(Yellow2))
             {
-                answer.SetValue(2, movecount);
+                ans.SetValue(2, movecount);
                 movecount++;
             }
-            if (movecount == answer.Length)
+            if (movecount == ans.Length)
             {
                 //play = false;
                 Debug.Log("input test");
-                wincondition(puzzle, answer);
+                wincondition(puz, ans);
             }
         }
     }
@@ -218,6 +279,10 @@ public class SimonNew : MonoBehaviour
             {
                 Array.Clear(ans, j, ans.Length);
             }*/
+        }
+        if (puztrack > 2)
+        {
+            Debug.Log("Ultimate Win!");
         }
     }
 }
