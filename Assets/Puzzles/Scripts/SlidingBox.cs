@@ -8,7 +8,7 @@ public class SlidingBox : Puzzle {
 
     // block prefab
     GameObject block;
-    PlayerController player = PlayerInput.Instance.Player1;
+    PlayerController player;
 
     static int SIZE = 3;
     static int N_EMPTY_CELLS = 1;
@@ -22,7 +22,7 @@ public class SlidingBox : Puzzle {
     // Start is called before the first frame update
     void Start()
     {
-
+        player = PlayerInput.Instance.Player1;
         block = (GameObject) Resources.Load("Prefabs/Block");
 
         int positiveStart = SIZE / 2;
@@ -65,7 +65,7 @@ public class SlidingBox : Puzzle {
     }
 
     // Update is called once per frame
-    void Update() {
+    void FixedUpdate() {
 
         if (checkWin_flag)
         {
