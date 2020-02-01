@@ -30,6 +30,8 @@ public class FixAHole_Piece : MonoBehaviour
 
     private SpriteRenderer[] spriteRenderers;
 
+    private bool isDiscarded = false;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -52,7 +54,7 @@ public class FixAHole_Piece : MonoBehaviour
     {
         GenerateBlockTiles();
 
-        rootTransform = transform.Find("AnimRoot");
+        rootTransform = transform.Find("AnimRoot").Find("RotateRoot");
         isInitialized = true;
     }
 
@@ -168,6 +170,7 @@ public class FixAHole_Piece : MonoBehaviour
     public void Chuck()
     {
         discardAnimation.Play();
+        isDiscarded = true;
     }
 
     void GenerateBlockTiles()
@@ -185,7 +188,7 @@ public class FixAHole_Piece : MonoBehaviour
                     UpdateSprite(sr, neighbours);
                 }
 
-                spriteObject.transform.SetParent(transform.Find("AnimRoot"));
+                spriteObject.transform.SetParent(transform.Find("AnimRoot").Find("RotateRoot"));
                 spriteObject.transform.localPosition = new Vector3(x, -y);
             }
         }
@@ -319,8 +322,13 @@ public class FixAHole_Piece : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        if(isDiscarded)
+        {
+            return;
+        }
+
         if (isInitialized)
         {
             transform.localRotation = Quaternion.Euler(0.0f, 0.0f, Mathf.LerpAngle(transform.localRotation.eulerAngles.z, desiredOrientation, 0.2f));

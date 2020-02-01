@@ -115,26 +115,26 @@ public class FixAHole_Board : MonoBehaviour
 
     int CalculateNeighbours(int x, int y)
     {
-        if(Board[y, x] == 1)
+        if(Board[y, x] == 0)
         {
             return 0;
         }
 
         int counter = 0;
 
-        if(x-1 >= 0 && Board[y, x-1] == 0)
+        if(x-1 >= 0 && Board[y, x-1] == 1)
         {
             counter |= 8;
         }
-        if(x+1 < BoardWidth && Board[y, x+1] == 0)
+        if(x+1 < BoardWidth && Board[y, x+1] == 1)
         {
             counter |= 2;
         }
-        if(y-1 >= 0 && Board[y-1, x] == 0)
+        if(y-1 >= 0 && Board[y-1, x] == 1)
         {
             counter |= 1;
         }
-        if(y+1 < BoardHeight && Board[y+1, x] == 0)
+        if(y+1 < BoardHeight && Board[y+1, x] == 1)
         {
             counter |= 4;
         }
@@ -145,7 +145,7 @@ public class FixAHole_Board : MonoBehaviour
     private void OnPieceSelected(FixAHole_Piece piece)
     {
         selectedPiece = piece;
-        selectedPiece.transform.SetParent(null);
+        selectedPiece.transform.SetParent(transform.parent);
         selectedPiece.transform.position = new Vector3(selectedPiece.transform.position.x, selectedPiece.transform.position.y, -20.0f);
 
         EnsurePieceInBounds();
@@ -362,6 +362,7 @@ public class FixAHole_Board : MonoBehaviour
                 }
             }
 
+            selectedPiece.transform.localPosition += new Vector3(0.0f, 0.0f, 2.0f);
             selectedPiece = null;
             ResetHighlight();
             EvaluateBoard();

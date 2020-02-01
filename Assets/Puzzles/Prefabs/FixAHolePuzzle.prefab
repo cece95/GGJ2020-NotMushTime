@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 878458140828397961}
   - component: {fileID: 477201607891899535}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4784277975785272869}
   - component: {fileID: 4784277975785272868}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PuzzleCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4784277976274583733}
   - component: {fileID: 3939389717687897506}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FixAHolePuzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1835385700385373488}
   - component: {fileID: 6795860882040535042}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,9 +249,6 @@ MonoBehaviour:
   BlockSize: 1
   DigThreshold: 76
   DesiredHoles: 20
-  BoardPiecePrefab: {fileID: 0}
-  TimeBetweenMoves: 0.3
-  pickingArea: {fileID: 3582100259987729561}
 --- !u!1 &7046573354993942010
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,7 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2836737943295766238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3560209360584531735}
   - component: {fileID: 3582100259987729561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PiecePickingArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7358575316602462626}
   - component: {fileID: 3028095614680323564}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +420,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2507092948733052461}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BoardPieces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
