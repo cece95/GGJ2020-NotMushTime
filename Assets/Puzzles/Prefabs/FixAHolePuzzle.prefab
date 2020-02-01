@@ -249,8 +249,7 @@ MonoBehaviour:
   BlockSize: 1
   DigThreshold: 76
   DesiredHoles: 20
-  BoardPiecePrefab: {fileID: -97738889537194930, guid: 765322e8ed4c046d688221fa7376f45b,
-    type: 3}
+  BoardPiecePrefab: {fileID: 0}
   TimeBetweenMoves: 0.3
   pickingArea: {fileID: 3582100259987729561}
 --- !u!1 &7046573354993942010
@@ -331,9 +330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanPickPiece: 0
-  piecesPool: []
-  piecePrefab: {fileID: 7937951620368984978, guid: 9548fbc6ea7cd45808b5f885c32e7c79,
-    type: 3}
   TimeBetweenAddingPieces: 0.3
   FirstPieceXOffset: -4
   NextPieceXOffset: 2

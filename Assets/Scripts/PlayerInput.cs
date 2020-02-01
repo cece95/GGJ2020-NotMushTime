@@ -83,7 +83,10 @@ public class PlayerInput : MonoBehaviour
     private static PlayerInput instance;
 
     [SerializeField]
-    private float stickPressDowntime = 0.3f;
+    private float stickPressDowntime = 0.2f;
+
+    [SerializeField]
+    private float stickReleaseThreshold = 0.15f;
 
     public float StickPressDowntime { get { return stickPressDowntime; } }
 
@@ -136,7 +139,7 @@ public class PlayerInput : MonoBehaviour
         }
         else
         {
-            if ((int)Input.GetAxis(playerId + " Horizontal Press") == 0 && (int)Input.GetAxis(playerId + " Vertical Press") == 0)
+            if (Mathf.Abs(Input.GetAxis(playerId + " Horizontal Press")) <= stickReleaseThreshold && Mathf.Abs(Input.GetAxis(playerId + " Vertical Press")) <= stickReleaseThreshold)
             {
                 controller.StickPressDowntime = 0.0f;
             }

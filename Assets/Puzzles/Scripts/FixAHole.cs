@@ -10,6 +10,7 @@ public class FixAHole : Puzzle
     {
         puzzleBoard = GetComponentInChildren<FixAHole_Board>();
         puzzleBoard.OnPuzzleCompleted += PuzzleBoard_OnPuzzleCompleted;
+        puzzleBoard.Initialize();
 
         StartPuzzle(PlayerInput.Instance.Player1, PlayerInput.Instance.Player2);
     }
