@@ -52,40 +52,51 @@ public class SimonSays : MonoBehaviour
         return random.Next(min, max);
     }
 
+    void wait(double x)
+    {
+        DateTime t = DateTime.Now;
+        DateTime tf = DateTime.Now.AddSeconds(x);
+
+        while (t < tf)
+        {
+            t = DateTime.Now;
+        }
+    }
+
     private void SetTimer()
     {
         // Create a timer with a two second interval.
         aTimer = new System.Timers.Timer(5000);
         // Hook up the Elapsed event for the timer.
         aTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
-        //aTimer.AutoReset = true;
+        aTimer.AutoReset = true;
         aTimer.Enabled = true;
     }
 
     private void PuzzleGo(int[]puz)
     {
-        if (Input.GetKeyDown(Red1) || Input.GetKeyDown(Red2))
-        {
-            Debug.Log("test");
-        }
-        //hit = false;
-        if (puz[puzzleposition] == 0)
-        {
-            red.enabled = true;
-        }
-        if (puz[puzzleposition] == 1)
-        {
-            blue.enabled = true;
-        }
-        if (puz[puzzleposition] == 2)
-        {
-            green.enabled = true;
-        }
-        if (puz[puzzleposition] == 3)
-        {
-            yellow.enabled = true;
-        }
+    
 
+            //hit = false;
+            if (puz[puzzleposition] == 0)
+            {
+                red.enabled = true;
+            }
+            if (puz[puzzleposition] == 1)
+            {
+                blue.enabled = true;
+            }
+            if (puz[puzzleposition] == 2)
+            {
+                green.enabled = true;
+            }
+            if (puz[puzzleposition] == 3)
+            {
+                yellow.enabled = true;
+            }
+
+        
+        
     }
 
     private void SimonInput(int[] puz)
@@ -96,6 +107,8 @@ public class SimonSays : MonoBehaviour
             if (Input.GetKeyDown(Red1) || Input.GetKeyDown(Red2))
             {
                 hit = true;
+                red.enabled = false;
+                
             }
             /*else
             {
@@ -108,6 +121,8 @@ public class SimonSays : MonoBehaviour
             if (Input.GetKeyDown(Blue1) || Input.GetKeyDown(Blue2))
             {
                 hit = true;
+                blue.enabled = false;
+               
             }
             /*else
             {
@@ -120,6 +135,8 @@ public class SimonSays : MonoBehaviour
             if (Input.GetKeyDown(Green1) || Input.GetKeyDown(Green2))
             {
                 hit = true;
+                green.enabled = false;
+                
             }
             /*else
             {
@@ -132,6 +149,7 @@ public class SimonSays : MonoBehaviour
             if (Input.GetKeyDown(Yellow1) || Input.GetKeyDown(Yellow2))
             {
                 hit = true;
+                yellow.enabled = false;
             }
             /*else
             {
@@ -142,9 +160,15 @@ public class SimonSays : MonoBehaviour
 
     private void OnTimedEvent(System.Object source, ElapsedEventArgs e)
     {
+        //puzzleposition++;
+        red.enabled = false;
+        blue.enabled = false;
+        green.enabled = false;
+        yellow.enabled = false;
         //Console.WriteLine("The Elapsed event was raised at {0:HH:mm:ss.fff}", e.SignalTime);
         if(hit == false)
         {
+            puzzleposition++;
             pass = false;
         }
         else
@@ -158,6 +182,10 @@ public class SimonSays : MonoBehaviour
     {
         if(pass == false)
         {
+            red.enabled = false;
+            blue.enabled = false;
+            green.enabled = false;
+            yellow.enabled = false;
             //timefail = true;
             puzzleposition = 0;
             Debug.Log("Fail!");
