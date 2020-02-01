@@ -113,6 +113,35 @@ public class FixAHole_Board : MonoBehaviour
         }
     }
 
+    int CalculateNeighbours(int x, int y)
+    {
+        if(Board[y, x] == 1)
+        {
+            return 0;
+        }
+
+        int counter = 0;
+
+        if(x-1 >= 0 && Board[y, x-1] == 0)
+        {
+            counter |= 8;
+        }
+        if(x+1 < BoardWidth && Board[y, x+1] == 0)
+        {
+            counter |= 2;
+        }
+        if(y-1 >= 0 && Board[y-1, x] == 0)
+        {
+            counter |= 1;
+        }
+        if(y+1 < BoardHeight && Board[y+1, x] == 0)
+        {
+            counter |= 4;
+        }
+
+        return counter;
+    }
+
     private void OnPieceSelected(FixAHole_Piece piece)
     {
         selectedPiece = piece;
@@ -126,67 +155,62 @@ public class FixAHole_Board : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.RightArrow))
+        if (selectedPiece)
         {
-            selectionX++;
-            if(selectionX + selectedPiece.PieceWidth >= BoardWidth)
+            if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                selectionX = BoardWidth - selectedPiece.PieceWidth;
+                selectionX++;
+                if (selectionX + selectedPiece.PieceWidth >= BoardWidth)
+                {
+                    selectionX = BoardWidth - selectedPiece.PieceWidth;
+                }
+                HighlightSelection();
             }
-            HighlightSelection();
-        }
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            selectionX--;
-            if (selectionX < 0)
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                selectionX = 0;
+                selectionX--;
+                if (selectionX < 0)
+                {
+                    selectionX = 0;
+                }
+                HighlightSelection();
             }
-            HighlightSelection();
-        }
-        if(Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            selectionY--;
-            if (selectionY < 0)
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                selectionY = 0;
+                selectionY--;
+                if (selectionY < 0)
+                {
+                    selectionY = 0;
+                }
+                HighlightSelection();
             }
-            HighlightSelection();
-        }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            selectionY++;
-            if (selectionY + selectedPiece.PieceHeight >= BoardHeight)
+            if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                selectionY = BoardHeight - selectedPiece.PieceHeight;
+                selectionY++;
+                if (selectionY + selectedPiece.PieceHeight >= BoardHeight)
+                {
+                    selectionY = BoardHeight - selectedPiece.PieceHeight;
+                }
+                HighlightSelection();
             }
-            HighlightSelection();
-        }
-        if(Input.GetKeyDown(KeyCode.L))
-        {
-            InsertPiece();
-        }
-        if(Input.GetKeyDown(KeyCode.N))
-        {
-            if(selectedPiece)
+
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                InsertPiece();
+            }
+            if (Input.GetKeyDown(KeyCode.N))
             {
                 selectedPiece.RotatePiece(false);
                 EnsurePieceInBounds();
                 HighlightSelection();
             }
-        }
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            if (selectedPiece)
+            if (Input.GetKeyDown(KeyCode.M))
             {
                 selectedPiece.RotatePiece(true);
                 EnsurePieceInBounds();
                 HighlightSelection();
             }
-        }
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            if(selectedPiece)
+            if (Input.GetKeyDown(KeyCode.P))
             {
                 ChuckCurrentPiece();
             }
@@ -209,7 +233,7 @@ public class FixAHole_Board : MonoBehaviour
 
         Debug.Log("Board width: " + BoardWidth + " Board Height: " + BoardHeight);
 
-        PieceBoard = new FixAHole_BoardPiece[BoardWidth, BoardHeight];
+        PieceBoard = new FixAHole_BoardPiece[BoardHeight, BoardWidth];
 
         for( int x = 0; x < BoardWidth; ++x )
         {
@@ -220,7 +244,20 @@ public class FixAHole_Board : MonoBehaviour
                 NewPiece.transform.localPosition = new Vector3(x, -y, 0) * BlockSize + Offset;
                 NewPiece.SetFilled(Board[y, x] == 1);
 
-                PieceBoard[x, y] = NewPiece;
+                PieceBoard[y, x] = NewPiece;
+            }
+        }
+
+        for (int x = 0; x < BoardWidth; ++x)
+        {
+            for (int y = 0; y < BoardHeight; ++y)
+            {
+                int neighbours = CalculateNeighbours(x, y);
+
+                if (PieceBoard[y, x] != null)
+                {
+                    PieceBoard[y, x].SetNeighbours((byte)neighbours);
+                }
             }
         }
     }
@@ -245,7 +282,7 @@ public class FixAHole_Board : MonoBehaviour
 
                     if (currentX < BoardWidth && currentY < BoardHeight)
                     {
-                        PieceBoard[currentX, currentY].SetHighlight(pieceBlock[y, x]);
+                        PieceBoard[currentY, currentX].SetHighlight(pieceBlock[y, x]);
                     }
                 }
             }
@@ -258,7 +295,7 @@ public class FixAHole_Board : MonoBehaviour
         {
             for (int y = 0; y < BoardHeight; ++y)
             {
-                PieceBoard[x, y].SetHighlight(false);
+                PieceBoard[y, x].SetHighlight(false);
             }
         }
     }
@@ -278,8 +315,8 @@ public class FixAHole_Board : MonoBehaviour
 
                     if (currentX < BoardWidth && currentY < BoardHeight)
                     {
-                        bool currentFill = PieceBoard[currentX, currentY].IsFilled;
-                        PieceBoard[currentX, currentY].SetFilled(currentFill || pieceBlock[y, x]);
+                        bool currentFill = PieceBoard[currentY, currentX].IsFilled;
+                        PieceBoard[currentY, currentX].SetFilled(currentFill || pieceBlock[y, x]);
                     }
                 }
             }
