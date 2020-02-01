@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Timers;
 using System;
 
+
 public class SimonNew : MonoBehaviour
 {
     [SerializeField] private KeyCode Red1, Red2, Blue1, Blue2, Yellow1, Yellow2, Green1, Green2;
@@ -23,6 +24,8 @@ public class SimonNew : MonoBehaviour
     int puztrack = 0;
     public int timervalue = 800;
     int movecount = 0;
+    float timecounter = 0.0f;
+    float timestore;
 
     // Start is called before the first frame update
     void Start()
@@ -75,6 +78,7 @@ public class SimonNew : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timecounter += Time.deltaTime;
         if (puztrack == 0)
         {
             PuzzleGo(puzzle);
@@ -217,33 +221,87 @@ public class SimonNew : MonoBehaviour
 
     private void SimonInput(int[] puz, int[] ans) 
     {
+        
         if (play == true)
         {
             if (Input.GetKeyDown(Red1) || Input.GetKeyDown(Red2))
             {
+                timestore = timecounter;
                 ans.SetValue(0, movecount);
                 movecount++;
             }
             if (Input.GetKeyDown(Blue1) || Input.GetKeyDown(Blue2))
             {
+                timestore = timecounter;
                 ans.SetValue(1, movecount);
                 movecount++;
             }
             if (Input.GetKeyDown(Green1) || Input.GetKeyDown(Green2))
             {
+                timestore = timecounter;
                 ans.SetValue(3, movecount);
                 movecount++;
             }
             if (Input.GetKeyDown(Yellow1) || Input.GetKeyDown(Yellow2))
             {
+                timestore = timecounter;
                 ans.SetValue(2, movecount);
                 movecount++;
             }
             if (movecount == ans.Length)
             {
+                red.color = new Color(1f, 1f, 1f, 0f);
+                blue.color = new Color(1f, 1f, 1f, 0f);
+                green.color = new Color(1f, 1f, 1f, 0f);
+                yellow.color = new Color(1f, 1f, 1f, 0f);
                 //play = false;
                 Debug.Log("input test");
                 wincondition(puz, ans);
+            }
+            if (movecount > 0)
+            {
+                if (ans[movecount-1] == 0&& timecounter - timestore < 0.7f)
+                {
+                    red.color = new Color(1f, 0f, 0f, 1f);
+                    blue.color = new Color(1f, 1f, 1f, 0f);
+                    green.color = new Color(1f, 1f, 1f, 0f);
+                    yellow.color = new Color(1f, 1f, 1f, 0f);
+                }
+                else if (ans[movecount-1] == 1 && timecounter - timestore < 0.7f)
+                {
+                    blue.color = new Color(0f, 0f, 1f, 1f);
+                    red.color = new Color(1f, 1f, 1f, 0f);
+                    green.color = new Color(1f, 1f, 1f, 0f);
+                    yellow.color = new Color(1f, 1f, 1f, 0f);
+                }
+                else if (ans[movecount-1] == 2 && timecounter - timestore < 0.7f)
+                {
+                    green.color = new Color(0f, 1f, 0f, 1f);
+                    red.color = new Color(1f, 1f, 1f, 0f);
+                    blue.color = new Color(1f, 1f, 1f, 0f);
+                    yellow.color = new Color(1f, 1f, 1f, 0f);
+                }
+                else if (ans[movecount-1] == 3 && timecounter - timestore < 0.7f)
+                {
+                    yellow.color = new Color(1f, 1f, 0f, 1f);
+                    red.color = new Color(1f, 1f, 1f, 0f);
+                    blue.color = new Color(1f, 1f, 1f, 0f);
+                    green.color = new Color(1f, 1f, 1f, 0f);
+                }
+                else
+                {
+                    red.color = new Color(1f, 1f, 1f, 0f);
+                    blue.color = new Color(1f, 1f, 1f, 0f);
+                    green.color = new Color(1f, 1f, 1f, 0f);
+                    yellow.color = new Color(1f, 1f, 1f, 0f);
+                }
+                //if(Input.GetKeyDown(Red1)|| Input.GetKeyDown(Red2) || Input.GetKeyUp(Blue1) || Input.GetKeyUp(Blue2) || Input.GetKeyUp(Green1) || Input.GetKeyUp(Green2) || Input.GetKeyUp(Yellow1) || Input.GetKeyUp(Yellow2))
+                //{
+                //    red.color = new Color(1f, 1f, 1f, 0f);
+                //    blue.color = new Color(1f, 1f, 1f, 0f);
+                //    green.color = new Color(1f, 1f, 1f, 0f);
+                //    yellow.color = new Color(1f, 1f, 1f, 0f);
+                //}
             }
         }
     }
