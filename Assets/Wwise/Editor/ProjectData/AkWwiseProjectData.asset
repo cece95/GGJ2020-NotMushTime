@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05bff40b57a404970835e6b53be1e4cd, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 692d733041eec7429110dbc33c839094
+    GuidInternal: 
+    m_lastTime: -8586210147014775808
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 4d87d1d28f13964985243f7dbc5d5e82
+    GuidInternal: 
+    m_lastTime: -8586210144524775808
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2e563b88421c0c4189e8c672fb883ad1
+    GuidInternal: 
+    m_lastTime: -8586210144164775808
+    List:
+    - name: Ambience
+      guid: 5ef76c1bc2fc334f9669bcd90cfe662b
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 7
+      Path: Default Work Unit/Ambience
+  EventWwu:
+  - PhysicalPath: Events/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2af0d1b482278845bbee084276577987
+    GuidInternal: 
+    m_lastTime: -8586210144164775808
+    List:
+    - name: Main_Reactor
+      guid: 62d2b37be379e845aaf684b060d6e749
+      id: 658170097
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main_Reactor
+        ObjectType: 3
+      Path: Default Work Unit/Main_Reactor
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 3e7fcad31a60e241b7f2d7e0f8228490
+    GuidInternal: 
+    m_lastTime: -8586210147014775808
+    List: []
+  StateWwu:
+  - PhysicalPath: States/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: b4e3e64815f2e0439d58e97aa9c44a7b
+    GuidInternal: 
+    m_lastTime: -8586210147014775808
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: bf89a347018a9841b4a34b8e84e71b51
+    GuidInternal: 
+    m_lastTime: -8586210147014775808
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 4800af011647e245b37ee71976ac3313
+    GuidInternal: 
+    m_lastTime: -8586210147014775808
+    List: []
+  ExpandedItems:
+  - /GGJ2020-SaveTheWorld_WwiseProject
+  - /GGJ2020-SaveTheWorld_WwiseProject/Events
+  - /GGJ2020-SaveTheWorld_WwiseProject/Events/Default Work Unit
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

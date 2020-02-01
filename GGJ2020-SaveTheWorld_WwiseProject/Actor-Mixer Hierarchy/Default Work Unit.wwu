@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Main_Reactor" ID="{82892614-391C-4818-B3CD-8B2E5D8BE0F2}" ShortID="577625359">
+					<PropertyList>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Power_Plant_Ambience_01" ID="{3CE6D275-2053-4C47-947E-93089173C711}" ShortID="843907083">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Power_Plant_Ambience_01" ID="{5738E3FE-BCB5-4A5D-92F7-DC4295828ABC}" ShortID="1053373926">
+									<Language>SFX</Language>
+									<AudioFile>Power_Plant_Ambience_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Power_Plant_Ambience_01" ID="{5738E3FE-BCB5-4A5D-92F7-DC4295828ABC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Power_Plant_Ambience_02" ID="{69195C3C-94DC-48AC-ACFB-BAA4833DCEE3}" ShortID="716250435">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Power_Plant_Ambience_02" ID="{8B4B09EC-A4B6-481E-9C09-E12557E44515}" ShortID="15782557">
+									<Language>SFX</Language>
+									<AudioFile>Power_Plant_Ambience_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Power_Plant_Ambience_02" ID="{8B4B09EC-A4B6-481E-9C09-E12557E44515}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Power_Plant_Ambience" ID="{1A28459E-6D2F-40B9-AA48-DB67B59E5BAA}" ShortID="80117477">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Power_Plant_Ambience" ID="{6D29D193-7D87-417B-BCAB-884143ACBCCE}" ShortID="428038605">
+									<Language>SFX</Language>
+									<AudioFile>Power_Plant_Ambience.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Power_Plant_Ambience" ID="{6D29D193-7D87-417B-BCAB-884143ACBCCE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Power_Plant_Ambience_03" ID="{3D084344-3343-4A6D-98DB-DD35F389B500}" ShortID="546279731">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Power_Plant_Ambience_02" ID="{511030F8-70EC-43A5-ABB4-1E1B96FC3F82}" ShortID="685501041">
+									<Language>SFX</Language>
+									<AudioFile>Power_Plant_Ambience_02.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="15782557"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Power_Plant_Ambience_02" ID="{511030F8-70EC-43A5-ABB4-1E1B96FC3F82}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Power_Plant_Ambience_04" ID="{8AEC3944-1B20-45A4-A1B6-548B0E27D1D8}" ShortID="357838288">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Power_Plant_Ambience_01" ID="{CA9A872E-1EB1-42A6-97E8-DE3F4096A0F3}" ShortID="115617734">
+									<Language>SFX</Language>
+									<AudioFile>Power_Plant_Ambience_01.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="1053373926"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Power_Plant_Ambience_01" ID="{CA9A872E-1EB1-42A6-97E8-DE3F4096A0F3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

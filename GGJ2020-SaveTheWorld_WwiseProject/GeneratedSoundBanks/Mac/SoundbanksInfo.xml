@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>/Users/eigengrau_23/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GGJ2020-SaveTheWorld/GGJ2020-SaveTheWorld_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/eigengrau_23/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GGJ2020-SaveTheWorld/GGJ2020-SaveTheWorld_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/eigengrau_23/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GGJ2020-SaveTheWorld/GGJ2020-SaveTheWorld_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/eigengrau_23/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GGJ2020-SaveTheWorld/GGJ2020-SaveTheWorld_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="85412153" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambience</ObjectPath>
+			<ShortName>Ambience</ShortName>
+			<Path>Ambience.bnk</Path>
+			<IncludedEvents>
+				<Event Id="658170097" Name="Main_Reactor" ObjectPath="\Events\Default Work Unit\Main_Reactor" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="15782557" Language="SFX">
+					<ShortName>Power_Plant_Ambience_02.wav</ShortName>
+					<Path>SFX/Power_Plant_Ambience_02_10C4C929.wem</Path>
+				</File>
+				<File Id="428038605" Language="SFX">
+					<ShortName>Power_Plant_Ambience.wav</ShortName>
+					<Path>SFX/Power_Plant_Ambience_10C4C929.wem</Path>
+				</File>
+				<File Id="1053373926" Language="SFX">
+					<ShortName>Power_Plant_Ambience_01.wav</ShortName>
+					<Path>SFX/Power_Plant_Ambience_01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
