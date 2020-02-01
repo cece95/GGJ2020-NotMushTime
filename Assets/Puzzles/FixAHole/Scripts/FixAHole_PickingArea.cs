@@ -13,10 +13,8 @@ public class FixAHole_PickingArea : MonoBehaviour
 
     private List<FixAHole_Piece> pieces = new List<FixAHole_Piece>();
 
-    [SerializeField]
     private List<FixAHole_PieceAsset> piecesPool;
 
-    [SerializeField]
     private FixAHole_Piece piecePrefab;
 
     [SerializeField]
@@ -35,7 +33,8 @@ public class FixAHole_PickingArea : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        piecesPool = new List<FixAHole_PieceAsset>(Resources.LoadAll<FixAHole_PieceAsset>("FixAHolePieces"));
+        piecesPool = new List<FixAHole_PieceAsset>(Resources.LoadAll<FixAHole_PieceAsset>("FixAHole/Pieces"));
+        piecePrefab = Resources.Load<FixAHole_Piece>("FixAHole/Prefabs/Piece");
     }
 
     public void SelectPiece(int pieceId)
