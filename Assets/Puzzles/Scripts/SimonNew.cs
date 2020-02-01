@@ -7,7 +7,7 @@ using System;
 
 public class SimonNew : MonoBehaviour
 {
-    [SerializeField] private KeyCode Red1, Red2, Blue1, Blue2, Yellow1, Yellow2, Green1, Green2;
+    //[SerializeField] private KeyCode Red1, Red2, Blue1, Blue2, Yellow1, Yellow2, Green1, Green2;
     public SpriteRenderer red, blue, green, yellow;//0,1,2,3
     int[] puzzle = new int[4];
     int[] answer = new int[4];
@@ -26,10 +26,17 @@ public class SimonNew : MonoBehaviour
     int movecount = 0;
     float timecounter = 0.0f;
     float timestore;
+    Component PI;
+
+    PlayerController playerController, playerController1;
 
     // Start is called before the first frame update
     void Start()
     {
+        playerController = PlayerInput.Instance.Player1;
+        playerController1 = PlayerInput.Instance.Player2;
+        
+
         SetTimer();
         /*red.enabled = false;
         blue.enabled = false;
@@ -224,25 +231,25 @@ public class SimonNew : MonoBehaviour
         
         if (play == true)
         {
-            if (Input.GetKeyDown(Red1) || Input.GetKeyDown(Red2))
+            if (playerController.IsRedDown() || playerController1.IsRedDown())
             {
                 timestore = timecounter;
                 ans.SetValue(0, movecount);
                 movecount++;
             }
-            if (Input.GetKeyDown(Blue1) || Input.GetKeyDown(Blue2))
+            if (playerController.IsBlueDown() || playerController1.IsBlueDown())
             {
                 timestore = timecounter;
                 ans.SetValue(1, movecount);
                 movecount++;
             }
-            if (Input.GetKeyDown(Green1) || Input.GetKeyDown(Green2))
+            if (playerController.IsGreenDown() || playerController1.IsGreenDown())
             {
                 timestore = timecounter;
                 ans.SetValue(3, movecount);
                 movecount++;
             }
-            if (Input.GetKeyDown(Yellow1) || Input.GetKeyDown(Yellow2))
+            if (playerController.IsYellowDown() || playerController1.IsYellowDown())
             {
                 timestore = timecounter;
                 ans.SetValue(2, movecount);
