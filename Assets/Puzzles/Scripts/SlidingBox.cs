@@ -8,6 +8,7 @@ public class SlidingBox : Puzzle {
 
     // block prefab
     GameObject block;
+    PlayerController player = PlayerInput.Instance.Player1;
 
     static int SIZE = 3;
     static int N_EMPTY_CELLS = 1;
@@ -77,22 +78,22 @@ public class SlidingBox : Puzzle {
         int y = emptyCell.Item2;
 
         // move the only box that can move in that direction. If none can move, do nothing
-        if (Input.GetKeyDown(KeyCode.UpArrow)){
+        if (player.VerticalPress > 0){
             moveUp(x,y);
             checkWin_flag = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow)){
+        if (player.VerticalPress < 0){
             moveDown(x, y);
             checkWin_flag = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow)){
+        if (player.HorizontalPress > 0){
             moveRight(x, y);
             checkWin_flag = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow)){
+        if (player.HorizontalPress < 0){
             moveLeft(x, y);
             checkWin_flag = true;
         }
