@@ -7,15 +7,27 @@ public class FixAHole_PickingArea : MonoBehaviour
     public delegate void PieceDelegate(FixAHole_Piece piece);
     public event PieceDelegate OnPieceSelected;
 
+    public bool CanPickPiece;
+
     private int selectedPiece = 0;
 
-    private FixAHole_Piece[] pieces;
+    private List<FixAHole_Piece> pieces = new List<FixAHole_Piece>();
+
+    [SerializeField]
+    private List<FixAHole_PieceAsset> piecesPool;
+
+    [SerializeField]
+    private FixAHole_Piece piecePrefab;
+
+    [SerializeField]
+    private float TimeBetweenAddingPieces = 1.0f;
+
+    float pieceAddTimer = 0.0f;
 
     // Start is called before the first frame update
     void Awake()
     {
-        pieces = GetComponentsInChildren<FixAHole_Piece>();
-        SelectPiece(0);
+
     }
 
     public void SelectPiece(int pieceId)
@@ -23,9 +35,56 @@ public class FixAHole_PickingArea : MonoBehaviour
         pieceId = Mathf.Clamp(pieceId, 0, 4);
         selectedPiece = pieceId;
 
-        for(int i = 0; i < 5; ++i)
+        for(int i = 0; i < pieces.Count; ++i)
         {
             pieces[i].SetHighlight(i == pieceId);
+        }
+    }
+
+    private FixAHole_Piece GenerateNewPiece()
+    {
+        FixAHole_Piece newPiece = Instantiate(piecePrefab);
+        newPiece.Initialize(piecesPool[Random.Range(0, piecesPool.Count - 1)]);
+
+        return newPiece;
+    }
+
+    private void AddNewPiece(FixAHole_Piece newPiece)
+    {
+        // Make sure scale is properly set
+        newPiece.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        newPiece.transform.SetParent(transform);
+        pieces.Add(newPiece);
+
+        // Update selection
+        SelectPiece(selectedPiece);
+    }
+
+    private void FixedUpdate()
+    {
+        // Keep adding pieces one by one until we have 5
+        if(pieces.Count < 5)
+        {
+            if(pieceAddTimer <= 0.0f)
+            {
+                AddNewPiece(GenerateNewPiece());
+                pieceAddTimer = TimeBetweenAddingPieces;
+            }
+            else
+            {
+                pieceAddTimer -= Time.fixedDeltaTime;
+            }
+        }
+
+        // Slide the pieces to the left
+        for(int i = 0; i < pieces.Count; ++i)
+        {
+            FixAHole_Piece piece = pieces[i];
+            float desiredX = -0.05f + i * 0.025f;
+            if (piece.transform.localPosition.x > desiredX)
+            {
+                piece.transform.localPosition = new Vector3(Mathf.Lerp(piece.transform.localPosition.x, desiredX, Mathf.SmoothStep(0.0f, 1.0f, Mathf.SmoothStep(0.0f, 1.0f, 0.3f))), 0.0f, 0.0f);
+            }
         }
     }
 
@@ -42,11 +101,12 @@ public class FixAHole_PickingArea : MonoBehaviour
             SelectPiece(selectedPiece + 1);
         }
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(CanPickPiece && Input.GetKeyDown(KeyCode.Space))
         {
             if(OnPieceSelected != null)
             {
                 OnPieceSelected.Invoke(pieces[selectedPiece]);
+                pieces.Remove(pieces[selectedPiece]);
             }
         }
     }

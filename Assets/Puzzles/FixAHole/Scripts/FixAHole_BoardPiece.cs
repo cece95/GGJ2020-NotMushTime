@@ -6,6 +6,7 @@ public class FixAHole_BoardPiece : MonoBehaviour
 {
     public bool IsFilled { get; private set; }
     public bool IsHighlighted { get; private set; }
+    public bool IsBlocked { get; private set; }
 
     [SerializeField]
     private Sprite emptySprite;
@@ -44,6 +45,12 @@ public class FixAHole_BoardPiece : MonoBehaviour
     public void SetHighlight(bool isHighlighted)
     {
         IsHighlighted = isHighlighted;
+        UpdateSprite();
+    }
+
+    public void SetBlocked(bool isBlocked)
+    {
+        IsBlocked = isBlocked;
         UpdateSprite();
     }
 
@@ -136,7 +143,7 @@ public class FixAHole_BoardPiece : MonoBehaviour
             }
 
             spriteRenderer.sprite = newSprite;
-            spriteRenderer.color = IsHighlighted ? Color.yellow : ( IsFilled ? Color.white : Color.gray );
+            spriteRenderer.color = IsBlocked ? Color.red : ( IsHighlighted ? Color.yellow : ( IsFilled ? Color.white : Color.gray ) );
         } else
         {
             Debug.LogWarning("Sprite renderer not existing");

@@ -53,23 +53,11 @@ public class FixAHole_Board : MonoBehaviour
 
     void RandomizeBoard(int width, int height)
     {
-        int xOffset = Random.Range(0, 1000);
-        int yOffset = Random.Range(0, 1000);
-
         Board = new byte[height, width];
         for(int x = 0; x < width; ++x)
         {
             for(int y = 0; y < height; ++y)
             {
-                byte value = 1;
-                if( x > 0 && y > 0 && x < width - 1 && y < height - 1)
-                {
-                    if(Mathf.PerlinNoise((float)(x + xOffset) / width, (float)(y + yOffset) / height) > PerlinThreshold)
-                    {
-                        value = 0;
-                    }
-                }
-
                 Board[y, x] = 1;
             }
         }
@@ -145,6 +133,7 @@ public class FixAHole_Board : MonoBehaviour
     private void OnPieceSelected(FixAHole_Piece piece)
     {
         selectedPiece = piece;
+        selectedPiece.transform.SetParent(null);
 
         selectionX = 0;
         selectionY = 0;
@@ -152,9 +141,19 @@ public class FixAHole_Board : MonoBehaviour
         HighlightSelection();
     }
 
+    private void FixedUpdate()
+    {
+        if (selectedPiece)
+        {
+            selectedPiece.transform.position = Vector3.Lerp(selectedPiece.transform.position, PieceBoard[selectionY, selectionX].transform.position, 0.5f);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
+        pickingArea.CanPickPiece = selectedPiece == null;
+
         if (selectedPiece)
         {
             if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -273,6 +272,8 @@ public class FixAHole_Board : MonoBehaviour
             int width = pieceBlock.GetLength(1);
             int height = pieceBlock.GetLength(0);
 
+            bool canPlace = CanPlacePiece();
+
             for (int x = 0; x < width; ++x)
             {
                 for (int y = 0; y < height; ++y)
@@ -282,7 +283,14 @@ public class FixAHole_Board : MonoBehaviour
 
                     if (currentX < BoardWidth && currentY < BoardHeight)
                     {
-                        PieceBoard[currentY, currentX].SetHighlight(pieceBlock[y, x]);
+                        if (canPlace)
+                        {
+                            PieceBoard[currentY, currentX].SetHighlight(pieceBlock[y, x]);
+                        }
+                        else
+                        {
+                            PieceBoard[currentY, currentX].SetBlocked(pieceBlock[y, x]);
+                        }
                     }
                 }
             }
@@ -296,13 +304,14 @@ public class FixAHole_Board : MonoBehaviour
             for (int y = 0; y < BoardHeight; ++y)
             {
                 PieceBoard[y, x].SetHighlight(false);
+                PieceBoard[y, x].SetBlocked(false);
             }
         }
     }
 
     void InsertPiece()
     {
-        if (selectedPiece)
+        if (selectedPiece && CanPlacePiece())
         {
             bool[,] pieceBlock = selectedPiece.GetStructure();
 
@@ -324,6 +333,37 @@ public class FixAHole_Board : MonoBehaviour
             selectedPiece = null;
             ResetHighlight();
         }
+    }
+
+    bool CanPlacePiece()
+    {
+        bool returnValue = false;
+
+        if(selectedPiece)
+        {
+            returnValue = true;
+            bool[,] pieceBlock = selectedPiece.GetStructure();
+
+            for (int x = 0; x < selectedPiece.PieceWidth; ++x)
+            {
+                for (int y = 0; y < selectedPiece.PieceHeight; ++y)
+                {
+                    int currentX = selectionX + x;
+                    int currentY = selectionY + y;
+
+                    if (currentX < BoardWidth && currentY < BoardHeight)
+                    {
+                        bool currentFill = PieceBoard[currentY, currentX].IsFilled;
+                        if(currentFill && pieceBlock[y,x])
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+
+        return returnValue;
     }
 
     void EnsurePieceInBounds()

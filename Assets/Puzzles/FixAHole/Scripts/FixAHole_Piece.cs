@@ -13,16 +13,27 @@ public class FixAHole_Piece : MonoBehaviour
     private bool[,] PieceStructure;
 
     private SpriteRenderer spriteRenderer;
+    private Animation animation;
 
     // Start is called before the first frame update
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-
-        //PieceBlock = PieceAsset.PieceStructure;
-        GetPieceStructure();
+        animation = GetComponent<Animation>();
 
         Debug.Log(PieceAsset);
+    }
+
+    public void Initialize(FixAHole_PieceAsset pieceAsset)
+    {
+        PieceAsset = pieceAsset;
+        GetPieceStructure();
+        UpdateSprites();
+    }
+
+    void UpdateSprites()
+    {
+        //TODO: Actually put some code in
     }
 
     void GetPieceStructure()
@@ -89,6 +100,7 @@ public class FixAHole_Piece : MonoBehaviour
 
     public void Chuck()
     {
+        animation.Play();
         ///TODO: Play animation
     }
 
