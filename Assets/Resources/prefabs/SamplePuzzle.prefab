@@ -41,7 +41,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.22397874, g: 0.319, b: 0.2935479, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 4784277976274583733}
   - component: {fileID: 4784277976274584394}
   m_Layer: 0
-  m_Name: Puzzle
+  m_Name: SamplePuzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
