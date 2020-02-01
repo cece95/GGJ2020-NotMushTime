@@ -5,10 +5,10 @@ using System.Timers;
 using System;
 
 
-public class SimonNew : MonoBehaviour
+public class SimonNew : Puzzle
 {
     //[SerializeField] private KeyCode Red1, Red2, Blue1, Blue2, Yellow1, Yellow2, Green1, Green2;
-    public SpriteRenderer red, blue, green, yellow;//0,1,2,3
+    public SpriteRenderer red, blue, green, yellow, locked, correct, wrong;//0,1,2,3
     int[] puzzle = new int[4];
     int[] answer = new int[4];
     int[] puzzle1 = new int[5];
@@ -46,6 +46,9 @@ public class SimonNew : MonoBehaviour
         blue.color = new Color(1f, 1f, 1f, 0f);
         green.color = new Color(1f, 1f, 1f, 0f); 
         yellow.color = new Color(1f, 1f, 1f, 0f);
+        correct.color = new Color(1f, 1f, 1f, 0f);
+        wrong.color = new Color(1f, 1f, 1f, 0f);
+        locked.color = new Color(1f, 1f, 1f, 1f);
         for (int i = 0; i < 4; i++)
         {
             puzzle[i] = RandomNumber(0, 4);
@@ -182,35 +185,32 @@ public class SimonNew : MonoBehaviour
     
     private void PuzzleGo(int[] puz)
     {
-
-
-        //hit = false;
         if (displayswitch == true)
         {
             if (puz[puzzleposition] == 0)
             {
-                red.color = new Color(1f, 0f, 0f, 1f);
+                red.color = new Color(1f, 1f, 1f, 1f);
                 blue.color = new Color(1f, 1f, 1f, 0f);
                 green.color = new Color(1f, 1f, 1f, 0f);
                 yellow.color = new Color(1f, 1f, 1f, 0f);
             }
             if (puz[puzzleposition] == 1)
             {
-                blue.color = new Color(0f, 0f, 1f, 1f);
+                blue.color = new Color(1f, 1f, 1f, 1f);
                 red.color = new Color(1f, 1f, 1f, 0f);
                 green.color = new Color(1f, 1f, 1f, 0f);
                 yellow.color = new Color(1f, 1f, 1f, 0f);
             }
             if (puz[puzzleposition] == 2)
             {
-                green.color = new Color(0f, 1f, 0f, 1f);
+                green.color = new Color(1f, 1f, 1f, 1f);
                 red.color = new Color(1f, 1f, 1f, 0f);
                 blue.color = new Color(1f, 1f, 1f, 0f);
                 yellow.color = new Color(1f, 1f, 1f, 0f);
             }
             if (puz[puzzleposition] == 3)
             {
-                yellow.color = new Color(1f, 1f, 0f, 1f);
+                yellow.color = new Color(1f, 1f, 1f, 1f);
                 red.color = new Color(1f, 1f, 1f, 0f);
                 blue.color = new Color(1f, 1f, 1f, 0f);
                 green.color = new Color(1f, 1f, 1f, 0f);
@@ -231,6 +231,9 @@ public class SimonNew : MonoBehaviour
         
         if (play == true)
         {
+            correct.color = new Color(1f, 1f, 1f, 0f);
+            wrong.color = new Color(1f, 1f, 1f, 0f);
+            locked.color = new Color(1f, 1f, 1f, 1f);
             if (playerController.IsRedDown() || playerController1.IsRedDown())
             {
                 timestore = timecounter;
@@ -269,28 +272,28 @@ public class SimonNew : MonoBehaviour
             {
                 if (ans[movecount-1] == 0&& timecounter - timestore < 0.7f)
                 {
-                    red.color = new Color(1f, 0f, 0f, 1f);
+                    red.color = new Color(1f, 1f, 1f, 1f);
                     blue.color = new Color(1f, 1f, 1f, 0f);
                     green.color = new Color(1f, 1f, 1f, 0f);
                     yellow.color = new Color(1f, 1f, 1f, 0f);
                 }
                 else if (ans[movecount-1] == 1 && timecounter - timestore < 0.7f)
                 {
-                    blue.color = new Color(0f, 0f, 1f, 1f);
+                    blue.color = new Color(1f, 1f, 1f, 1f);
                     red.color = new Color(1f, 1f, 1f, 0f);
                     green.color = new Color(1f, 1f, 1f, 0f);
                     yellow.color = new Color(1f, 1f, 1f, 0f);
                 }
                 else if (ans[movecount-1] == 2 && timecounter - timestore < 0.7f)
                 {
-                    green.color = new Color(0f, 1f, 0f, 1f);
+                    green.color = new Color(1f, 1f, 1f, 1f);
                     red.color = new Color(1f, 1f, 1f, 0f);
                     blue.color = new Color(1f, 1f, 1f, 0f);
                     yellow.color = new Color(1f, 1f, 1f, 0f);
                 }
                 else if (ans[movecount-1] == 3 && timecounter - timestore < 0.7f)
                 {
-                    yellow.color = new Color(1f, 1f, 0f, 1f);
+                    yellow.color = new Color(1f, 1f, 1f, 1f);
                     red.color = new Color(1f, 1f, 1f, 0f);
                     blue.color = new Color(1f, 1f, 1f, 0f);
                     green.color = new Color(1f, 1f, 1f, 0f);
@@ -326,6 +329,8 @@ public class SimonNew : MonoBehaviour
         }
         if(passer == true)
         {
+            correct.color = new Color(1f, 1f, 1f, 1f);
+            locked.color = new Color(1f, 1f, 1f, 0f);
             Debug.Log("Win");
             puztrack++;
             puzzleposition = 0;
@@ -335,6 +340,8 @@ public class SimonNew : MonoBehaviour
         }
         else if (passer == false)
         {
+            wrong.color = new Color(1f, 1f, 1f, 1f);
+            locked.color = new Color(1f, 1f, 1f, 0f);
             Debug.Log("you suck!");
             puzzleposition = 0;
             movecount = 0;
@@ -348,6 +355,7 @@ public class SimonNew : MonoBehaviour
         if (puztrack > 2)
         {
             Debug.Log("Ultimate Win!");
+            OnCompleted();
         }
     }
 }
