@@ -44,8 +44,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // -2.4 = biggest | 2.4 = smallest 
-
         // Scale based on Y-Axis position in order to give perception of deapth
         transform.localScale = Vector3.one * depth_scale_curve.Evaluate(transform.position.y);
     }
