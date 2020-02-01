@@ -75,6 +75,7 @@ public class PlayerInput : MonoBehaviour
                                 if (instance == null)
                                 {
                                     GameObject go = new GameObject();
+                                    go.name = "Player Input";
                                     instance = go.AddComponent<PlayerInput>();
                                 }
                                 return instance;
