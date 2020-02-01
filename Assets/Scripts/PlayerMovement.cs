@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     static float MOVEMENT_SPEED_MODIFIER = 1.75f;
+    static float PLAYER_BOUNCE_MODIFIER = 4.00f;
     [Header("Player Variables")]
     public float Horizontal;
     public float Vertical;
@@ -61,10 +62,7 @@ public class PlayerMovement : MonoBehaviour
         Speed.x = Horizontal;
         Speed.y = Vertical;
         
-        //move the player based on the player input
         rigidbody_.AddForce(Speed.normalized * MOVEMENT_SPEED_MODIFIER);
-        //rigidbody_.velocity.Set(input_.P1Horizontal, input_.P1Vertical);
-        //rigidbody_.transform.SetPositionAndRotation((rigidbody_.position + Speed), rigidbody_.rotation);
 
 
         //if the player is near a grabbable object, pick it up
@@ -87,6 +85,19 @@ public class PlayerMovement : MonoBehaviour
         if (Yellow) //if the yellow button is being pressed
         {
 
+        }
+    }
+    
+    /// <summary>
+    /// Sent when an incoming collider makes contact with this object's
+    /// collider (2D physics only).
+    /// </summary>
+    /// <param name="other">The Collision2D data associated with this collision.</param>
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            rigidbody_.AddForce(other.GetContact(0).relativeVelocity * PLAYER_BOUNCE_MODIFIER);
         }
     }
 
