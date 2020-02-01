@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class FixAHole_BoardPiece : MonoBehaviour
 {
-    private bool IsFilled = false;
+    public bool IsFilled { get; private set; }
+    public bool IsHighlighted { get; private set; }
 
     [SerializeField]
     private Sprite emptySprite;
@@ -17,7 +18,6 @@ public class FixAHole_BoardPiece : MonoBehaviour
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        Debug.Log(spriteRenderer);
     }
     
     public void SetFilled(bool isFilled)
@@ -26,12 +26,18 @@ public class FixAHole_BoardPiece : MonoBehaviour
         UpdateSprite();
     }
 
+    public void SetHighlight(bool isHighlighted)
+    {
+        IsHighlighted = isHighlighted;
+        UpdateSprite();
+    }
+
     void UpdateSprite()
     {
         if(spriteRenderer)
         {
             spriteRenderer.sprite = IsFilled ? filledSprite : emptySprite;
-            spriteRenderer.color = IsFilled ? Color.white : Color.gray;
+            spriteRenderer.color = IsHighlighted ? Color.yellow : ( IsFilled ? Color.white : Color.gray );
         } else
         {
             Debug.LogWarning("Sprite renderer not existing");

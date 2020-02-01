@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de57e75041edb40749c0d16f6a2cb95d, type: 3}
   m_Name: LPiece
   m_EditorClassIdentifier: 
+  PieceWidth: 2
+  PieceHeight: 3
   PieceName: 
+  PieceStructure:
+  - 10
+  - 10
+  - 11
   SpriteAsset: {fileID: 0}

@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778517d24c125474bb302f0b9392b744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PieceAsset: {fileID: 11400000, guid: 3a75dc25a2ff44da4a4a2f7243a1059a, type: 2}
+  PieceAsset: {fileID: 11400000, guid: 5994d03208dba469aaebf7f041daa5b6, type: 2}
 --- !u!1 &1934116177617737949
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +599,7 @@ MonoBehaviour:
   BlockSize: 0.75
   BoardPiecePrefab: {fileID: -97738889537194930, guid: 765322e8ed4c046d688221fa7376f45b,
     type: 3}
+  pickingArea: {fileID: 3582100259987729561}
 --- !u!1 &7046573354993942010
 GameObject:
   m_ObjectHideFlags: 0
