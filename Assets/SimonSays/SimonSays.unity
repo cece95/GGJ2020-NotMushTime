@@ -710,11 +710,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d93e79f16bce5444ac8ae990d43b6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Red1: 0
-  Red2: 0
-  Blue1: 0
-  Blue2: 0
-  Yellow1: 0
-  Yellow2: 0
-  Green1: 0
-  Green2: 0
+  Red1: 114
+  Red2: 112
+  Blue1: 102
+  Blue2: 108
+  Yellow1: 113
+  Yellow2: 105
+  Green1: 101
+  Green2: 111
+  red: {fileID: 1759416506}
+  blue: {fileID: 1147389891}
+  green: {fileID: 1724994328}
+  yellow: {fileID: 1040575816}
+  hit: 0
