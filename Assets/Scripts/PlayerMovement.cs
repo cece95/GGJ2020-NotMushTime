@@ -23,14 +23,16 @@ public class PlayerMovement : MonoBehaviour
     private bool mush;
     Animator animator;
     AnimationCurve depth_scale_curve;
+    PlayerController player_controller;
 
     // Start is called before the first frame update
     void Start()
     {
         if (rigidbody_.name.Contains("Mush"))
-            mush = true;
+            player_controller = PlayerInput.Instance.Player1;
         else
-            mush = false;
+            player_controller = PlayerInput.Instance.Player2;
+
 
         animator = GetComponentInChildren<Animator>();
 
@@ -49,60 +51,12 @@ public class PlayerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (mush)
-        {
-            // If we are mush, then we are player one
-            Vertical = input_.P1Vertical;
-            Horizontal = input_.P1Horizontal;
 
-            Red = input_.P1Red;
-            Green = input_.P1Green;
-            Yellow = input_.P1Yellow;
-            Blue = input_.P1Blue;
-
-
-        }
-        else
-        {
-            // otherwise we are player 2
-            Vertical = input_.P2Vertical;
-            Horizontal = input_.P2Horizontal;
-
-            Red = input_.P2Red;
-            Green = input_.P2Green;
-            Yellow = input_.P2Yellow;
-            Blue = input_.P2Blue;
-        }
-
-        Speed.x = Horizontal;
-        Speed.y = Vertical;
-        
+        Speed.x = player_controller.Horizontal;
+        Speed.y = player_controller.Vertical;
         rigidbody_.AddForce(Speed.normalized * MOVEMENT_SPEED_MODIFIER);
-
-
-        //if the player is near a grabbable object, pick it up
-
-        if (Green) //green button will be used for interaction, anything in these brackets will be called when the green button is pressed 
-        {
-
-        }
-
-        if (Red) // if the red button is being pressed for the player
-        {
-
-        }
-
-        if (Blue) // if the blue button is being pressed
-        {
-
-        }
-
-        if (Yellow) //if the yellow button is being pressed
-        {
-
-        }
     }
-    
+
     /// <summary>
     /// Sent when an incoming collider makes contact with this object's
     /// collider (2D physics only).
@@ -111,13 +65,12 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         // Bounce between players
-        if(other.gameObject.tag == "Player")
-        {            
-            if(other.GetContact(0).relativeVelocity.magnitude > PLAYER_BOUNCE_THRESHOLD)
+        if (other.gameObject.tag == "Player")
+        {
+            if (other.GetContact(0).relativeVelocity.magnitude > PLAYER_BOUNCE_THRESHOLD)
                 animator.SetTrigger("Bounce");
-            
+
             rigidbody_.AddForce(other.GetContact(0).relativeVelocity * PLAYER_BOUNCE_MODIFIER);
         }
     }
-
 }

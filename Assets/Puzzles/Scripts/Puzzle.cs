@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class Puzzle : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public delegate void PuzzleCompleted();
+    public delegate void PuzzleFailed();
+
+    public event PuzzleCompleted OnPuzzleCompleted;
+    public event PuzzleFailed OnPuzzleFailed;
+
+    protected void OnCompleted()
     {
-        
+        if(OnPuzzleCompleted != null)
+        {
+            OnPuzzleCompleted();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    protected void OnFailed()
     {
-        
+        if(OnPuzzleFailed != null)
+        {
+            OnPuzzleFailed();
+        }
     }
 }
