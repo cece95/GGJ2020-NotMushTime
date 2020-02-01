@@ -3,16 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ExitAfterAnimation : MonoBehaviour
-
-
-
-
+public class KeyPress : MonoBehaviour
 {
-
-    public GameObject myObject;
-    bool animationIsComplete = false;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +14,10 @@ public class ExitAfterAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    
-    public void AnimationComplete()
-    {
-        SceneManager.LoadScene("MainMenu");
+        if (Input.anyKey)
+        {
+            Debug.Log("A key or mouse click has been detected");
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 }

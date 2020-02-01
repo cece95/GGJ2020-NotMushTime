@@ -7,7 +7,7 @@ public class SceneSwitcher : MonoBehaviour
 {
     public void GotoMainScene()
     {
-        SceneManager.LoadScene("main");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void GotoCreditsScene()
@@ -19,5 +19,19 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("Help");
     }
+
+    public void GotoPlayer1Scene()
+    {
+        // pass 1 player params
+        SceneManager.LoadScene("UI");
+    }
+
+    public void GotoPlayer2Scene()
+    {
+        // pass 2 player params
+        SceneManager.LoadScene("UI");
+    }
+
+
 }
 
