@@ -5,19 +5,18 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    static float MOVEMENT_SPEED_MODIFIER = 0.05f;
+    static float MOVEMENT_SPEED_MODIFIER = 1f;
     [Header("Player Variables")]
-    public int player = 0;
     public float Horizontal;
     public float Vertical;
     public bool Red;
     public bool Green;
     public bool Yellow;
     public bool Blue;
-    public Vector3 Speed = new Vector3(0, 0, 0);
+    public Vector2 Speed = new Vector3(0, 0);
 
     [Header("Linked Scripts")]
-    public Rigidbody rigidbody_;
+    public Rigidbody2D rigidbody_;
     public PlayerInput input_;
     private bool mush;
 
@@ -36,7 +35,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (mush)
         {
-            player = 1; // Does this actually do anything?
             // If we are mush, then we are player one
             Vertical = input_.P1Vertical;
             Horizontal = input_.P1Horizontal;
@@ -50,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            player = 2;
             // otherwise we are player 2
             Vertical = input_.P2Vertical;
             Horizontal = input_.P2Horizontal;
@@ -61,11 +58,13 @@ public class PlayerMovement : MonoBehaviour
             Blue = input_.P2Blue;
         }
 
-        Speed.x = Horizontal * MOVEMENT_SPEED_MODIFIER;
-        Speed.y = Vertical * MOVEMENT_SPEED_MODIFIER;
+        Speed.x = Horizontal;
+        Speed.y = Vertical;
+        
         //move the player based on the player input
-        rigidbody_.velocity.Set(input_.P1Horizontal, input_.P1Vertical, 0);
-        rigidbody_.transform.SetPositionAndRotation((rigidbody_.position + Speed), rigidbody_.rotation);
+        rigidbody_.AddForce(Speed.normalized * MOVEMENT_SPEED_MODIFIER);
+        //rigidbody_.velocity.Set(input_.P1Horizontal, input_.P1Vertical);
+        //rigidbody_.transform.SetPositionAndRotation((rigidbody_.position + Speed), rigidbody_.rotation);
 
 
         //if the player is near a grabbable object, pick it up
