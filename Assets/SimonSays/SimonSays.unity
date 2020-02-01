@@ -677,6 +677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1865807768}
   - component: {fileID: 1865807769}
+  - component: {fileID: 1865807770}
   m_Layer: 0
   m_Name: script
   m_TagString: Untagged
@@ -705,7 +706,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865807767}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d93e79f16bce5444ac8ae990d43b6f5, type: 3}
   m_Name: 
@@ -718,6 +719,31 @@ MonoBehaviour:
   Yellow2: 105
   Green1: 101
   Green2: 111
+  red: {fileID: 1759416506}
+  blue: {fileID: 1147389891}
+  green: {fileID: 1724994328}
+  yellow: {fileID: 1040575816}
+  hit: 0
+--- !u!114 &1865807770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865807767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe4c542777163645b0304a63fedf746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Red1: 122
+  Red2: 257
+  Blue1: 120
+  Blue2: 266
+  Yellow1: 99
+  Yellow2: 0
+  Green1: 118
+  Green2: 0
   red: {fileID: 1759416506}
   blue: {fileID: 1147389891}
   green: {fileID: 1724994328}

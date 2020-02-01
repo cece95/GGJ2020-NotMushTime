@@ -43,9 +43,9 @@ public class SimonSays : MonoBehaviour
     void Update()
     {
         PuzzleGo(puzzle);
-        //SimonInput(puzzle);
+        SimonInput(puzzle);
         
-        //PuzzlePass(puzzle);
+        PuzzlePass(puzzle);
     }
     public int RandomNumber(int min, int max)
     {
@@ -160,13 +160,13 @@ public class SimonSays : MonoBehaviour
 
     private void OnTimedEvent(System.Object source, ElapsedEventArgs e)
     {
-        puzzleposition++;
+        //puzzleposition++;
         red.enabled = false;
         blue.enabled = false;
         green.enabled = false;
         yellow.enabled = false;
         //Console.WriteLine("The Elapsed event was raised at {0:HH:mm:ss.fff}", e.SignalTime);
-        /*if(hit == false)
+        if(hit == false)
         {
             puzzleposition++;
             pass = false;
@@ -175,7 +175,7 @@ public class SimonSays : MonoBehaviour
         {
             pass = true;
         }
-        Progression();*/
+        Progression();
     }
 
     private void Progression()
@@ -187,7 +187,7 @@ public class SimonSays : MonoBehaviour
             green.enabled = false;
             yellow.enabled = false;
             //timefail = true;
-            //puzzleposition = 0;
+            puzzleposition = 0;
             Debug.Log("Fail!");
         }
         else
