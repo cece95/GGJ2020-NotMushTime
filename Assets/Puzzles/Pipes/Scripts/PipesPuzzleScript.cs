@@ -14,6 +14,7 @@ public class PipesPuzzleScript : Puzzle
 
 
     public static Node[,] nodes = new Node[5,5];
+    Node startNode, endNode = nodes[0, 0];
     private int boardWidth = 5;
     private int boardHeight = 5;
 
@@ -52,27 +53,27 @@ public class PipesPuzzleScript : Puzzle
 
 
         //randomly generate start and end nodes
-        Node start, end = nodes[0,0];
+        
         int randomStart = Random.Range(0, 4);
         int randomEnd = Random.Range(0, 4);
 
         if (Random.value > .5)
         {
-            start = nodes[0,randomStart];
+            startNode = nodes[0,randomStart];
         }
         else
         {
-            start = nodes[randomStart,0];
+            startNode = nodes[randomStart,0];
         }
 
         //randomly generate end node
         if (Random.value > .5)
         {
-            end = nodes[4,randomEnd];
+            endNode = nodes[4,randomEnd];
         }
         else
         {
-            start = nodes[randomEnd,4];
+            startNode = nodes[randomEnd,4];
         }
 
         //find a path through the pipes that uses every pipe once at maximum
@@ -80,13 +81,13 @@ public class PipesPuzzleScript : Puzzle
         List<Node> visited = new List<Node>();
 
         //start at the starting node
-        Node current = start;
+        Node current = startNode;
         Node previous;
         Node next;
         int length = 0;
         int collissions = 0;
 
-        while (!current.Equals(end))
+        while (!current.Equals(endNode))
         {
             
             collissions = 0;
@@ -120,7 +121,7 @@ public class PipesPuzzleScript : Puzzle
             {
 
                 //set the current node to the start
-                current = start;
+                current = startNode;
                 //clear the visited list
                 visited.Clear();
                
@@ -128,7 +129,7 @@ public class PipesPuzzleScript : Puzzle
             
         }
 
-        visited.Add(end);
+        visited.Add(endNode);
 
         visited.Reverse();
 
@@ -183,8 +184,8 @@ public class PipesPuzzleScript : Puzzle
            
         }
 
-        start.setTile('s');
-        end.setTile('e');
+        startNode.setTile('s');
+        endNode.setTile('e');
      
 
         //if there are any empty tiles, randomly generate the piece to go in to them
@@ -229,7 +230,7 @@ public class PipesPuzzleScript : Puzzle
                 if (n.getTile().Equals('s'))
                 {
                     newtile.SetSprite(sprites[0]);
-                    
+                    n.glowing = true;
                 }
                 else if (n.getTile().Equals('e'))
                 {
@@ -255,7 +256,6 @@ public class PipesPuzzleScript : Puzzle
             }
 
             //rotate blocks to correct orientation
-             newtile.staticRotation = (n.getRotation() * 90);
             
         }
 
@@ -298,6 +298,27 @@ public class PipesPuzzleScript : Puzzle
         }
     }
 
+    private void Update()
+    {
+
+        while(!endNode.glowing)
+        {
+            foreach(Node n in nodes)
+            {
+                if (n.getConnections().Any(item => item.glowing))
+                {
+                    n.glowing = true;
+                }
+
+                if (n.glowing)
+                {
+                    //change the sprite to reflect that it is glowing
+                }
+            }
+        }
+        
+    }
+
     void UpdateSelection()
     {
         // foreach(node ... )
@@ -309,6 +330,7 @@ public class PipesPuzzleScript : Puzzle
 
 public class Node
 {
+    public bool glowing;
     private char tile;
     private Vector2Int position;
     private List<Node> connections = new List<Node>();
