@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
 
     private List<PuzzleRenderer> puzzleRenderers;
 
+    private TriggerDialogueEnd triggerDialogueEnd;
+
+    private Timers timer;
+
     private Player[] players;
 
     private void Awake()
@@ -19,6 +23,8 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this);
 
         puzzlePortal = Resources.Load<PuzzleRenderer>("Prefabs/PuzzlePortal");
+        triggerDialogueEnd = GetComponent<TriggerDialogueEnd>();
+        timer = FindObjectOfType<Timers>();
 
         SetupPlayers();
         InitializeGame();
@@ -33,6 +39,16 @@ public class GameManager : MonoBehaviour
     {
         // Start timer
         // Enable player movement
+
+        
+
+        triggerDialogueEnd.Trigger();
+
+        foreach (Player player in players)
+        {
+            player.SetAllowMovement(true);
+        }
+
     }
 
     public void StartPuzzle(Player[] players, Puzzle puzzleToStart, Vector3 portalPosition, Vector3 portalSize)

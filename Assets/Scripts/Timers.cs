@@ -6,10 +6,15 @@ using UnityEngine.Events;
 
 public class Timers : MonoBehaviour
 {
+    public delegate void TimerFinished();
+    public event TimerFinished OnTimerFinished;
+
     static float TOTAL_TIME = 180.0f;
     
     float timeLeft;
     float elapsedTime;
+
+    bool isRunning = false;
 
     TextMeshProUGUI elapsedTimeText;
     TextMeshProUGUI timeLeftText;
@@ -24,6 +29,11 @@ public class Timers : MonoBehaviour
         timeLeftText = transform.Find("TimeLeft").GetComponentInChildren<TextMeshProUGUI>();
     }
 
+    void StartTimer()
+    {
+        isRunning = true;
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -33,10 +43,9 @@ public class Timers : MonoBehaviour
         timeLeftText.text = string.Format("{0:D2}:{1:D2}", Mathf.FloorToInt(timeLeft / 60), Mathf.FloorToInt(timeLeft % 60));
         elapsedTimeText.text = string.Format("{0:D2}:{1:D2}", Mathf.FloorToInt(elapsedTime / 60), Mathf.FloorToInt(elapsedTime % 60));
 
-        if (timeLeft < 0.0f)
-        { 
-            UnityEvent gameOver = new UnityEvent();
-            gameOver.Invoke();
+        if (timeLeft <= 0.0f)
+        {
+
         }
     }
 }
