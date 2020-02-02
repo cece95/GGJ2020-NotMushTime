@@ -38,6 +38,7 @@ public class SimonNew : Puzzle
         
 
         SetTimer();
+        aTimer.Stop();
         /*red.enabled = false;
         blue.enabled = false;
         green.enabled = false;
@@ -91,16 +92,19 @@ public class SimonNew : Puzzle
         timecounter += Time.deltaTime;
         if (puztrack == 0)
         {
+            aTimer.Start();
             PuzzleGo(puzzle);
             SimonInput(puzzle, answer);
         }
         if (puztrack == 1)
         {
+            aTimer.Start();
             PuzzleGo(puzzle1);
             SimonInput(puzzle1, answer1);
         }
         if (puztrack == 2)
         {
+            aTimer.Start();
             PuzzleGo(puzzle2);
             SimonInput(puzzle2, answer2);
         }
@@ -187,6 +191,7 @@ public class SimonNew : Puzzle
     {
         if (displayswitch == true)
         {
+            
             if (puz[puzzleposition] == 0)
             {
                 red.color = new Color(1f, 1f, 1f, 1f);
@@ -223,6 +228,7 @@ public class SimonNew : Puzzle
             green.color = new Color(1f, 1f, 1f, 0f);
             yellow.color = new Color(1f, 1f, 1f, 0f);
         }
+
 
     }
 
@@ -337,6 +343,15 @@ public class SimonNew : Puzzle
             movecount = 0;
             displayswitch = true;
             play = false;
+            aTimer.Stop();
+            for(int i = 0; i<80; i++)
+            {
+                for (int j = 0; j < 80; j++)
+                {
+                    Debug.Log("Wait");
+                }
+            }
+            
         }
         else if (passer == false)
         {
@@ -347,6 +362,14 @@ public class SimonNew : Puzzle
             movecount = 0;
             displayswitch = true;
             play = false;
+            aTimer.Stop();
+            for (int i = 0; i < 80; i++)
+            {
+                for (int j = 0; j < 80; j++)
+                {
+                    Debug.Log("Wait");
+                }
+            }
             /*for (int j = 0; j < ans.Length; j++)
             {
                 Array.Clear(ans, j, ans.Length);
