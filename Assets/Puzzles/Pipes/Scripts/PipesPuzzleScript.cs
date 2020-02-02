@@ -333,6 +333,16 @@ public class PipesPuzzleScript : Puzzle
         //        }
         //    }
         //}
+        // while(!endNode.glowing)
+
+
+        
+        {
+            foreach(Node n in nodes)
+            {
+                // n.PipeNode.SetGlowing(n.getConnections().Any(item => item.glowing));
+            }
+        }
         
     }
 
