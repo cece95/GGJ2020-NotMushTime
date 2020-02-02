@@ -4,17 +4,33 @@ using UnityEngine;
 
 public class Puzzle : MonoBehaviour
 {
-    public delegate void PuzzleCompleted();
-    public delegate void PuzzleFailed();
+    public delegate void PuzzleEnded(Puzzle puzzle);
 
-    public event PuzzleCompleted OnPuzzleCompleted;
-    public event PuzzleFailed OnPuzzleFailed;
+    public event PuzzleEnded OnPuzzleCompleted;
+    public event PuzzleEnded OnPuzzleQuit;
+    public event PuzzleEnded OnPuzzleFailed;
+
+    public Player[] Players { get; private set; }
+    public PuzzleRenderer MyRenderer;
+
+    public virtual void StartPuzzle(Player[] players)
+    {
+        Players = players;
+    }
 
     protected void OnCompleted()
     {
         if(OnPuzzleCompleted != null)
         {
-            OnPuzzleCompleted();
+            OnPuzzleCompleted(this);
+        }
+    }
+
+    protected void OnQuit()
+    {
+        if(OnPuzzleQuit != null)
+        {
+            OnPuzzleQuit(this);
         }
     }
 
@@ -22,7 +38,7 @@ public class Puzzle : MonoBehaviour
     {
         if(OnPuzzleFailed != null)
         {
-            OnPuzzleFailed();
+            OnPuzzleFailed(this);
         }
     }
 }

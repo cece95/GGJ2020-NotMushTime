@@ -28,10 +28,18 @@ public class SlidingBox : Puzzle {
 
     bool checkWin_flag = true;
 
+    public override void StartPuzzle(Player[] players)
+    {
+        base.StartPuzzle(players);
+
+        player = players[0].GetPlayerController();
+    }
+
     // Start is called before the first frame update
     void Awake()
     {
         player = PlayerInput.Instance.Player1;
+
         block = (GameObject) Resources.Load("SlideyBlocks/Prefabs/Block");
         blockSprites = Resources.LoadAll<Sprite>("SlideyBlocks/Sprites");
 

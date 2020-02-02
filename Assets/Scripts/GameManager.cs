@@ -7,11 +7,19 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { if (instance == null) { instance = FindObjectOfType<GameManager>(); } if (instance == null) { GameObject go = new GameObject(); go.name = "Game Manager"; instance = go.AddComponent<GameManager>(); } return instance; } }
     private static GameManager instance;
 
+    [SerializeField]
+    private PuzzleRenderer puzzlePortal;
+
+    private List<PuzzleRenderer> puzzleRenderers;
+
     private Player[] players;
 
     private void Awake()
     {
         DontDestroyOnLoad(this);
+
+        puzzlePortal = Resources.Load<PuzzleRenderer>("Prefabs/PuzzlePortal");
+
         SetupPlayers();
         InitializeGame();
     }
@@ -38,17 +46,49 @@ public class GameManager : MonoBehaviour
         }
 
         // Display puzzle
+        PuzzleRenderer newPuzzleRenderer = Instantiate(puzzlePortal);
+        newPuzzleRenderer.SetPuzzleToRender(puzzleToStart);
+
+        puzzleToStart.gameObject.SetActive(true);
+        puzzleToStart.MyRenderer = newPuzzleRenderer;
+        puzzleToStart.OnPuzzleCompleted += OnPuzzleEnded;
+
+        puzzleToStart.StartPuzzle(players);
     }
 
-    void OnPuzzleEnded(Player[] players)
+    void OnPuzzleEnded(Puzzle puzzle)
     {
+        UnbindEvents(puzzle);
+
         // Enable player movement
-        foreach (Player player in players)
+        foreach (Player player in puzzle.Players)
         {
             player.SetAllowMovement(true);
         }
 
         // Fade out puzzle
+        puzzle.MyRenderer.FadeOut();
+        puzzle.gameObject.SetActive(false);
+    }
+
+
+    void OnPuzzleQuit(Puzzle puzzle)
+    {
+        OnPuzzleEnded(puzzle);
+
+        //TODO: Reenable puzzle?
+    }
+
+    void BindEvents(Puzzle puzzle)
+    {
+        puzzle.OnPuzzleCompleted += OnPuzzleEnded;
+        puzzle.OnPuzzleQuit += OnPuzzleQuit;
+    }
+
+    void UnbindEvents(Puzzle puzzle)
+    {
+        puzzle.OnPuzzleCompleted -= OnPuzzleEnded;
+        puzzle.OnPuzzleQuit -= OnPuzzleQuit;
     }
 
     void EnablePlayerMovement(int playerId, bool movementEnabled)
