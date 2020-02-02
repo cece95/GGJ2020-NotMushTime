@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     private List<PuzzleRenderer> puzzleRenderers;
 
     private TriggerDialogueEnd triggerDialogueEnd;
+    private TriggerPuzzleCompleted triggerPuzzleCompleted;
 
     private Timers timer;
 
@@ -25,6 +26,7 @@ public class GameManager : MonoBehaviour
 
         puzzlePortal = Resources.Load<PuzzleRenderer>("Prefabs/PuzzlePortal");
         triggerDialogueEnd = GetComponent<TriggerDialogueEnd>();
+        triggerPuzzleCompleted = GetComponent<TriggerPuzzleCompleted>();
 
         timer = FindObjectOfType<Timers>();
         timer.TimerFinished += OnTimerFinished;
@@ -97,6 +99,9 @@ public class GameManager : MonoBehaviour
         // Fade out puzzle
         puzzle.MyRenderer.FadeOut();
         puzzle.gameObject.SetActive(false);
+
+        if (triggerPuzzleCompleted)
+            triggerPuzzleCompleted.Trigger();
 
         ++puzzlesCompleted;
     }
