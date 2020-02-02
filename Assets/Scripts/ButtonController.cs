@@ -26,7 +26,7 @@ public class ButtonController : MonoBehaviour
 
 
         // Close Door
-        Attached_Door.ClosedDoor();
+        Attached_Door.CloseDoor();
 
     }
 }
