@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { if (instance == null) { instance = FindObjectOfType<GameManager>(); } if (instance == null) { GameObject go = new GameObject(); go.name = "Game Manager"; instance = go.AddComponent<GameManager>(); } return instance; } }
     private static GameManager instance;
 
-    [SerializeField]
+    private int puzzlesCompleted = 0;
+
     private PuzzleRenderer puzzlePortal;
 
     private List<PuzzleRenderer> puzzleRenderers;
@@ -24,37 +25,46 @@ public class GameManager : MonoBehaviour
 
         puzzlePortal = Resources.Load<PuzzleRenderer>("Prefabs/PuzzlePortal");
         triggerDialogueEnd = GetComponent<TriggerDialogueEnd>();
+
         timer = FindObjectOfType<Timers>();
+        timer.TimerFinished += OnTimerFinished;
 
         SetupPlayers();
         InitializeGame();
     }
 
+    private void OnTimerFinished()
+    {
+        Debug.LogWarning("Time out! Game Over");
+
+        foreach (Player player in players)
+        {
+            player.SetAllowMovement(false);
+        }
+    }
+
     void InitializeGame()
     {
         // Play dialogue
+        OnDialogueFinished();
     }
 
     void OnDialogueFinished()
     {
-        // Start timer
-        // Enable player movement
-
-        
-
         triggerDialogueEnd.Trigger();
 
+        // Start timer
+        timer.StartTimer();
+
+        // Enable player movement
         foreach (Player player in players)
         {
             player.SetAllowMovement(true);
         }
-
     }
 
     public void StartPuzzle(Player[] players, Puzzle puzzleToStart, Vector3 portalPosition, Vector3 portalSize)
     {
-        // Instantiate puzzle
-
         // Disable player movement
         foreach(Player player in players)
         {
@@ -87,8 +97,9 @@ public class GameManager : MonoBehaviour
         // Fade out puzzle
         puzzle.MyRenderer.FadeOut();
         puzzle.gameObject.SetActive(false);
-    }
 
+        ++puzzlesCompleted;
+    }
 
     void OnPuzzleQuit(Puzzle puzzle)
     {
@@ -107,6 +118,21 @@ public class GameManager : MonoBehaviour
     {
         puzzle.OnPuzzleCompleted -= OnPuzzleEnded;
         puzzle.OnPuzzleQuit -= OnPuzzleQuit;
+    }
+
+    void EvaluateGameEnd()
+    {
+        if(puzzlesCompleted >= 4)
+        {
+            Debug.LogWarning("Game finished! Well done!");
+            //TODO: Game end
+
+            // Disable player movement
+            foreach (Player player in players)
+            {
+                player.SetAllowMovement(false);
+            }
+        }
     }
 
     void EnablePlayerMovement(int playerId, bool movementEnabled)
@@ -131,6 +157,8 @@ public class GameManager : MonoBehaviour
             {
                 player.SetPlayerController(PlayerInput.Instance.Player2);
             }
+
+            player.SetAllowMovement(false);
         }
     }
 }
