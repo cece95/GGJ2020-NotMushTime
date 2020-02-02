@@ -6,29 +6,50 @@ using System.Linq;
 
 public class PipesPuzzleScript : MonoBehaviour
 {
+<<<<<<< HEAD
     public PipeTile prefab;
 
     public static Node[,] nodes = new Node[5,5];
+=======
+
+    public static Node[,] nodes = new Node[7,7];
+>>>>>>> testing
     // Start is called before the first frame update
     void Start()
     {
         //generate an 2d array of nodes
         
 
+<<<<<<< HEAD
         for (int i = 0; i < 5; i++)
         {
             for (int j = 0; j < 5; j++)
             {
                 
+=======
+        for (int i = 0; i <= 6; i++)
+        {
+            for (int j = 0; j <= 6; j++)
+            {
+                print("i = " + i + ";  j = " + j);
+>>>>>>> testing
                 nodes[i,j] = new Node(new Vector2Int(i, j));
             }
         }
 
+<<<<<<< HEAD
         for (int i = 0; i < 5; i++)
         {
             for (int j = 0; j < 5; j++)
             {
                
+=======
+        for (int i = 0; i <= 6; i++)
+        {
+            for (int j = 0; j <= 6; j++)
+            {
+                print("i = " + i + ";  j = " + j);
+>>>>>>> testing
                 nodes[i,j].updateNeighbours();
             }
         }
@@ -39,8 +60,13 @@ public class PipesPuzzleScript : MonoBehaviour
 
         Node start, end = nodes[0,0];
         
+<<<<<<< HEAD
         int randomStart = Random.Range(0, 4);
         int randomEnd = Random.Range(0, 4);
+=======
+        int randomStart = Random.Range(0, 6);
+        int randomEnd = Random.Range(0, 6);
+>>>>>>> testing
 
         //randomly generate start node
         if (Random.value > .5)
@@ -55,11 +81,19 @@ public class PipesPuzzleScript : MonoBehaviour
         //randomly generate end node
         if (Random.value > .5)
         {
+<<<<<<< HEAD
             end = nodes[4,randomEnd];
         }
         else
         {
             start = nodes[randomEnd,4];
+=======
+            end = nodes[6,randomEnd];
+        }
+        else
+        {
+            start = nodes[randomEnd,6];
+>>>>>>> testing
         }
 
 
@@ -72,14 +106,20 @@ public class PipesPuzzleScript : MonoBehaviour
 
         //start at the starting node
         Node current = start;
+<<<<<<< HEAD
         Node previous;
         Node next;
         int length = 0;
         int collissions = 0;
+=======
+
+        visited.Add(current);
+>>>>>>> testing
 
 
         while (!current.Equals(end))
         {
+<<<<<<< HEAD
             
             collissions = 0;
             //pick a random connected node
@@ -111,10 +151,37 @@ public class PipesPuzzleScript : MonoBehaviour
             if (collissions == length)
             {
 
+=======
+
+
+            //pick a random connected node
+            //check to see if we have moved to it before
+            //if not, move to that node
+            if (!visited.Contains(current.getConnections()[Random.Range(0, 3)])) // if we have not visited the randomly selected node
+            {
+                current = current.getConnections()[Random.Range(0, 3)]; //move to the randomly selected node
+            }
+
+            visited.Add(current);
+
+            //go back to the start if we run in to a dead end
+
+            int length = current.getConnections().Count();
+            int collissions = 0;
+
+            for(int i = 0; i< length; i++)
+            {
+                if (visited.Contains(current.getConnections()[i])) { collissions++; }
+            }
+            if (collissions == length)
+            {
+                print("pathfinding resetting");
+>>>>>>> testing
                 //set the current node to the start
                 current = start;
                 //clear the visited list
                 visited.Clear();
+<<<<<<< HEAD
                
             }
             
@@ -245,6 +312,35 @@ public class PipesPuzzleScript : MonoBehaviour
         }
 
  
+=======
+            }
+
+        }
+
+        foreach (Node n in visited) {
+            print(n.getPosition().ToString() + "\n");
+        }
+        
+        //check to see if we are at the end node -- loop if not
+
+        //if all of the connected nodes have been visited, reset the list of visited nodes and start again
+
+        //if we are at the end node, record the path that we took to get there
+
+
+
+        //based on the path, place tiles that form the path
+
+        //if there are any empty tiles, randomly generate the piece to go in to them
+
+        //once the grid is full, rotate all the tiles a random number of times (between 0 and 3)
+
+
+
+
+        //fill all the other nodes with random pipes
+        //rotate all the nodes a random number of times
+>>>>>>> testing
     }
 
     // Update is called once per frame
@@ -257,15 +353,25 @@ public class PipesPuzzleScript : MonoBehaviour
 
 public class Node
 {
+<<<<<<< HEAD
     private char tile;
     private Vector2Int position;
     private List<Node> connections = new List<Node>();
     private int rotation = 0;
     private List<Vector2Int> connectionDirections = new List<Vector2Int>();
+=======
+    private Vector2Int position;
+    private List<Node> connections = new List<Node>();
+>>>>>>> testing
 
     public Node(Vector2Int position)
     {
         this.position = position;
+<<<<<<< HEAD
+=======
+
+       
+>>>>>>> testing
     }
 
 
@@ -275,6 +381,7 @@ public class Node
         
         if(this.position.x > 0)
         {
+<<<<<<< HEAD
            
             this.connections.Add(PipesPuzzleScript.nodes[this.position.x - 1,this.position.y]);
         }
@@ -282,10 +389,19 @@ public class Node
         if (this.position.x < 4)
         {
             
+=======
+            this.connections.Add(PipesPuzzleScript.nodes[this.position.x - 1,this.position.y]);
+        }
+
+        if (this.position.x < 6)
+        {
+            Debug.Log(this.position.x);
+>>>>>>> testing
             this.connections.Add(PipesPuzzleScript.nodes[this.position.x + 1,this.position.y]);
         }
         if (this.position.y > 0)
         {
+<<<<<<< HEAD
            
             this.connections.Add(PipesPuzzleScript.nodes[this.position.x,this.position.y - 1]);
         }
@@ -295,6 +411,19 @@ public class Node
             
             this.connections.Add(PipesPuzzleScript.nodes[this.position.x,this.position.y + 1]);
         }
+=======
+            this.connections.Add(PipesPuzzleScript.nodes[this.position.x,this.position.y - 1]);
+        }
+
+        if (this.position.y < 6)
+        {
+            this.connections.Add(PipesPuzzleScript.nodes[this.position.x,this.position.y + 1]);
+        }
+
+        
+        
+        
+>>>>>>> testing
         
     }
     public List<Node> getConnections()
@@ -306,6 +435,7 @@ public class Node
     {
         return this.position;
     }
+<<<<<<< HEAD
 
     public void setTile(char type)
     {
@@ -444,10 +574,13 @@ public class Node
 
     }
 
+=======
+>>>>>>> testing
 }
 
 public class Tile
 {
+<<<<<<< HEAD
     private char type;
     
     private List<Node> connectedNodes;
@@ -478,5 +611,11 @@ public class Tile
         {
 
         }
+=======
+    
+    public Tile()
+    {
+
+>>>>>>> testing
     }
 }

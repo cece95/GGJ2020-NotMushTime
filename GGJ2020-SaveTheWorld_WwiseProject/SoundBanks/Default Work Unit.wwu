@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{883B562E-1C42-410C-89E8-C672FB883AD1}" SchemaVersion="94">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{883B562E-1C42-410C-89E8-C672FB883AD1}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Ambience" ID="{1B6CF75E-FCC2-4F33-9669-BCD90CFE662B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Main_Reactor" ID="{7BB3D262-79E3-45E8-AAF6-84B060D6E749}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Interactive_Music" ID="{CD24BC8B-CD16-46A7-91B2-264E98AB7CD5}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Interactive_Music" ID="{1C3D2C6D-D986-4BFC-8C1A-0669A6BA4D78}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Shrooms" ID="{A91C7245-437A-4330-8803-9D0F1B3E6724}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Shroom_Bounce" ID="{216251D4-0D48-41E8-920A-3B7FAC67C4CC}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Shroom_Steps" ID="{B4E5E6EB-964D-4BCB-9F5D-9C513026CA9A}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Dialogue_Shrooms" ID="{C266A056-7109-4E17-BC25-3F721A55E7A1}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
