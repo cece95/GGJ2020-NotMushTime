@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 570418781925369484}
+  - component: {fileID: 5489322466311633341}
   - component: {fileID: 570418781925369485}
-  - component: {fileID: 570418781925369487}
   - component: {fileID: 570418781925369486}
   - component: {fileID: 570418781925369483}
   m_Layer: 0
@@ -35,6 +35,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5489322466311633341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570418781925369472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f70cd225e0ba45858eb981b6408bca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &570418781925369485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,7 +56,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 570418781925369472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffb8f052df071fc4c9eb471ba4521521, type: 3}
+  m_Script: {fileID: 11500000, guid: 00327132f2251224cb30d0a207eb59d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Horizontal: 0
@@ -54,32 +66,7 @@ MonoBehaviour:
   Yellow: 0
   Blue: 0
   Speed: {x: 0, y: 0}
-  rigidbody_: {fileID: 570418781925369486}
-  input_: {fileID: 570418781925369487}
---- !u!114 &570418781925369487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 570418781925369472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4189f75dbbc89aa45bd41215798c76b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  P1Vertical: 0
-  P1Horizontal: 0
-  P1Red: 0
-  P1Green: 0
-  P1Yellow: 0
-  P1Blue: 0
-  P2Vertical: 0
-  P2Horizontal: 0
-  P2Red: 0
-  P2Green: 0
-  P2Yellow: 0
-  P2Blue: 0
+  rigidbody_: {fileID: 0}
 --- !u!50 &570418781925369486
 Rigidbody2D:
   serializedVersion: 4

@@ -19,22 +19,18 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Linked Scripts")]
     public Rigidbody2D rigidbody_;
-    public PlayerInput input_;
     private bool mush;
     Animator animator;
     AnimationCurve depth_scale_curve;
     PlayerController player_controller;
 
+    private bool allowsMovement = true;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        if (rigidbody_.name.Contains("Mush"))
-            player_controller = PlayerInput.Instance.Player1;
-        else
-            player_controller = PlayerInput.Instance.Player2;
-
-
         animator = GetComponentInChildren<Animator>();
+        rigidbody_ = GetComponent<Rigidbody2D>();
 
         // Set-Up Depth scale curve
         depth_scale_curve = new AnimationCurve();
@@ -42,6 +38,15 @@ public class PlayerMovement : MonoBehaviour
         depth_scale_curve.AddKey(2.4f, 0.85f);
     }
 
+    public void SetAllowMovement(bool allow)
+    {
+        allowsMovement = allow;
+    }
+
+    public void SetPlayerController(PlayerController controller)
+    {
+        player_controller = controller;
+    }
 
     // Update is called once per frame
     void Update()
@@ -51,10 +56,12 @@ public class PlayerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-
-        Speed.x = player_controller.Horizontal;
-        Speed.y = player_controller.Vertical;
-        rigidbody_.AddForce(Speed.normalized * MOVEMENT_SPEED_MODIFIER);
+        if (allowsMovement && player_controller != null)
+        {
+            Speed.x = player_controller.Horizontal;
+            Speed.y = player_controller.Vertical;
+            rigidbody_.AddForce(Speed.normalized * MOVEMENT_SPEED_MODIFIER);
+        }
     }
 
     /// <summary>
