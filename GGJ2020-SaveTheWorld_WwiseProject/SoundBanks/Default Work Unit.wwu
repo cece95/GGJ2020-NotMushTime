@@ -26,6 +26,16 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Puzzles" ID="{B1E05415-AE23-412F-9244-AD1780551CDF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Tetris_Puzzle_Clicks" ID="{5E0B7883-B015-40E3-B0C8-5E3A034F4E8F}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Box_Dragging" ID="{3F61C689-4969-485D-BA0C-956585A08BD0}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pipe_Puzzle_Fail" ID="{B7DD5F98-6BB9-4883-B4BC-50105E125F29}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pipe_Puzzle_Match" ID="{351230ED-ECF4-493D-A5B0-9F943A4624EC}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

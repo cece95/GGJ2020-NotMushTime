@@ -1,0 +1,46 @@
+Event	ID	Name			Wwise Object Path	Notes
+	544157162	Pipe_Puzzle_Match			\Default Work Unit\Pipe_Puzzle_Match	
+	1463418219	Tetris_Puzzle_Clicks			\Default Work Unit\Tetris_Puzzle_Clicks	
+	1592165308	Box_Dragging			\Default Work Unit\Box_Dragging	
+	1847720199	Pipe_Puzzle_Fail			\Default Work Unit\Pipe_Puzzle_Fail	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1489383	Tetris_Click_03	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_03		18586
+	91478988	Pipe_Puzzle_Match_04	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Shrooms_Bouncing_Head_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pipes_Puzzle_Match\Pipe_Puzzle_Match_04		20350
+	101207830	Box_Dragging_02	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Box_Dragging_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box_Dragging\Box_Dragging_02		24760
+	122404883	Tetris_Click_09	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_09		7120
+	123321573	Tetris_Click_12	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_12		6238
+	146936428	Tetris_Click_16	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_16_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_16		8884
+	195844994	Box_Dragging_09	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Box_Dragging_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box_Dragging\Box_Dragging_09		24760
+	260642758	Pipe_Puzzle_Match_05	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Shrooms_Bouncing_Head_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pipes_Puzzle_Match\Pipe_Puzzle_Match_05		24760
+	312328943	Tetris_Click_01	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_01		13294
+	365520601	Tetris_Click_04	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_04		22996
+	393207477	Pipe_Puzzle_Match_02	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Shrooms_Bouncing_Head_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pipes_Puzzle_Match\Pipe_Puzzle_Match_02		19468
+	394333097	Box_Dragging_04	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Box_Dragging_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box_Dragging\Box_Dragging_04		24710
+	396318522	Tetris_Click_05	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_05		8884
+	433686303	Tetris_Click_07	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_07		8002
+	482431945	Box_Dragging_06	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Box_Dragging_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box_Dragging\Box_Dragging_06		18586
+	501510050	Tetris_Click_11	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_11		6996
+	505674878	Box_Dragging_03	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Box_Dragging_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box_Dragging\Box_Dragging_03		30934
+	524902331	Box_Dragging_08	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Box_Dragging_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box_Dragging\Box_Dragging_08		22996
+	544062167	Tetris_Click_13	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_13		8304
+	569188611	Pipe_Puzlle_Fail_01	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Shroom_Bounce_Tail_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pipe_Puzlle_Fail\Pipe_Puzlle_Fail_01		68860
+	600814688	Box_Dragging_11	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Box_Dragging_11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box_Dragging\Box_Dragging_11		22996
+	640122257	Tetris_Click_02	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_02		14176
+	651133254	Pipe_Puzzle_Fail_03	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Shroom_Bounce_Tail_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pipe_Puzlle_Fail\Pipe_Puzzle_Fail_03		83290
+	678305207	Tetris_Click_06	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_06		8724
+	742524403	Box_Dragging_12	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Box_Dragging_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box_Dragging\Box_Dragging_12		22996
+	754246897	Box_Dragging_01	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Box_Dragging_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box_Dragging\Box_Dragging_01		20350
+	781391874	Pipe_Puzzle_Match_01	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Shrooms_Bouncing_Head_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pipes_Puzzle_Match\Pipe_Puzzle_Match_01		20350
+	787221463	Box_Dragging_07	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Box_Dragging_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box_Dragging\Box_Dragging_07		30934
+	800696531	Tetris_Click_15	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_15_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_15		8002
+	848196077	Pipe_Puzzle_Fail_02	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Shroom_Bounce_Tail_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pipe_Puzlle_Fail\Pipe_Puzzle_Fail_02		65332
+	864848602	Box_Dragging_10	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Box_Dragging_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box_Dragging\Box_Dragging_10		31624
+	915915612	Tetris_Click_17	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_17		7120
+	980806326	Pipe_Puzzle_Match_03	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Shrooms_Bouncing_Head_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pipes_Puzzle_Match\Pipe_Puzzle_Match_03		31816
+	986985331	Tetris_Click_14	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_14		8002
+	1028705696	Box_Dragging_05	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Box_Dragging_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box_Dragging\Box_Dragging_05		23878
+	1060373863	Tetris_Click_08	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_08		8002
+	1066645446	Tetris_Click_10	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_10		8002
+	1071488859	Pipe_Puzzle_Match_06	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Shrooms_Bouncing_Head_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pipes_Puzzle_Match\Pipe_Puzzle_Match_06		25642
+

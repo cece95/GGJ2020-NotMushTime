@@ -22,7 +22,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+							<ObjectRef Name="Ambience" ID="{5293C358-8EAB-4A4B-A783-C3685E63115A}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -600,188 +600,6 @@
 							<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
 						</Reference>
 					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="Shrooms_Bouncing_Head_1" ID="{09DFA77E-2F95-4255-AE40-F6D64D7572D7}" ShortID="385223038">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Shrooms_Bouncing_Head_1" ID="{41A2E8CA-FC38-4CA9-9390-05F877262BFE}" ShortID="781391874">
-									<Language>SFX</Language>
-									<AudioFile>Shrooms_Bouncing_Head_1.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Shrooms_Bouncing_Head_1" ID="{41A2E8CA-FC38-4CA9-9390-05F877262BFE}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Shrooms_Bouncing_Head_2" ID="{3765A17A-68CD-4052-BA35-1BBC5C14C9EB}" ShortID="51925949">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Shrooms_Bouncing_Head_2" ID="{83703A72-FF47-4252-907A-3E74815B0B46}" ShortID="393207477">
-									<Language>SFX</Language>
-									<AudioFile>Shrooms_Bouncing_Head_2.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Shrooms_Bouncing_Head_2" ID="{83703A72-FF47-4252-907A-3E74815B0B46}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Shrooms_Bouncing_Head_3" ID="{39941A22-1EC9-4750-8D70-44C4C0D564FB}" ShortID="1033754994">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Shrooms_Bouncing_Head_3" ID="{71BDC370-E209-4C32-A36E-7641140BD863}" ShortID="980806326">
-									<Language>SFX</Language>
-									<AudioFile>Shrooms_Bouncing_Head_3.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Shrooms_Bouncing_Head_3" ID="{71BDC370-E209-4C32-A36E-7641140BD863}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Shrooms_Bouncing_Head_4" ID="{F2D3C8AC-3BCA-4611-A8C9-2230BE0E420F}" ShortID="1041577542">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Shrooms_Bouncing_Head_4" ID="{FB3FFBB5-AF58-44CB-A6FE-1A3C19C314CE}" ShortID="91478988">
-									<Language>SFX</Language>
-									<AudioFile>Shrooms_Bouncing_Head_4.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Shrooms_Bouncing_Head_4" ID="{FB3FFBB5-AF58-44CB-A6FE-1A3C19C314CE}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Shrooms_Bouncing_Head_5" ID="{46938F94-B609-43F4-8533-9255B597A2DD}" ShortID="832332434">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Shrooms_Bouncing_Head_5" ID="{31927773-B54E-425F-9026-01DA5447E862}" ShortID="260642758">
-									<Language>SFX</Language>
-									<AudioFile>Shrooms_Bouncing_Head_5.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Shrooms_Bouncing_Head_5" ID="{31927773-B54E-425F-9026-01DA5447E862}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Shrooms_Bouncing_Head_6" ID="{26721379-0C2F-4644-A902-26EC80BB4278}" ShortID="404300198">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Shrooms_Bouncing_Head_6" ID="{2A61E958-5297-48D4-8DCD-827983394387}" ShortID="1071488859">
-									<Language>SFX</Language>
-									<AudioFile>Shrooms_Bouncing_Head_6.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Shrooms_Bouncing_Head_6" ID="{2A61E958-5297-48D4-8DCD-827983394387}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Shroom_Bounce_Tail_1" ID="{A2FCECA5-1190-4272-9587-0D33D3AE8AD7}" ShortID="87388269">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Shroom_Bounce_Tail_1" ID="{BA9385EA-2774-4A2F-89F9-908A8D32C106}" ShortID="545498230">
-									<Language>SFX</Language>
-									<AudioFile>Shroom_Bounce_Tail_1.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="569188611"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Shroom_Bounce_Tail_1" ID="{BA9385EA-2774-4A2F-89F9-908A8D32C106}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Shroom_Bounce_Tail_2" ID="{A67BAFED-3C45-4E95-AAE9-AE3DC894CC64}" ShortID="153245423">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Shroom_Bounce_Tail_2" ID="{36C98E7D-0CE8-4DAC-AB9A-EC901CF9ED8D}" ShortID="1057481924">
-									<Language>SFX</Language>
-									<AudioFile>Shroom_Bounce_Tail_2.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="848196077"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Shroom_Bounce_Tail_2" ID="{36C98E7D-0CE8-4DAC-AB9A-EC901CF9ED8D}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Shroom_Bounce_Tail_3" ID="{28748F79-D66D-4B30-B573-7381E56E1FBE}" ShortID="585722378">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Shroom_Bounce_Tail_3" ID="{48251734-67AC-426A-8E87-764C8CACB029}" ShortID="816890196">
-									<Language>SFX</Language>
-									<AudioFile>Shroom_Bounce_Tail_3.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="651133254"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Shroom_Bounce_Tail_3" ID="{48251734-67AC-426A-8E87-764C8CACB029}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
 				</RandomSequenceContainer>
 				<Sound Name="Dialogue_Shrooms" ID="{4F5CB1DD-CD26-4EEF-ABC1-BF4E70C82516}" ShortID="755232110">
 					<PropertyList>
@@ -808,6 +626,863 @@
 						<ActiveSource Name="Dialogue_Shrooms" ID="{7BDB1EB5-FC16-4DA9-8C7F-44708278EEAA}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="Box_Dragging" ID="{5BA69A75-7C0A-402A-B4F9-4747D144DFCE}" ShortID="973726583">
+					<PropertyList>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Box_Dragging_01" ID="{914B376F-4E9D-4D34-B2E7-BD81B8FC854D}" ShortID="980029353">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Box_Dragging_01" ID="{16776DBA-1C15-4C3B-9899-27B4AA33F7A5}" ShortID="754246897">
+									<Language>SFX</Language>
+									<AudioFile>Box_Dragging_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Box_Dragging_01" ID="{16776DBA-1C15-4C3B-9899-27B4AA33F7A5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Box_Dragging_02" ID="{EF955EEF-BE1E-4B07-90C9-605AEF40933F}" ShortID="921498589">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Box_Dragging_02" ID="{788CB431-0B25-4087-8A41-764F3A4B60C8}" ShortID="101207830">
+									<Language>SFX</Language>
+									<AudioFile>Box_Dragging_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Box_Dragging_02" ID="{788CB431-0B25-4087-8A41-764F3A4B60C8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Box_Dragging_03" ID="{6CC1B4A8-6E38-421F-A208-11A9E09612C9}" ShortID="902431571">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Box_Dragging_03" ID="{EF2C4684-7644-4D5E-AE24-C3E5ED38627D}" ShortID="505674878">
+									<Language>SFX</Language>
+									<AudioFile>Box_Dragging_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Box_Dragging_03" ID="{EF2C4684-7644-4D5E-AE24-C3E5ED38627D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Box_Dragging_04" ID="{1FB2E043-C673-4599-B673-503CFC98BC75}" ShortID="415660912">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Box_Dragging_04" ID="{F94508EF-48B2-4223-A7E7-8FC9910F5DA1}" ShortID="394333097">
+									<Language>SFX</Language>
+									<AudioFile>Box_Dragging_04.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Box_Dragging_04" ID="{F94508EF-48B2-4223-A7E7-8FC9910F5DA1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Box_Dragging_05" ID="{8FD9D13B-1A2F-4A9F-A247-D6446F466144}" ShortID="637982708">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Box_Dragging_05" ID="{1C2E5231-B059-4109-89F5-0F174F2BB5D9}" ShortID="1028705696">
+									<Language>SFX</Language>
+									<AudioFile>Box_Dragging_05.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Box_Dragging_05" ID="{1C2E5231-B059-4109-89F5-0F174F2BB5D9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Box_Dragging_06" ID="{7BBD9CA5-1420-4C74-AA68-2A3DB06DEBD3}" ShortID="96812696">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Box_Dragging_06" ID="{BC56BCD1-923D-4298-99F7-053067D4D0E5}" ShortID="482431945">
+									<Language>SFX</Language>
+									<AudioFile>Box_Dragging_06.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Box_Dragging_06" ID="{BC56BCD1-923D-4298-99F7-053067D4D0E5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Box_Dragging_07" ID="{5D44A5D9-498B-4F71-B3D9-D249F52C6076}" ShortID="598647825">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Box_Dragging_07" ID="{F50AF2B7-AEA2-4B63-BF20-4A19E0FADCFA}" ShortID="787221463">
+									<Language>SFX</Language>
+									<AudioFile>Box_Dragging_07.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Box_Dragging_07" ID="{F50AF2B7-AEA2-4B63-BF20-4A19E0FADCFA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Box_Dragging_08" ID="{313C11B0-C9B7-4358-B6F2-8AAFB7E8D240}" ShortID="952430824">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Box_Dragging_08" ID="{5E3B82E7-1575-486F-9653-AC3FB1DCBDB7}" ShortID="524902331">
+									<Language>SFX</Language>
+									<AudioFile>Box_Dragging_08.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Box_Dragging_08" ID="{5E3B82E7-1575-486F-9653-AC3FB1DCBDB7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Box_Dragging_09" ID="{750BFA52-6557-44EB-BDF3-2502CC8BD350}" ShortID="141589636">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Box_Dragging_09" ID="{BBBB6204-C478-4B15-9FB3-7752D37FDC7F}" ShortID="195844994">
+									<Language>SFX</Language>
+									<AudioFile>Box_Dragging_09.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Box_Dragging_09" ID="{BBBB6204-C478-4B15-9FB3-7752D37FDC7F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Box_Dragging_10" ID="{07EB5195-EF95-442D-999C-FE3A3D5AD14B}" ShortID="660513024">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Box_Dragging_10" ID="{83EE5726-9418-4893-AA4C-89D61EBC9D53}" ShortID="864848602">
+									<Language>SFX</Language>
+									<AudioFile>Box_Dragging_10.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Box_Dragging_10" ID="{83EE5726-9418-4893-AA4C-89D61EBC9D53}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Box_Dragging_11" ID="{218396E9-455D-4CE3-B469-E0DD37D7333E}" ShortID="582917068">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Box_Dragging_11" ID="{06B68858-FBF4-43B6-8CC8-D4032DD2AB25}" ShortID="600814688">
+									<Language>SFX</Language>
+									<AudioFile>Box_Dragging_11.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Box_Dragging_11" ID="{06B68858-FBF4-43B6-8CC8-D4032DD2AB25}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Box_Dragging_12" ID="{9C8728B1-92F6-4FA5-B920-1F2D311C6649}" ShortID="646498947">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Box_Dragging_12" ID="{623B0DCA-7473-4EF6-8BE7-E7C27EC225D7}" ShortID="742524403">
+									<Language>SFX</Language>
+									<AudioFile>Box_Dragging_12.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Box_Dragging_12" ID="{623B0DCA-7473-4EF6-8BE7-E7C27EC225D7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Pipes_Puzzle_Match" ID="{526818B1-8535-4B82-A158-8FEADC1E5797}" ShortID="559320810">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>30</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{E629139C-8ECD-4EB2-8734-843A8D0A2D2A}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Pipe_Puzzle_Match_01" ID="{09DFA77E-2F95-4255-AE40-F6D64D7572D7}" ShortID="385223038">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shrooms_Bouncing_Head_1" ID="{41A2E8CA-FC38-4CA9-9390-05F877262BFE}" ShortID="781391874">
+									<Language>SFX</Language>
+									<AudioFile>Shrooms_Bouncing_Head_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shrooms_Bouncing_Head_1" ID="{41A2E8CA-FC38-4CA9-9390-05F877262BFE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pipe_Puzzle_Match_02" ID="{3765A17A-68CD-4052-BA35-1BBC5C14C9EB}" ShortID="51925949">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shrooms_Bouncing_Head_2" ID="{83703A72-FF47-4252-907A-3E74815B0B46}" ShortID="393207477">
+									<Language>SFX</Language>
+									<AudioFile>Shrooms_Bouncing_Head_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shrooms_Bouncing_Head_2" ID="{83703A72-FF47-4252-907A-3E74815B0B46}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pipe_Puzzle_Match_03" ID="{39941A22-1EC9-4750-8D70-44C4C0D564FB}" ShortID="1033754994">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shrooms_Bouncing_Head_3" ID="{71BDC370-E209-4C32-A36E-7641140BD863}" ShortID="980806326">
+									<Language>SFX</Language>
+									<AudioFile>Shrooms_Bouncing_Head_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shrooms_Bouncing_Head_3" ID="{71BDC370-E209-4C32-A36E-7641140BD863}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pipe_Puzzle_Match_04" ID="{F2D3C8AC-3BCA-4611-A8C9-2230BE0E420F}" ShortID="1041577542">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shrooms_Bouncing_Head_4" ID="{FB3FFBB5-AF58-44CB-A6FE-1A3C19C314CE}" ShortID="91478988">
+									<Language>SFX</Language>
+									<AudioFile>Shrooms_Bouncing_Head_4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shrooms_Bouncing_Head_4" ID="{FB3FFBB5-AF58-44CB-A6FE-1A3C19C314CE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pipe_Puzzle_Match_05" ID="{46938F94-B609-43F4-8533-9255B597A2DD}" ShortID="832332434">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shrooms_Bouncing_Head_5" ID="{31927773-B54E-425F-9026-01DA5447E862}" ShortID="260642758">
+									<Language>SFX</Language>
+									<AudioFile>Shrooms_Bouncing_Head_5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shrooms_Bouncing_Head_5" ID="{31927773-B54E-425F-9026-01DA5447E862}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pipe_Puzzle_Match_06" ID="{26721379-0C2F-4644-A902-26EC80BB4278}" ShortID="404300198">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shrooms_Bouncing_Head_6" ID="{2A61E958-5297-48D4-8DCD-827983394387}" ShortID="1071488859">
+									<Language>SFX</Language>
+									<AudioFile>Shrooms_Bouncing_Head_6.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shrooms_Bouncing_Head_6" ID="{2A61E958-5297-48D4-8DCD-827983394387}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Pipe_Puzlle_Fail" ID="{2AD9AA70-09BB-4314-8AAE-503249404894}" ShortID="621621949">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>30</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{71952903-4F94-46CA-A084-A51FEDD23F58}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Pipe_Puzlle_Fail_01" ID="{A2FCECA5-1190-4272-9587-0D33D3AE8AD7}" ShortID="87388269">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce_Tail_1" ID="{BA9385EA-2774-4A2F-89F9-908A8D32C106}" ShortID="545498230">
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce_Tail_1.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="569188611"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce_Tail_1" ID="{BA9385EA-2774-4A2F-89F9-908A8D32C106}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pipe_Puzzle_Fail_02" ID="{A67BAFED-3C45-4E95-AAE9-AE3DC894CC64}" ShortID="153245423">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce_Tail_2" ID="{36C98E7D-0CE8-4DAC-AB9A-EC901CF9ED8D}" ShortID="1057481924">
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce_Tail_2.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="848196077"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce_Tail_2" ID="{36C98E7D-0CE8-4DAC-AB9A-EC901CF9ED8D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pipe_Puzzle_Fail_03" ID="{28748F79-D66D-4B30-B573-7381E56E1FBE}" ShortID="585722378">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce_Tail_3" ID="{48251734-67AC-426A-8E87-764C8CACB029}" ShortID="816890196">
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce_Tail_3.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="651133254"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce_Tail_3" ID="{48251734-67AC-426A-8E87-764C8CACB029}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Tetris_Puzzle_Clicks" ID="{B0E5D67D-CB42-46D5-9939-8CB5944D0BB1}" ShortID="681050904">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{8030D2C1-0687-45F7-8709-F5CFD519A517}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1A1EAE25-C45D-483F-BDDD-06F32200A930}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1"/>
+											<Property Name="Min" Type="Real64" Value="-1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Tetris_Click_01" ID="{4AEAF3D3-D444-48F5-87DD-53A0615685BE}" ShortID="979142138">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_01" ID="{4E0102D9-5CE5-4841-8392-B8383FCD459E}" ShortID="312328943">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_01" ID="{4E0102D9-5CE5-4841-8392-B8383FCD459E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_02" ID="{7BE150DB-2650-427B-B06F-93C59BFAFB38}" ShortID="616646694">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_02" ID="{015E0C57-00D4-4471-9C00-AFE0666A89AE}" ShortID="640122257">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_02" ID="{015E0C57-00D4-4471-9C00-AFE0666A89AE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_03" ID="{5CAF2194-9A25-4343-920D-BD40BB87970D}" ShortID="835065330">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_03" ID="{4F9C6539-BB24-402F-9B96-CD84099873E6}" ShortID="1489383">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_03" ID="{4F9C6539-BB24-402F-9B96-CD84099873E6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_04" ID="{361E11AA-779D-48FF-AD43-D9D774122407}" ShortID="317098985">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_04" ID="{F689758C-7895-47FB-8267-07AA8D125004}" ShortID="365520601">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_04.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_04" ID="{F689758C-7895-47FB-8267-07AA8D125004}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_05" ID="{FD44DF1B-5DCD-4468-B7B0-4F26DB16493C}" ShortID="414609789">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_05" ID="{7A8C3D24-491F-40E1-9AE1-FC81FAD7FD5E}" ShortID="396318522">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_05.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_05" ID="{7A8C3D24-491F-40E1-9AE1-FC81FAD7FD5E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_06" ID="{DAA5A530-427D-4570-B107-DFA20021F05E}" ShortID="413924585">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_06" ID="{CFB90AA2-D00E-4015-A545-4269584AD27D}" ShortID="678305207">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_06.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_06" ID="{CFB90AA2-D00E-4015-A545-4269584AD27D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_07" ID="{FB2B8ECD-B361-492E-B065-F87559FD8F5F}" ShortID="171116352">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_07" ID="{B81AA12A-929D-401E-A083-BD2FD5B565E4}" ShortID="433686303">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_07.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_07" ID="{B81AA12A-929D-401E-A083-BD2FD5B565E4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_08" ID="{11081EA8-4F35-4DFD-8F49-9E0B890DEF7A}" ShortID="220917214">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_08" ID="{7DB83B73-973C-4C1C-82F8-7B0812887C32}" ShortID="1060373863">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_08.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_08" ID="{7DB83B73-973C-4C1C-82F8-7B0812887C32}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_09" ID="{AAAA7B83-280E-4F2E-9154-336F72F66DFA}" ShortID="223339906">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_09" ID="{7FC1036D-4D63-4DC4-9EDB-99E4C2F67539}" ShortID="122404883">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_09.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_09" ID="{7FC1036D-4D63-4DC4-9EDB-99E4C2F67539}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_10" ID="{EFD0791A-90BD-4A28-9A70-8F5965EC19ED}" ShortID="772267787">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_10" ID="{941B45B3-4C0C-416D-8943-DEC88196AFB0}" ShortID="1066645446">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_10.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_10" ID="{941B45B3-4C0C-416D-8943-DEC88196AFB0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_11" ID="{83A2B051-52E1-4200-B6CF-D19EA0E50F41}" ShortID="635116208">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_11" ID="{2B9937AF-CF41-4D30-BC11-2724AB14CE60}" ShortID="501510050">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_11.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_11" ID="{2B9937AF-CF41-4D30-BC11-2724AB14CE60}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_12" ID="{DA12FE87-F0F8-45AE-8E46-0ABF8E676CB5}" ShortID="785261999">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_12" ID="{98D9D16A-3AA4-47B4-8738-F22925979F51}" ShortID="123321573">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_12.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_12" ID="{98D9D16A-3AA4-47B4-8738-F22925979F51}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_13" ID="{C8B8316C-8013-4DDC-80C7-AA9E6A7C9377}" ShortID="571001905">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_13" ID="{F19D632B-208E-403C-942C-88D5C2DC277F}" ShortID="544062167">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_13.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_13" ID="{F19D632B-208E-403C-942C-88D5C2DC277F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_14" ID="{2BD35D69-CA69-4048-8E5E-ABECA7AEA88E}" ShortID="952390488">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_14" ID="{01A99FFA-A594-4E9C-909E-B178F16B2599}" ShortID="986985331">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_14.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_14" ID="{01A99FFA-A594-4E9C-909E-B178F16B2599}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_15" ID="{D667BF3E-37C5-4986-B021-EA288A20F5DE}" ShortID="487817950">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_15" ID="{5C9D55E1-9099-4F78-9EF5-5EF15454EF15}" ShortID="800696531">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_15.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_15" ID="{5C9D55E1-9099-4F78-9EF5-5EF15454EF15}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_16" ID="{7CA60C62-6DD1-492A-A08C-88E8FA6E8994}" ShortID="595153688">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_16" ID="{92C89F76-14AD-441A-AE9F-DCCA1505D989}" ShortID="146936428">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_16.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_16" ID="{92C89F76-14AD-441A-AE9F-DCCA1505D989}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tetris_Click_17" ID="{9B788F82-187D-4EDB-BADE-7E2222BB9ECC}" ShortID="595453470">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tetris_Click_17" ID="{686F2E73-1D92-421B-AA3B-6A2D38BBB937}" ShortID="915915612">
+									<Language>SFX</Language>
+									<AudioFile>Tetris_Click_17.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tetris_Click_17" ID="{686F2E73-1D92-421B-AA3B-6A2D38BBB937}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

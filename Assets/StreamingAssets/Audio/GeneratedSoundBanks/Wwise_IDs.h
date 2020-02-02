@@ -13,11 +13,15 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BOX_DRAGGING = 1592165308U;
         static const AkUniqueID DIALOGUE_SHROOMS = 2598333881U;
         static const AkUniqueID INTERACTIVE_MUSIC = 3734989563U;
         static const AkUniqueID MAIN_REACTOR = 658170097U;
+        static const AkUniqueID PIPE_PUZZLE_FAIL = 1847720199U;
+        static const AkUniqueID PIPE_PUZZLE_MATCH = 544157162U;
         static const AkUniqueID SHROOM_BOUNCE = 1380635400U;
         static const AkUniqueID SHROOM_STEPS = 785153393U;
+        static const AkUniqueID TETRIS_PUZZLE_CLICKS = 1463418219U;
     } // namespace EVENTS
 
     namespace STATES
@@ -59,6 +63,7 @@ namespace AK
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID INTERACTIVE_MUSIC = 3734989563U;
+        static const AkUniqueID PUZZLES = 4237507684U;
         static const AkUniqueID SHROOMS = 3983930604U;
     } // namespace BANKS
 
@@ -67,6 +72,7 @@ namespace AK
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID INTERACTIVE_MUSIC = 3734989563U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID PUZZLES = 4237507684U;
         static const AkUniqueID SHROOMS = 3983930604U;
         static const AkUniqueID UI_PUZZLES = 2423156673U;
     } // namespace BUSSES

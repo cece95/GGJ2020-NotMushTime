@@ -70,14 +70,10 @@
 			<Path>English(US)/Shrooms.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2598333881" Name="Dialogue_Shrooms" ObjectPath="\Events\Default Work Unit\Dialogue_Shrooms" DurationType="OneShot" DurationMin="9.640000" DurationMax="9.640000"/>
-				<Event Id="1380635400" Name="Shroom_Bounce" ObjectPath="\Events\Default Work Unit\Shroom_Bounce" DurationType="OneShot" DurationMin="0.220000" DurationMax="0.943605"/>
+				<Event Id="1380635400" Name="Shroom_Bounce" ObjectPath="\Events\Default Work Unit\Shroom_Bounce" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="785153393" Name="Shroom_Steps" ObjectPath="\Events\Default Work Unit\Shroom_Steps" DurationType="OneShot" DurationMin="0.106869" DurationMax="0.277912"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="91478988" Language="SFX">
-					<ShortName>Shrooms_Bouncing_Head_4.wav</ShortName>
-					<Path>SFX/Shrooms_Bouncing_Head_4_10C4C929.wem</Path>
-				</File>
 				<File Id="108645341" Language="SFX">
 					<ShortName>Shroom_Step_01.wav</ShortName>
 					<Path>SFX/Shroom_Step_01_66608D6F.wem</Path>
@@ -89,10 +85,6 @@
 				<File Id="247946552" Language="SFX">
 					<ShortName>Shroom_Step_13.wav</ShortName>
 					<Path>SFX/Shroom_Step_13_BCFE92A3.wem</Path>
-				</File>
-				<File Id="260642758" Language="SFX">
-					<ShortName>Shrooms_Bouncing_Head_5.wav</ShortName>
-					<Path>SFX/Shrooms_Bouncing_Head_5_10C4C929.wem</Path>
 				</File>
 				<File Id="312163290" Language="SFX">
 					<ShortName>Shroom_Step_14.wav</ShortName>
@@ -110,10 +102,6 @@
 					<ShortName>Shroom_Step_02.wav</ShortName>
 					<Path>SFX/Shroom_Step_02_593E73C9.wem</Path>
 				</File>
-				<File Id="393207477" Language="SFX">
-					<ShortName>Shrooms_Bouncing_Head_2.wav</ShortName>
-					<Path>SFX/Shrooms_Bouncing_Head_2_10C4C929.wem</Path>
-				</File>
 				<File Id="415171525" Language="SFX">
 					<ShortName>Shroom_Step_06.wav</ShortName>
 					<Path>SFX/Shroom_Step_06_DE20DBC3.wem</Path>
@@ -125,18 +113,6 @@
 				<File Id="493975409" Language="English(US)">
 					<ShortName>Dialogue_Shrooms.wav</ShortName>
 					<Path>Voices/English(US)/Dialogue_Shrooms_10C4C929.wem</Path>
-				</File>
-				<File Id="569188611" Language="SFX">
-					<ShortName>Shroom_Bounce_Tail_1.wav</ShortName>
-					<Path>SFX/Shroom_Bounce_Tail_1_10C4C929.wem</Path>
-				</File>
-				<File Id="651133254" Language="SFX">
-					<ShortName>Shroom_Bounce_Tail_3.wav</ShortName>
-					<Path>SFX/Shroom_Bounce_Tail_3_10C4C929.wem</Path>
-				</File>
-				<File Id="781391874" Language="SFX">
-					<ShortName>Shrooms_Bouncing_Head_1.wav</ShortName>
-					<Path>SFX/Shrooms_Bouncing_Head_1_10C4C929.wem</Path>
 				</File>
 				<File Id="785698507" Language="SFX">
 					<ShortName>Shroom_Step_03.wav</ShortName>
@@ -150,21 +126,174 @@
 					<ShortName>Shroom_Step_04.wav</ShortName>
 					<Path>SFX/Shroom_Step_04_845C61A6.wem</Path>
 				</File>
+				<File Id="916146740" Language="SFX">
+					<ShortName>Shroom_Step_08.wav</ShortName>
+					<Path>SFX/Shroom_Step_08_432C93C2.wem</Path>
+				</File>
+				<File Id="1058851181" Language="SFX">
+					<ShortName>Shroom_Step_11.wav</ShortName>
+					<Path>SFX/Shroom_Step_11_5CEAC8A1.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="4237507684" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Puzzles</ObjectPath>
+			<ShortName>Puzzles</ShortName>
+			<Path>Puzzles.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1592165308" Name="Box_Dragging" ObjectPath="\Events\Default Work Unit\Box_Dragging" DurationType="OneShot" DurationMin="0.210000" DurationMax="0.357823"/>
+				<Event Id="1847720199" Name="Pipe_Puzzle_Fail" ObjectPath="\Events\Default Work Unit\Pipe_Puzzle_Fail" DurationType="OneShot" DurationMin="0.718934" DurationMax="0.971255"/>
+				<Event Id="544157162" Name="Pipe_Puzzle_Match" ObjectPath="\Events\Default Work Unit\Pipe_Puzzle_Match" DurationType="OneShot" DurationMin="0.213737" DurationMax="0.370549"/>
+				<Event Id="1463418219" Name="Tetris_Puzzle_Clicks" ObjectPath="\Events\Default Work Unit\Tetris_Puzzle_Clicks" DurationType="OneShot" DurationMin="0.068007" DurationMax="0.267619"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="1489383" Language="SFX">
+					<ShortName>Tetris_Click_03.wav</ShortName>
+					<Path>SFX/Tetris_Click_03_10C4C929.wem</Path>
+				</File>
+				<File Id="91478988" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_4.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_4_10C4C929.wem</Path>
+				</File>
+				<File Id="101207830" Language="SFX">
+					<ShortName>Box_Dragging_02.wav</ShortName>
+					<Path>SFX/Box_Dragging_02_10C4C929.wem</Path>
+				</File>
+				<File Id="122404883" Language="SFX">
+					<ShortName>Tetris_Click_09.wav</ShortName>
+					<Path>SFX/Tetris_Click_09_10C4C929.wem</Path>
+				</File>
+				<File Id="123321573" Language="SFX">
+					<ShortName>Tetris_Click_12.wav</ShortName>
+					<Path>SFX/Tetris_Click_12_10C4C929.wem</Path>
+				</File>
+				<File Id="146936428" Language="SFX">
+					<ShortName>Tetris_Click_16.wav</ShortName>
+					<Path>SFX/Tetris_Click_16_10C4C929.wem</Path>
+				</File>
+				<File Id="195844994" Language="SFX">
+					<ShortName>Box_Dragging_09.wav</ShortName>
+					<Path>SFX/Box_Dragging_09_10C4C929.wem</Path>
+				</File>
+				<File Id="260642758" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_5.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_5_10C4C929.wem</Path>
+				</File>
+				<File Id="312328943" Language="SFX">
+					<ShortName>Tetris_Click_01.wav</ShortName>
+					<Path>SFX/Tetris_Click_01_10C4C929.wem</Path>
+				</File>
+				<File Id="365520601" Language="SFX">
+					<ShortName>Tetris_Click_04.wav</ShortName>
+					<Path>SFX/Tetris_Click_04_10C4C929.wem</Path>
+				</File>
+				<File Id="393207477" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_2.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_2_10C4C929.wem</Path>
+				</File>
+				<File Id="394333097" Language="SFX">
+					<ShortName>Box_Dragging_04.wav</ShortName>
+					<Path>SFX/Box_Dragging_04_10C4C929.wem</Path>
+				</File>
+				<File Id="396318522" Language="SFX">
+					<ShortName>Tetris_Click_05.wav</ShortName>
+					<Path>SFX/Tetris_Click_05_10C4C929.wem</Path>
+				</File>
+				<File Id="433686303" Language="SFX">
+					<ShortName>Tetris_Click_07.wav</ShortName>
+					<Path>SFX/Tetris_Click_07_10C4C929.wem</Path>
+				</File>
+				<File Id="482431945" Language="SFX">
+					<ShortName>Box_Dragging_06.wav</ShortName>
+					<Path>SFX/Box_Dragging_06_10C4C929.wem</Path>
+				</File>
+				<File Id="501510050" Language="SFX">
+					<ShortName>Tetris_Click_11.wav</ShortName>
+					<Path>SFX/Tetris_Click_11_10C4C929.wem</Path>
+				</File>
+				<File Id="505674878" Language="SFX">
+					<ShortName>Box_Dragging_03.wav</ShortName>
+					<Path>SFX/Box_Dragging_03_10C4C929.wem</Path>
+				</File>
+				<File Id="524902331" Language="SFX">
+					<ShortName>Box_Dragging_08.wav</ShortName>
+					<Path>SFX/Box_Dragging_08_10C4C929.wem</Path>
+				</File>
+				<File Id="544062167" Language="SFX">
+					<ShortName>Tetris_Click_13.wav</ShortName>
+					<Path>SFX/Tetris_Click_13_10C4C929.wem</Path>
+				</File>
+				<File Id="569188611" Language="SFX">
+					<ShortName>Shroom_Bounce_Tail_1.wav</ShortName>
+					<Path>SFX/Shroom_Bounce_Tail_1_10C4C929.wem</Path>
+				</File>
+				<File Id="600814688" Language="SFX">
+					<ShortName>Box_Dragging_11.wav</ShortName>
+					<Path>SFX/Box_Dragging_11_10C4C929.wem</Path>
+				</File>
+				<File Id="640122257" Language="SFX">
+					<ShortName>Tetris_Click_02.wav</ShortName>
+					<Path>SFX/Tetris_Click_02_10C4C929.wem</Path>
+				</File>
+				<File Id="651133254" Language="SFX">
+					<ShortName>Shroom_Bounce_Tail_3.wav</ShortName>
+					<Path>SFX/Shroom_Bounce_Tail_3_10C4C929.wem</Path>
+				</File>
+				<File Id="678305207" Language="SFX">
+					<ShortName>Tetris_Click_06.wav</ShortName>
+					<Path>SFX/Tetris_Click_06_10C4C929.wem</Path>
+				</File>
+				<File Id="742524403" Language="SFX">
+					<ShortName>Box_Dragging_12.wav</ShortName>
+					<Path>SFX/Box_Dragging_12_10C4C929.wem</Path>
+				</File>
+				<File Id="754246897" Language="SFX">
+					<ShortName>Box_Dragging_01.wav</ShortName>
+					<Path>SFX/Box_Dragging_01_10C4C929.wem</Path>
+				</File>
+				<File Id="781391874" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_1.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_1_10C4C929.wem</Path>
+				</File>
+				<File Id="787221463" Language="SFX">
+					<ShortName>Box_Dragging_07.wav</ShortName>
+					<Path>SFX/Box_Dragging_07_10C4C929.wem</Path>
+				</File>
+				<File Id="800696531" Language="SFX">
+					<ShortName>Tetris_Click_15.wav</ShortName>
+					<Path>SFX/Tetris_Click_15_10C4C929.wem</Path>
+				</File>
 				<File Id="848196077" Language="SFX">
 					<ShortName>Shroom_Bounce_Tail_2.wav</ShortName>
 					<Path>SFX/Shroom_Bounce_Tail_2_10C4C929.wem</Path>
 				</File>
-				<File Id="916146740" Language="SFX">
-					<ShortName>Shroom_Step_08.wav</ShortName>
-					<Path>SFX/Shroom_Step_08_432C93C2.wem</Path>
+				<File Id="864848602" Language="SFX">
+					<ShortName>Box_Dragging_10.wav</ShortName>
+					<Path>SFX/Box_Dragging_10_10C4C929.wem</Path>
+				</File>
+				<File Id="915915612" Language="SFX">
+					<ShortName>Tetris_Click_17.wav</ShortName>
+					<Path>SFX/Tetris_Click_17_10C4C929.wem</Path>
 				</File>
 				<File Id="980806326" Language="SFX">
 					<ShortName>Shrooms_Bouncing_Head_3.wav</ShortName>
 					<Path>SFX/Shrooms_Bouncing_Head_3_10C4C929.wem</Path>
 				</File>
-				<File Id="1058851181" Language="SFX">
-					<ShortName>Shroom_Step_11.wav</ShortName>
-					<Path>SFX/Shroom_Step_11_5CEAC8A1.wem</Path>
+				<File Id="986985331" Language="SFX">
+					<ShortName>Tetris_Click_14.wav</ShortName>
+					<Path>SFX/Tetris_Click_14_10C4C929.wem</Path>
+				</File>
+				<File Id="1028705696" Language="SFX">
+					<ShortName>Box_Dragging_05.wav</ShortName>
+					<Path>SFX/Box_Dragging_05_10C4C929.wem</Path>
+				</File>
+				<File Id="1060373863" Language="SFX">
+					<ShortName>Tetris_Click_08.wav</ShortName>
+					<Path>SFX/Tetris_Click_08_10C4C929.wem</Path>
+				</File>
+				<File Id="1066645446" Language="SFX">
+					<ShortName>Tetris_Click_10.wav</ShortName>
+					<Path>SFX/Tetris_Click_10_10C4C929.wem</Path>
 				</File>
 				<File Id="1071488859" Language="SFX">
 					<ShortName>Shrooms_Bouncing_Head_6.wav</ShortName>

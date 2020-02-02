@@ -12,6 +12,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3734989563	Interactive_Music			\Default Work Unit\Master Audio Bus\Interactive_Music	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3983930604	Shrooms			\Default Work Unit\Master Audio Bus\Shrooms	
+	4237507684	Puzzles			\Default Work Unit\Master Audio Bus\Puzzles	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	

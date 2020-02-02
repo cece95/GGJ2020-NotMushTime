@@ -3,11 +3,15 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{B6ACE588-4492-4671-A4DC-5DF30AC478CA}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Z:\Volumes\Active_Projects\Game_Jam_2020\Sound_Library\Dialogue"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Z:\Volumes\Active_Projects\Game_Jam_2020\Sound_Library\Puzzle_Games\Tetris"/>
 				<Property Name="Event Action List\{1C3D2C6D-D986-4BFC-8C1A-0669A6BA4D78}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{216251D4-0D48-41E8-920A-3B7FAC67C4CC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{351230ED-ECF4-493D-A5B0-9F943A4624EC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3F61C689-4969-485D-BA0C-956585A08BD0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5E0B7883-B015-40E3-B0C8-5E3A034F4E8F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7BB3D262-79E3-45E8-AAF6-84B060D6E749}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B4E5E6EB-964D-4BCB-9F5D-9C513026CA9A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B7DD5F98-6BB9-4883-B4BC-50105E125F29}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C266A056-7109-4E17-BC25-3F721A55E7A1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D749288E-A7A3-4062-82E3-4240CE278AC0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
@@ -25,10 +29,10 @@
 				</Property>
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
-				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
+				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="cYikmcXyuU2r5f2BxVYi1Q=="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="XvdsG8L8M0+WabzZDP5mK4u8JM0WzadGkbImTpirfNVFchypekMwQ4gDnQ8bPmck"/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="XvdsG8L8M0+WabzZDP5mK4u8JM0WzadGkbImTpirfNUVVOCxI64vQZJErReAVRzfRXIcqXpDMEOIA50PGz5nJA=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="XxNnkWI1Sk+RRo8j/yssowH/////////KTLkH6ZKpkaZ3BkbebkNUwH/////////"/>
 				<Property Name="Interactive Music\x64_{0C3010CB-9AF4-4E87-8746-716ECF12D2ED} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP6uqqqqq6ihAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
@@ -66,7 +70,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ802H0dKPE5ZJhSQ/fbxdXoI="/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="jxeLPu2ad0Gf5ROhUob1+w=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="jxeLPu2ad0Gf5ROhUob1+6K+kW6lRChElsftyxOtMiE="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="KvDRtIIniEW77ghCdld5hw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="v4mjRwGKmEG0o0uOhOcbUQ=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value="tOPmSBXy4EOdWOl6qcRKe/HgqacH9lpIqUqfuu0im7w="/>

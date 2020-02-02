@@ -58,6 +58,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Box_Dragging" ID="{3F61C689-4969-485D-BA0C-956585A08BD0}">
+					<ChildrenList>
+						<Action Name="" ID="{B87165E0-66B8-4F9D-941E-BCCFBE3311B7}" ShortID="119255641">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Box_Dragging" ID="{5BA69A75-7C0A-402A-B4F9-4747D144DFCE}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pipe_Puzzle_Match" ID="{351230ED-ECF4-493D-A5B0-9F943A4624EC}">
+					<ChildrenList>
+						<Action Name="" ID="{3F349D56-69EB-4C79-A90E-F628BBF5FF74}" ShortID="709924421">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pipes_Puzzle_Match" ID="{526818B1-8535-4B82-A158-8FEADC1E5797}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pipe_Puzzle_Fail" ID="{B7DD5F98-6BB9-4883-B4BC-50105E125F29}">
+					<ChildrenList>
+						<Action Name="" ID="{9ED62817-44BF-46D8-B61E-DD5C36641651}" ShortID="709719567">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pipe_Puzlle_Fail" ID="{2AD9AA70-09BB-4314-8AAE-503249404894}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Tetris_Puzzle_Clicks" ID="{5E0B7883-B015-40E3-B0C8-5E3A034F4E8F}">
+					<ChildrenList>
+						<Action Name="" ID="{0DF3A1D8-D9B7-49FB-A422-4F29E39D5185}" ShortID="965775576">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tetris_Puzzle_Clicks" ID="{B0E5D67D-CB42-46D5-9939-8CB5944D0BB1}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
