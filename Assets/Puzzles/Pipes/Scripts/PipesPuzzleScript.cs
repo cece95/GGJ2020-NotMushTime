@@ -4,11 +4,27 @@ using UnityEngine;
 using System.Linq;
 
 
-public class PipesPuzzleScript : MonoBehaviour
+public class PipesPuzzleScript : Puzzle
 {
     public PipeTile prefab;
 
-    public static Node[,] nodes = new Node[5,5];
+    private int boardWidth = 5;
+    private int boardHeight = 5;
+
+    public static Node[,] nodes = new Node[5, 5];
+
+    private PlayerController selector, rotator;
+
+    private int selectedX, selectedY;
+
+    public override void StartPuzzle(Player[] players)
+    {
+        base.StartPuzzle(players);
+
+        selector = players[0].GetPlayerController();
+        rotator = players[1].GetPlayerController();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -232,17 +248,36 @@ public class PipesPuzzleScript : MonoBehaviour
                 newtile.C.color = Color.black;
             }
 
-
+            n.PipeNode = newtile;
         }
 
  
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        //if a block is selected, rotate it and update the blocks it is connected to
+        if (selector.HorizontalPress > 0)
+        {
+            selectedX = Mathf.Clamp(selectedX + 1, 0, boardWidth - 1);
+        }
+        if (selector.HorizontalPress < 0)
+        {
+            selectedX = Mathf.Clamp(selectedX - 1, 0, boardWidth - 1);
+        }
+        if (selector.VerticalPress > 0)
+        {
+            selectedX = Mathf.Clamp(selectedY + 1, 0, boardWidth - 1);
+        }
+        if (selector.VerticalPress < 0)
+        {
+            selectedX = Mathf.Clamp(selectedY - 1, 0, boardWidth - 1);
+        }
 
+        if(rotator.IsGreenDown())
+        {
+            // TODO: Rotate piece
+            // nodes[selectedY, selectedX].PipeNode.Rotate() ???
+        }
     }
 }
 
@@ -253,6 +288,8 @@ public class Node
     private List<Node> connections = new List<Node>();
     private int rotation = 0;
     private List<Vector2Int> connectionDirections = new List<Vector2Int>();
+
+    public PipeTile PipeNode;
 
     public Node(Vector2Int position)
     {
