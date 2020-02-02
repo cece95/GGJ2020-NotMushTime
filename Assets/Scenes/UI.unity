@@ -193,8 +193,82 @@ PrefabInstance:
       propertyPath: m_Name
       value: SimonSaysPuzzle
       objectReference: {fileID: 0}
+    - target: {fileID: 6631361470465805110, guid: f0cc64f47538d447baf57478a5d80be4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0cc64f47538d447baf57478a5d80be4, type: 3}
+--- !u!1001 &514291991
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4784277976274583733, guid: 48c955291864bb540bc9d59d70b06236,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784277976274583733, guid: 48c955291864bb540bc9d59d70b06236,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784277976274583733, guid: 48c955291864bb540bc9d59d70b06236,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784277976274583733, guid: 48c955291864bb540bc9d59d70b06236,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784277976274583733, guid: 48c955291864bb540bc9d59d70b06236,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784277976274583733, guid: 48c955291864bb540bc9d59d70b06236,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784277976274583733, guid: 48c955291864bb540bc9d59d70b06236,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784277976274583733, guid: 48c955291864bb540bc9d59d70b06236,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784277976274583733, guid: 48c955291864bb540bc9d59d70b06236,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784277976274583733, guid: 48c955291864bb540bc9d59d70b06236,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784277976274583733, guid: 48c955291864bb540bc9d59d70b06236,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784277976274584395, guid: 48c955291864bb540bc9d59d70b06236,
+        type: 3}
+      propertyPath: m_Name
+      value: SlidingBlocksPuzzle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 48c955291864bb540bc9d59d70b06236, type: 3}
 --- !u!1 &911739104 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8479811366349096548, guid: 793ea37392b24c74b9f37298fcc7ada8,

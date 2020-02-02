@@ -6,6 +6,15 @@ using UnityEngine;
 
 public class SlidingBox : Puzzle {
 
+    [SerializeField]
+    private Sprite[] blockSprites;
+
+    [SerializeField]
+    private Vector2 centerPoint;
+
+    [SerializeField]
+    private Vector2 blockSize;
+
     // block prefab
     GameObject block;
     PlayerController player;
@@ -20,10 +29,11 @@ public class SlidingBox : Puzzle {
     bool checkWin_flag = true;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         player = PlayerInput.Instance.Player1;
-        block = (GameObject) Resources.Load("Prefabs/Block");
+        block = (GameObject) Resources.Load("SlideyBlocks/Prefabs/Block");
+        blockSprites = Resources.LoadAll<Sprite>("SlideyBlocks/Sprites");
 
         int positiveStart = SIZE / 2;
         int negativeStart = -SIZE / 2;
@@ -33,7 +43,7 @@ public class SlidingBox : Puzzle {
         {
             for (int pj = negativeStart; pj < negativeStart + SIZE; pj++)
             {
-                Vector3 p = new Vector3(3 * pj, 3 * pi, 0);
+                Vector3 p = centerPoint + new Vector2(pj, pi) * blockSize;
                 possiblePositions.Add(p);
             }
         }
@@ -51,12 +61,16 @@ public class SlidingBox : Puzzle {
 
             alreadyExtractedNumbers.Add(n);
             Vector3 pos = possiblePositions[n];
-            GameObject b = Instantiate(block, pos, Quaternion.identity);
+            GameObject b = Instantiate(block);
+            b.GetComponent<SpriteRenderer>().sprite = blockSprites[i];
             int nToShow = i + 1;
-            b.tag = nToShow.ToString();
+            b.name = nToShow.ToString();
 
             //add block as children of the prefab
-            b.transform.SetParent(gameObject.transform);
+            b.transform.SetParent(transform.Find("Content").Find("Blocks"));
+            b.transform.localPosition = pos;
+
+            b.layer = 8;
             
             // save the blocks in the position matrix
             int x = n % SIZE;
@@ -113,7 +127,7 @@ public class SlidingBox : Puzzle {
                 GameObject bl = blocks[i2, i1];
                 if (bl != null && checkNumber <= SIZE*SIZE)
                 {
-                    string blockNumber = bl.tag;
+                    string blockNumber = bl.name;
                     Debug.Log(blockNumber + " | " + checkNumber.ToString());
                     if (blockNumber != checkNumber.ToString())
                     {
@@ -154,7 +168,7 @@ public class SlidingBox : Puzzle {
         {
             blocks[x, y] = blocks[x, y + 1];
             blocks[x, y + 1] = null;
-            blocks[x, y].transform.Translate(0, 3, 0);
+            blocks[x, y].transform.Translate(0, blockSize.y, 0);
         }
     }
 
@@ -164,7 +178,7 @@ public class SlidingBox : Puzzle {
         {
             blocks[x, y] = blocks[x, y - 1];
             blocks[x, y - 1] = null;
-            blocks[x, y].transform.Translate(0, -3, 0);
+            blocks[x, y].transform.Translate(0, -blockSize.y, 0);
         }
     }
 
@@ -174,7 +188,7 @@ public class SlidingBox : Puzzle {
         {
             blocks[x, y] = blocks[x - 1, y];
             blocks[x - 1, y] = null;
-            blocks[x, y].transform.Translate(3, 0, 0);
+            blocks[x, y].transform.Translate(blockSize.x, 0, 0);
         }
     }
 
@@ -184,7 +198,7 @@ public class SlidingBox : Puzzle {
         {
             blocks[x, y] = blocks[x + 1, y];
             blocks[x + 1, y] = null;
-            blocks[x, y].transform.Translate(-3, 0, 0);
+            blocks[x, y].transform.Translate(-blockSize.x, 0, 0);
         }
     }
 
