@@ -10,6 +10,17 @@
 						<State Name="Alarm_Syren" ID="{8AE6C00B-7034-43DE-875B-69A73C3FDC28}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Simon_Says_Puzzle" ID="{6233072A-1CA7-441C-86C5-F656AB5FB2C5}">
+					<ChildrenList>
+						<State Name="None" ID="{52D96462-6665-4764-9F0E-71480DE34E83}"/>
+						<State Name="Puzzle_A" ID="{F1DE9214-B75A-43DA-9AD2-DAF2E8F09463}"/>
+						<State Name="Puzzle_B" ID="{886D0ACB-A39E-4805-9F73-9CCE4611D327}"/>
+						<State Name="Puzzle_C" ID="{38983B61-9168-4788-AE53-93F10CAEDD61}"/>
+						<State Name="Puzzle_D" ID="{99E85BEA-84DA-4110-80D3-407295B8429F}"/>
+						<State Name="Puzzle_Failed" ID="{B8620105-0574-4BF3-B810-449C4C58FB07}"/>
+						<State Name="Puzzle_Complete" ID="{1092C3B6-8287-4F6F-88AD-A1ED6FBFD747}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

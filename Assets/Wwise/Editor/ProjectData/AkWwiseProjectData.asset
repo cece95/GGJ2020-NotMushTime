@@ -17,14 +17,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 692d733041eec7429110dbc33c839094
     GuidInternal: 
-    m_lastTime: -8586210147014775808
+    m_lastTime: -8586209681254775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 4d87d1d28f13964985243f7dbc5d5e82
     GuidInternal: 
-    m_lastTime: -8586209823734775808
+    m_lastTime: -8586209626554775808
     List:
     - name: Reverb
       guid: a01721411f4c2541a0228710a74f5e53
@@ -42,7 +42,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2e563b88421c0c4189e8c672fb883ad1
     GuidInternal: 
-    m_lastTime: -8586209829654775808
+    m_lastTime: -8586209610304775808
     List:
     - name: Ambience
       guid: 5ef76c1bc2fc334f9669bcd90cfe662b
@@ -62,6 +62,15 @@ MonoBehaviour:
       - ElementName: Interactive_Music
         ObjectType: 7
       Path: Default Work Unit/Interactive_Music
+    - name: Puzzles
+      guid: 1554e0b123ae2f419244ad1780551cdf
+      id: 4237507684
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Puzzles
+        ObjectType: 7
+      Path: Default Work Unit/Puzzles
     - name: Shrooms
       guid: 45721ca97a43304388039d0f1b3e6724
       id: 3983930604
@@ -76,8 +85,20 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2af0d1b482278845bbee084276577987
     GuidInternal: 
-    m_lastTime: -8586209830234775808
+    m_lastTime: -8586209610304775808
     List:
+    - name: Box_Dragging
+      guid: 89c6613f69495d48ba0c956585a08bd0
+      id: 1592165308
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Box_Dragging
+        ObjectType: 3
+      Path: Default Work Unit/Box_Dragging
+      maxAttenuation: 0
+      maxDuration: 0.357823
+      minDuration: 0.21
     - name: Dialogue_Shrooms
       guid: 56a066c20971174ebc253f721a55e7a1
       id: 2598333881
@@ -114,6 +135,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Pipe_Puzzle_Fail
+      guid: 985fddb7b96b8348b4bc50105e125f29
+      id: 1847720199
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pipe_Puzzle_Fail
+        ObjectType: 3
+      Path: Default Work Unit/Pipe_Puzzle_Fail
+      maxAttenuation: 0
+      maxDuration: 0.971255
+      minDuration: 0.718934
+    - name: Pipe_Puzzle_Match
+      guid: ed301235f4ec3d49a5b09f943a4624ec
+      id: 544157162
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pipe_Puzzle_Match
+        ObjectType: 3
+      Path: Default Work Unit/Pipe_Puzzle_Match
+      maxAttenuation: 0
+      maxDuration: 0.370549
+      minDuration: 0.213737
     - name: Shroom_Bounce
       guid: d4516221480de841920a3b7fac67c4cc
       id: 1380635400
@@ -124,8 +169,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Shroom_Bounce
       maxAttenuation: 0
-      maxDuration: 0.943605
-      minDuration: 0.22
+      maxDuration: 0
+      minDuration: 0
     - name: Shroom_Steps
       guid: ebe6e5b44d96cb4b9f5d9c513026ca9a
       id: 785153393
@@ -138,19 +183,55 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.277912
       minDuration: 0.106869
+    - name: Simon_Says_Puzzle
+      guid: fce53e15f676924cb82e5941aa4e61a7
+      id: 3147088319
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Simon_Says_Puzzle
+        ObjectType: 3
+      Path: Default Work Unit/Simon_Says_Puzzle
+      maxAttenuation: 0
+      maxDuration: 3.04
+      minDuration: 2.03
+    - name: Sliding_Block_Puzzle
+      guid: fdadddf4996ead4489a46ade5c957eb7
+      id: 3292274422
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Sliding_Block_Puzzle
+        ObjectType: 3
+      Path: Default Work Unit/Sliding_Block_Puzzle
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.12
+    - name: Tetris_Puzzle_Clicks
+      guid: 83780b5e15b0e340b0c85e3a034f4e8f
+      id: 1463418219
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tetris_Puzzle_Clicks
+        ObjectType: 3
+      Path: Default Work Unit/Tetris_Puzzle_Clicks
+      maxAttenuation: 0
+      maxDuration: 0.267619
+      minDuration: 0.068007
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 3e7fcad31a60e241b7f2d7e0f8228490
     GuidInternal: 
-    m_lastTime: -8586210147014775808
+    m_lastTime: -8586209681264775808
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: b4e3e64815f2e0439d58e97aa9c44a7b
     GuidInternal: 
-    m_lastTime: -8586210088194775808
+    m_lastTime: -8586209641824775808
     List:
     - name: Happy_Days_Are_Over
       guid: f1e0a9a707f65a48a94a9fbaed229bbc
@@ -183,13 +264,117 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Simon_Says_Puzzle
+      guid: 2a073362a71c1c4486c5f656ab5fb2c5
+      id: 3147088319
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Simon_Says_Puzzle
+        ObjectType: 9
+      Path: Default Work Unit/Simon_Says_Puzzle
+      values:
+      - name: None
+        guid: 6264d952656664479f0e71480de34e83
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Puzzle_A
+        guid: 1492def15ab7da439ad2daf2e8f09463
+        id: 3821528377
+        PathAndIcons:
+        - ElementName: Puzzle_A
+          ObjectType: 8
+      - name: Puzzle_B
+        guid: cb0a6d889ea305489f739cce4611d327
+        id: 3821528378
+        PathAndIcons:
+        - ElementName: Puzzle_B
+          ObjectType: 8
+      - name: Puzzle_C
+        guid: 613b983868918847ae5393f10caedd61
+        id: 3821528379
+        PathAndIcons:
+        - ElementName: Puzzle_C
+          ObjectType: 8
+      - name: Puzzle_Complete
+        guid: b6c3921087826f4f88ada1ed6fbfd747
+        id: 376835237
+        PathAndIcons:
+        - ElementName: Puzzle_Complete
+          ObjectType: 8
+      - name: Puzzle_D
+        guid: ea5be899da84104180d3407295b8429f
+        id: 3821528380
+        PathAndIcons:
+        - ElementName: Puzzle_D
+          ObjectType: 8
+      - name: Puzzle_Failed
+        guid: 050162b87405f34bb810449c4c58fb07
+        id: 3956906079
+        PathAndIcons:
+        - ElementName: Puzzle_Failed
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: bf89a347018a9841b4a34b8e84e71b51
     GuidInternal: 
-    m_lastTime: -8586209997374775808
+    m_lastTime: -8586209644844775808
     List:
+    - name: Simon_Says_Puzzle
+      guid: 19443b6de6682b45bcf1bcaff05088f7
+      id: 3147088319
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Simon_Says_Puzzle
+        ObjectType: 11
+      Path: Default Work Unit/Simon_Says_Puzzle
+      values:
+      - name: Puzzle_A
+        guid: a39955a82a8feb4eb054ce5d8f9a29f3
+        id: 3821528377
+        PathAndIcons:
+        - ElementName: Puzzle_A
+          ObjectType: 10
+      - name: Puzzle_B
+        guid: d9452314a281ec44bf2f917e2bb083f3
+        id: 3821528378
+        PathAndIcons:
+        - ElementName: Puzzle_B
+          ObjectType: 10
+      - name: Puzzle_C
+        guid: e6243ecda10ce542a1c5f9d91e3450c2
+        id: 3821528379
+        PathAndIcons:
+        - ElementName: Puzzle_C
+          ObjectType: 10
+      - name: Puzzle_Completed
+        guid: 480f1e9f4fc4af4097230bedd04c35f8
+        id: 14018523
+        PathAndIcons:
+        - ElementName: Puzzle_Completed
+          ObjectType: 10
+      - name: Puzzle_D
+        guid: b36e7a7b1ea3c14284a82cc73af44c71
+        id: 3821528380
+        PathAndIcons:
+        - ElementName: Puzzle_D
+          ObjectType: 10
+      - name: Puzzle_Failed
+        guid: 2f3f37f56d69e74fa79e657d9fe8bae9
+        id: 3956906079
+        PathAndIcons:
+        - ElementName: Puzzle_Failed
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Surface_Type
       guid: 9742875796b4f24dbe325dedb0fef3ad
       id: 4064446173
@@ -214,7 +399,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4800af011647e245b37ee71976ac3313
     GuidInternal: 
-    m_lastTime: -8586209982964775808
+    m_lastTime: -8586209681254775808
     List:
     - name: Shroom_Steps
       guid: 7b3a993d2a9f064a9af3f39f186bc5c6
@@ -227,7 +412,8 @@ MonoBehaviour:
       Path: Default Work Unit/Shroom_Steps
   ExpandedItems:
   - /GGJ2020-SaveTheWorld_WwiseProject
-  - /GGJ2020-SaveTheWorld_WwiseProject/Events
-  - /GGJ2020-SaveTheWorld_WwiseProject/Events/Default Work Unit
+  - /GGJ2020-SaveTheWorld_WwiseProject/States
+  - /GGJ2020-SaveTheWorld_WwiseProject/States/Default Work Unit
+  - /GGJ2020-SaveTheWorld_WwiseProject/States/Default Work Unit/Happy_Days_Are_Over
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

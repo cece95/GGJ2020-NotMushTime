@@ -12,7 +12,6 @@
 					<ChildrenList>
 						<Bus Name="Ambience" ID="{5293C358-8EAB-4A4B-A783-C3685E63115A}"/>
 						<Bus Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}"/>
-						<Bus Name="UI_Puzzles" ID="{096EE929-33E0-44A0-B2D8-2A90DA4833E4}"/>
 						<AuxBus Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -42,6 +41,7 @@
 								</Property>
 							</PropertyList>
 						</Bus>
+						<Bus Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
