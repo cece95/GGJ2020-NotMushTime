@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4d87d1d28f13964985243f7dbc5d5e82
     GuidInternal: 
-    m_lastTime: -8586209679324775808
+    m_lastTime: -8586209626554775808
     List:
     - name: Reverb
       guid: a01721411f4c2541a0228710a74f5e53
@@ -42,7 +42,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2e563b88421c0c4189e8c672fb883ad1
     GuidInternal: 
-    m_lastTime: -8586209643634775808
+    m_lastTime: -8586209610304775808
     List:
     - name: Ambience
       guid: 5ef76c1bc2fc334f9669bcd90cfe662b
@@ -85,7 +85,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2af0d1b482278845bbee084276577987
     GuidInternal: 
-    m_lastTime: -8586209644734775808
+    m_lastTime: -8586209610304775808
     List:
     - name: Box_Dragging
       guid: 89c6613f69495d48ba0c956585a08bd0
@@ -195,6 +195,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 3.04
       minDuration: 2.03
+    - name: Sliding_Block_Puzzle
+      guid: fdadddf4996ead4489a46ade5c957eb7
+      id: 3292274422
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Sliding_Block_Puzzle
+        ObjectType: 3
+      Path: Default Work Unit/Sliding_Block_Puzzle
+      maxAttenuation: 0
+      maxDuration: 0.15
+      minDuration: 0.12
     - name: Tetris_Puzzle_Clicks
       guid: 83780b5e15b0e340b0c85e3a034f4e8f
       id: 1463418219

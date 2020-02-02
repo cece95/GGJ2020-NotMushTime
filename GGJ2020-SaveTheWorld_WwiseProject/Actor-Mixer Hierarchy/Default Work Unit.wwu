@@ -24,6 +24,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Ambience" ID="{5293C358-8EAB-4A4B-A783-C3685E63115A}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Power_Plant_Ambience_01" ID="{3CE6D275-2053-4C47-947E-93089173C711}" ShortID="843907083">
@@ -152,6 +155,9 @@
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="Surface_Type" ID="{57874297-B496-4DF2-BE32-5DEDB0FEF3AD}" WorkUnitID="{47A389BF-8A01-4198-B4A3-4B8E84E71B51}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -599,6 +605,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
 					</ReferenceList>
 				</RandomSequenceContainer>
 				<Sound Name="Dialogue_Shrooms" ID="{4F5CB1DD-CD26-4EEF-ABC1-BF4E70C82516}" ShortID="755232110">
@@ -641,6 +650,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -903,6 +915,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Pipe_Puzzle_Match_01" ID="{09DFA77E-2F95-4255-AE40-F6D64D7572D7}" ShortID="385223038">
@@ -1049,6 +1064,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Pipe_Puzlle_Fail_01" ID="{A2FCECA5-1190-4272-9587-0D33D3AE8AD7}" ShortID="87388269">
@@ -1154,7 +1172,10 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1504,6 +1525,9 @@
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="Simon_Says_Puzzle" ID="{6233072A-1CA7-441C-86C5-F656AB5FB2C5}" WorkUnitID="{48E6E3B4-F215-43E0-9D58-E97AA9C44A7B}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Simon_Says_Puzzle_A" ID="{492D187E-E448-4E03-895F-41C26AFFEA96}" ShortID="836710540">
@@ -1682,6 +1706,216 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<RandomSequenceContainer Name="Sliding_Blocks" ID="{516F49C9-540E-4F6A-A148-AB86D6AAEA69}" ShortID="969837760">
+					<PropertyList>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Sliding_Blocks_01" ID="{66EC8E00-D221-47D7-B1C8-ACCE56053703}" ShortID="82430198">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sliding_Blocks_01" ID="{F288FF80-D768-4D7D-A6FD-EB975BEB9A60}" ShortID="103739611">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00240850059031877"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00410861865407321"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Sliding_Blocks_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sliding_Blocks_01" ID="{F288FF80-D768-4D7D-A6FD-EB975BEB9A60}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sliding_Blocks_02" ID="{9BD6DEE4-8A7C-4A82-9CD1-8D9B13410823}" ShortID="682515895">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sliding_Blocks_02" ID="{BAC14F8D-8F06-41DC-8465-35B00BB168B7}" ShortID="1027277644">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00265643447461629"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00177095631641086"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Sliding_Blocks_02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sliding_Blocks_02" ID="{BAC14F8D-8F06-41DC-8465-35B00BB168B7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sliding_Blocks_03" ID="{2E46E28C-470F-4C52-A838-3AEC17192B3A}" ShortID="787776568">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sliding_Blocks_03" ID="{6AD1C921-3E6C-4A73-9E32-0FCE1E369CE5}" ShortID="1027030479">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00353010625737898"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00353010625737898"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Sliding_Blocks_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sliding_Blocks_03" ID="{6AD1C921-3E6C-4A73-9E32-0FCE1E369CE5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sliding_Blocks_04" ID="{81BA8C68-DA22-41C7-A914-F0DAE6A40A1D}" ShortID="286006528">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sliding_Blocks_04" ID="{463E6854-47B4-4D33-A66E-AD3AFE4E202A}" ShortID="98141503">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00276269185360094"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00107438016528925"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Sliding_Blocks_04.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sliding_Blocks_04" ID="{463E6854-47B4-4D33-A66E-AD3AFE4E202A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sliding_Blocks_05" ID="{5044A974-FBE2-42E0-9C57-D9397DA3F85F}" ShortID="767545124">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sliding_Blocks_05" ID="{89422091-7C77-449C-99F6-0DACE934587B}" ShortID="842782798">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00245572609208973"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00306965761511216"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Sliding_Blocks_05.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sliding_Blocks_05" ID="{89422091-7C77-449C-99F6-0DACE934587B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sliding_Blocks_06" ID="{BB3DC2E7-AE43-4D9E-A659-BF21E656C5C7}" ShortID="988040514">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sliding_Blocks_06" ID="{04DB531A-E44B-43FB-AB61-2C3796AA6311}" ShortID="21689718">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00295930414668819"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00443895622003229"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Sliding_Blocks_06.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sliding_Blocks_06" ID="{04DB531A-E44B-43FB-AB61-2C3796AA6311}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sliding_Blocks_07" ID="{B782B24E-1896-4F8D-825C-7D0B3C7A8510}" ShortID="494161530">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sliding_Blocks_07" ID="{EDC8D514-0039-4281-90DD-4945F313E8C3}" ShortID="165052390">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0018417945690673"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00155844155844156"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Sliding_Blocks_07.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sliding_Blocks_07" ID="{EDC8D514-0039-4281-90DD-4945F313E8C3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sliding_Blocks_08" ID="{34D358C0-0B8F-4705-8452-48D6239BE6F2}" ShortID="942449572">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sliding_Blocks_08" ID="{938D5453-1DB5-411D-8EA9-B36637510781}" ShortID="504714564">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00269185360094451"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00297520661157025"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Sliding_Blocks_08.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sliding_Blocks_08" ID="{938D5453-1DB5-411D-8EA9-B36637510781}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

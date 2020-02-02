@@ -113,6 +113,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Sliding_Block_Puzzle" ID="{F4DDADFD-6E99-44AD-89A4-6ADE5C957EB7}">
+					<ChildrenList>
+						<Action Name="" ID="{8B9323C2-6009-4992-A023-F0A2CABA807F}" ShortID="836517014">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sliding_Blocks" ID="{516F49C9-540E-4F6A-A148-AB86D6AAEA69}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID SHROOM_BOUNCE = 1380635400U;
         static const AkUniqueID SHROOM_STEPS = 785153393U;
         static const AkUniqueID SIMON_SAYS_PUZZLE = 3147088319U;
+        static const AkUniqueID SLIDING_BLOCK_PUZZLE = 3292274422U;
         static const AkUniqueID TETRIS_PUZZLE_CLICKS = 1463418219U;
     } // namespace EVENTS
 
@@ -105,7 +106,6 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID PUZZLES = 4237507684U;
         static const AkUniqueID SHROOMS = 3983930604U;
-        static const AkUniqueID UI_PUZZLES = 2423156673U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES
