@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 
 
-public class PipesPuzzleScript : MonoBehaviour
+public class PipesPuzzleScript : Puzzle
 {
 
 
@@ -14,6 +14,21 @@ public class PipesPuzzleScript : MonoBehaviour
 
 
     public static Node[,] nodes = new Node[5,5];
+    private int boardWidth = 5;
+    private int boardHeight = 5;
+
+    private PlayerController selector, rotator;
+
+    private int selectedX, selectedY;
+
+    public override void StartPuzzle(Player[] players)
+    {
+        base.StartPuzzle(players);
+
+        selector = players[0].GetPlayerController();
+        rotator = players[1].GetPlayerController();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -247,13 +262,48 @@ public class PipesPuzzleScript : MonoBehaviour
  
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Node selected = nodes[Random.Range(0, 4), Random.Range(0, 4)];
 
         //if the player presses the green button, rotate the 
+        if (selector.HorizontalPress > 0)
+        {
+            selectedX = Mathf.Clamp(selectedX + 1, 0, boardWidth - 1);
+            UpdateSelection();
+        }
+        if (selector.HorizontalPress < 0)
+        {
+            selectedX = Mathf.Clamp(selectedX - 1, 0, boardWidth - 1);
+            UpdateSelection();
+        }
+        if (selector.VerticalPress > 0)
+        {
+            selectedX = Mathf.Clamp(selectedY + 1, 0, boardWidth - 1);
+            UpdateSelection();
+        }
+        if (selector.VerticalPress < 0)
+        {
+            selectedX = Mathf.Clamp(selectedY - 1, 0, boardWidth - 1);
+            UpdateSelection();
+        }
 
+        if(rotator.IsGreenDown())
+        {
+            // TODO: Rotate piece
+
+            nodes[selectedX, selectedY].Spin();
+            // nodes[selectedY, selectedX].PipeNode.Rotate() ???
+            // Rotate sprite as well
+        }
+    }
+
+    void UpdateSelection()
+    {
+        // foreach(node ... )
+        // remove selection
+
+        // nodes[selectedX, selectedY].select();
     }
 }
 
@@ -264,6 +314,8 @@ public class Node
     private List<Node> connections = new List<Node>();
     private int rotation = 0;
     private List<Vector2Int> connectionDirections = new List<Vector2Int>();
+
+    public PipeTile PipeNode;
 
     public Node(Vector2Int position)
     {
