@@ -203,7 +203,7 @@ public class PipesPuzzleScript : Puzzle
 
         foreach (Node n in nodes)
         {
-            if(n.getTile().Equals(""))
+            if(n.getTile().Equals('\0')) // if the character variable is empty
             {
                 double r = Random.value;
 
@@ -318,21 +318,21 @@ public class PipesPuzzleScript : Puzzle
     private void Update()
     {
 
-        while(!endNode.glowing)
-        {
-            foreach(Node n in nodes)
-            {
-                if (n.getConnections().Any(item => item.glowing))
-                {
-                    n.glowing = true;
-                }
+        //while(!endNode.glowing)
+        //{
+        //    foreach(Node n in nodes)
+        //    {
+        //        if (n.getConnections().Any(item => item.glowing))
+        //        {
+        //            n.glowing = true;
+        //        }
 
-                if (n.glowing)
-                {
-                    //change the sprite to reflect that it is glowing
-                }
-            }
-        }
+        //        if (n.glowing)
+        //        {
+        //            //change the sprite to reflect that it is glowing
+        //        }
+        //    }
+        //}
         
     }
 
