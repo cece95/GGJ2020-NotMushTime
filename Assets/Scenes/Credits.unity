@@ -629,7 +629,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.6, y: -269}
+  m_AnchoredPosition: {x: -14.6, y: -297}
   m_SizeDelta: {x: 70.8, y: 70.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1141709402
@@ -741,9 +741,11 @@ MonoBehaviour:
 
     Cesare Grigoletto
 
+    Roddy
+    Ewles
 
-    Stuart
-    Baillie
+
+    Stuart Baillie
 
     Nathan Baillie'
   m_isRightToLeft: 0
@@ -814,12 +816,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -46.802124, w: -240.74875}
   m_textInfo:
     textComponent: {fileID: 1428483127}
-    characterCount: 146
+    characterCount: 158
     spriteCount: 0
-    spaceCount: 22
-    wordCount: 19
+    spaceCount: 24
+    wordCount: 21
     linkCount: 0
-    lineCount: 13
+    lineCount: 14
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1153,6 +1155,7 @@ MonoBehaviour:
 
 
 
+
     Special Thanks'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1222,12 +1225,12 @@ MonoBehaviour:
   m_margin: {x: 13.37207, y: 0, z: 0, w: -262.40607}
   m_textInfo:
     textComponent: {fileID: 1746689108}
-    characterCount: 51
+    characterCount: 52
     spriteCount: 0
-    spaceCount: 12
+    spaceCount: 13
     wordCount: 6
     linkCount: 0
-    lineCount: 12
+    lineCount: 13
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
