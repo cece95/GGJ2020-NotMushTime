@@ -12,14 +12,11 @@ public class PipesPuzzleScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //generate an 2d array of nodes
-        
-
+       
         for (int i = 0; i < 5; i++)
         {
             for (int j = 0; j < 5; j++)
             {
-                
                 nodes[i,j] = new Node(new Vector2Int(i, j));
             }
         }
@@ -35,14 +32,10 @@ public class PipesPuzzleScript : MonoBehaviour
 
 
         //randomly generate start and end nodes
-
-
         Node start, end = nodes[0,0];
-        
         int randomStart = Random.Range(0, 4);
         int randomEnd = Random.Range(0, 4);
 
-        //randomly generate start node
         if (Random.value > .5)
         {
             start = nodes[0,randomStart];
@@ -62,13 +55,9 @@ public class PipesPuzzleScript : MonoBehaviour
             start = nodes[randomEnd,4];
         }
 
-
-
         //find a path through the pipes that uses every pipe once at maximum
 
         List<Node> visited = new List<Node>();
-
-
 
         //start at the starting node
         Node current = start;
@@ -76,7 +65,6 @@ public class PipesPuzzleScript : MonoBehaviour
         Node next;
         int length = 0;
         int collissions = 0;
-
 
         while (!current.Equals(end))
         {
@@ -119,9 +107,12 @@ public class PipesPuzzleScript : MonoBehaviour
             }
             
         }
+
         visited.Add(end);
+
         visited.Reverse();
-        for(int i = 1; i < visited.Count -1; i++)
+
+        for (int i = 1; i < visited.Count -1; i++)
         {
             //get the node at index of i in the list of visited nodes
             current = visited[i];
@@ -140,7 +131,7 @@ public class PipesPuzzleScript : MonoBehaviour
                 {
                     current.setTile('x');
                 }
-                else if (r > 0.55)
+                else if (r > 0.45)
                 {
                     current.setTile('i');
                 }
@@ -158,7 +149,7 @@ public class PipesPuzzleScript : MonoBehaviour
                 {
                     current.setTile('x');
                 }
-                else if( r > 0.55)
+                else if( r > 0.45)
                 {
                     current.setTile('l');
                 }
@@ -184,15 +175,15 @@ public class PipesPuzzleScript : MonoBehaviour
             {
                 double r = Random.value;
 
-                if (r < 0.1)
+                if (r < 0.07)
                 {
                     n.setTile('x');
                 }
-                else if ( 0.4> r && r > 0.1)
+                else if ( 0.5> r && r > 0.07)
                 {
                     n.setTile('l');
                 }
-                else if(0.6 > r && r > 0.4)
+                else if(0.65 > r && r > 0.5)
                 {
                     n.setTile('t');
                 }
@@ -266,7 +257,7 @@ public class Node
     public Node(Vector2Int position)
     {
         this.position = position;
-    }
+    } // function that created a node at location "position"
 
 
     public void updateNeighbours()
@@ -296,31 +287,31 @@ public class Node
             this.connections.Add(PipesPuzzleScript.nodes[this.position.x,this.position.y + 1]);
         }
         
-    }
+    } // function used in initial setup to connect all adjacent nodes to one another
     public List<Node> getConnections()
     {
         return this.connections;
-    }
+    } // function that lists the nodes connected to the current node
 
     public Vector2Int getPosition()
     {
         return this.position;
-    }
+    } // function that returns the position of the current node
 
     public void setTile(char type)
     {
         this.tile = type;
-    }
+    } //function to set the 
 
     public char getTile()
     {
         return this.tile;
-    }
+    } //function for getting the type of tile the selected node is
 
     public List<Vector2Int> getConnectionDirections()
     {
         return connectionDirections;
-    }
+    } //function that returns the directions in which the node is trying to connect with other nodes
 
     public void setConnections(List<Vector2Int> Connections)
     {
@@ -340,7 +331,7 @@ public class Node
         }
        
 
-    }
+    } //function to change which nodes the current node is connected to
 
     public void Spin()
     {
@@ -442,41 +433,7 @@ public class Node
 
        
 
-    }
+    } //function to rotate the selected node 90 degrees clockwise
 
 }
 
-public class Tile
-{
-    private char type;
-    
-    private List<Node> connectedNodes;
-
-    public Tile(char type)
-    {
-        this.type = type;
-
-        if (type.Equals("x")) //this is  a cross piece, it is connected to all surrounding tiles
-        {
-           
-
-
-
-        }
-
-        if(type.Equals("i")) // this is a straight line block
-        {
-
-        }
-         
-        if(type.Equals("t")) //this is a T block
-        {
-
-        }
-
-        if(type.Equals("l")) // this is an L block
-        {
-
-        }
-    }
-}
