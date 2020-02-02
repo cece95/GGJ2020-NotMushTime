@@ -225,6 +225,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 2704037955345715318, guid: 379b18fbcdee94f4f9f4ec82eda0f654, type: 3}
+  sprites:
+  - {fileID: 21300000, guid: 55d4a064f5fda4d64b45e0522db71dd8, type: 3}
+  - {fileID: 21300000, guid: f47490bd03975437393d86151b0c48a6, type: 3}
+  - {fileID: 21300000, guid: fdc2b3b1f47c544dc9aefff6745bfe26, type: 3}
+  - {fileID: 21300000, guid: fecbe4f6b20834c43ad2368298e6ffce, type: 3}
+  - {fileID: 21300000, guid: 19cc9d03f4cd34a0793eaec72d7b5638, type: 3}
+  - {fileID: 21300000, guid: cd92ad1a119ab40538bbfad46f41361b, type: 3}
 --- !u!114 &1941472216
 MonoBehaviour:
   m_ObjectHideFlags: 0

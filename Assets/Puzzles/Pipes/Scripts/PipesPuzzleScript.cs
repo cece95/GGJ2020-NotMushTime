@@ -6,7 +6,12 @@ using System.Linq;
 
 public class PipesPuzzleScript : MonoBehaviour
 {
+
+
     public PipeTile prefab;
+
+    public Sprite[] sprites;
+
 
     public static Node[,] nodes = new Node[5,5];
     // Start is called before the first frame update
@@ -163,8 +168,8 @@ public class PipesPuzzleScript : MonoBehaviour
            
         }
 
-        start.setTile('o');
-        end.setTile('o');
+        start.setTile('s');
+        end.setTile('e');
      
 
         //if there are any empty tiles, randomly generate the piece to go in to them
@@ -193,46 +198,50 @@ public class PipesPuzzleScript : MonoBehaviour
                 }
             }
 
+            //rotate every node a random number of times
             for (int i = 0; i< Random.Range(1, 4); i++)
             {
                 n.Spin();
             }
 
+            //
             PipeTile newtile = Instantiate(prefab, new Vector3(n.getPosition().x, n.getPosition().y), Quaternion.identity);
 
+
+            //place blocks in correct tiles
+            {
+
+                if (n.getTile().Equals('s'))
+                {
+                    newtile.SetSprite(sprites[0]);
+                    
+                }
+                else if (n.getTile().Equals('e'))
+                {
+                    newtile.SetSprite(sprites[1]);
+                }
+                else if (n.getTile().Equals('i'))
+                {
+                    newtile.SetSprite(sprites[2]);
+                }
+                else if (n.getTile().Equals('l'))
+                {
+                    newtile.SetSprite(sprites[3]);
+                }
+                else if (n.getTile().Equals('t'))
+                {
+                    newtile.SetSprite(sprites[4]);
+                }
+                else if (n.getTile().Equals('x'))
+                {
+                    newtile.SetSprite(sprites[5]);
+                }
+
+            }
+
+            //rotate blocks to correct orientation
+             newtile.staticRotation = (n.getRotation() * 90);
             
-
-            if(n.getConnectionDirections().Contains(Vector2Int.up))
-            {
-                newtile.N.color = Color.red;
-            }
-            if (n.getConnectionDirections().Contains(Vector2Int.down))
-            {
-                newtile.S.color = Color.red;
-            }
-            if (n.getConnectionDirections().Contains(Vector2Int.left))
-            {
-                newtile.W.color = Color.red;
-            }
-            if (n.getConnectionDirections().Contains(Vector2Int.right))
-            {
-                newtile.E.color = Color.red;
-            }
-
-            if(n.Equals(start))
-            {
-                newtile.C.color = Color.green;
-            }
-            else if (n.Equals(end))
-            {
-                newtile.C.color = Color.blue;
-            }
-            else if (!n.getTile().Equals(null))
-            {
-                newtile.C.color = Color.black;
-            }
-
-
         }
 
  
@@ -241,7 +250,9 @@ public class PipesPuzzleScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if a block is selected, rotate it and update the blocks it is connected to
+        Node selected = nodes[Random.Range(0, 4), Random.Range(0, 4)];
+
+        //if the player presses the green button, rotate the 
 
     }
 }
@@ -259,7 +270,9 @@ public class Node
         this.position = position;
     } // function that created a node at location "position"
 
+    public int getRotation() { return rotation; }
 
+    // function used in initial setup to connect all adjacent nodes to one another
     public void updateNeighbours()
     {
         //add connected nodes to list of connections
@@ -287,21 +300,26 @@ public class Node
             this.connections.Add(PipesPuzzleScript.nodes[this.position.x,this.position.y + 1]);
         }
         
-    } // function used in initial setup to connect all adjacent nodes to one another
+    } 
+
+    // function that lists the nodes connected to the current node
     public List<Node> getConnections()
     {
         return this.connections;
-    } // function that lists the nodes connected to the current node
+    } 
 
+
+    // function that returns the position of the current node
     public Vector2Int getPosition()
     {
         return this.position;
-    } // function that returns the position of the current node
+    } 
 
+    //function to set the tile type
     public void setTile(char type)
     {
         this.tile = type;
-    } //function to set the 
+    }
 
     public char getTile()
     {
