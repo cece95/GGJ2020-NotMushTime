@@ -10,6 +10,8 @@ public class PuzzleRenderer : MonoBehaviour
 
     private Puzzle puzzleToRender;
 
+    private RenderTexture puzzleRT;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -22,8 +24,15 @@ public class PuzzleRenderer : MonoBehaviour
 
     public void SetPuzzleToRender(Puzzle puzzle)
     {
-        puzzleToRender = puzzle;
+        puzzleRT = new RenderTexture(512, 512, 16, RenderTextureFormat.ARGB32);
+        if (puzzleRT.Create())
+        {
 
+            puzzleToRender = puzzle;
+            puzzle.SetRenderTexture(puzzleRT);
+
+            meshRenderer.material.SetTexture("_MainTex", puzzleRT);
+        }
     }
 
     public void FadeOut()

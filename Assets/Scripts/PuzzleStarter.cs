@@ -7,6 +7,8 @@ public class PuzzleStarter : MonoBehaviour
     public delegate void PuzzleDelegate(string message);
     public event PuzzleDelegate OnStartError;
 
+    public Vector3 PortalPosition;
+
     [SerializeField]
     private Puzzle puzzleToStart;
 
@@ -32,7 +34,7 @@ public class PuzzleStarter : MonoBehaviour
 
     private void CollidingPlayer_OnInteract(Player interactingPlayer)
     {
-        if(!isEnabled)
+        if(!isEnabled || puzzleToStart == null)
         {
             return;
         }
@@ -61,7 +63,7 @@ public class PuzzleStarter : MonoBehaviour
 
         isEnabled = false;
 
-        GameManager.Instance.StartPuzzle(players, puzzleToStart);
+        GameManager.Instance.StartPuzzle(players, puzzleToStart, PortalPosition);
     }
 
     private void OnTriggerExit2D(Collider2D collision)

@@ -23,6 +23,11 @@ public class Puzzle : MonoBehaviour
         Players = players;
     }
 
+    public void SetRenderTexture(RenderTexture rt)
+    {
+        GetComponentInChildren<Camera>().targetTexture = rt;
+    }
+
     protected void OnCompleted()
     {
         if(OnPuzzleCompleted != null)
