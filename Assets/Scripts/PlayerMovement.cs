@@ -61,7 +61,14 @@ public class PlayerMovement : MonoBehaviour
             Speed.x = player_controller.Horizontal;
             Speed.y = player_controller.Vertical;
             rigidbody_.AddForce(Speed.normalized * MOVEMENT_SPEED_MODIFIER);
+            if (Speed.magnitude > 0.01f)
+                animator.SetBool("Moving", true);
+            else
+                animator.SetBool("Moving", false);
+
         }
+        else
+            animator.SetBool("Moving", false);
     }
 
     /// <summary>
