@@ -45,6 +45,7 @@ public class FixAHole_Board : MonoBehaviour
 
     private FixAHole_PickingArea pickingArea;
 
+    [SerializeField]
     private PlayerController setter;
 
     public void Initialize()

@@ -78,7 +78,7 @@ SpriteRenderer:
   m_Size: {x: 22, y: 18.003906}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4784277975785272890
@@ -200,6 +200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 583502f1593f74a19a8cf5e900ff5ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playersRequired: 2
+  MyRenderer: {fileID: 0}
 --- !u!1 &6763632787784360128
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,6 +251,21 @@ MonoBehaviour:
   BlockSize: 1
   DigThreshold: 76
   DesiredHoles: 20
+  setter:
+    Horizontal: 0
+    Vertical: 0
+    HorizontalPress: 0
+    VerticalPress: 0
+    Yellow: 0
+    Green: 0
+    Blue: 0
+    Red: 0
+    YellowPressedFlag: 0
+    GreenPressedFlag: 0
+    BluePressedFlag: 0
+    RedPressedFlag: 0
+    GreenPressed: 0
+    StickPressDowntime: 0
 --- !u!1 &7046573354993942010
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,6 +347,21 @@ MonoBehaviour:
   TimeBetweenAddingPieces: 0.3
   FirstPieceXOffset: -4
   NextPieceXOffset: 2
+  Picker:
+    Horizontal: 0
+    Vertical: 0
+    HorizontalPress: 0
+    VerticalPress: 0
+    Yellow: 0
+    Green: 0
+    Blue: 0
+    Red: 0
+    YellowPressedFlag: 0
+    GreenPressedFlag: 0
+    BluePressedFlag: 0
+    RedPressedFlag: 0
+    GreenPressed: 0
+    StickPressDowntime: 0
 --- !u!1 &8951429682893957624
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +440,7 @@ SpriteRenderer:
   m_Size: {x: 22, y: 18.003906}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &9051016633800931582

@@ -30,13 +30,16 @@ public class SimonNew : Puzzle
 
     PlayerController playerController, playerController1;
 
+    public override void StartPuzzle(Player[] players)
+    {
+        base.StartPuzzle(players);
+
+        playerController = players[0].GetPlayerController();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        playerController = PlayerInput.Instance.Player1;
-        playerController1 = PlayerInput.Instance.Player2;
-        
-
         SetTimer();
         /*red.enabled = false;
         blue.enabled = false;
@@ -86,7 +89,7 @@ public class SimonNew : Puzzle
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         timecounter += Time.deltaTime;
         if (puztrack == 0)
@@ -234,28 +237,28 @@ public class SimonNew : Puzzle
             correct.color = new Color(1f, 1f, 1f, 0f);
             wrong.color = new Color(1f, 1f, 1f, 0f);
             locked.color = new Color(1f, 1f, 1f, 1f);
-            if (playerController.IsRedDown() || playerController1.IsRedDown())
+            if (playerController.IsRedDown())
             {
                 timestore = timecounter;
                 ans.SetValue(0, movecount);
                 movecount++;
             }
-            if (playerController.IsBlueDown() || playerController1.IsBlueDown())
+            if (playerController.IsBlueDown())
             {
                 timestore = timecounter;
                 ans.SetValue(1, movecount);
                 movecount++;
             }
-            if (playerController.IsGreenDown() || playerController1.IsGreenDown())
-            {
-                timestore = timecounter;
-                ans.SetValue(3, movecount);
-                movecount++;
-            }
-            if (playerController.IsYellowDown() || playerController1.IsYellowDown())
+            if (playerController.IsGreenDown())
             {
                 timestore = timecounter;
                 ans.SetValue(2, movecount);
+                movecount++;
+            }
+            if (playerController.IsYellowDown())
+            {
+                timestore = timecounter;
+                ans.SetValue(3, movecount);
                 movecount++;
             }
             if (movecount == ans.Length)

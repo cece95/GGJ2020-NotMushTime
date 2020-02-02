@@ -11,9 +11,6 @@ public class PuzzleStarter : MonoBehaviour
     private Puzzle puzzleToStart;
 
     [SerializeField]
-    private int playersRequired = 1;
-
-    [SerializeField]
     private bool isEnabled = true;
 
     List<Player> collidingPlayers = new List<Player>();
@@ -40,16 +37,17 @@ public class PuzzleStarter : MonoBehaviour
             return;
         }
 
-        if(playersRequired > collidingPlayers.Count)
+        if(puzzleToStart.PlayersRequired > collidingPlayers.Count)
         {
             if (OnStartError != null)
             {
                 OnStartError("You require both players to start this puzzle!");
-                return;
             }
+
+            return;
         }
 
-        Player[] players = new Player[playersRequired];
+        Player[] players = new Player[puzzleToStart.PlayersRequired];
         players[0] = interactingPlayer;
 
         foreach (Player player in collidingPlayers)

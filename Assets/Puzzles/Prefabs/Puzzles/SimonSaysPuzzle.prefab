@@ -1328,6 +1328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe4c542777163645b0304a63fedf746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playersRequired: 1
+  MyRenderer: {fileID: 0}
   red: {fileID: 6631361468674275959}
   blue: {fileID: 6631361470094334187}
   green: {fileID: 6631361468588850577}

@@ -365,6 +365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f2af7d91d9e4d448efda8745945669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playersRequired: 1
+  MyRenderer: {fileID: 0}
   blockSprites: []
   centerPoint: {x: 0.1, y: 0.8}
   blockSize: {x: 1.89, y: 1.9}

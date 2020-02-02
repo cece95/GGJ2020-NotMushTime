@@ -7,7 +7,7 @@ public class FixAHole_PickingArea : MonoBehaviour
     public delegate void PieceDelegate(FixAHole_Piece piece);
     public event PieceDelegate OnPieceSelected;
 
-    public bool CanPickPiece;
+    public bool CanPickPiece = true;
 
     private int selectedPiece = 0;
 
@@ -103,9 +103,9 @@ public class FixAHole_PickingArea : MonoBehaviour
             SelectPiece(selectedPiece + 1);
         }
 
-        if(CanPickPiece && Picker.IsGreenDown())
+        if(Picker.IsGreenDown())
         {
-            if(OnPieceSelected != null)
+            if(CanPickPiece && OnPieceSelected != null)
             {
                 OnPieceSelected.Invoke(pieces[selectedPiece]);
                 pieces[selectedPiece].IsHeld = true;

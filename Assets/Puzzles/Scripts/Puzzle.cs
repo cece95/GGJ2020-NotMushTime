@@ -10,6 +10,11 @@ public class Puzzle : MonoBehaviour
     public event PuzzleEnded OnPuzzleQuit;
     public event PuzzleEnded OnPuzzleFailed;
 
+    [SerializeField]
+    private int playersRequired;
+
+    public int PlayersRequired { get { return playersRequired; } }
+
     public Player[] Players { get; private set; }
     public PuzzleRenderer MyRenderer;
 

@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
 
         // Display puzzle
         PuzzleRenderer newPuzzleRenderer = Instantiate(puzzlePortal);
+
         newPuzzleRenderer.SetPuzzleToRender(puzzleToStart);
 
         puzzleToStart.gameObject.SetActive(true);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class PlayerController
 {
     public float Horizontal;
@@ -20,6 +21,11 @@ public class PlayerController
     public bool BluePressedFlag;
     public bool RedPressedFlag;
 
+    public bool YellowReleased;
+    public bool GreenReleased;
+    public bool BlueReleased;
+    public bool RedReleased;
+
     public float StickPressDowntime;
 
     /// <summary>
@@ -28,9 +34,7 @@ public class PlayerController
     /// <returns></returns>
     public bool IsYellowDown()
     {
-        bool toRet = Yellow && !YellowPressedFlag;
-        YellowPressedFlag = Yellow;
-        return toRet;
+        return YellowPressedFlag;
     }
 
     /// <summary>
@@ -39,9 +43,7 @@ public class PlayerController
     /// <returns></returns>
     public bool IsGreenDown()
     {
-        bool toRet = Green && !GreenPressedFlag;
-        GreenPressedFlag = Green;
-        return toRet;
+        return GreenPressedFlag;
     }
 
     /// <summary>
@@ -50,9 +52,7 @@ public class PlayerController
     /// <returns></returns>
     public bool IsBlueDown()
     {
-        bool toRet = Blue && !BluePressedFlag;
-        BluePressedFlag = Blue;
-        return toRet;
+        return BluePressedFlag;
     }
 
     /// <summary>
@@ -61,9 +61,7 @@ public class PlayerController
     /// <returns></returns>
     public bool IsRedDown()
     {
-        bool toRet = Red && !RedPressedFlag;
-        RedPressedFlag = Red;
-        return toRet;
+        return RedPressedFlag;
     }
 }
 
@@ -154,6 +152,16 @@ public class PlayerInput : MonoBehaviour
         controller.Green = Input.GetButton(playerId + " Green");
         controller.Blue = Input.GetButton(playerId + " Blue");
         controller.Red = Input.GetButton(playerId + " Red");
+
+        controller.YellowPressedFlag = controller.Yellow && controller.YellowReleased;
+        controller.GreenPressedFlag = controller.Green && controller.GreenReleased;
+        controller.BluePressedFlag = controller.Blue && controller.BlueReleased;
+        controller.RedPressedFlag = controller.Red && controller.RedReleased;
+
+        controller.YellowReleased = !controller.Yellow;
+        controller.GreenReleased = !controller.Green;
+        controller.BlueReleased = !controller.Blue;
+        controller.RedReleased = !controller.Red;
 
         // Reset pressed flags
         if (controller.YellowPressedFlag && !controller.Yellow)
