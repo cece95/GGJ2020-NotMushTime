@@ -6,7 +6,7 @@
 				<SoundcasterSession Name="GGJ_2020_Save_The_Wordl" ID="{A34A9060-55EC-4B03-B8BC-96C7ED85D80D}">
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Puzzle_Complete" ID="{1092C3B6-8287-4F6F-88AD-A1ED6FBFD747}"/>
+						<CurrentStateRef Name="Puzzle_Failed" ID="{B8620105-0574-4BF3-B810-449C4C58FB07}"/>
 						<CurrentStateRef Name="Happy_Days" ID="{36A710D6-9A67-4E94-9BC9-E0A32C66A9DD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

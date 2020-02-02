@@ -23,7 +23,12 @@ namespace AK
         static const AkUniqueID PNUMATIC_DOOR_UP = 1068172655U;
         static const AkUniqueID SHROOM_BOUNCE = 1380635400U;
         static const AkUniqueID SHROOM_STEPS = 785153393U;
-        static const AkUniqueID SIMON_SAYS_PUZZLE = 3147088319U;
+        static const AkUniqueID SIMON_SAYS_A = 1697904516U;
+        static const AkUniqueID SIMON_SAYS_B = 1697904519U;
+        static const AkUniqueID SIMON_SAYS_C = 1697904518U;
+        static const AkUniqueID SIMON_SAYS_COMPLETE = 2168464150U;
+        static const AkUniqueID SIMON_SAYS_D = 1697904513U;
+        static const AkUniqueID SIMON_SAYS_FAIL = 155810655U;
         static const AkUniqueID SLIDING_BLOCK_PUZZLE = 3292274422U;
         static const AkUniqueID TETRIS_PUZZLE_CLICKS = 1463418219U;
     } // namespace EVENTS

@@ -11,12 +11,18 @@
 				<Property Name="Event Action List\{3350C5C3-D6C0-4C24-B38E-FB4B921C0A8A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{351230ED-ECF4-493D-A5B0-9F943A4624EC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3F61C689-4969-485D-BA0C-956585A08BD0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{41B49FD2-72CE-4DF2-8D90-58465772CD95}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5E0B7883-B015-40E3-B0C8-5E3A034F4E8F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7BB3D262-79E3-45E8-AAF6-84B060D6E749}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A2BC3F2D-A578-4DA5-9DE5-59E2A557AAFB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B4E5E6EB-964D-4BCB-9F5D-9C513026CA9A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B7DD5F98-6BB9-4883-B4BC-50105E125F29}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{BE011786-1A71-427F-A4DC-1BFD6F001061}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C266A056-7109-4E17-BC25-3F721A55E7A1}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{CEE4B750-D227-4A62-AE94-2192132EC5C7}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D2B361C2-E9BD-4CD1-A3A7-45312CA14D15}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D749288E-A7A3-4062-82E3-4240CE278AC0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{EB5ED818-BA8D-4FEC-9267-69438412D35B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F4DDADFD-6E99-44AD-89A4-6ADE5C957EB7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">

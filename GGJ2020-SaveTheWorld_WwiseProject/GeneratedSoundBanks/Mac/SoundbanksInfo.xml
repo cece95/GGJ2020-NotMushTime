@@ -186,7 +186,12 @@
 				<Event Id="1592165308" Name="Box_Dragging" ObjectPath="\Events\Default Work Unit\Box_Dragging" DurationType="OneShot" DurationMin="0.210000" DurationMax="0.357823"/>
 				<Event Id="1847720199" Name="Pipe_Puzzle_Fail" ObjectPath="\Events\Default Work Unit\Pipe_Puzzle_Fail" DurationType="OneShot" DurationMin="0.718934" DurationMax="0.971255"/>
 				<Event Id="544157162" Name="Pipe_Puzzle_Match" ObjectPath="\Events\Default Work Unit\Pipe_Puzzle_Match" DurationType="OneShot" DurationMin="0.213737" DurationMax="0.370549"/>
-				<Event Id="3147088319" Name="Simon_Says_Puzzle" ObjectPath="\Events\Default Work Unit\Simon_Says_Puzzle" DurationType="OneShot" DurationMin="2.030000" DurationMax="3.040000"/>
+				<Event Id="1697904516" Name="Simon_Says_A" ObjectPath="\Events\Default Work Unit\Simon_Says_A" DurationType="OneShot" DurationMin="2.480000" DurationMax="2.480000"/>
+				<Event Id="1697904519" Name="Simon_Says_B" ObjectPath="\Events\Default Work Unit\Simon_Says_B" DurationType="OneShot" DurationMin="2.580000" DurationMax="2.580000"/>
+				<Event Id="1697904518" Name="Simon_Says_C" ObjectPath="\Events\Default Work Unit\Simon_Says_C" DurationType="OneShot" DurationMin="2.380000" DurationMax="2.380000"/>
+				<Event Id="2168464150" Name="Simon_Says_Complete" ObjectPath="\Events\Default Work Unit\Simon_Says_Complete" DurationType="OneShot" DurationMin="3.040000" DurationMax="3.040000"/>
+				<Event Id="1697904513" Name="Simon_Says_D" ObjectPath="\Events\Default Work Unit\Simon_Says_D" DurationType="OneShot" DurationMin="2.030000" DurationMax="2.030000"/>
+				<Event Id="155810655" Name="Simon_Says_Fail" ObjectPath="\Events\Default Work Unit\Simon_Says_Fail" DurationType="OneShot" DurationMin="2.380000" DurationMax="2.380000"/>
 				<Event Id="3292274422" Name="Sliding_Block_Puzzle" ObjectPath="\Events\Default Work Unit\Sliding_Block_Puzzle" DurationType="OneShot" DurationMin="0.120000" DurationMax="0.150000"/>
 				<Event Id="1463418219" Name="Tetris_Puzzle_Clicks" ObjectPath="\Events\Default Work Unit\Tetris_Puzzle_Clicks" DurationType="OneShot" DurationMin="0.068007" DurationMax="0.267619"/>
 			</IncludedEvents>

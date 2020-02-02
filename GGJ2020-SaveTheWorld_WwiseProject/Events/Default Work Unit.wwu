@@ -102,17 +102,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Simon_Says_Puzzle" ID="{153EE5FC-76F6-4C92-B82E-5941AA4E61A7}">
-					<ChildrenList>
-						<Action Name="" ID="{4F3D25DC-A6AE-4B16-ACB7-4856E054044D}" ShortID="469913512">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Simon_Says_Puzzle" ID="{80F43DFB-3FC5-4EDE-B011-255A3380638E}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Sliding_Block_Puzzle" ID="{F4DDADFD-6E99-44AD-89A4-6ADE5C957EB7}">
 					<ChildrenList>
 						<Action Name="" ID="{8B9323C2-6009-4992-A023-F0A2CABA807F}" ShortID="836517014">
@@ -141,6 +130,72 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Pnumatic_Door_Down" ID="{9F769ACB-2CFD-49BA-8048-5EA0BA17C02B}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Simon_Says_A" ID="{D2B361C2-E9BD-4CD1-A3A7-45312CA14D15}">
+					<ChildrenList>
+						<Action Name="" ID="{430FDF7B-E3B1-4BC1-9D58-EBD3AAD1C2BE}" ShortID="658992910">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Simon_Says_Puzzle_A" ID="{492D187E-E448-4E03-895F-41C26AFFEA96}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Simon_Says_B" ID="{CEE4B750-D227-4A62-AE94-2192132EC5C7}">
+					<ChildrenList>
+						<Action Name="" ID="{9DC36234-380A-4CD8-8F85-4C66161EAA16}" ShortID="957622842">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Simon_Says_Puzzle_B" ID="{D89093ED-0683-4CCF-A866-D3FFF3125D9F}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Simon_Says_C" ID="{BE011786-1A71-427F-A4DC-1BFD6F001061}">
+					<ChildrenList>
+						<Action Name="" ID="{7CB5F692-A3C5-45DA-971B-F7C545715C2F}" ShortID="1040610536">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Simon_Says_Puzzle_C" ID="{E56857A3-62C3-4BA2-92CB-D0D5F69FAADF}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Simon_Says_D" ID="{A2BC3F2D-A578-4DA5-9DE5-59E2A557AAFB}">
+					<ChildrenList>
+						<Action Name="" ID="{3B43B19D-FDC0-43B5-BFBA-8B4A106B4A1B}" ShortID="190923464">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Simon_Says_Puzzle_D" ID="{F7E5FDF3-D324-4DFD-959C-67FFA764791F}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Simon_Says_Complete" ID="{EB5ED818-BA8D-4FEC-9267-69438412D35B}">
+					<ChildrenList>
+						<Action Name="" ID="{93D0A4AA-251E-4541-9974-66B1929C8268}" ShortID="1013352350">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Simon_Says_Puzzle_Completed" ID="{03C9844B-613A-41EB-B980-61876859D33C}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Simon_Says_Fail" ID="{41B49FD2-72CE-4DF2-8D90-58465772CD95}">
+					<ChildrenList>
+						<Action Name="" ID="{6D1C9A9C-A6E4-4508-96E9-E6F9827E721F}" ShortID="462498896">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Simon_Says_Puzzle_Fail" ID="{0FA3D6DB-3824-48F3-8846-E8A2AF02E321}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
