@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3734989563	Interactive_Music			\Default Work Unit\Interactive_Music	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2017233915	Happy_Days_Are_Over			\Default Work Unit\Happy_Days_Are_Over	
+
+State	ID	Name	State Group			Notes
+	0	None	Happy_Days_Are_Over			
+	1353553046	Alarm_Syren	Happy_Days_Are_Over			
+	3498417625	Happy_Days	Happy_Days_Are_Over			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	104091088	Ouch	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Ouch_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Interactive_Music\Are_Over\Ouch\Ouch		12700864
+	1012585534	overcooked	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\overcooked_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Interactive_Music\Happy_Days\overcooked\overcooked		7815944
+	1039887605	Alram_Syren	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Alram_Syren_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Interactive_Music\Are_Over\Alram_Syren\Alram_Syren		705664
+

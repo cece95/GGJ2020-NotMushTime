@@ -15,7 +15,7 @@ public class PuzzleRenderer : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
-        meshRenderer = GetComponent<MeshRenderer>();
+        meshRenderer = GetComponentInChildren<MeshRenderer>();
         if(meshRenderer)
         {
             meshRenderer.sortingOrder = 10;

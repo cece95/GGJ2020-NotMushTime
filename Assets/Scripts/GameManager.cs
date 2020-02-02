@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         // Enable player movement
     }
 
-    public void StartPuzzle(Player[] players, Puzzle puzzleToStart, Vector3 portalPosition)
+    public void StartPuzzle(Player[] players, Puzzle puzzleToStart, Vector3 portalPosition, Vector3 portalSize)
     {
         // Instantiate puzzle
 
@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
         // Display puzzle
         PuzzleRenderer newPuzzleRenderer = Instantiate(puzzlePortal);
         newPuzzleRenderer.transform.position = portalPosition;
-
+        newPuzzleRenderer.transform.GetChild(0).localScale = portalSize;
         newPuzzleRenderer.SetPuzzleToRender(puzzleToStart);
 
         puzzleToStart.gameObject.SetActive(true);

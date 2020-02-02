@@ -109,12 +109,12 @@ MonoBehaviour:
   IsHeld: 0
   PieceAsset: {fileID: 11400000, guid: 3a75dc25a2ff44da4a4a2f7243a1059a, type: 2}
   sprites:
-  - {fileID: 2713144985732300613, guid: 9f7df0538ce454b60950def6504f03ae, type: 3}
-  - {fileID: 6423512500045515010, guid: 9f7df0538ce454b60950def6504f03ae, type: 3}
-  - {fileID: 8439126414908278728, guid: 9f7df0538ce454b60950def6504f03ae, type: 3}
-  - {fileID: -1034550687188589013, guid: 9f7df0538ce454b60950def6504f03ae, type: 3}
-  - {fileID: 9201947229870217490, guid: 9f7df0538ce454b60950def6504f03ae, type: 3}
-  - {fileID: 7774953555004979217, guid: 9f7df0538ce454b60950def6504f03ae, type: 3}
+  - {fileID: 21300000, guid: b6901033777034a31beccc6bebdb1421, type: 3}
+  - {fileID: 21300000, guid: b6901033777034a31beccc6bebdb1421, type: 3}
+  - {fileID: 21300000, guid: b6901033777034a31beccc6bebdb1421, type: 3}
+  - {fileID: 21300000, guid: b6901033777034a31beccc6bebdb1421, type: 3}
+  - {fileID: 21300000, guid: b6901033777034a31beccc6bebdb1421, type: 3}
+  - {fileID: 21300000, guid: b6901033777034a31beccc6bebdb1421, type: 3}
   spriteOffset: {x: 0, y: 0}
 --- !u!111 &331808227830209873
 Animation:

@@ -9,6 +9,8 @@ public class PuzzleStarter : MonoBehaviour
 
     public Vector3 PortalPosition;
 
+    public Vector3 PortalSize;
+
     [SerializeField]
     private Puzzle puzzleToStart;
 
@@ -27,7 +29,6 @@ public class PuzzleStarter : MonoBehaviour
             if(!collidingPlayers.Contains(collidingPlayer))
             {
                 collidingPlayers.Add(collidingPlayer);
-
             }
         }
     }
@@ -63,7 +64,7 @@ public class PuzzleStarter : MonoBehaviour
 
         isEnabled = false;
 
-        GameManager.Instance.StartPuzzle(players, puzzleToStart, PortalPosition);
+        GameManager.Instance.StartPuzzle(players, puzzleToStart, PortalPosition, PortalSize);
     }
 
     private void OnTriggerExit2D(Collider2D collision)

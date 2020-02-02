@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>/Users/eigengrau_23/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GGJ2020-SaveTheWorld/GGJ2020-SaveTheWorld_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/eigengrau_23/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GGJ2020-SaveTheWorld/GGJ2020-SaveTheWorld_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/eigengrau_23/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GGJ2020-SaveTheWorld/GGJ2020-SaveTheWorld_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/eigengrau_23/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GGJ2020-SaveTheWorld/GGJ2020-SaveTheWorld_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="85412153" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambience</ObjectPath>
+			<ShortName>Ambience</ShortName>
+			<Path>Ambience.bnk</Path>
+			<IncludedEvents>
+				<Event Id="658170097" Name="Main_Reactor" ObjectPath="\Events\Default Work Unit\Main_Reactor" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="15782557" Language="SFX">
+					<ShortName>Power_Plant_Ambience_02.wav</ShortName>
+					<Path>SFX/Power_Plant_Ambience_02_D178875F.wem</Path>
+				</File>
+				<File Id="115617734" Language="SFX">
+					<ShortName>Power_Plant_Ambience_01.wav</ShortName>
+					<Path>SFX/Power_Plant_Ambience_01_13D6DC3D.wem</Path>
+				</File>
+				<File Id="685501041" Language="SFX">
+					<ShortName>Power_Plant_Ambience_02.wav</ShortName>
+					<Path>SFX/Power_Plant_Ambience_02_56016EC3.wem</Path>
+				</File>
+				<File Id="1053373926" Language="SFX">
+					<ShortName>Power_Plant_Ambience_01.wav</ShortName>
+					<Path>SFX/Power_Plant_Ambience_01_F00B0F01.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3734989563" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Interactive_Music</ObjectPath>
+			<ShortName>Interactive_Music</ShortName>
+			<Path>Interactive_Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3734989563" Name="Interactive_Music" ObjectPath="\Events\Default Work Unit\Interactive_Music" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="104091088" Language="SFX">
+					<ShortName>Ouch.wav</ShortName>
+					<Path>SFX/Ouch_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1012585534" Language="SFX">
+					<ShortName>overcooked.wav</ShortName>
+					<Path>SFX/overcooked_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1039887605" Language="SFX">
+					<ShortName>Alram_Syren.wav</ShortName>
+					<Path>SFX/Alram_Syren_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3983930604" Language="English(US)">
+			<ObjectPath>\SoundBanks\Default Work Unit\Shrooms</ObjectPath>
+			<ShortName>Shrooms</ShortName>
+			<Path>English(US)/Shrooms.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2598333881" Name="Dialogue_Shrooms" ObjectPath="\Events\Default Work Unit\Dialogue_Shrooms" DurationType="OneShot" DurationMin="9.640000" DurationMax="9.640000"/>
+				<Event Id="1380635400" Name="Shroom_Bounce" ObjectPath="\Events\Default Work Unit\Shroom_Bounce" DurationType="OneShot" DurationMin="0.220000" DurationMax="0.943605"/>
+				<Event Id="785153393" Name="Shroom_Steps" ObjectPath="\Events\Default Work Unit\Shroom_Steps" DurationType="OneShot" DurationMin="0.106869" DurationMax="0.277912"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="91478988" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_4.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_4_10C4C929.wem</Path>
+				</File>
+				<File Id="108645341" Language="SFX">
+					<ShortName>Shroom_Step_01.wav</ShortName>
+					<Path>SFX/Shroom_Step_01_66608D6F.wem</Path>
+				</File>
+				<File Id="214543282" Language="SFX">
+					<ShortName>Shroom_Step_07.wav</ShortName>
+					<Path>SFX/Shroom_Step_07_90D622A5.wem</Path>
+				</File>
+				<File Id="247946552" Language="SFX">
+					<ShortName>Shroom_Step_13.wav</ShortName>
+					<Path>SFX/Shroom_Step_13_BCFE92A3.wem</Path>
+				</File>
+				<File Id="260642758" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_5.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_5_10C4C929.wem</Path>
+				</File>
+				<File Id="312163290" Language="SFX">
+					<ShortName>Shroom_Step_14.wav</ShortName>
+					<Path>SFX/Shroom_Step_14_D834797E.wem</Path>
+				</File>
+				<File Id="337409131" Language="SFX">
+					<ShortName>Shroom_Step_12.wav</ShortName>
+					<Path>SFX/Shroom_Step_12_59071B08.wem</Path>
+				</File>
+				<File Id="367363241" Language="SFX">
+					<ShortName>Shroom_Step_05.wav</ShortName>
+					<Path>SFX/Shroom_Step_05_3808CFD5.wem</Path>
+				</File>
+				<File Id="379364992" Language="SFX">
+					<ShortName>Shroom_Step_02.wav</ShortName>
+					<Path>SFX/Shroom_Step_02_593E73C9.wem</Path>
+				</File>
+				<File Id="393207477" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_2.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_2_10C4C929.wem</Path>
+				</File>
+				<File Id="415171525" Language="SFX">
+					<ShortName>Shroom_Step_06.wav</ShortName>
+					<Path>SFX/Shroom_Step_06_DE20DBC3.wem</Path>
+				</File>
+				<File Id="490055282" Language="SFX">
+					<ShortName>Shroom_Step_09.wav</ShortName>
+					<Path>SFX/Shroom_Step_09_58A0E5B5.wem</Path>
+				</File>
+				<File Id="493975409" Language="English(US)">
+					<ShortName>Dialogue_Shrooms.wav</ShortName>
+					<Path>Voices/English(US)/Dialogue_Shrooms_10C4C929.wem</Path>
+				</File>
+				<File Id="569188611" Language="SFX">
+					<ShortName>Shroom_Bounce_Tail_1.wav</ShortName>
+					<Path>SFX/Shroom_Bounce_Tail_1_10C4C929.wem</Path>
+				</File>
+				<File Id="651133254" Language="SFX">
+					<ShortName>Shroom_Bounce_Tail_3.wav</ShortName>
+					<Path>SFX/Shroom_Bounce_Tail_3_10C4C929.wem</Path>
+				</File>
+				<File Id="781391874" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_1.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_1_10C4C929.wem</Path>
+				</File>
+				<File Id="785698507" Language="SFX">
+					<ShortName>Shroom_Step_03.wav</ShortName>
+					<Path>SFX/Shroom_Step_03_B2A2C211.wem</Path>
+				</File>
+				<File Id="803809114" Language="SFX">
+					<ShortName>Shroom_Step_15.wav</ShortName>
+					<Path>SFX/Shroom_Step_15_B095325D.wem</Path>
+				</File>
+				<File Id="804564581" Language="SFX">
+					<ShortName>Shroom_Step_04.wav</ShortName>
+					<Path>SFX/Shroom_Step_04_845C61A6.wem</Path>
+				</File>
+				<File Id="848196077" Language="SFX">
+					<ShortName>Shroom_Bounce_Tail_2.wav</ShortName>
+					<Path>SFX/Shroom_Bounce_Tail_2_10C4C929.wem</Path>
+				</File>
+				<File Id="916146740" Language="SFX">
+					<ShortName>Shroom_Step_08.wav</ShortName>
+					<Path>SFX/Shroom_Step_08_432C93C2.wem</Path>
+				</File>
+				<File Id="980806326" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_3.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_3_10C4C929.wem</Path>
+				</File>
+				<File Id="1058851181" Language="SFX">
+					<ShortName>Shroom_Step_11.wav</ShortName>
+					<Path>SFX/Shroom_Step_11_5CEAC8A1.wem</Path>
+				</File>
+				<File Id="1071488859" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_6.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_6_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
