@@ -19,6 +19,8 @@ namespace AK
         static const AkUniqueID MAIN_REACTOR = 658170097U;
         static const AkUniqueID PIPE_PUZZLE_FAIL = 1847720199U;
         static const AkUniqueID PIPE_PUZZLE_MATCH = 544157162U;
+        static const AkUniqueID PNUMATIC_DOOR_DOWN = 2425467796U;
+        static const AkUniqueID PNUMATIC_DOOR_UP = 1068172655U;
         static const AkUniqueID SHROOM_BOUNCE = 1380635400U;
         static const AkUniqueID SHROOM_STEPS = 785153393U;
         static const AkUniqueID SIMON_SAYS_PUZZLE = 3147088319U;

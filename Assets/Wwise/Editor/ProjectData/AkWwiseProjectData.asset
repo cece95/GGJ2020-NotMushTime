@@ -42,7 +42,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2e563b88421c0c4189e8c672fb883ad1
     GuidInternal: 
-    m_lastTime: -8586209610304775808
+    m_lastTime: -8586209595144775808
     List:
     - name: Ambience
       guid: 5ef76c1bc2fc334f9669bcd90cfe662b
@@ -85,7 +85,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2af0d1b482278845bbee084276577987
     GuidInternal: 
-    m_lastTime: -8586209610304775808
+    m_lastTime: -8586209598694775808
     List:
     - name: Box_Dragging
       guid: 89c6613f69495d48ba0c956585a08bd0
@@ -159,6 +159,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.370549
       minDuration: 0.213737
+    - name: Pnumatic_Door_Down
+      guid: c3c55033c0d6244cb38efb4b921c0a8a
+      id: 2425467796
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pnumatic_Door_Down
+        ObjectType: 3
+      Path: Default Work Unit/Pnumatic_Door_Down
+      maxAttenuation: 0
+      maxDuration: 0.69
+      minDuration: 0.69
+    - name: Pnumatic_Door_UP
+      guid: 95b7de1d14e4d44d8132fd07da1743f5
+      id: 1068172655
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pnumatic_Door_UP
+        ObjectType: 3
+      Path: Default Work Unit/Pnumatic_Door_UP
+      maxAttenuation: 0
+      maxDuration: 0.74
+      minDuration: 0.74
     - name: Shroom_Bounce
       guid: d4516221480de841920a3b7fac67c4cc
       id: 1380635400
@@ -412,8 +436,7 @@ MonoBehaviour:
       Path: Default Work Unit/Shroom_Steps
   ExpandedItems:
   - /GGJ2020-SaveTheWorld_WwiseProject
-  - /GGJ2020-SaveTheWorld_WwiseProject/States
-  - /GGJ2020-SaveTheWorld_WwiseProject/States/Default Work Unit
-  - /GGJ2020-SaveTheWorld_WwiseProject/States/Default Work Unit/Happy_Days_Are_Over
+  - /GGJ2020-SaveTheWorld_WwiseProject/Events
+  - /GGJ2020-SaveTheWorld_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

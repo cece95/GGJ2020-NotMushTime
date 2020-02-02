@@ -3,7 +3,7 @@
 	<Platform GUID="{99A48871-F2C5-4DB9-ABE5-FD81C55622D5}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Ambience" Hash="2389481527" Timestamp="1580645861"/>
+				<File Name="Ambience" Hash="4109774813" Timestamp="1580647368"/>
 				<File Name="Init" Hash="1593557291" Timestamp="1580644238"/>
 				<File Name="Interactive_Music" Hash="3925133818" Timestamp="1580639840"/>
 				<File Name="Puzzles" Hash="2328923242" Timestamp="1580645896"/>
@@ -15,14 +15,14 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="724602580" Timestamp="1580645896"/>
+				<File Name="" Hash="2311106936" Timestamp="1580647368"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{9DE44C49-D77A-4F1F-966F-D93A4374CE7E}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Ambience" Hash="2389481527" Timestamp="1580645896"/>
+				<File Name="Ambience" Hash="4109774813" Timestamp="1580647396"/>
 				<File Name="Init" Hash="166472105" Timestamp="1580645896"/>
 				<File Name="Interactive_Music" Hash="3925133818" Timestamp="1580639839"/>
 				<File Name="Puzzles" Hash="2328923242" Timestamp="1580645896"/>
@@ -34,7 +34,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3774188438" Timestamp="1580645896"/>
+				<File Name="" Hash="1466601210" Timestamp="1580647396"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

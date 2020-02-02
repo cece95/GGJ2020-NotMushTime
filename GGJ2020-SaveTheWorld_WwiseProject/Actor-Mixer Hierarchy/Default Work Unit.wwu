@@ -1916,6 +1916,76 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="Pnumatic_Door_UP" ID="{D56A2F1A-9CCA-430A-B041-DE4939BAAB71}" ShortID="633405856">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{02107232-F1C9-4E38-9259-23A28BCAA466}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Pnumatic_Door_UP" ID="{53BE381A-0C8A-4522-A69E-00A1CEAFA6C1}" ShortID="960549818">
+							<Language>SFX</Language>
+							<AudioFile>Pnumatic_Door_UP.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Pnumatic_Door_UP" ID="{53BE381A-0C8A-4522-A69E-00A1CEAFA6C1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Pnumatic_Door_Down" ID="{9F769ACB-2CFD-49BA-8048-5EA0BA17C02B}" ShortID="71669718">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Pnumatic_Door_Down" ID="{A9DD187F-E4F2-4712-A55D-5D5D1992FCA1}" ShortID="515185842">
+							<Language>SFX</Language>
+							<AudioFile>Pnumatic_Door_Down.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Pnumatic_Door_Down" ID="{A9DD187F-E4F2-4712-A55D-5D5D1992FCA1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

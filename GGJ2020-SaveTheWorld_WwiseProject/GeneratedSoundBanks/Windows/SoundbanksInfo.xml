@@ -17,6 +17,8 @@
 			<Path>Ambience.bnk</Path>
 			<IncludedEvents>
 				<Event Id="658170097" Name="Main_Reactor" ObjectPath="\Events\Default Work Unit\Main_Reactor" DurationType="Infinite"/>
+				<Event Id="2425467796" Name="Pnumatic_Door_Down" ObjectPath="\Events\Default Work Unit\Pnumatic_Door_Down" DurationType="OneShot" DurationMin="0.690000" DurationMax="0.690000"/>
+				<Event Id="1068172655" Name="Pnumatic_Door_UP" ObjectPath="\Events\Default Work Unit\Pnumatic_Door_UP" DurationType="OneShot" DurationMin="0.740000" DurationMax="0.740000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="15782557" Language="SFX">
@@ -27,9 +29,17 @@
 					<ShortName>Power_Plant_Ambience_01.wav</ShortName>
 					<Path>SFX/Power_Plant_Ambience_01_13D6DC3D.wem</Path>
 				</File>
+				<File Id="515185842" Language="SFX">
+					<ShortName>Pnumatic_Door_Down.wav</ShortName>
+					<Path>SFX/Pnumatic_Door_Down_10C4C929.wem</Path>
+				</File>
 				<File Id="685501041" Language="SFX">
 					<ShortName>Power_Plant_Ambience_02.wav</ShortName>
 					<Path>SFX/Power_Plant_Ambience_02_56016EC3.wem</Path>
+				</File>
+				<File Id="960549818" Language="SFX">
+					<ShortName>Pnumatic_Door_UP.wav</ShortName>
+					<Path>SFX/Pnumatic_Door_UP_10C4C929.wem</Path>
 				</File>
 				<File Id="1053373926" Language="SFX">
 					<ShortName>Power_Plant_Ambience_01.wav</ShortName>

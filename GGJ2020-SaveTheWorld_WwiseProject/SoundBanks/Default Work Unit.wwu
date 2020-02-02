@@ -6,6 +6,8 @@
 				<SoundBank Name="Ambience" ID="{1B6CF75E-FCC2-4F33-9669-BCD90CFE662B}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Main_Reactor" ID="{7BB3D262-79E3-45E8-AAF6-84B060D6E749}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pnumatic_Door_Down" ID="{3350C5C3-D6C0-4C24-B38E-FB4B921C0A8A}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pnumatic_Door_UP" ID="{1DDEB795-E414-4DD4-8132-FD07DA1743F5}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

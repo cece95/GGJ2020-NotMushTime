@@ -3,10 +3,12 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{B6ACE588-4492-4671-A4DC-5DF30AC478CA}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Z:\Volumes\Active_Projects\Game_Jam_2020\Sound_Library\Puzzle_Games\Sliding_Blocks"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Z:\Volumes\Active_Projects\Game_Jam_2020\Sound_Library\Pnumatic_Door_UP_DOWN"/>
 				<Property Name="Event Action List\{153EE5FC-76F6-4C92-B82E-5941AA4E61A7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1C3D2C6D-D986-4BFC-8C1A-0669A6BA4D78}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1DDEB795-E414-4DD4-8132-FD07DA1743F5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{216251D4-0D48-41E8-920A-3B7FAC67C4CC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3350C5C3-D6C0-4C24-B38E-FB4B921C0A8A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{351230ED-ECF4-493D-A5B0-9F943A4624EC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3F61C689-4969-485D-BA0C-956585A08BD0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5E0B7883-B015-40E3-B0C8-5E3A034F4E8F}\x64_Expand States" Type="string" Value=""/>
@@ -15,6 +17,7 @@
 				<Property Name="Event Action List\{B7DD5F98-6BB9-4883-B4BC-50105E125F29}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C266A056-7109-4E17-BC25-3F721A55E7A1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D749288E-A7A3-4062-82E3-4240CE278AC0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F4DDADFD-6E99-44AD-89A4-6ADE5C957EB7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>

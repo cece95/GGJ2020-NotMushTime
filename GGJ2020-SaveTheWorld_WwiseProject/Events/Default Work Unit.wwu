@@ -124,6 +124,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Pnumatic_Door_UP" ID="{1DDEB795-E414-4DD4-8132-FD07DA1743F5}">
+					<ChildrenList>
+						<Action Name="" ID="{29E506AD-7BB5-434F-801D-2B0265A8A64E}" ShortID="772645227">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pnumatic_Door_UP" ID="{D56A2F1A-9CCA-430A-B041-DE4939BAAB71}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pnumatic_Door_Down" ID="{3350C5C3-D6C0-4C24-B38E-FB4B921C0A8A}">
+					<ChildrenList>
+						<Action Name="" ID="{9333BC85-2292-4CEC-B4F0-591ABADC8A9F}" ShortID="244809397">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pnumatic_Door_Down" ID="{9F769ACB-2CFD-49BA-8048-5EA0BA17C02B}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
