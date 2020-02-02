@@ -26,6 +26,8 @@ public class SlidingBox : Puzzle {
     GameObject[,] blocks = new GameObject[SIZE,SIZE];
     List<Vector3> possiblePositions = new List<Vector3>();
 
+    private TriggerPuzzleSlide triggerPuzzleSlide;
+
     bool checkWin_flag = true;
 
     public override void StartPuzzle(Player[] players)
@@ -33,6 +35,11 @@ public class SlidingBox : Puzzle {
         base.StartPuzzle(players);
 
         player = players[0].GetPlayerController();
+    }
+
+    private void Start()
+    {
+        triggerPuzzleSlide = GetComponent<TriggerPuzzleSlide>();
     }
 
     // Start is called before the first frame update
@@ -177,6 +184,7 @@ public class SlidingBox : Puzzle {
             blocks[x, y] = blocks[x, y + 1];
             blocks[x, y + 1] = null;
             blocks[x, y].transform.Translate(0, blockSize.y, 0);
+            if (triggerPuzzleSlide) triggerPuzzleSlide.Trigger();
         }
     }
 
@@ -187,6 +195,7 @@ public class SlidingBox : Puzzle {
             blocks[x, y] = blocks[x, y - 1];
             blocks[x, y - 1] = null;
             blocks[x, y].transform.Translate(0, -blockSize.y, 0);
+            if (triggerPuzzleSlide) triggerPuzzleSlide.Trigger();
         }
     }
 
@@ -197,6 +206,7 @@ public class SlidingBox : Puzzle {
             blocks[x, y] = blocks[x - 1, y];
             blocks[x - 1, y] = null;
             blocks[x, y].transform.Translate(blockSize.x, 0, 0);
+            if (triggerPuzzleSlide) triggerPuzzleSlide.Trigger();
         }
     }
 
@@ -207,6 +217,7 @@ public class SlidingBox : Puzzle {
             blocks[x, y] = blocks[x + 1, y];
             blocks[x + 1, y] = null;
             blocks[x, y].transform.Translate(-blockSize.x, 0, 0);
+            if (triggerPuzzleSlide) triggerPuzzleSlide.Trigger();
         }
     }
 

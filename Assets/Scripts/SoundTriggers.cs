@@ -101,3 +101,58 @@ public class TriggerSSFailed: AkTriggerBase
         }
     }
 }
+
+public class TriggerPuzzleCompleted : AkTriggerBase
+{
+    public void Trigger()
+    {
+        if (triggerDelegate != null)
+        {
+            triggerDelegate(null);
+        }
+    }
+}
+
+public class TriggerPuzzleFailed : AkTriggerBase
+{
+    public void Trigger()
+    {
+        if (triggerDelegate != null)
+        {
+            triggerDelegate(null);
+        }
+    }
+}
+
+public class TriggerPuzzleSlide : AkTriggerBase
+{
+    public void Trigger()
+    {
+        if (triggerDelegate != null)
+        {
+            triggerDelegate(null);
+        }
+    }
+}
+
+public class TriggerPuzzleRotate: AkTriggerBase
+{
+    public void Trigger()
+    {
+        if (triggerDelegate != null)
+        {
+            triggerDelegate(null);
+        }
+    }
+}
+
+public class TriggerPuzzleSelect : AkTriggerBase
+{
+    public void Trigger()
+    {
+        if (triggerDelegate != null)
+        {
+            triggerDelegate(null);
+        }
+    }
+}

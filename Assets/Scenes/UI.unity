@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 683d1927371464214b0d8a54c86185a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: 6675069d
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
@@ -789,7 +789,8 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 6649d2845f3624dcdac8507723f014ce,
+      type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
