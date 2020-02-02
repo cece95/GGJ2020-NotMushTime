@@ -203,7 +203,7 @@ public class PipesPuzzleScript : Puzzle
 
         foreach (Node n in nodes)
         {
-            if(n.getTile().Equals(null))
+            if(n.getTile().Equals(""))
             {
                 double r = Random.value;
 
