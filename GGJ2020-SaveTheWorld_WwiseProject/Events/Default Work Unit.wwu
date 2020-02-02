@@ -102,6 +102,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Simon_Says_Puzzle" ID="{153EE5FC-76F6-4C92-B82E-5941AA4E61A7}">
+					<ChildrenList>
+						<Action Name="" ID="{4F3D25DC-A6AE-4B16-ACB7-4856E054044D}" ShortID="469913512">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Simon_Says_Puzzle" ID="{80F43DFB-3FC5-4EDE-B011-255A3380638E}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

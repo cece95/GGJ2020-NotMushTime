@@ -1,10 +1,18 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	2017233915	Happy_Days_Are_Over			\Default Work Unit\Happy_Days_Are_Over	
+	3147088319	Simon_Says_Puzzle			\Default Work Unit\Simon_Says_Puzzle	
 
 State	ID	Name	State Group			Notes
 	0	None	Happy_Days_Are_Over			
 	1353553046	Alarm_Syren	Happy_Days_Are_Over			
 	3498417625	Happy_Days	Happy_Days_Are_Over			
+	0	None	Simon_Says_Puzzle			
+	376835237	Puzzle_Complete	Simon_Says_Puzzle			
+	3821528377	Puzzle_A	Simon_Says_Puzzle			
+	3821528378	Puzzle_B	Simon_Says_Puzzle			
+	3821528379	Puzzle_C	Simon_Says_Puzzle			
+	3821528380	Puzzle_D	Simon_Says_Puzzle			
+	3956906079	Puzzle_Failed	Simon_Says_Puzzle			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	

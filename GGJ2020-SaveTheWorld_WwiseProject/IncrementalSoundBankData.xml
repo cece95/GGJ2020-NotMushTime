@@ -4,9 +4,9 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Ambience" Hash="1443772830" Timestamp="1580639840"/>
-				<File Name="Init" Hash="2999218531" Timestamp="1580639840"/>
+				<File Name="Init" Hash="2963173613" Timestamp="1580642778"/>
 				<File Name="Interactive_Music" Hash="3925133818" Timestamp="1580639840"/>
-				<File Name="Puzzles" Hash="256080948" Timestamp="1580639840"/>
+				<File Name="Puzzles" Hash="1956560691" Timestamp="1580643268"/>
 				<File Name="Shrooms" Hash="1423876586" Timestamp="1580618823"/>
 			</Language>
 			<Language ID="684519430">
@@ -15,7 +15,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="55090832" Timestamp="1580639840"/>
+				<File Name="" Hash="2609665113" Timestamp="1580643268"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -23,9 +23,9 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Ambience" Hash="1443772830" Timestamp="1580639839"/>
-				<File Name="Init" Hash="2857056161" Timestamp="1580639839"/>
+				<File Name="Init" Hash="8413307" Timestamp="1580642875"/>
 				<File Name="Interactive_Music" Hash="3925133818" Timestamp="1580639839"/>
-				<File Name="Puzzles" Hash="256080948" Timestamp="1580639839"/>
+				<File Name="Puzzles" Hash="1956560691" Timestamp="1580643458"/>
 				<File Name="Shrooms" Hash="3172541889" Timestamp="1580618058"/>
 			</Language>
 			<Language ID="684519430">
@@ -34,7 +34,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1005442466" Timestamp="1580639839"/>
+				<File Name="" Hash="827281699" Timestamp="1580643458"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

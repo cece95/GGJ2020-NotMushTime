@@ -144,6 +144,7 @@
 				<Event Id="1592165308" Name="Box_Dragging" ObjectPath="\Events\Default Work Unit\Box_Dragging" DurationType="OneShot" DurationMin="0.210000" DurationMax="0.357823"/>
 				<Event Id="1847720199" Name="Pipe_Puzzle_Fail" ObjectPath="\Events\Default Work Unit\Pipe_Puzzle_Fail" DurationType="OneShot" DurationMin="0.718934" DurationMax="0.971255"/>
 				<Event Id="544157162" Name="Pipe_Puzzle_Match" ObjectPath="\Events\Default Work Unit\Pipe_Puzzle_Match" DurationType="OneShot" DurationMin="0.213737" DurationMax="0.370549"/>
+				<Event Id="3147088319" Name="Simon_Says_Puzzle" ObjectPath="\Events\Default Work Unit\Simon_Says_Puzzle" DurationType="OneShot" DurationMin="2.030000" DurationMax="3.040000"/>
 				<Event Id="1463418219" Name="Tetris_Puzzle_Clicks" ObjectPath="\Events\Default Work Unit\Tetris_Puzzle_Clicks" DurationType="OneShot" DurationMin="0.068007" DurationMax="0.267619"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -183,9 +184,17 @@
 					<ShortName>Tetris_Click_01.wav</ShortName>
 					<Path>SFX/Tetris_Click_01_10C4C929.wem</Path>
 				</File>
+				<File Id="339182672" Language="SFX">
+					<ShortName>Simon_Says_Puzzle_Fail.wav</ShortName>
+					<Path>SFX/Simon_Says_Puzzle_Fail_10C4C929.wem</Path>
+				</File>
 				<File Id="365520601" Language="SFX">
 					<ShortName>Tetris_Click_04.wav</ShortName>
 					<Path>SFX/Tetris_Click_04_10C4C929.wem</Path>
+				</File>
+				<File Id="385266190" Language="SFX">
+					<ShortName>Simon_Says_Puzzle_Completed.wav</ShortName>
+					<Path>SFX/Simon_Says_Puzzle_Completed_10C4C929.wem</Path>
 				</File>
 				<File Id="393207477" Language="SFX">
 					<ShortName>Shrooms_Bouncing_Head_2.wav</ShortName>
@@ -194,6 +203,10 @@
 				<File Id="394333097" Language="SFX">
 					<ShortName>Box_Dragging_04.wav</ShortName>
 					<Path>SFX/Box_Dragging_04_10C4C929.wem</Path>
+				</File>
+				<File Id="394651104" Language="SFX">
+					<ShortName>Simon_Says_Puzzle_A.wav</ShortName>
+					<Path>SFX/Simon_Says_Puzzle_A_10C4C929.wem</Path>
 				</File>
 				<File Id="396318522" Language="SFX">
 					<ShortName>Tetris_Click_05.wav</ShortName>
@@ -259,9 +272,17 @@
 					<ShortName>Box_Dragging_07.wav</ShortName>
 					<Path>SFX/Box_Dragging_07_10C4C929.wem</Path>
 				</File>
+				<File Id="789285109" Language="SFX">
+					<ShortName>Simon_Says_Puzzle_D.wav</ShortName>
+					<Path>SFX/Simon_Says_Puzzle_D_10C4C929.wem</Path>
+				</File>
 				<File Id="800696531" Language="SFX">
 					<ShortName>Tetris_Click_15.wav</ShortName>
 					<Path>SFX/Tetris_Click_15_10C4C929.wem</Path>
+				</File>
+				<File Id="836659967" Language="SFX">
+					<ShortName>Simon_Says_Puzzle_B.wav</ShortName>
+					<Path>SFX/Simon_Says_Puzzle_B_10C4C929.wem</Path>
 				</File>
 				<File Id="848196077" Language="SFX">
 					<ShortName>Shroom_Bounce_Tail_2.wav</ShortName>
@@ -282,6 +303,10 @@
 				<File Id="986985331" Language="SFX">
 					<ShortName>Tetris_Click_14.wav</ShortName>
 					<Path>SFX/Tetris_Click_14_10C4C929.wem</Path>
+				</File>
+				<File Id="996717651" Language="SFX">
+					<ShortName>Simon_Says_Puzzle_C.wav</ShortName>
+					<Path>SFX/Simon_Says_Puzzle_C_10C4C929.wem</Path>
 				</File>
 				<File Id="1028705696" Language="SFX">
 					<ShortName>Box_Dragging_05.wav</ShortName>

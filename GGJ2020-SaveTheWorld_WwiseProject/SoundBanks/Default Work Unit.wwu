@@ -32,6 +32,7 @@
 						<ObjectRef Name="Box_Dragging" ID="{3F61C689-4969-485D-BA0C-956585A08BD0}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pipe_Puzzle_Fail" ID="{B7DD5F98-6BB9-4883-B4BC-50105E125F29}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pipe_Puzzle_Match" ID="{351230ED-ECF4-493D-A5B0-9F943A4624EC}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Simon_Says_Puzzle" ID="{153EE5FC-76F6-4C92-B82E-5941AA4E61A7}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

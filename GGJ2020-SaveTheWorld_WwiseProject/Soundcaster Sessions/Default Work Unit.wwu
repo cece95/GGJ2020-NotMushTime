@@ -4,17 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{C423D044-ACA6-4C2A-9BD8-977252D85E40}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="GGJ_2020_Save_The_Wordl" ID="{A34A9060-55EC-4B03-B8BC-96C7ED85D80D}">
-					<ModuleList>
-						<Module>
-							<ObjectRef Name="Interactive_Music" ID="{12B668A2-8F0D-4305-9202-E326D206EFB7}" WorkUnitID="{65346142-43E8-4CF7-B11B-B75EA90191F9}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Puzzle_Failed" ID="{B8620105-0574-4BF3-B810-449C4C58FB07}"/>
 						<CurrentStateRef Name="Happy_Days" ID="{36A710D6-9A67-4E94-9BC9-E0A32C66A9DD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Puzzle_A" ID="{A85599A3-8F2A-4EEB-B054-CE5D8F9A29F3}"/>
 						<CurrentSwitchRef Name="Floor" ID="{FE155676-1E63-4DAF-B92F-6F14D05A4F4A}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
