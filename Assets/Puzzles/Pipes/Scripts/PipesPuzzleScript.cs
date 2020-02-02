@@ -6,12 +6,12 @@ using System.Linq;
 
 public class PipesPuzzleScript : Puzzle
 {
-
+    [SerializeField]
+    private bool debugMode = false;
 
     public PipeTile prefab;
 
     public Sprite[] sprites;
-
 
     public static Node[,] nodes = new Node[5,5];
     Node startNode, endNode = nodes[0, 0];
@@ -20,7 +20,8 @@ public class PipesPuzzleScript : Puzzle
 
     private PlayerController selector, rotator;
 
-    private int selectedX, selectedY;
+    private int selectedX = 2;
+    private int selectedY = 2;
 
     public override void StartPuzzle(Player[] players)
     {
@@ -30,10 +31,20 @@ public class PipesPuzzleScript : Puzzle
         rotator = players[1].GetPlayerController();
     }
 
+    private void Awake()
+    {
+        if(debugMode)
+        {
+            selector = PlayerInput.Instance.Player1;
+            rotator = PlayerInput.Instance.Player2;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-       
+        Transform contentTransform = transform.Find("Content");
+
         for (int i = 0; i < 5; i++)
         {
             for (int j = 0; j < 5; j++)
@@ -256,15 +267,18 @@ public class PipesPuzzleScript : Puzzle
             }
 
             //rotate blocks to correct orientation
-            
+            newtile.SetRotation(n.getRotation() * 90);
+            newtile.transform.SetParent(contentTransform);
+            n.PipeNode = newtile;
         }
-
- 
     }
 
     void FixedUpdate()
     {
-        Node selected = nodes[Random.Range(0, 4), Random.Range(0, 4)];
+        if(selector == null || rotator == null)
+        {
+            return;
+        }
 
         //if the player presses the green button, rotate the 
         if (selector.HorizontalPress > 0)
@@ -279,20 +293,23 @@ public class PipesPuzzleScript : Puzzle
         }
         if (selector.VerticalPress > 0)
         {
-            selectedX = Mathf.Clamp(selectedY + 1, 0, boardWidth - 1);
+            selectedY = Mathf.Clamp(selectedY + 1, 0, boardHeight - 1);
             UpdateSelection();
         }
         if (selector.VerticalPress < 0)
         {
-            selectedX = Mathf.Clamp(selectedY - 1, 0, boardWidth - 1);
+            selectedY = Mathf.Clamp(selectedY - 1, 0, boardHeight - 1);
             UpdateSelection();
         }
 
         if(rotator.IsGreenDown())
         {
             // TODO: Rotate piece
+            Node currentNode = nodes[selectedX, selectedY];
 
-            nodes[selectedX, selectedY].Spin();
+            currentNode.Spin();
+
+            currentNode.PipeNode.desiredRotation = currentNode.getRotation() * 90.0f;
             // nodes[selectedY, selectedX].PipeNode.Rotate() ???
             // Rotate sprite as well
         }
@@ -321,6 +338,15 @@ public class PipesPuzzleScript : Puzzle
 
     void UpdateSelection()
     {
+        for(int x = 0; x < 5; ++x)
+        {
+            for(int y = 0; y < 5; ++y)
+            {
+                nodes[x, y].PipeNode.SetSelected(false);
+            }
+        }
+
+        nodes[selectedX, selectedY].PipeNode.SetSelected(true);
         // foreach(node ... )
         // remove selection
 

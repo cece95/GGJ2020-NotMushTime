@@ -99,3 +99,5 @@ MonoBehaviour:
   W: {fileID: 0}
   E: {fileID: 0}
   C: {fileID: 0}
+  desiredRotation: 0
+  standardScale: {x: 0.25, y: 0.25, z: 1}
