@@ -58,72 +58,72 @@ public class FixAHole_BoardPiece : MonoBehaviour
 
                 case 1: // N
                     newSprite = sprites[1];
-                    transform.localRotation = Quaternion.Euler(0, 0, 180);
+                    transform.localRotation = Quaternion.Euler(0, 0, 270);
                     break;
 
                 case 2: // E
                     newSprite = sprites[1];
-                    transform.localRotation = Quaternion.Euler(0, 0, 90);
+                    transform.localRotation = Quaternion.Euler(0, 0, 180);
                     break;
 
                 case 4: // S
                     newSprite = sprites[1];
-                    transform.localRotation = Quaternion.Euler(0, 0, 0);
+                    transform.localRotation = Quaternion.Euler(0, 0, 90);
                     break;
 
                 case 8: // W
                     newSprite = sprites[1];
-                    transform.localRotation = Quaternion.Euler(0, 0, 270);
+                    transform.localRotation = Quaternion.Euler(0, 0, 0);
                     break;
 
                 case 3: // NE
                     newSprite = sprites[2];
-                    transform.localRotation = Quaternion.Euler(0, 0, 0);
+                    transform.localRotation = Quaternion.Euler(0, 0, 270);
                     break;
 
                 case 6: // SE
                     newSprite = sprites[2];
-                    transform.localRotation = Quaternion.Euler(0, 0, 270);
+                    transform.localRotation = Quaternion.Euler(0, 0, 180);
                     break;
 
                 case 12: // SW
                     newSprite = sprites[2];
-                    transform.localRotation = Quaternion.Euler(0, 0, 180);
+                    transform.localRotation = Quaternion.Euler(0, 0, 90);
                     break;
 
                 case 9: // NW
                     newSprite = sprites[2];
-                    transform.localRotation = Quaternion.Euler(0, 0, 90);
+                    transform.localRotation = Quaternion.Euler(0, 0, 0);
                     break;
 
                 case 5: // NS
                     newSprite = sprites[3];
-                    transform.localRotation = Quaternion.Euler(0, 0, 0);
+                    transform.localRotation = Quaternion.Euler(0, 0, 90);
                     break;
 
                 case 10: // EW
                     newSprite = sprites[3];
-                    transform.localRotation = Quaternion.Euler(0, 0, 90);
+                    transform.localRotation = Quaternion.Euler(0, 0, 0);
                     break;
 
                 case 7: // NES
                     newSprite = sprites[4];
-                    transform.localRotation = Quaternion.Euler(0, 0, 0);
+                    transform.localRotation = Quaternion.Euler(0, 0, 180);
                     break;
 
                 case 14: // ESW
                     newSprite = sprites[4];
-                    transform.localRotation = Quaternion.Euler(0, 0, 270);
+                    transform.localRotation = Quaternion.Euler(0, 0, 90);
                     break;
 
                 case 13: // NSW
                     newSprite = sprites[4];
-                    transform.localRotation = Quaternion.Euler(0, 0, 180);
+                    transform.localRotation = Quaternion.Euler(0, 0, 0);
                     break;
 
                 case 11: // NEW
                     newSprite = sprites[4];
-                    transform.localRotation = Quaternion.Euler(0, 0, 90);
+                    transform.localRotation = Quaternion.Euler(0, 0, 270);
                     break;
 
                 case 15: // NESW

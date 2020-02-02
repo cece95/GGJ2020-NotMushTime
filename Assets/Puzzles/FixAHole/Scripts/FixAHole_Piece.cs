@@ -12,6 +12,9 @@ public class FixAHole_Piece : MonoBehaviour
     public bool IsBlocked { get; private set; }
 
     [SerializeField]
+    private float tileSize = 2.0f;
+
+    [SerializeField]
     public FixAHole_PieceAsset PieceAsset;
 
     private bool[,] PieceStructure;
@@ -189,7 +192,8 @@ public class FixAHole_Piece : MonoBehaviour
                 }
 
                 spriteObject.transform.SetParent(transform.Find("AnimRoot").Find("RotateRoot"));
-                spriteObject.transform.localPosition = new Vector3(x, -y);
+                spriteObject.transform.localScale = Vector3.one / 1.5f;
+                spriteObject.transform.localPosition = new Vector3(x, -y) * tileSize;
             }
         }
 
@@ -339,7 +343,7 @@ public class FixAHole_Piece : MonoBehaviour
                 if (rootTransform != null)
                 {
                     Vector3 rootPosition = rootTransform.localPosition;
-                    rootTransform.localPosition = Vector3.Lerp(rootPosition, new Vector3(spriteOffset.x, spriteOffset.y), 0.2f);
+                    rootTransform.localPosition = Vector3.Lerp(rootPosition, new Vector3(spriteOffset.x, spriteOffset.y) * tileSize, 0.2f);
                 }
             }
             else
