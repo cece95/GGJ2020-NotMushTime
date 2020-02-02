@@ -34,6 +34,7 @@
 						<ObjectRef Name="Simon_Says_C" ID="{BE011786-1A71-427F-A4DC-1BFD6F001061}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Sliding_Block_Puzzle" ID="{F4DDADFD-6E99-44AD-89A4-6ADE5C957EB7}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Box_Dragging" ID="{3F61C689-4969-485D-BA0C-956585A08BD0}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pipe_Puzzle_Complete" ID="{E7333C3F-C7C5-486F-90AA-C2E8680E614F}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pipe_Puzzle_Fail" ID="{B7DD5F98-6BB9-4883-B4BC-50105E125F29}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pipe_Puzzle_Match" ID="{351230ED-ECF4-493D-A5B0-9F943A4624EC}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Simon_Says_B" ID="{CEE4B750-D227-4A62-AE94-2192132EC5C7}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>

@@ -201,6 +201,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Pipe_Puzzle_Complete" ID="{E7333C3F-C7C5-486F-90AA-C2E8680E614F}">
+					<ChildrenList>
+						<Action Name="" ID="{61AFB1B2-6E7C-4CAD-A1E5-4161261657FA}" ShortID="728714900">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pipe_Puzzle_Complete" ID="{87358401-1934-456A-A0F6-87F12C20ACF6}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

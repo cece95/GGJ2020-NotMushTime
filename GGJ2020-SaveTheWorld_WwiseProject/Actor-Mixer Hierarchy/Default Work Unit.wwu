@@ -2111,6 +2111,33 @@
 						<ActiveSource Name="Simon_Says_Puzzle_Fail" ID="{4BB63A38-9DB0-40B4-A24E-E0347D49651D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Pipe_Puzzle_Complete" ID="{87358401-1934-456A-A0F6-87F12C20ACF6}" ShortID="785822179">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Pipe_Puzzle_Complete" ID="{0DEDAFEA-5EB6-41F5-86A5-DB77E2BBE9A2}" ShortID="878062074">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0154899645808737"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0329161747343567"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Pipe_Puzzle_Complete.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Pipe_Puzzle_Complete" ID="{0DEDAFEA-5EB6-41F5-86A5-DB77E2BBE9A2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -184,6 +184,7 @@
 			<Path>Puzzles.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1592165308" Name="Box_Dragging" ObjectPath="\Events\Default Work Unit\Box_Dragging" DurationType="OneShot" DurationMin="0.210000" DurationMax="0.357823"/>
+				<Event Id="3346238510" Name="Pipe_Puzzle_Complete" ObjectPath="\Events\Default Work Unit\Pipe_Puzzle_Complete" DurationType="OneShot" DurationMin="1.640000" DurationMax="1.640000"/>
 				<Event Id="1847720199" Name="Pipe_Puzzle_Fail" ObjectPath="\Events\Default Work Unit\Pipe_Puzzle_Fail" DurationType="OneShot" DurationMin="0.718934" DurationMax="0.971255"/>
 				<Event Id="544157162" Name="Pipe_Puzzle_Match" ObjectPath="\Events\Default Work Unit\Pipe_Puzzle_Match" DurationType="OneShot" DurationMin="0.213737" DurationMax="0.370549"/>
 				<Event Id="1697904516" Name="Simon_Says_A" ObjectPath="\Events\Default Work Unit\Simon_Says_A" DurationType="OneShot" DurationMin="2.480000" DurationMax="2.480000"/>
@@ -363,6 +364,10 @@
 				<File Id="864848602" Language="SFX">
 					<ShortName>Box_Dragging_10.wav</ShortName>
 					<Path>SFX/Box_Dragging_10_10C4C929.wem</Path>
+				</File>
+				<File Id="878062074" Language="SFX">
+					<ShortName>Pipe_Puzzle_Complete.wav</ShortName>
+					<Path>SFX/Pipe_Puzzle_Complete_4F316F8B.wem</Path>
 				</File>
 				<File Id="915915612" Language="SFX">
 					<ShortName>Tetris_Click_17.wav</ShortName>

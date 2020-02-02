@@ -10,6 +10,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1847720199	Pipe_Puzzle_Fail			\Default Work Unit\Pipe_Puzzle_Fail	
 	2168464150	Simon_Says_Complete			\Default Work Unit\Simon_Says_Complete	
 	3292274422	Sliding_Block_Puzzle			\Default Work Unit\Sliding_Block_Puzzle	
+	3346238510	Pipe_Puzzle_Complete			\Default Work Unit\Pipe_Puzzle_Complete	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1489383	Tetris_Click_03	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_03		18586
@@ -54,6 +55,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	842782798	Sliding_Blocks_05	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Sliding_Blocks_05_A54F9E5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sliding_Blocks\Sliding_Blocks_05		11530
 	848196077	Pipe_Puzzle_Fail_02	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Shroom_Bounce_Tail_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pipe_Puzlle_Fail\Pipe_Puzzle_Fail_02		65332
 	864848602	Box_Dragging_10	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Box_Dragging_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Box_Dragging\Box_Dragging_10		31624
+	878062074	Pipe_Puzzle_Complete	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Pipe_Puzzle_Complete_4F316F8B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pipe_Puzzle_Complete		289360
 	915915612	Tetris_Click_17	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_17		7120
 	980806326	Pipe_Puzzle_Match_03	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Shrooms_Bouncing_Head_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pipes_Puzzle_Match\Pipe_Puzzle_Match_03		31816
 	986985331	Tetris_Click_14	Y:\Documents\GitHub\GGJ2020-SaveTheWorld\GGJ2020-SaveTheWorld_WwiseProject\.cache\Mac\SFX\Tetris_Click_14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tetris_Puzzle_Clicks\Tetris_Click_14		8002

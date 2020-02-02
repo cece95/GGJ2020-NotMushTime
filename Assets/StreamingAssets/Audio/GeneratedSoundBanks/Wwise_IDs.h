@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID DIALOGUE_SHROOMS = 2598333881U;
         static const AkUniqueID INTERACTIVE_MUSIC = 3734989563U;
         static const AkUniqueID MAIN_REACTOR = 658170097U;
+        static const AkUniqueID PIPE_PUZZLE_COMPLETE = 3346238510U;
         static const AkUniqueID PIPE_PUZZLE_FAIL = 1847720199U;
         static const AkUniqueID PIPE_PUZZLE_MATCH = 544157162U;
         static const AkUniqueID PNUMATIC_DOOR_DOWN = 2425467796U;

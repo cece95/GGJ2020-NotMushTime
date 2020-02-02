@@ -165,7 +165,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1ce47f8bb142a4ce18f988751c7c9ac1,
+    WwiseObjectReference: {fileID: 11400000, guid: 9e46d9b860ca04dc08c2187b09f490b7,
       type: 2}
   useCallbacks: 0
   Callbacks: []
@@ -912,7 +912,7 @@ PrefabInstance:
         type: 3}
       propertyPath: data.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 4d381e790875243c0adcf5a63af87cbc,
+      objectReference: {fileID: 11400000, guid: 6ef0a3b0e00164e829d6a02d711d160a,
         type: 2}
     - target: {fileID: 6536453420265748528, guid: fad88d9407ac6974e8d9f186ca7cf6be,
         type: 3}

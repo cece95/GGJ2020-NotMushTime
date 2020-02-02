@@ -42,7 +42,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2e563b88421c0c4189e8c672fb883ad1
     GuidInternal: 
-    m_lastTime: -8586209595144775808
+    m_lastTime: -8586209542224775808
     List:
     - name: Ambience
       guid: 5ef76c1bc2fc334f9669bcd90cfe662b
@@ -85,7 +85,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2af0d1b482278845bbee084276577987
     GuidInternal: 
-    m_lastTime: -8586209598694775808
+    m_lastTime: -8586209542224775808
     List:
     - name: Box_Dragging
       guid: 89c6613f69495d48ba0c956585a08bd0
@@ -135,6 +135,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Pipe_Puzzle_Complete
+      guid: 3f3c33e7c5c76f4890aac2e8680e614f
+      id: 3346238510
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pipe_Puzzle_Complete
+        ObjectType: 3
+      Path: Default Work Unit/Pipe_Puzzle_Complete
+      maxAttenuation: 0
+      maxDuration: 1.64
+      minDuration: 1.64
     - name: Pipe_Puzzle_Fail
       guid: 985fddb7b96b8348b4bc50105e125f29
       id: 1847720199
@@ -207,18 +219,78 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.277912
       minDuration: 0.106869
-    - name: Simon_Says_Puzzle
-      guid: fce53e15f676924cb82e5941aa4e61a7
-      id: 3147088319
+    - name: Simon_Says_A
+      guid: c261b3d2bde9d14ca3a745312ca14d15
+      id: 1697904516
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Simon_Says_Puzzle
+      - ElementName: Simon_Says_A
         ObjectType: 3
-      Path: Default Work Unit/Simon_Says_Puzzle
+      Path: Default Work Unit/Simon_Says_A
+      maxAttenuation: 0
+      maxDuration: 2.48
+      minDuration: 2.48
+    - name: Simon_Says_B
+      guid: 50b7e4ce27d2624aae942192132ec5c7
+      id: 1697904519
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Simon_Says_B
+        ObjectType: 3
+      Path: Default Work Unit/Simon_Says_B
+      maxAttenuation: 0
+      maxDuration: 2.58
+      minDuration: 2.58
+    - name: Simon_Says_C
+      guid: 861701be711a7f42a4dc1bfd6f001061
+      id: 1697904518
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Simon_Says_C
+        ObjectType: 3
+      Path: Default Work Unit/Simon_Says_C
+      maxAttenuation: 0
+      maxDuration: 2.38
+      minDuration: 2.38
+    - name: Simon_Says_Complete
+      guid: 18d85eeb8dbaec4f926769438412d35b
+      id: 2168464150
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Simon_Says_Complete
+        ObjectType: 3
+      Path: Default Work Unit/Simon_Says_Complete
       maxAttenuation: 0
       maxDuration: 3.04
+      minDuration: 3.04
+    - name: Simon_Says_D
+      guid: 2d3fbca278a5a54d9de559e2a557aafb
+      id: 1697904513
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Simon_Says_D
+        ObjectType: 3
+      Path: Default Work Unit/Simon_Says_D
+      maxAttenuation: 0
+      maxDuration: 2.03
       minDuration: 2.03
+    - name: Simon_Says_Fail
+      guid: d29fb441ce72f24d8d9058465772cd95
+      id: 155810655
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Simon_Says_Fail
+        ObjectType: 3
+      Path: Default Work Unit/Simon_Says_Fail
+      maxAttenuation: 0
+      maxDuration: 2.38
+      minDuration: 2.38
     - name: Sliding_Block_Puzzle
       guid: fdadddf4996ead4489a46ade5c957eb7
       id: 3292274422
@@ -436,7 +508,8 @@ MonoBehaviour:
       Path: Default Work Unit/Shroom_Steps
   ExpandedItems:
   - /GGJ2020-SaveTheWorld_WwiseProject
-  - /GGJ2020-SaveTheWorld_WwiseProject/Events
-  - /GGJ2020-SaveTheWorld_WwiseProject/Events/Default Work Unit
+  - /GGJ2020-SaveTheWorld_WwiseProject/States
+  - /GGJ2020-SaveTheWorld_WwiseProject/States/Default Work Unit
+  - /GGJ2020-SaveTheWorld_WwiseProject/States/Default Work Unit/Happy_Days_Are_Over
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
