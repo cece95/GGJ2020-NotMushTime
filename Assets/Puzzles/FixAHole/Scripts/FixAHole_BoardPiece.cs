@@ -8,12 +8,6 @@ public class FixAHole_BoardPiece : MonoBehaviour
     public bool IsHighlighted { get; private set; }
     public bool IsBlocked { get; private set; }
 
-    [SerializeField]
-    private Sprite emptySprite;
-
-    [SerializeField]
-    private Sprite filledSprite;
-
     private SpriteRenderer spriteRenderer;
 
     private byte neighbours;
@@ -139,7 +133,7 @@ public class FixAHole_BoardPiece : MonoBehaviour
             }
 
             spriteRenderer.sprite = newSprite;
-            spriteRenderer.color = IsBlocked ? Color.red : ( IsHighlighted ? Color.yellow : ( IsFilled ? Color.white : Color.gray ) );
+            // spriteRenderer.color = IsBlocked ? Color.red : ( IsHighlighted ? Color.yellow : ( IsFilled ? Color.white : Color.gray ) );
         } else
         {
             Debug.LogWarning("Sprite renderer not existing");
