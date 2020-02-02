@@ -3,11 +3,12 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{B6ACE588-4492-4671-A4DC-5DF30AC478CA}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Z:\Volumes\Active_Projects\Game_Jam_2020\Sound_Library\Shroom_Bounce\Shroom_Bounce_Tail"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Z:\Volumes\Active_Projects\Game_Jam_2020\Sound_Library\Dialogue"/>
 				<Property Name="Event Action List\{1C3D2C6D-D986-4BFC-8C1A-0669A6BA4D78}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{216251D4-0D48-41E8-920A-3B7FAC67C4CC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7BB3D262-79E3-45E8-AAF6-84B060D6E749}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B4E5E6EB-964D-4BCB-9F5D-9C513026CA9A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C266A056-7109-4E17-BC25-3F721A55E7A1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D749288E-A7A3-4062-82E3-4240CE278AC0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -24,7 +25,7 @@
 				</Property>
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
-				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
+				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="cYikmcXyuU2r5f2BxVYi1Q=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="XvdsG8L8M0+WabzZDP5mK4u8JM0WzadGkbImTpirfNVFchypekMwQ4gDnQ8bPmck"/>
@@ -54,7 +55,7 @@
 				<Property Name="ProjectExplorer\FirstVisible_8_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
 				<Property Name="ProjectExplorer\x64_Expanded_10_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_11_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_12_1" Type="string" Value="omi2Eg2PBUOSAuMm0gbvt0JhNGXoQ/dMsRu3XqkBkfk="/>
+				<Property Name="ProjectExplorer\x64_Expanded_12_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_13_1" Type="string" Value="SACvARZH4kWzfucZdqwzEw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_14_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_15_1" Type="string" Value=""/>
@@ -65,7 +66,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ802H0dKPE5ZJhSQ/fbxdXoI="/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="jxeLPu2ad0Gf5ROhUob1+4f0Bxeq4btFudSk5Kw/S/0="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="jxeLPu2ad0Gf5ROhUob1+w=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="KvDRtIIniEW77ghCdld5hw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="v4mjRwGKmEG0o0uOhOcbUQ=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value="tOPmSBXy4EOdWOl6qcRKe/HgqacH9lpIqUqfuu0im7w="/>

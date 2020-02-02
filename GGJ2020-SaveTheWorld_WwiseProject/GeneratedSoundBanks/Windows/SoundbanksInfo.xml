@@ -64,11 +64,12 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3983930604" Language="SFX">
+		<SoundBank Id="3983930604" Language="English(US)">
 			<ObjectPath>\SoundBanks\Default Work Unit\Shrooms</ObjectPath>
 			<ShortName>Shrooms</ShortName>
-			<Path>Shrooms.bnk</Path>
+			<Path>English(US)/Shrooms.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2598333881" Name="Dialogue_Shrooms" ObjectPath="\Events\Default Work Unit\Dialogue_Shrooms" DurationType="OneShot" DurationMin="9.640000" DurationMax="9.640000"/>
 				<Event Id="1380635400" Name="Shroom_Bounce" ObjectPath="\Events\Default Work Unit\Shroom_Bounce" DurationType="OneShot" DurationMin="0.220000" DurationMax="0.943605"/>
 				<Event Id="785153393" Name="Shroom_Steps" ObjectPath="\Events\Default Work Unit\Shroom_Steps" DurationType="OneShot" DurationMin="0.106869" DurationMax="0.277912"/>
 			</IncludedEvents>
@@ -120,6 +121,10 @@
 				<File Id="490055282" Language="SFX">
 					<ShortName>Shroom_Step_09.wav</ShortName>
 					<Path>SFX/Shroom_Step_09_58A0E5B5.wem</Path>
+				</File>
+				<File Id="493975409" Language="English(US)">
+					<ShortName>Dialogue_Shrooms.wav</ShortName>
+					<Path>Voices/English(US)/Dialogue_Shrooms_10C4C929.wem</Path>
 				</File>
 				<File Id="569188611" Language="SFX">
 					<ShortName>Shroom_Bounce_Tail_1.wav</ShortName>

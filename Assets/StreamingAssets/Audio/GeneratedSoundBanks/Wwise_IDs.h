@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DIALOGUE_SHROOMS = 2598333881U;
         static const AkUniqueID INTERACTIVE_MUSIC = 3734989563U;
         static const AkUniqueID MAIN_REACTOR = 658170097U;
         static const AkUniqueID SHROOM_BOUNCE = 1380635400U;

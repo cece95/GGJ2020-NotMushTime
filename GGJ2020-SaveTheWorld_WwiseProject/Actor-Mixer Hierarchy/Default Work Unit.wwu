@@ -783,6 +783,31 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="Dialogue_Shrooms" ID="{4F5CB1DD-CD26-4EEF-ABC1-BF4E70C82516}" ShortID="755232110">
+					<PropertyList>
+						<Property Name="IsVoice" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Dialogue_Shrooms" ID="{7BDB1EB5-FC16-4DA9-8C7F-44708278EEAA}" ShortID="493975409">
+							<Language>English(US)</Language>
+							<AudioFile>Dialogue_Shrooms.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Dialogue_Shrooms" ID="{7BDB1EB5-FC16-4DA9-8C7F-44708278EEAA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

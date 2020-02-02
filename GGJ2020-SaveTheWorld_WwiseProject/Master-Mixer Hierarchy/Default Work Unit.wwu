@@ -16,10 +16,15 @@
 						<AuxBus Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-31</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
-								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-									<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Hall_Stop_Screaming" ID="{8CDB5849-1E3A-4CE7-B5EB-0E90DBDF1D10}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
 						</AuxBus>

@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4d87d1d28f13964985243f7dbc5d5e82
     GuidInternal: 
-    m_lastTime: -8586209958444775808
+    m_lastTime: -8586209823734775808
     List:
     - name: Reverb
       guid: a01721411f4c2541a0228710a74f5e53
@@ -42,7 +42,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2e563b88421c0c4189e8c672fb883ad1
     GuidInternal: 
-    m_lastTime: -8586209907844775808
+    m_lastTime: -8586209829654775808
     List:
     - name: Ambience
       guid: 5ef76c1bc2fc334f9669bcd90cfe662b
@@ -76,8 +76,20 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2af0d1b482278845bbee084276577987
     GuidInternal: 
-    m_lastTime: -8586209890944775808
+    m_lastTime: -8586209830234775808
     List:
+    - name: Dialogue_Shrooms
+      guid: 56a066c20971174ebc253f721a55e7a1
+      id: 2598333881
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dialogue_Shrooms
+        ObjectType: 3
+      Path: Default Work Unit/Dialogue_Shrooms
+      maxAttenuation: 0
+      maxDuration: 9.64
+      minDuration: 9.64
     - name: Interactive_Music
       guid: 6d2c3d1c86d9fc4b8c1a0669a6ba4d78
       id: 3734989563

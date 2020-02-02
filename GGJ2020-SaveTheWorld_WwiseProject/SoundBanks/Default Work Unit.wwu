@@ -21,6 +21,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Shroom_Bounce" ID="{216251D4-0D48-41E8-920A-3B7FAC67C4CC}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Shroom_Steps" ID="{B4E5E6EB-964D-4BCB-9F5D-9C513026CA9A}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Dialogue_Shrooms" ID="{C266A056-7109-4E17-BC25-3F721A55E7A1}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
