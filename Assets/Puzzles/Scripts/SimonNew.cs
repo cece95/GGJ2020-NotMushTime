@@ -344,9 +344,9 @@ public class SimonNew : Puzzle
             displayswitch = true;
             play = false;
             aTimer.Stop();
-            for(int i = 0; i<80; i++)
+            for(int i = 0; i<150; i++)
             {
-                for (int j = 0; j < 80; j++)
+                for (int j = 0; j < 150; j++)
                 {
                     Debug.Log("Wait");
                 }
@@ -363,9 +363,9 @@ public class SimonNew : Puzzle
             displayswitch = true;
             play = false;
             aTimer.Stop();
-            for (int i = 0; i < 80; i++)
+            for (int i = 0; i < 150; i++)
             {
-                for (int j = 0; j < 80; j++)
+                for (int j = 0; j < 150; j++)
                 {
                     Debug.Log("Wait");
                 }
