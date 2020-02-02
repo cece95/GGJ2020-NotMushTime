@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PipeTile : MonoBehaviour
 {
-    public SpriteRenderer N, S, W, E;
+    public SpriteRenderer N, S, W, E, C;
     
     // Start is called before the first frame update
     void Start()

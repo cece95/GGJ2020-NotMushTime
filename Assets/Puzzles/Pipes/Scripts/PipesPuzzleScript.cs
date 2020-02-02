@@ -19,7 +19,7 @@ public class PipesPuzzleScript : MonoBehaviour
         {
             for (int j = 0; j < 5; j++)
             {
-                print("Creating Node : i = " + i + ";  j = " + j);
+                
                 nodes[i,j] = new Node(new Vector2Int(i, j));
             }
         }
@@ -28,7 +28,7 @@ public class PipesPuzzleScript : MonoBehaviour
         {
             for (int j = 0; j < 5; j++)
             {
-                print("Updating Neighbours : i = " + i + ";  j = " + j);
+               
                 nodes[i,j].updateNeighbours();
             }
         }
@@ -228,6 +228,20 @@ public class PipesPuzzleScript : MonoBehaviour
                 newtile.E.color = Color.red;
             }
 
+            if(n.Equals(start))
+            {
+                newtile.C.color = Color.green;
+            }
+            else if (n.Equals(end))
+            {
+                newtile.C.color = Color.blue;
+            }
+            else if (!n.getTile().Equals(null))
+            {
+                newtile.C.color = Color.black;
+            }
+
+
         }
 
  
@@ -313,6 +327,8 @@ public class Node
         this.connections.Clear();
         foreach (Vector2Int c in Connections)
         {
+            connectionDirections = Connections;
+
             int x = this.getPosition().x + c.x;
             int y = this.getPosition().y + c.y;
 
@@ -322,7 +338,7 @@ public class Node
                 this.connections.Add(PipesPuzzleScript.nodes[this.getPosition().x + c.x, this.getPosition().y + c.y]);
             }
         }
-        connectionDirections = Connections;
+       
 
     }
 
