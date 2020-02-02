@@ -24,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
     AnimationCurve depth_scale_curve;
     PlayerController player_controller;
 
+    TriggerFootstep triggerFootstep;
+    TriggerBounce triggerBounce;
+
     private bool allowsMovement = true;
 
     // Start is called before the first frame update
@@ -31,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
     {
         animator = GetComponentInChildren<Animator>();
         rigidbody_ = GetComponent<Rigidbody2D>();
+        triggerFootstep = GetComponent<TriggerFootstep>();
+        triggerBounce = GetComponent<TriggerBounce>();
 
         // Set-Up Depth scale curve
         depth_scale_curve = new AnimationCurve();
@@ -62,10 +67,15 @@ public class PlayerMovement : MonoBehaviour
             Speed.y = player_controller.Vertical;
             rigidbody_.AddForce(Speed.normalized * MOVEMENT_SPEED_MODIFIER);
             if (Speed.magnitude > 0.01f)
+            {
                 animator.SetBool("Moving", true);
+                if (triggerFootstep)
+                {
+                    triggerFootstep.Trigger();
+                }
+            }
             else
                 animator.SetBool("Moving", false);
-
         }
         else
             animator.SetBool("Moving", false);
@@ -82,7 +92,10 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             if (other.GetContact(0).relativeVelocity.magnitude > PLAYER_BOUNCE_THRESHOLD)
+            {
                 animator.SetTrigger("Bounce");
+                triggerBounce.Trigger();
+            }
 
             rigidbody_.AddForce(other.GetContact(0).relativeVelocity * PLAYER_BOUNCE_MODIFIER);
         }

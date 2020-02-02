@@ -7,6 +7,8 @@ public class FixAHole_PickingArea : MonoBehaviour
     public delegate void PieceDelegate(FixAHole_Piece piece);
     public event PieceDelegate OnPieceSelected;
 
+    TriggerPuzzleSelect triggerPuzzleSelect;
+
     public bool CanPickPiece = true;
 
     private int selectedPiece = 0;
@@ -29,6 +31,11 @@ public class FixAHole_PickingArea : MonoBehaviour
     float pieceAddTimer = 0.0f;
 
     public PlayerController Picker;
+
+    private void Start()
+    {
+        triggerPuzzleSelect = GetComponent<TriggerPuzzleSelect>();
+    }
 
     // Start is called before the first frame update
     void Awake()
@@ -97,10 +104,16 @@ public class FixAHole_PickingArea : MonoBehaviour
         if(Picker.HorizontalPress < 0)
         {
             SelectPiece(selectedPiece - 1);
+
+            if (triggerPuzzleSelect)
+                triggerPuzzleSelect.Trigger();
         }
         if(Picker.HorizontalPress > 0)
         {
             SelectPiece(selectedPiece + 1);
+
+            if (triggerPuzzleSelect)
+                triggerPuzzleSelect.Trigger();
         }
 
         if(Picker.IsGreenDown())
@@ -110,6 +123,9 @@ public class FixAHole_PickingArea : MonoBehaviour
                 OnPieceSelected.Invoke(pieces[selectedPiece]);
                 pieces[selectedPiece].IsHeld = true;
                 pieces.Remove(pieces[selectedPiece]);
+
+                if (triggerPuzzleSelect)
+                    triggerPuzzleSelect.Trigger();
             }
         }
     }

@@ -8,6 +8,16 @@
 						<Switch Name="Floor" ID="{FE155676-1E63-4DAF-B92F-6F14D05A4F4A}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Simon_Says_Puzzle" ID="{6D3B4419-68E6-452B-BCF1-BCAFF05088F7}">
+					<ChildrenList>
+						<Switch Name="Puzzle_A" ID="{A85599A3-8F2A-4EEB-B054-CE5D8F9A29F3}"/>
+						<Switch Name="Puzzle_B" ID="{142345D9-81A2-44EC-BF2F-917E2BB083F3}"/>
+						<Switch Name="Puzzle_C" ID="{CD3E24E6-0CA1-42E5-A1C5-F9D91E3450C2}"/>
+						<Switch Name="Puzzle_D" ID="{7B7A6EB3-A31E-42C1-84A8-2CC73AF44C71}"/>
+						<Switch Name="Puzzle_Completed" ID="{9F1E0F48-C44F-40AF-9723-0BEDD04C35F8}"/>
+						<Switch Name="Puzzle_Failed" ID="{F5373F2F-696D-4FE7-A79E-657D9FE8BAE9}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
