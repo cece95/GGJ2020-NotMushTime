@@ -581,10 +581,10 @@
 							</ModifierList>
 						</Property>
 						<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
-						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-6</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -609,6 +609,201 @@
 							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-06" ID="{B0921ED5-A280-44C1-8F7F-DF6A5B06B908}" ShortID="1040864181">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-06" ID="{83C180F7-9D6D-461C-B5D6-587DC4333B05}" ShortID="397432513">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0104132231404959"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0219834710743801"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-06.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-06" ID="{83C180F7-9D6D-461C-B5D6-587DC4333B05}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-09" ID="{FC7A6901-9D1E-4835-B6BD-B2FFCA7D3641}" ShortID="121327514">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-09" ID="{E8DB5648-6C2A-48A6-BB39-46B3BC74095E}" ShortID="428784846">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00727272727272728"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0124675324675325"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-09.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-09" ID="{E8DB5648-6C2A-48A6-BB39-46B3BC74095E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-12" ID="{263E8754-BDCD-41C7-8A13-064DB72491D8}" ShortID="1047207834">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-12" ID="{8F64FE8F-F157-4BF8-9DCA-732DC8E1D16A}" ShortID="111251399">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0133766233766234"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0170247933884297"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-12.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-12" ID="{8F64FE8F-F157-4BF8-9DCA-732DC8E1D16A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-15" ID="{5968F92D-57CD-4C60-8D71-6B459729DE51}" ShortID="794464327">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-15" ID="{BDA821FD-D88E-44AE-8301-21CFFCCD8A3E}" ShortID="189448701">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0180637544273908"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0108382526564345"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-15.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-15" ID="{BDA821FD-D88E-44AE-8301-21CFFCCD8A3E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-18" ID="{5333F3BF-8623-4F27-B065-99D0056BE09C}" ShortID="124534747">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-18" ID="{009EC7A3-26F3-4643-84FD-453AD48BDD1E}" ShortID="867287380">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0121900157150621"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.017066022001087"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-18.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-18" ID="{009EC7A3-26F3-4643-84FD-453AD48BDD1E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-21" ID="{7BAB507B-901C-49BD-AE23-1A3D76A58E86}" ShortID="922375824">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-21" ID="{13E04D53-4200-44CB-AF08-5C4ACE0AA0A5}" ShortID="776431258">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0117931501604971"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0128652547205423"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0482447052020336"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-21.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-21" ID="{13E04D53-4200-44CB-AF08-5C4ACE0AA0A5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-24" ID="{BC1DDFB6-F69D-4965-8540-8EB4D8F0AAB7}" ShortID="69854751">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-24" ID="{5E5F3F07-CFBF-4AB3-A185-C667BB29876B}" ShortID="646929000">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0242266824085006"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0242266824085005"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-24.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-24" ID="{5E5F3F07-CFBF-4AB3-A185-C667BB29876B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-27" ID="{599E3B5A-DF7C-49D2-98C2-EC9D776F0199}" ShortID="579382302">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-27" ID="{3C670FA5-9C39-498B-838F-6CECA23131C7}" ShortID="494965667">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0144273907910272"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0188665879574971"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-27.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-27" ID="{3C670FA5-9C39-498B-838F-6CECA23131C7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</RandomSequenceContainer>
 				<Sound Name="Dialogue_Shrooms" ID="{4F5CB1DD-CD26-4EEF-ABC1-BF4E70C82516}" ShortID="755232110">
 					<PropertyList>
@@ -1504,208 +1699,6 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<SwitchContainer Name="Simon_Says_Puzzle" ID="{80F43DFB-3FC5-4EDE-B011-255A3380638E}" ShortID="363587539">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-12</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-						</Reference>
-						<Reference Name="DefaultSwitchOrState">
-							<ObjectRef Name="None" ID="{52D96462-6665-4764-9F0E-71480DE34E83}" WorkUnitID="{48E6E3B4-F215-43E0-9D58-E97AA9C44A7B}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-						</Reference>
-						<Reference Name="SwitchGroupOrStateGroup">
-							<ObjectRef Name="Simon_Says_Puzzle" ID="{6233072A-1CA7-441C-86C5-F656AB5FB2C5}" WorkUnitID="{48E6E3B4-F215-43E0-9D58-E97AA9C44A7B}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="Simon_Says_Puzzle_A" ID="{492D187E-E448-4E03-895F-41C26AFFEA96}" ShortID="836710540">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Simon_Says_Puzzle_A" ID="{DFB3346A-64E1-4C77-897E-A66185EC272C}" ShortID="394651104">
-									<Language>SFX</Language>
-									<AudioFile>Simon_Says_Puzzle_A.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Simon_Says_Puzzle_A" ID="{DFB3346A-64E1-4C77-897E-A66185EC272C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Simon_Says_Puzzle_B" ID="{D89093ED-0683-4CCF-A866-D3FFF3125D9F}" ShortID="529505473">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Simon_Says_Puzzle_B" ID="{85000990-56E7-4CB7-B992-8B7B1E6B6429}" ShortID="836659967">
-									<Language>SFX</Language>
-									<AudioFile>Simon_Says_Puzzle_B.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Simon_Says_Puzzle_B" ID="{85000990-56E7-4CB7-B992-8B7B1E6B6429}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Simon_Says_Puzzle_C" ID="{E56857A3-62C3-4BA2-92CB-D0D5F69FAADF}" ShortID="485285298">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Simon_Says_Puzzle_C" ID="{FE307F8A-8709-41CA-8FE3-17773645F9B5}" ShortID="996717651">
-									<Language>SFX</Language>
-									<AudioFile>Simon_Says_Puzzle_C.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Simon_Says_Puzzle_C" ID="{FE307F8A-8709-41CA-8FE3-17773645F9B5}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Simon_Says_Puzzle_Completed" ID="{03C9844B-613A-41EB-B980-61876859D33C}" ShortID="217118027">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Simon_Says_Puzzle_Completed" ID="{E68399E8-C9B5-45DA-884E-148131CF31DA}" ShortID="385266190">
-									<Language>SFX</Language>
-									<AudioFile>Simon_Says_Puzzle_Completed.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Simon_Says_Puzzle_Completed" ID="{E68399E8-C9B5-45DA-884E-148131CF31DA}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Simon_Says_Puzzle_D" ID="{F7E5FDF3-D324-4DFD-959C-67FFA764791F}" ShortID="318918037">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Simon_Says_Puzzle_D" ID="{3E32B2C7-4812-4261-B93A-7165E9D6D6EC}" ShortID="789285109">
-									<Language>SFX</Language>
-									<AudioFile>Simon_Says_Puzzle_D.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Simon_Says_Puzzle_D" ID="{3E32B2C7-4812-4261-B93A-7165E9D6D6EC}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Simon_Says_Puzzle_Fail" ID="{0FA3D6DB-3824-48F3-8846-E8A2AF02E321}" ShortID="403979065">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Simon_Says_Puzzle_Fail" ID="{4BB63A38-9DB0-40B4-A24E-E0347D49651D}" ShortID="339182672">
-									<Language>SFX</Language>
-									<AudioFile>Simon_Says_Puzzle_Fail.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Simon_Says_Puzzle_Fail" ID="{4BB63A38-9DB0-40B4-A24E-E0347D49651D}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-					<GroupingInfo>
-						<GroupingBehaviorList>
-							<GroupingBehavior>
-								<ItemRef Name="Simon_Says_Puzzle_Completed" ID="{03C9844B-613A-41EB-B980-61876859D33C}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="Simon_Says_Puzzle_A" ID="{492D187E-E448-4E03-895F-41C26AFFEA96}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="Simon_Says_Puzzle_C" ID="{E56857A3-62C3-4BA2-92CB-D0D5F69FAADF}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="Simon_Says_Puzzle_Fail" ID="{0FA3D6DB-3824-48F3-8846-E8A2AF02E321}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="Simon_Says_Puzzle_B" ID="{D89093ED-0683-4CCF-A866-D3FFF3125D9F}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="Simon_Says_Puzzle_D" ID="{F7E5FDF3-D324-4DFD-959C-67FFA764791F}"/>
-							</GroupingBehavior>
-						</GroupingBehaviorList>
-						<GroupingList>
-							<Grouping>
-								<SwitchRef Name="Puzzle_Failed" ID="{B8620105-0574-4BF3-B810-449C4C58FB07}"/>
-								<ItemList>
-									<ItemRef Name="Simon_Says_Puzzle_Fail" ID="{0FA3D6DB-3824-48F3-8846-E8A2AF02E321}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="Puzzle_A" ID="{F1DE9214-B75A-43DA-9AD2-DAF2E8F09463}"/>
-								<ItemList>
-									<ItemRef Name="Simon_Says_Puzzle_A" ID="{492D187E-E448-4E03-895F-41C26AFFEA96}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="Puzzle_C" ID="{38983B61-9168-4788-AE53-93F10CAEDD61}"/>
-								<ItemList>
-									<ItemRef Name="Simon_Says_Puzzle_C" ID="{E56857A3-62C3-4BA2-92CB-D0D5F69FAADF}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="Puzzle_Complete" ID="{1092C3B6-8287-4F6F-88AD-A1ED6FBFD747}"/>
-								<ItemList>
-									<ItemRef Name="Simon_Says_Puzzle_Completed" ID="{03C9844B-613A-41EB-B980-61876859D33C}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="Puzzle_B" ID="{886D0ACB-A39E-4805-9F73-9CCE4611D327}"/>
-								<ItemList>
-									<ItemRef Name="Simon_Says_Puzzle_B" ID="{D89093ED-0683-4CCF-A866-D3FFF3125D9F}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="Puzzle_D" ID="{99E85BEA-84DA-4110-80D3-407295B8429F}"/>
-								<ItemList>
-									<ItemRef Name="Simon_Says_Puzzle_D" ID="{F7E5FDF3-D324-4DFD-959C-67FFA764791F}"/>
-								</ItemList>
-							</Grouping>
-						</GroupingList>
-					</GroupingInfo>
-				</SwitchContainer>
 				<RandomSequenceContainer Name="Sliding_Blocks" ID="{516F49C9-540E-4F6A-A148-AB86D6AAEA69}" ShortID="969837760">
 					<PropertyList>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
@@ -1916,6 +1909,208 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="Pnumatic_Door_UP" ID="{D56A2F1A-9CCA-430A-B041-DE4939BAAB71}" ShortID="633405856">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{02107232-F1C9-4E38-9259-23A28BCAA466}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Pnumatic_Door_UP" ID="{53BE381A-0C8A-4522-A69E-00A1CEAFA6C1}" ShortID="960549818">
+							<Language>SFX</Language>
+							<AudioFile>Pnumatic_Door_UP.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Pnumatic_Door_UP" ID="{53BE381A-0C8A-4522-A69E-00A1CEAFA6C1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Pnumatic_Door_Down" ID="{9F769ACB-2CFD-49BA-8048-5EA0BA17C02B}" ShortID="71669718">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Pnumatic_Door_Down" ID="{A9DD187F-E4F2-4712-A55D-5D5D1992FCA1}" ShortID="515185842">
+							<Language>SFX</Language>
+							<AudioFile>Pnumatic_Door_Down.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Pnumatic_Door_Down" ID="{A9DD187F-E4F2-4712-A55D-5D5D1992FCA1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Simon_Says_Puzzle_A" ID="{492D187E-E448-4E03-895F-41C26AFFEA96}" ShortID="836710540">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Simon_Says_Puzzle_A" ID="{DFB3346A-64E1-4C77-897E-A66185EC272C}" ShortID="394651104">
+							<Language>SFX</Language>
+							<AudioFile>Simon_Says_Puzzle_A.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Simon_Says_Puzzle_A" ID="{DFB3346A-64E1-4C77-897E-A66185EC272C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Simon_Says_Puzzle_B" ID="{D89093ED-0683-4CCF-A866-D3FFF3125D9F}" ShortID="529505473">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Simon_Says_Puzzle_B" ID="{85000990-56E7-4CB7-B992-8B7B1E6B6429}" ShortID="836659967">
+							<Language>SFX</Language>
+							<AudioFile>Simon_Says_Puzzle_B.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Simon_Says_Puzzle_B" ID="{85000990-56E7-4CB7-B992-8B7B1E6B6429}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Simon_Says_Puzzle_C" ID="{E56857A3-62C3-4BA2-92CB-D0D5F69FAADF}" ShortID="485285298">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Simon_Says_Puzzle_C" ID="{FE307F8A-8709-41CA-8FE3-17773645F9B5}" ShortID="996717651">
+							<Language>SFX</Language>
+							<AudioFile>Simon_Says_Puzzle_C.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Simon_Says_Puzzle_C" ID="{FE307F8A-8709-41CA-8FE3-17773645F9B5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Simon_Says_Puzzle_Completed" ID="{03C9844B-613A-41EB-B980-61876859D33C}" ShortID="217118027">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Simon_Says_Puzzle_Completed" ID="{E68399E8-C9B5-45DA-884E-148131CF31DA}" ShortID="385266190">
+							<Language>SFX</Language>
+							<AudioFile>Simon_Says_Puzzle_Completed.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Simon_Says_Puzzle_Completed" ID="{E68399E8-C9B5-45DA-884E-148131CF31DA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Simon_Says_Puzzle_D" ID="{F7E5FDF3-D324-4DFD-959C-67FFA764791F}" ShortID="318918037">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Simon_Says_Puzzle_D" ID="{3E32B2C7-4812-4261-B93A-7165E9D6D6EC}" ShortID="789285109">
+							<Language>SFX</Language>
+							<AudioFile>Simon_Says_Puzzle_D.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Simon_Says_Puzzle_D" ID="{3E32B2C7-4812-4261-B93A-7165E9D6D6EC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Simon_Says_Puzzle_Fail" ID="{0FA3D6DB-3824-48F3-8846-E8A2AF02E321}" ShortID="403979065">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Simon_Says_Puzzle_Fail" ID="{4BB63A38-9DB0-40B4-A24E-E0347D49651D}" ShortID="339182672">
+							<Language>SFX</Language>
+							<AudioFile>Simon_Says_Puzzle_Fail.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Simon_Says_Puzzle_Fail" ID="{4BB63A38-9DB0-40B4-A24E-E0347D49651D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

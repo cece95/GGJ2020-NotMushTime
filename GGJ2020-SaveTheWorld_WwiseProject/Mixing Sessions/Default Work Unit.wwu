@@ -19,7 +19,6 @@
 						<ObjectRef Name="Pipe_Puzlle_Fail" ID="{2AD9AA70-09BB-4314-8AAE-503249404894}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
 						<ObjectRef Name="Pipes_Puzzle_Match" ID="{526818B1-8535-4B82-A158-8FEADC1E5797}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
 						<ObjectRef Name="Tetris_Puzzle_Clicks" ID="{B0E5D67D-CB42-46D5-9939-8CB5944D0BB1}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
-						<ObjectRef Name="Simon_Says_Puzzle" ID="{80F43DFB-3FC5-4EDE-B011-255A3380638E}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
 					</ObjectList>
 				</MixingSession>
 			</ChildrenList>

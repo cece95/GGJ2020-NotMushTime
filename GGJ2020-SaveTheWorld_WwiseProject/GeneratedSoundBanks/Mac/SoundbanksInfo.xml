@@ -17,6 +17,8 @@
 			<Path>Ambience.bnk</Path>
 			<IncludedEvents>
 				<Event Id="658170097" Name="Main_Reactor" ObjectPath="\Events\Default Work Unit\Main_Reactor" DurationType="Infinite"/>
+				<Event Id="2425467796" Name="Pnumatic_Door_Down" ObjectPath="\Events\Default Work Unit\Pnumatic_Door_Down" DurationType="OneShot" DurationMin="0.690000" DurationMax="0.690000"/>
+				<Event Id="1068172655" Name="Pnumatic_Door_UP" ObjectPath="\Events\Default Work Unit\Pnumatic_Door_UP" DurationType="OneShot" DurationMin="0.740000" DurationMax="0.740000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="15782557" Language="SFX">
@@ -27,9 +29,17 @@
 					<ShortName>Power_Plant_Ambience_01.wav</ShortName>
 					<Path>SFX/Power_Plant_Ambience_01_13D6DC3D.wem</Path>
 				</File>
+				<File Id="515185842" Language="SFX">
+					<ShortName>Pnumatic_Door_Down.wav</ShortName>
+					<Path>SFX/Pnumatic_Door_Down_10C4C929.wem</Path>
+				</File>
 				<File Id="685501041" Language="SFX">
 					<ShortName>Power_Plant_Ambience_02.wav</ShortName>
 					<Path>SFX/Power_Plant_Ambience_02_56016EC3.wem</Path>
+				</File>
+				<File Id="960549818" Language="SFX">
+					<ShortName>Pnumatic_Door_UP.wav</ShortName>
+					<Path>SFX/Pnumatic_Door_UP_10C4C929.wem</Path>
 				</File>
 				<File Id="1053373926" Language="SFX">
 					<ShortName>Power_Plant_Ambience_01.wav</ShortName>
@@ -70,13 +80,21 @@
 			<Path>English(US)/Shrooms.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2598333881" Name="Dialogue_Shrooms" ObjectPath="\Events\Default Work Unit\Dialogue_Shrooms" DurationType="OneShot" DurationMin="9.640000" DurationMax="9.640000"/>
-				<Event Id="1380635400" Name="Shroom_Bounce" ObjectPath="\Events\Default Work Unit\Shroom_Bounce" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1380635400" Name="Shroom_Bounce" ObjectPath="\Events\Default Work Unit\Shroom_Bounce" DurationType="OneShot" DurationMin="0.859828" DurationMax="1.140000"/>
 				<Event Id="785153393" Name="Shroom_Steps" ObjectPath="\Events\Default Work Unit\Shroom_Steps" DurationType="OneShot" DurationMin="0.106869" DurationMax="0.277912"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="108645341" Language="SFX">
 					<ShortName>Shroom_Step_01.wav</ShortName>
 					<Path>SFX/Shroom_Step_01_66608D6F.wem</Path>
+				</File>
+				<File Id="111251399" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-12.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-12_89B25EB1.wem</Path>
+				</File>
+				<File Id="189448701" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-15.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-15_426D6391.wem</Path>
 				</File>
 				<File Id="214543282" Language="SFX">
 					<ShortName>Shroom_Step_07.wav</ShortName>
@@ -102,9 +120,17 @@
 					<ShortName>Shroom_Step_02.wav</ShortName>
 					<Path>SFX/Shroom_Step_02_593E73C9.wem</Path>
 				</File>
+				<File Id="397432513" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-06.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-06_91C69A6B.wem</Path>
+				</File>
 				<File Id="415171525" Language="SFX">
 					<ShortName>Shroom_Step_06.wav</ShortName>
 					<Path>SFX/Shroom_Step_06_DE20DBC3.wem</Path>
+				</File>
+				<File Id="428784846" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-09.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-09_D210C562.wem</Path>
 				</File>
 				<File Id="490055282" Language="SFX">
 					<ShortName>Shroom_Step_09.wav</ShortName>
@@ -113,6 +139,18 @@
 				<File Id="493975409" Language="English(US)">
 					<ShortName>Dialogue_Shrooms.wav</ShortName>
 					<Path>Voices/English(US)/Dialogue_Shrooms_10C4C929.wem</Path>
+				</File>
+				<File Id="494965667" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-27.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-27_98C61724.wem</Path>
+				</File>
+				<File Id="646929000" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-24.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-24_0F6E0F70.wem</Path>
+				</File>
+				<File Id="776431258" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-21.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-21_A8965B66.wem</Path>
 				</File>
 				<File Id="785698507" Language="SFX">
 					<ShortName>Shroom_Step_03.wav</ShortName>
@@ -125,6 +163,10 @@
 				<File Id="804564581" Language="SFX">
 					<ShortName>Shroom_Step_04.wav</ShortName>
 					<Path>SFX/Shroom_Step_04_845C61A6.wem</Path>
+				</File>
+				<File Id="867287380" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-18.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-18_A866B1A3.wem</Path>
 				</File>
 				<File Id="916146740" Language="SFX">
 					<ShortName>Shroom_Step_08.wav</ShortName>
@@ -144,7 +186,12 @@
 				<Event Id="1592165308" Name="Box_Dragging" ObjectPath="\Events\Default Work Unit\Box_Dragging" DurationType="OneShot" DurationMin="0.210000" DurationMax="0.357823"/>
 				<Event Id="1847720199" Name="Pipe_Puzzle_Fail" ObjectPath="\Events\Default Work Unit\Pipe_Puzzle_Fail" DurationType="OneShot" DurationMin="0.718934" DurationMax="0.971255"/>
 				<Event Id="544157162" Name="Pipe_Puzzle_Match" ObjectPath="\Events\Default Work Unit\Pipe_Puzzle_Match" DurationType="OneShot" DurationMin="0.213737" DurationMax="0.370549"/>
-				<Event Id="3147088319" Name="Simon_Says_Puzzle" ObjectPath="\Events\Default Work Unit\Simon_Says_Puzzle" DurationType="OneShot" DurationMin="2.030000" DurationMax="3.040000"/>
+				<Event Id="1697904516" Name="Simon_Says_A" ObjectPath="\Events\Default Work Unit\Simon_Says_A" DurationType="OneShot" DurationMin="2.480000" DurationMax="2.480000"/>
+				<Event Id="1697904519" Name="Simon_Says_B" ObjectPath="\Events\Default Work Unit\Simon_Says_B" DurationType="OneShot" DurationMin="2.580000" DurationMax="2.580000"/>
+				<Event Id="1697904518" Name="Simon_Says_C" ObjectPath="\Events\Default Work Unit\Simon_Says_C" DurationType="OneShot" DurationMin="2.380000" DurationMax="2.380000"/>
+				<Event Id="2168464150" Name="Simon_Says_Complete" ObjectPath="\Events\Default Work Unit\Simon_Says_Complete" DurationType="OneShot" DurationMin="3.040000" DurationMax="3.040000"/>
+				<Event Id="1697904513" Name="Simon_Says_D" ObjectPath="\Events\Default Work Unit\Simon_Says_D" DurationType="OneShot" DurationMin="2.030000" DurationMax="2.030000"/>
+				<Event Id="155810655" Name="Simon_Says_Fail" ObjectPath="\Events\Default Work Unit\Simon_Says_Fail" DurationType="OneShot" DurationMin="2.380000" DurationMax="2.380000"/>
 				<Event Id="3292274422" Name="Sliding_Block_Puzzle" ObjectPath="\Events\Default Work Unit\Sliding_Block_Puzzle" DurationType="OneShot" DurationMin="0.120000" DurationMax="0.150000"/>
 				<Event Id="1463418219" Name="Tetris_Puzzle_Clicks" ObjectPath="\Events\Default Work Unit\Tetris_Puzzle_Clicks" DurationType="OneShot" DurationMin="0.068007" DurationMax="0.267619"/>
 			</IncludedEvents>
