@@ -15,31 +15,51 @@ public class GameManager : MonoBehaviour
 
     private Player[] players;
 
+    private Timers timer;
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
 
         puzzlePortal = Resources.Load<PuzzleRenderer>("Prefabs/PuzzlePortal");
 
+        timer = FindObjectOfType<Timers>();
+        timer.TimerFinished += OnTimerFinished;
+
         SetupPlayers();
         InitializeGame();
+    }
+
+    private void OnTimerFinished()
+    {
+        Debug.LogWarning("Time out! Game Over");
+
+        foreach (Player player in players)
+        {
+            player.SetAllowMovement(false);
+        }
     }
 
     void InitializeGame()
     {
         // Play dialogue
+        OnDialogueFinished();
     }
 
     void OnDialogueFinished()
     {
         // Start timer
+        timer.StartTimer();
+
         // Enable player movement
+        foreach (Player player in players)
+        {
+            player.SetAllowMovement(true);
+        }
     }
 
     public void StartPuzzle(Player[] players, Puzzle puzzleToStart, Vector3 portalPosition, Vector3 portalSize)
     {
-        // Instantiate puzzle
-
         // Disable player movement
         foreach(Player player in players)
         {
@@ -99,7 +119,14 @@ public class GameManager : MonoBehaviour
     {
         if(puzzlesCompleted >= 4)
         {
+            Debug.LogWarning("Game finished! Well done!");
             //TODO: Game end
+
+            // Disable player movement
+            foreach (Player player in players)
+            {
+                player.SetAllowMovement(false);
+            }
         }
     }
 
@@ -125,6 +152,8 @@ public class GameManager : MonoBehaviour
             {
                 player.SetPlayerController(PlayerInput.Instance.Player2);
             }
+
+            player.SetAllowMovement(false);
         }
     }
 }
