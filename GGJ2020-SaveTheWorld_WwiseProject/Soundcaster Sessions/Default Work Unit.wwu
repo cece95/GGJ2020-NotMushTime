@@ -14,7 +14,9 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Happy_Days" ID="{36A710D6-9A67-4E94-9BC9-E0A32C66A9DD}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Floor" ID="{FE155676-1E63-4DAF-B92F-6F14D05A4F4A}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

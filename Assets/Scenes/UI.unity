@@ -185,6 +185,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6567660905428264027}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &986237697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986237696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e197fa4e29aa43d0bd188ddf8b0d47a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  terrainType: 0
 --- !u!114 &986237698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,6 +332,7 @@ GameObject:
   - component: {fileID: 1672303012}
   - component: {fileID: 1672303011}
   - component: {fileID: 1672303013}
+  - component: {fileID: 1672303014}
   m_Layer: 0
   m_Name: Sound_Banks
   m_TagString: Untagged
@@ -383,6 +397,31 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 3932d601aa49b4365b229cbf261cb40a,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &1672303014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672303010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b15827d1bff340e493bb0b648ab94ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e681d0be6d39f4d6f9056ca23863a358,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0

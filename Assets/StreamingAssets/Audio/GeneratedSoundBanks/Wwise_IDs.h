@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID INTERACTIVE_MUSIC = 3734989563U;
         static const AkUniqueID MAIN_REACTOR = 658170097U;
+        static const AkUniqueID SHROOM_STEPS = 785153393U;
     } // namespace EVENTS
 
     namespace STATES
@@ -34,31 +35,37 @@ namespace AK
 
     namespace SWITCHES
     {
-        namespace HAPPY_DAYS
+        namespace SURFACE_TYPE
         {
-            static const AkUniqueID GROUP = 3498417625U;
+            static const AkUniqueID GROUP = 4064446173U;
 
             namespace SWITCH
             {
+                static const AkUniqueID FLOOR = 1088209313U;
             } // namespace SWITCH
-        } // namespace HAPPY_DAYS
+        } // namespace SURFACE_TYPE
 
     } // namespace SWITCHES
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID SHROOM_STEPS = 785153393U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID INTERACTIVE_MUSIC = 3734989563U;
+        static const AkUniqueID SHROOMS = 3983930604U;
     } // namespace BANKS
 
     namespace BUSSES
     {
-        static const AkUniqueID ALARM_SYREN = 1353553046U;
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID INTERACTIVE_MUSIC = 3734989563U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID PLAYERS = 2188949101U;
+        static const AkUniqueID SHROOMS = 3983930604U;
         static const AkUniqueID UI_PUZZLES = 2423156673U;
     } // namespace BUSSES
 

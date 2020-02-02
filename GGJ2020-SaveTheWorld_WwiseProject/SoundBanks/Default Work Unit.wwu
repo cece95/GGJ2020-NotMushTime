@@ -17,6 +17,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Shrooms" ID="{A91C7245-437A-4330-8803-9D0F1B3E6724}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Shroom_Steps" ID="{B4E5E6EB-964D-4BCB-9F5D-9C513026CA9A}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

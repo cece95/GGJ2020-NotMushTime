@@ -139,39 +139,437 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="Player_Footsteps" ID="{24F5F4EE-3C65-4F29-A54F-35EC4CB12DB4}" ShortID="281130874">
+				<RandomSequenceContainer Name="Shroom_Bounce" ID="{6E91BEA2-44A5-4428-96C7-EDCB13AD3221}" ShortID="749713913">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Players" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+							<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
 						</Reference>
 					</ReferenceList>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="Players_Bouncing" ID="{6E91BEA2-44A5-4428-96C7-EDCB13AD3221}" ShortID="749713913">
+				<SwitchContainer Name="Shroom_Steps_Switch" ID="{1707F487-E1AA-45BB-B9D4-A4E4AC3F4BFD}" ShortID="146548632">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
 						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Players" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-						</Reference>
-					</ReferenceList>
-				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="Alarm_Syren" ID="{EB3ACC9B-E09C-4BB4-9D3A-0AE8EDB418DA}" ShortID="1069433856">
-					<PropertyList>
-						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Floor" ID="{FE155676-1E63-4DAF-B92F-6F14D05A4F4A}" WorkUnitID="{47A389BF-8A01-4198-B4A3-4B8E84E71B51}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Alarm_Syren" ID="{D4638861-60C3-4833-A427-ED6BE2682A5A}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+							<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Surface_Type" ID="{57874297-B496-4DF2-BE32-5DEDB0FEF3AD}" WorkUnitID="{47A389BF-8A01-4198-B4A3-4B8E84E71B51}"/>
 						</Reference>
 					</ReferenceList>
-				</RandomSequenceContainer>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Shroom_Steps" ID="{24F5F4EE-3C65-4F29-A54F-35EC4CB12DB4}" ShortID="281130874">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2DCB2342-4388-43CF-851F-FDDF8203EFF5}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{82B6305C-0D85-4E27-9E54-7AA572986804}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Shroom_Step_01" ID="{B75CA6AD-8B09-48E4-ABFF-89694B11B67E}" ShortID="147394764">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_01" ID="{CDC6753A-E3D2-47D4-A531-4B59FE6B88A1}" ShortID="108645341">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00493506493506494"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00829988193624559"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_01" ID="{CDC6753A-E3D2-47D4-A531-4B59FE6B88A1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Shroom_Step_02" ID="{0B6B50DE-9C4D-4F33-B93C-DD7EA10660A0}" ShortID="45630644">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_02" ID="{390CB460-7CA6-4786-AFB7-3E41B8E28729}" ShortID="379364992">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00642266824085006"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00604486422668243"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.242927981109799"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_02" ID="{390CB460-7CA6-4786-AFB7-3E41B8E28729}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Shroom_Step_03" ID="{CC516FE5-46DD-4010-BB66-DE612B07D553}" ShortID="252092286">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_03" ID="{B9EC2883-2F2D-4FDA-B8BE-84454AF109FF}" ShortID="785698507">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00642266824085006"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00602125147579691"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.152538370720189"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_03" ID="{B9EC2883-2F2D-4FDA-B8BE-84454AF109FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Shroom_Step_04" ID="{A038D314-DB71-4FDF-9A57-A3820D192DF4}" ShortID="24792314">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_04" ID="{8B9DB46C-5A23-4B8D-8C97-4FF9F45025E3}" ShortID="804564581">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00478158205430933"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00573789846517117"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_04" ID="{8B9DB46C-5A23-4B8D-8C97-4FF9F45025E3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Shroom_Step_05" ID="{251C6B9D-BB91-4FD8-96D2-80E1E3459E32}" ShortID="360135901">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_05" ID="{B092BE33-BA7C-44CB-8E3E-28D1D71B6ED8}" ShortID="367363241">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00295697499779132"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00403223863335181"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_05" ID="{B092BE33-BA7C-44CB-8E3E-28D1D71B6ED8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Shroom_Step_06" ID="{AA8D42B5-C5A2-44E9-8557-E1FDAC2697B7}" ShortID="260493378">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_06" ID="{5523775A-2EA0-4B95-AEA3-4DED54CD617F}" ShortID="415171525">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00220779220779221"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00240850059031877"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_06" ID="{5523775A-2EA0-4B95-AEA3-4DED54CD617F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Shroom_Step_07" ID="{D0AD8AD8-A5AB-4CFD-ADD8-B8BB324EC541}" ShortID="1020029586">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_07" ID="{3DDBA9ED-65C6-46C3-B404-8F3958548A3F}" ShortID="214543282">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00545454545454545"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00441558441558443"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_07" ID="{3DDBA9ED-65C6-46C3-B404-8F3958548A3F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Shroom_Step_08" ID="{3E281E23-2BBF-49DD-A8C6-6C5D309EA227}" ShortID="932264638">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_08" ID="{FB022A87-46A1-4A44-9C4E-60EE3EB99639}" ShortID="916146740">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00297520661157025"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00255017709563166"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.00765053128689492"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.135796930342385"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_08" ID="{FB022A87-46A1-4A44-9C4E-60EE3EB99639}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Shroom_Step_09" ID="{B23DDAED-A83B-4EBD-A2D7-236A0E56F2D1}" ShortID="265000934">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_09" ID="{5AD09D2F-FE00-46BC-8052-7ED15E3BFA7F}" ShortID="490055282">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00247933884297521"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0433057851239669"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_09.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_09" ID="{5AD09D2F-FE00-46BC-8052-7ED15E3BFA7F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Shroom_Step_11" ID="{4EAC7CFC-F9A0-49A3-9E47-DC1C7F36CB53}" ShortID="5937546">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_11" ID="{9A30FB75-F784-4C1B-A334-D137ACC066BB}" ShortID="1058851181">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00605667060212515"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00785123966942147"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_11.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_11" ID="{9A30FB75-F784-4C1B-A334-D137ACC066BB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Shroom_Step_12" ID="{D89C9F15-9829-4F3F-A04F-B953BFE67DDE}" ShortID="751673884">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_12" ID="{4D2DDCCD-7176-4546-A2E7-97A7C6690F36}" ShortID="337409131">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00350649350649351"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00493506493506493"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_12.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_12" ID="{4D2DDCCD-7176-4546-A2E7-97A7C6690F36}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Shroom_Step_13" ID="{42CD207A-BA30-47DD-B556-2C3A206E170E}" ShortID="241357666">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_13" ID="{E88A6C1B-4B6B-4930-84D1-277C2970200A}" ShortID="247946552">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00573789846517119"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0130696576151122"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_13.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_13" ID="{E88A6C1B-4B6B-4930-84D1-277C2970200A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Shroom_Step_14" ID="{613A5D19-FCC7-4C4D-842C-134559A8929E}" ShortID="803307193">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_14" ID="{5CDEEE63-289B-44BF-BEF1-4421FF1CD91D}" ShortID="312163290">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00421487603305785"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00642266824085005"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_14.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_14" ID="{5CDEEE63-289B-44BF-BEF1-4421FF1CD91D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Shroom_Step_15" ID="{9B46FA25-49D6-4E42-B48D-455E02356C92}" ShortID="932097318">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shroom_Step_15" ID="{66720EC8-5078-4C88-98A5-403B6B1579B6}" ShortID="803809114">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0059504132231405"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00595041322314049"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.193884297520661"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Shroom_Step_15.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shroom_Step_15" ID="{66720EC8-5078-4C88-98A5-403B6B1579B6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Shroom_Steps" ID="{24F5F4EE-3C65-4F29-A54F-35EC4CB12DB4}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Floor" ID="{FE155676-1E63-4DAF-B92F-6F14D05A4F4A}"/>
+								<ItemList>
+									<ItemRef Name="Shroom_Steps" ID="{24F5F4EE-3C65-4F29-A54F-35EC4CB12DB4}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

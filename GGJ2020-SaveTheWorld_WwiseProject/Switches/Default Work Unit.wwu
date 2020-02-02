@@ -3,7 +3,11 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{47A389BF-8A01-4198-B4A3-4B8E84E71B51}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="Happy_Days" ID="{D9609245-B7E8-4726-B2A8-88A091136A4A}"/>
+				<SwitchGroup Name="Surface_Type" ID="{57874297-B496-4DF2-BE32-5DEDB0FEF3AD}">
+					<ChildrenList>
+						<Switch Name="Floor" ID="{FE155676-1E63-4DAF-B92F-6F14D05A4F4A}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

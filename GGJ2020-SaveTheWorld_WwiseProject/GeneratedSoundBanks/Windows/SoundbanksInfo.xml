@@ -64,5 +64,71 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
+		<SoundBank Id="3983930604" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Shrooms</ObjectPath>
+			<ShortName>Shrooms</ShortName>
+			<Path>Shrooms.bnk</Path>
+			<IncludedEvents>
+				<Event Id="785153393" Name="Shroom_Steps" ObjectPath="\Events\Default Work Unit\Shroom_Steps" DurationType="OneShot" DurationMin="0.106869" DurationMax="0.277912"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="108645341" Language="SFX">
+					<ShortName>Shroom_Step_01.wav</ShortName>
+					<Path>SFX/Shroom_Step_01_7DD75476.wem</Path>
+				</File>
+				<File Id="214543282" Language="SFX">
+					<ShortName>Shroom_Step_07.wav</ShortName>
+					<Path>SFX/Shroom_Step_07_363DC68C.wem</Path>
+				</File>
+				<File Id="247946552" Language="SFX">
+					<ShortName>Shroom_Step_13.wav</ShortName>
+					<Path>SFX/Shroom_Step_13_4AB840A7.wem</Path>
+				</File>
+				<File Id="312163290" Language="SFX">
+					<ShortName>Shroom_Step_14.wav</ShortName>
+					<Path>SFX/Shroom_Step_14_6CFE0F96.wem</Path>
+				</File>
+				<File Id="337409131" Language="SFX">
+					<ShortName>Shroom_Step_12.wav</ShortName>
+					<Path>SFX/Shroom_Step_12_471D819A.wem</Path>
+				</File>
+				<File Id="367363241" Language="SFX">
+					<ShortName>Shroom_Step_05.wav</ShortName>
+					<Path>SFX/Shroom_Step_05_41DF8A94.wem</Path>
+				</File>
+				<File Id="379364992" Language="SFX">
+					<ShortName>Shroom_Step_02.wav</ShortName>
+					<Path>SFX/Shroom_Step_02_800700B1.wem</Path>
+				</File>
+				<File Id="415171525" Language="SFX">
+					<ShortName>Shroom_Step_06.wav</ShortName>
+					<Path>SFX/Shroom_Step_06_781B909C.wem</Path>
+				</File>
+				<File Id="490055282" Language="SFX">
+					<ShortName>Shroom_Step_09.wav</ShortName>
+					<Path>SFX/Shroom_Step_09_7BCEC5F7.wem</Path>
+				</File>
+				<File Id="785698507" Language="SFX">
+					<ShortName>Shroom_Step_03.wav</ShortName>
+					<Path>SFX/Shroom_Step_03_8FB7C60A.wem</Path>
+				</File>
+				<File Id="803809114" Language="SFX">
+					<ShortName>Shroom_Step_15.wav</ShortName>
+					<Path>SFX/Shroom_Step_15_37715372.wem</Path>
+				</File>
+				<File Id="804564581" Language="SFX">
+					<ShortName>Shroom_Step_04.wav</ShortName>
+					<Path>SFX/Shroom_Step_04_75822C93.wem</Path>
+				</File>
+				<File Id="916146740" Language="SFX">
+					<ShortName>Shroom_Step_08.wav</ShortName>
+					<Path>SFX/Shroom_Step_08_BF8E0B12.wem</Path>
+				</File>
+				<File Id="1058851181" Language="SFX">
+					<ShortName>Shroom_Step_11.wav</ShortName>
+					<Path>SFX/Shroom_Step_11_3900AEC1.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
