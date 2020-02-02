@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { if (instance == null) { instance = FindObjectOfType<GameManager>(); } if (instance == null) { GameObject go = new GameObject(); go.name = "Game Manager"; instance = go.AddComponent<GameManager>(); } return instance; } }
     private static GameManager instance;
 
-    [SerializeField]
+    private int puzzlesCompleted = 0;
+
     private PuzzleRenderer puzzlePortal;
 
     private List<PuzzleRenderer> puzzleRenderers;
@@ -71,8 +72,9 @@ public class GameManager : MonoBehaviour
         // Fade out puzzle
         puzzle.MyRenderer.FadeOut();
         puzzle.gameObject.SetActive(false);
-    }
 
+        ++puzzlesCompleted;
+    }
 
     void OnPuzzleQuit(Puzzle puzzle)
     {
@@ -91,6 +93,14 @@ public class GameManager : MonoBehaviour
     {
         puzzle.OnPuzzleCompleted -= OnPuzzleEnded;
         puzzle.OnPuzzleQuit -= OnPuzzleQuit;
+    }
+
+    void EvaluateGameEnd()
+    {
+        if(puzzlesCompleted >= 4)
+        {
+            //TODO: Game end
+        }
     }
 
     void EnablePlayerMovement(int playerId, bool movementEnabled)
