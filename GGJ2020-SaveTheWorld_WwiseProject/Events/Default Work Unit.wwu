@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B4D1F02A-2782-4588-BBEE-084276577987}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{B4D1F02A-2782-4588-BBEE-084276577987}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Main_Reactor" ID="{7BB3D262-79E3-45E8-AAF6-84B060D6E749}">
+					<ChildrenList>
+						<Action Name="" ID="{01D5F96D-730F-4755-858A-1F1D56C2D88C}" ShortID="288027944">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main_Reactor" ID="{82892614-391C-4818-B3CD-8B2E5D8BE0F2}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Interactive_Music" ID="{1C3D2C6D-D986-4BFC-8C1A-0669A6BA4D78}">
+					<ChildrenList>
+						<Action Name="" ID="{628F78A2-B409-4796-B003-932D4174F393}" ShortID="622984241">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interactive_Music" ID="{12B668A2-8F0D-4305-9202-E326D206EFB7}" WorkUnitID="{65346142-43E8-4CF7-B11B-B75EA90191F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Shroom_Steps" ID="{B4E5E6EB-964D-4BCB-9F5D-9C513026CA9A}">
+					<ChildrenList>
+						<Action Name="" ID="{4DD74785-6FCD-489F-BCA7-493748D72F5A}" ShortID="251161028">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shroom_Steps_Switch" ID="{1707F487-E1AA-45BB-B9D4-A4E4AC3F4BFD}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Shroom_Bounce" ID="{216251D4-0D48-41E8-920A-3B7FAC67C4CC}">
+					<ChildrenList>
+						<Action Name="" ID="{609A2654-3E54-44A3-A5B1-F36BE7CE55A9}" ShortID="324310394">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shroom_Bounce" ID="{6E91BEA2-44A5-4428-96C7-EDCB13AD3221}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dialogue_Shrooms" ID="{C266A056-7109-4E17-BC25-3F721A55E7A1}">
+					<ChildrenList>
+						<Action Name="" ID="{63561F57-B255-4EB8-A653-026DDF78C59B}" ShortID="708163536">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dialogue_Shrooms" ID="{4F5CB1DD-CD26-4EEF-ABC1-BF4E70C82516}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

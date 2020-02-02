@@ -1,1 +1,3 @@
-# GGJ2020-EarthBuilders
+# Not Mush Time!
+
+Global Game Jam 2020

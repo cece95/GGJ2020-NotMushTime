@@ -1,0 +1,233 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05bff40b57a404970835e6b53be1e4cd, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 692d733041eec7429110dbc33c839094
+    GuidInternal: 
+    m_lastTime: -8586210147014775808
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 4d87d1d28f13964985243f7dbc5d5e82
+    GuidInternal: 
+    m_lastTime: -8586209823734775808
+    List:
+    - name: Reverb
+      guid: a01721411f4c2541a0228710a74f5e53
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Reverb
+        ObjectType: 1
+      Path: Default Work Unit/Master Audio Bus/Reverb
+  BankWwu:
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2e563b88421c0c4189e8c672fb883ad1
+    GuidInternal: 
+    m_lastTime: -8586209829654775808
+    List:
+    - name: Ambience
+      guid: 5ef76c1bc2fc334f9669bcd90cfe662b
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 7
+      Path: Default Work Unit/Ambience
+    - name: Interactive_Music
+      guid: 8bbc24cd16cda74691b2264e98ab7cd5
+      id: 3734989563
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Interactive_Music
+        ObjectType: 7
+      Path: Default Work Unit/Interactive_Music
+    - name: Shrooms
+      guid: 45721ca97a43304388039d0f1b3e6724
+      id: 3983930604
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Shrooms
+        ObjectType: 7
+      Path: Default Work Unit/Shrooms
+  EventWwu:
+  - PhysicalPath: Events/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2af0d1b482278845bbee084276577987
+    GuidInternal: 
+    m_lastTime: -8586209830234775808
+    List:
+    - name: Dialogue_Shrooms
+      guid: 56a066c20971174ebc253f721a55e7a1
+      id: 2598333881
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dialogue_Shrooms
+        ObjectType: 3
+      Path: Default Work Unit/Dialogue_Shrooms
+      maxAttenuation: 0
+      maxDuration: 9.64
+      minDuration: 9.64
+    - name: Interactive_Music
+      guid: 6d2c3d1c86d9fc4b8c1a0669a6ba4d78
+      id: 3734989563
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Interactive_Music
+        ObjectType: 3
+      Path: Default Work Unit/Interactive_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Main_Reactor
+      guid: 62d2b37be379e845aaf684b060d6e749
+      id: 658170097
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main_Reactor
+        ObjectType: 3
+      Path: Default Work Unit/Main_Reactor
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Shroom_Bounce
+      guid: d4516221480de841920a3b7fac67c4cc
+      id: 1380635400
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Shroom_Bounce
+        ObjectType: 3
+      Path: Default Work Unit/Shroom_Bounce
+      maxAttenuation: 0
+      maxDuration: 0.943605
+      minDuration: 0.22
+    - name: Shroom_Steps
+      guid: ebe6e5b44d96cb4b9f5d9c513026ca9a
+      id: 785153393
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Shroom_Steps
+        ObjectType: 3
+      Path: Default Work Unit/Shroom_Steps
+      maxAttenuation: 0
+      maxDuration: 0.277912
+      minDuration: 0.106869
+  RtpcWwu:
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 3e7fcad31a60e241b7f2d7e0f8228490
+    GuidInternal: 
+    m_lastTime: -8586210147014775808
+    List: []
+  StateWwu:
+  - PhysicalPath: States/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: b4e3e64815f2e0439d58e97aa9c44a7b
+    GuidInternal: 
+    m_lastTime: -8586210088194775808
+    List:
+    - name: Happy_Days_Are_Over
+      guid: f1e0a9a707f65a48a94a9fbaed229bbc
+      id: 2017233915
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Happy_Days_Are_Over
+        ObjectType: 9
+      Path: Default Work Unit/Happy_Days_Are_Over
+      values:
+      - name: Alarm_Syren
+        guid: 0bc0e68a3470de43875b69a73c3fdc28
+        id: 1353553046
+        PathAndIcons:
+        - ElementName: Alarm_Syren
+          ObjectType: 8
+      - name: Happy_Days
+        guid: d610a736679a944e9bc9e0a32c66a9dd
+        id: 3498417625
+        PathAndIcons:
+        - ElementName: Happy_Days
+          ObjectType: 8
+      - name: None
+        guid: 5a1ddb6f0ccfdb4d868845b64dd02223
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: bf89a347018a9841b4a34b8e84e71b51
+    GuidInternal: 
+    m_lastTime: -8586209997374775808
+    List:
+    - name: Surface_Type
+      guid: 9742875796b4f24dbe325dedb0fef3ad
+      id: 4064446173
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Surface_Type
+        ObjectType: 11
+      Path: Default Work Unit/Surface_Type
+      values:
+      - name: Floor
+        guid: 765615fe631eaf4db92f6f14d05a4f4a
+        id: 1088209313
+        PathAndIcons:
+        - ElementName: Floor
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 4800af011647e245b37ee71976ac3313
+    GuidInternal: 
+    m_lastTime: -8586209982964775808
+    List:
+    - name: Shroom_Steps
+      guid: 7b3a993d2a9f064a9af3f39f186bc5c6
+      id: 785153393
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Shroom_Steps
+        ObjectType: 14
+      Path: Default Work Unit/Shroom_Steps
+  ExpandedItems:
+  - /GGJ2020-SaveTheWorld_WwiseProject
+  - /GGJ2020-SaveTheWorld_WwiseProject/Events
+  - /GGJ2020-SaveTheWorld_WwiseProject/Events/Default Work Unit
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 
