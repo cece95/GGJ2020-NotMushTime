@@ -245,7 +245,7 @@ public class PipesPuzzleScript : Puzzle
                 }
                 else if (n.getTile().Equals('e'))
                 {
-                    newtile.SetSprite(sprites[1]);
+                    newtile.SetSprite(sprites[0]);
                 }
                 else if (n.getTile().Equals('i'))
                 {
@@ -318,24 +318,35 @@ public class PipesPuzzleScript : Puzzle
     private void Update()
     {
 
-        //while(!endNode.glowing)
-        //{
-        //    foreach(Node n in nodes)
-        //    {
-        //        if (n.getConnections().Any(item => item.glowing))
-        //        {
-        //            n.glowing = true;
-        //        }
+        if (rotator.IsGreenDown())
+        {
+            for (int i = 0; i < nodes[2, 2].getConnections().Count(); i++)
+            { 
+                print(nodes[2, 2].getConnections()[i].getPosition().ToString());
+             }
+            foreach (Node n in nodes)
+            {
+                if (n.getConnections().Any(item => item.glowing))
+                {
+                    n.glowing = true;
+                }
+                else
+                {
+                    if (n != startNode)
+                    {
+                        n.glowing = false;
+                    }
+                }
 
-        //        if (n.glowing)
-        //        {
-        //            //change the sprite to reflect that it is glowing
-        //        }
-        //    }
-        //}
-        // while(!endNode.glowing)
 
-        
+                if (n.glowing)
+                {
+                    n.PipeNode.SetGlowing(true);
+                }
+            }
+
+
+        }
     }
 
     void UpdateSelection()
@@ -463,26 +474,27 @@ public class Node
         {
             if (rotation == 0)
             {
-                connected.Add(Vector2Int.up);
-                connected.Add(Vector2Int.right);
+                connected.Add(Vector2Int.down);
+                connected.Add(Vector2Int.left);
 
             }
-
             if (rotation == 1)
             {
                 connected.Add(Vector2Int.down);
                 connected.Add(Vector2Int.right);
             }
+
             if (rotation == 2)
             {
-                connected.Add(Vector2Int.down);
-                connected.Add(Vector2Int.left);
+                connected.Add(Vector2Int.up);
+                connected.Add(Vector2Int.right);
             }
             if (rotation == 3)
             {
                 connected.Add(Vector2Int.up);
                 connected.Add(Vector2Int.left);
             }
+            
 
             setConnections(connected);
             rotation++;
@@ -492,14 +504,14 @@ public class Node
 
         if (this.tile.Equals('i'))
         {
-            if (rotation == 0)
+            if (rotation == 1)
             {
                 connected.Add(Vector2Int.up);
                 connected.Add(Vector2Int.down);
 
             }
 
-            if (rotation == 1)
+            if (rotation == 0)
             {
                 connected.Add(Vector2Int.left);
                 connected.Add(Vector2Int.right);
@@ -524,10 +536,11 @@ public class Node
 
             if (rotation == 1)
             {
-                connected.Add(Vector2Int.down);
+                connected.Add(Vector2Int.up);
                 connected.Add(Vector2Int.left);
                 connected.Add(Vector2Int.right);
             }
+            
             if (rotation == 2)
             {
                 connected.Add(Vector2Int.up);
@@ -538,10 +551,11 @@ public class Node
 
             if (rotation == 3)
             {
-                connected.Add(Vector2Int.up);
+                connected.Add(Vector2Int.down);
                 connected.Add(Vector2Int.left);
                 connected.Add(Vector2Int.right);
             }
+
             setConnections(connected);
             rotation++;
             if (rotation == 4) { rotation = 0; }
@@ -550,6 +564,33 @@ public class Node
         }
 
         if (this.tile.Equals('x')) { setConnections(connections); }
+
+        if (this.tile.Equals('s') || this.tile.Equals('e'))
+        {
+            if (rotation == 0)
+            {
+                connected.Add(Vector2Int.down);
+                setConnections(connected);
+            }
+            if (rotation == 1)
+            {
+                connected.Add(Vector2Int.left);
+                setConnections(connected);
+            }
+            if (rotation == 2)
+            {
+                connected.Add(Vector2Int.up);
+                setConnections(connected);
+            }
+            if (rotation == 3)
+            {
+                connected.Add(Vector2Int.right);
+                setConnections(connected);
+            }
+            setConnections(connected);
+            rotation++;
+            if (rotation == 4) { rotation = 0; }
+        }
 
        
 
