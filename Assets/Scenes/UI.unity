@@ -267,6 +267,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlidingBlocksPuzzle
       objectReference: {fileID: 0}
+    - target: {fileID: 4784277976274584395, guid: 48c955291864bb540bc9d59d70b06236,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48c955291864bb540bc9d59d70b06236, type: 3}
 --- !u!1 &911739104 stripped
@@ -302,6 +307,11 @@ PrefabInstance:
     - target: {fileID: 8479811366349096548, guid: 793ea37392b24c74b9f37298fcc7ada8,
         type: 3}
       propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8479811366349096548, guid: 793ea37392b24c74b9f37298fcc7ada8,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8479811366349096568, guid: 793ea37392b24c74b9f37298fcc7ada8,
