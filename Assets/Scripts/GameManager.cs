@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
 
     private Player[] players;
 
+    public DoorController Door_Top_Right;
+    public DoorController Door_Bottom_Right;
+
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -71,6 +75,12 @@ public class GameManager : MonoBehaviour
         // Fade out puzzle
         puzzle.MyRenderer.FadeOut();
         puzzle.gameObject.SetActive(false);
+
+        if(puzzle as SlidingBox)
+            Door_Top_Right.OpenDoor();
+        
+        else if(puzzle as SimonNew)
+            Door_Bottom_Right.OpenDoor();
     }
 
 
