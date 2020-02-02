@@ -189,6 +189,7 @@ public class FixAHole_Piece : MonoBehaviour
                 }
 
                 spriteObject.transform.SetParent(transform.Find("AnimRoot").Find("RotateRoot"));
+                spriteObject.transform.localScale = Vector3.one / 2.0f;
                 spriteObject.transform.localPosition = new Vector3(x, -y);
             }
         }
