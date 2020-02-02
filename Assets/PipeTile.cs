@@ -5,8 +5,7 @@ using UnityEngine;
 public class PipeTile : MonoBehaviour
 {
     public SpriteRenderer N, S, W, E, C;
-    public int desiredRotation;
-    public int staticRotation;
+    public float desiredRotation;
 
     //this variable is the current orientation of the object
     public int rotation;
@@ -28,6 +27,11 @@ public class PipeTile : MonoBehaviour
     public void SetSprite(Sprite sprite)
     {
         spriteRenderer.sprite = sprite;
+    }
+
+    public void SetGlowing(bool glowing)
+    {
+        spriteRenderer.color = glowing ? Color.cyan : Color.white;
     }
 
     public void SetSelected(bool selected)

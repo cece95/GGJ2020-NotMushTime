@@ -317,20 +317,11 @@ public class PipesPuzzleScript : Puzzle
 
     private void Update()
     {
-
-        while(!endNode.glowing)
+        // while(!endNode.glowing)
         {
             foreach(Node n in nodes)
             {
-                if (n.getConnections().Any(item => item.glowing))
-                {
-                    n.glowing = true;
-                }
-
-                if (n.glowing)
-                {
-                    //change the sprite to reflect that it is glowing
-                }
+                // n.PipeNode.SetGlowing(n.getConnections().Any(item => item.glowing));
             }
         }
         
