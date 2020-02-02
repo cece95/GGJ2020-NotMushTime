@@ -94,12 +94,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41100351d1b97423cb928c51fdf2f17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emptySprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  filledSprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   sprites:
-  - {fileID: -1164371994287368124, guid: 9f7df0538ce454b60950def6504f03ae, type: 3}
-  - {fileID: 6423512500045515010, guid: 9f7df0538ce454b60950def6504f03ae, type: 3}
-  - {fileID: -6196967707362754222, guid: 9f7df0538ce454b60950def6504f03ae, type: 3}
-  - {fileID: -1034550687188589013, guid: 9f7df0538ce454b60950def6504f03ae, type: 3}
-  - {fileID: 7094444655758174362, guid: 9f7df0538ce454b60950def6504f03ae, type: 3}
-  - {fileID: -7306792171676536876, guid: 9f7df0538ce454b60950def6504f03ae, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: d1f89c134ed3242c7a75da92ceb3c2dd, type: 3}
+  - {fileID: 21300000, guid: 2590731722c2e43d0aa4399696182a49, type: 3}
+  - {fileID: 21300000, guid: 261da23c91d16469b85dd7980cdff3b9, type: 3}
+  - {fileID: 21300000, guid: d48a59cff52be4556965dd12c642b98c, type: 3}
+  - {fileID: 21300000, guid: cbb7efc5a28d64f85bfe4102bbdde29d, type: 3}
