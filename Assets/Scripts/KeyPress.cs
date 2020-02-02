@@ -16,7 +16,7 @@ public class KeyPress : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            Debug.Log("A key or mouse click has been detected");
+         //   Debug.Log("A key or mouse click has been detected");
             SceneManager.LoadScene("MainMenu");
         }
     }
