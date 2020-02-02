@@ -45,7 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acbafe52eef2149eab5786fd75c7d354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePortal: {fileID: 0}
 --- !u!114 &2168128840607665747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,14 +82,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946670ac0e79846128f33ccb0b0ace09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: b44c7267f7e1664c
   useOtherObject: 0
   data:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 4d381e790875243c0adcf5a63af87cbc,
+      type: 2}
   valueIdInternal: 0
   groupIdInternal: 0
   valueGuidInternal: 

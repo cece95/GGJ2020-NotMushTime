@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0037377415769439799ccb3d93760be3, type: 3}
+  m_Name: CEE4B750-D227-4A62-AE94-2192132EC5C7
+  m_EditorClassIdentifier: 
+  objectName: Simon_Says_B
+  id: 1697904519
+  guid: CEE4B750-D227-4A62-AE94-2192132EC5C7

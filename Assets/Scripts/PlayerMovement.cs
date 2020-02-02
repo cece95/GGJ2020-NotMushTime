@@ -69,7 +69,10 @@ public class PlayerMovement : MonoBehaviour
             if (Speed.magnitude > 0.01f)
             {
                 animator.SetBool("Moving", true);
-                triggerFootstep.Trigger();
+                if (triggerFootstep)
+                {
+                    triggerFootstep.Trigger();
+                }
             }
             else
                 animator.SetBool("Moving", false);

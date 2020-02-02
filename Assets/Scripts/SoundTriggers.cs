@@ -35,3 +35,69 @@ public class TriggerBounce : AkTriggerBase
         }
     }
 }
+
+public class TriggerSSRed : AkTriggerBase
+{
+    public void Trigger()
+    {
+        if (triggerDelegate != null)
+        {
+            triggerDelegate(null);
+        }
+    }
+}
+
+public class TriggerSSBlue : AkTriggerBase
+{
+    public void Trigger()
+    {
+        if (triggerDelegate != null)
+        {
+            triggerDelegate(null);
+        }
+    }
+}
+
+public class TriggerSSGreen : AkTriggerBase
+{
+    public void Trigger()
+    {
+        if (triggerDelegate != null)
+        {
+            triggerDelegate(null);
+        }
+    }
+}
+
+public class TriggerSSYellow : AkTriggerBase
+{
+    public void Trigger()
+    {
+        if (triggerDelegate != null)
+        {
+            triggerDelegate(null);
+        }
+    }
+}
+
+public class TriggerSSCompleted : AkTriggerBase
+{
+    public void Trigger()
+    {
+        if (triggerDelegate != null)
+        {
+            triggerDelegate(null);
+        }
+    }
+}
+
+public class TriggerSSFailed: AkTriggerBase
+{
+    public void Trigger()
+    {
+        if (triggerDelegate != null)
+        {
+            triggerDelegate(null);
+        }
+    }
+}
