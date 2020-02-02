@@ -109,7 +109,6 @@ public class GameManager : MonoBehaviour
         
         else if(puzzle as SimonNew)
             Door_Bottom_Right.OpenDoor();
-    }
 
         if (triggerPuzzleCompleted)
             triggerPuzzleCompleted.Trigger();
