@@ -6,13 +6,19 @@ public class FixAHole : Puzzle
 {
     private FixAHole_Board puzzleBoard;
 
+    [SerializeField]
+    bool debugMode = false;
+
     private void Awake()
     {
-        puzzleBoard = GetComponentInChildren<FixAHole_Board>();
-        puzzleBoard.OnPuzzleCompleted += PuzzleBoard_OnPuzzleCompleted;
-        puzzleBoard.Initialize();
+        if (debugMode)
+        {
+            puzzleBoard = GetComponentInChildren<FixAHole_Board>();
+            puzzleBoard.OnPuzzleCompleted += PuzzleBoard_OnPuzzleCompleted;
+            puzzleBoard.Initialize();
 
-        puzzleBoard.SetPlayerControllers(PlayerInput.Instance.Player1, PlayerInput.Instance.Player2);
+            puzzleBoard.SetPlayerControllers(PlayerInput.Instance.Player1, PlayerInput.Instance.Player2);
+        }
     }
 
     public override void StartPuzzle(Player[] players)
