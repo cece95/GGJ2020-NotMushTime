@@ -123,19 +123,19 @@ public class FixAHole_Board : MonoBehaviour
 
         int counter = 0;
 
-        if(x-1 >= 0 && Board[y, x-1] == 1)
+        if(x-1 < 0 || Board[y, x-1] == 1)
         {
             counter |= 8;
         }
-        if(x+1 < BoardWidth && Board[y, x+1] == 1)
+        if(x+1 >= BoardWidth || Board[y, x+1] == 1)
         {
             counter |= 2;
         }
-        if(y-1 >= 0 && Board[y-1, x] == 1)
+        if(y-1 < 0 || Board[y-1, x] == 1)
         {
             counter |= 1;
         }
-        if(y+1 < BoardHeight && Board[y+1, x] == 1)
+        if(y+1 >= BoardHeight || Board[y+1, x] == 1)
         {
             counter |= 4;
         }
