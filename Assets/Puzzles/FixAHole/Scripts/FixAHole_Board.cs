@@ -7,6 +7,9 @@ public class FixAHole_Board : MonoBehaviour
     public delegate void PuzzleCompleted();
     public event PuzzleCompleted OnPuzzleCompleted;
 
+    TriggerPuzzleSlide triggerPuzzleDiscard;
+    TriggerPuzzleRotate triggerPuzzleRotate;
+
     [SerializeField]
     private int BoardWidth;
 
@@ -47,6 +50,11 @@ public class FixAHole_Board : MonoBehaviour
 
     [SerializeField]
     private PlayerController setter;
+
+    private void Start()
+    {
+        triggerPuzzleRotate = GetComponent<TriggerPuzzleRotate>();
+    }
 
     public void Initialize()
     {
@@ -172,6 +180,9 @@ public class FixAHole_Board : MonoBehaviour
                 {
                     selectionX = BoardWidth - selectedPiece.PieceWidth;
                 }
+
+                if (triggerPuzzleRotate)
+                    triggerPuzzleRotate.Trigger();
                 HighlightSelection();
             }
             if (setter.HorizontalPress < 0)
@@ -181,6 +192,9 @@ public class FixAHole_Board : MonoBehaviour
                 {
                     selectionX = 0;
                 }
+
+                if (triggerPuzzleRotate)
+                    triggerPuzzleRotate.Trigger();
                 HighlightSelection();
             }
             if (setter.VerticalPress > 0)
@@ -190,6 +204,9 @@ public class FixAHole_Board : MonoBehaviour
                 {
                     selectionY = 0;
                 }
+
+                if (triggerPuzzleRotate)
+                    triggerPuzzleRotate.Trigger();
                 HighlightSelection();
             }
             if (setter.VerticalPress < 0)
@@ -199,6 +216,9 @@ public class FixAHole_Board : MonoBehaviour
                 {
                     selectionY = BoardHeight - selectedPiece.PieceHeight;
                 }
+
+                if (triggerPuzzleRotate)
+                    triggerPuzzleRotate.Trigger();
                 HighlightSelection();
             }
 
@@ -208,18 +228,24 @@ public class FixAHole_Board : MonoBehaviour
             }
             if (setter.IsYellowDown())
             {
+                if (triggerPuzzleRotate)
+                    triggerPuzzleRotate.Trigger();
                 selectedPiece.RotatePiece(false);
                 EnsurePieceInBounds();
                 HighlightSelection();
             }
             if (setter.IsGreenDown())
             {
+                if (triggerPuzzleRotate)
+                    triggerPuzzleRotate.Trigger();
                 selectedPiece.RotatePiece(true);
                 EnsurePieceInBounds();
                 HighlightSelection();
             }
             if (setter.IsRedDown())
             {
+                if (triggerPuzzleDiscard)
+                    triggerPuzzleDiscard.Trigger();
                 ChuckCurrentPiece();
             }
         }
@@ -362,6 +388,9 @@ public class FixAHole_Board : MonoBehaviour
                     }
                 }
             }
+
+            if (triggerPuzzleRotate)
+                triggerPuzzleRotate.Trigger();
 
             selectedPiece.transform.localPosition += new Vector3(0.0f, 0.0f, 2.0f);
             selectedPiece = null;

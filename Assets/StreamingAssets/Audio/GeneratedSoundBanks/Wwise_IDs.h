@@ -13,11 +13,24 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BOX_DRAGGING = 1592165308U;
         static const AkUniqueID DIALOGUE_SHROOMS = 2598333881U;
         static const AkUniqueID INTERACTIVE_MUSIC = 3734989563U;
         static const AkUniqueID MAIN_REACTOR = 658170097U;
+        static const AkUniqueID PIPE_PUZZLE_FAIL = 1847720199U;
+        static const AkUniqueID PIPE_PUZZLE_MATCH = 544157162U;
+        static const AkUniqueID PNUMATIC_DOOR_DOWN = 2425467796U;
+        static const AkUniqueID PNUMATIC_DOOR_UP = 1068172655U;
         static const AkUniqueID SHROOM_BOUNCE = 1380635400U;
         static const AkUniqueID SHROOM_STEPS = 785153393U;
+        static const AkUniqueID SIMON_SAYS_A = 1697904516U;
+        static const AkUniqueID SIMON_SAYS_B = 1697904519U;
+        static const AkUniqueID SIMON_SAYS_C = 1697904518U;
+        static const AkUniqueID SIMON_SAYS_COMPLETE = 2168464150U;
+        static const AkUniqueID SIMON_SAYS_D = 1697904513U;
+        static const AkUniqueID SIMON_SAYS_FAIL = 155810655U;
+        static const AkUniqueID SLIDING_BLOCK_PUZZLE = 3292274422U;
+        static const AkUniqueID TETRIS_PUZZLE_CLICKS = 1463418219U;
     } // namespace EVENTS
 
     namespace STATES
@@ -33,10 +46,40 @@ namespace AK
             } // namespace STATE
         } // namespace HAPPY_DAYS_ARE_OVER
 
+        namespace SIMON_SAYS_PUZZLE
+        {
+            static const AkUniqueID GROUP = 3147088319U;
+
+            namespace STATE
+            {
+                static const AkUniqueID PUZZLE_A = 3821528377U;
+                static const AkUniqueID PUZZLE_B = 3821528378U;
+                static const AkUniqueID PUZZLE_C = 3821528379U;
+                static const AkUniqueID PUZZLE_COMPLETE = 376835237U;
+                static const AkUniqueID PUZZLE_D = 3821528380U;
+                static const AkUniqueID PUZZLE_FAILED = 3956906079U;
+            } // namespace STATE
+        } // namespace SIMON_SAYS_PUZZLE
+
     } // namespace STATES
 
     namespace SWITCHES
     {
+        namespace SIMON_SAYS_PUZZLE
+        {
+            static const AkUniqueID GROUP = 3147088319U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID PUZZLE_A = 3821528377U;
+                static const AkUniqueID PUZZLE_B = 3821528378U;
+                static const AkUniqueID PUZZLE_C = 3821528379U;
+                static const AkUniqueID PUZZLE_COMPLETED = 14018523U;
+                static const AkUniqueID PUZZLE_D = 3821528380U;
+                static const AkUniqueID PUZZLE_FAILED = 3956906079U;
+            } // namespace SWITCH
+        } // namespace SIMON_SAYS_PUZZLE
+
         namespace SURFACE_TYPE
         {
             static const AkUniqueID GROUP = 4064446173U;
@@ -59,6 +102,7 @@ namespace AK
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID INTERACTIVE_MUSIC = 3734989563U;
+        static const AkUniqueID PUZZLES = 4237507684U;
         static const AkUniqueID SHROOMS = 3983930604U;
     } // namespace BANKS
 
@@ -67,8 +111,8 @@ namespace AK
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID INTERACTIVE_MUSIC = 3734989563U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID PUZZLES = 4237507684U;
         static const AkUniqueID SHROOMS = 3983930604U;
-        static const AkUniqueID UI_PUZZLES = 2423156673U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

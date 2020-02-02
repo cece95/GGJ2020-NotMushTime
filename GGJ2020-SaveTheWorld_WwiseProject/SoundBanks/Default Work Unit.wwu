@@ -6,6 +6,8 @@
 				<SoundBank Name="Ambience" ID="{1B6CF75E-FCC2-4F33-9669-BCD90CFE662B}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Main_Reactor" ID="{7BB3D262-79E3-45E8-AAF6-84B060D6E749}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pnumatic_Door_Down" ID="{3350C5C3-D6C0-4C24-B38E-FB4B921C0A8A}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pnumatic_Door_UP" ID="{1DDEB795-E414-4DD4-8132-FD07DA1743F5}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -22,6 +24,23 @@
 						<ObjectRef Name="Shroom_Bounce" ID="{216251D4-0D48-41E8-920A-3B7FAC67C4CC}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Shroom_Steps" ID="{B4E5E6EB-964D-4BCB-9F5D-9C513026CA9A}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Dialogue_Shrooms" ID="{C266A056-7109-4E17-BC25-3F721A55E7A1}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Puzzles" ID="{B1E05415-AE23-412F-9244-AD1780551CDF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Tetris_Puzzle_Clicks" ID="{5E0B7883-B015-40E3-B0C8-5E3A034F4E8F}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Simon_Says_C" ID="{BE011786-1A71-427F-A4DC-1BFD6F001061}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Sliding_Block_Puzzle" ID="{F4DDADFD-6E99-44AD-89A4-6ADE5C957EB7}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Box_Dragging" ID="{3F61C689-4969-485D-BA0C-956585A08BD0}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pipe_Puzzle_Fail" ID="{B7DD5F98-6BB9-4883-B4BC-50105E125F29}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pipe_Puzzle_Match" ID="{351230ED-ECF4-493D-A5B0-9F943A4624EC}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Simon_Says_B" ID="{CEE4B750-D227-4A62-AE94-2192132EC5C7}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Simon_Says_A" ID="{D2B361C2-E9BD-4CD1-A3A7-45312CA14D15}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Simon_Says_D" ID="{A2BC3F2D-A578-4DA5-9DE5-59E2A557AAFB}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Simon_Says_Fail" ID="{41B49FD2-72CE-4DF2-8D90-58465772CD95}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Simon_Says_Complete" ID="{EB5ED818-BA8D-4FEC-9267-69438412D35B}" WorkUnitID="{B4D1F02A-2782-4588-BBEE-084276577987}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

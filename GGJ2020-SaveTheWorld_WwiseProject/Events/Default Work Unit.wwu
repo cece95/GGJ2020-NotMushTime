@@ -58,6 +58,149 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Box_Dragging" ID="{3F61C689-4969-485D-BA0C-956585A08BD0}">
+					<ChildrenList>
+						<Action Name="" ID="{B87165E0-66B8-4F9D-941E-BCCFBE3311B7}" ShortID="119255641">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Box_Dragging" ID="{5BA69A75-7C0A-402A-B4F9-4747D144DFCE}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pipe_Puzzle_Match" ID="{351230ED-ECF4-493D-A5B0-9F943A4624EC}">
+					<ChildrenList>
+						<Action Name="" ID="{3F349D56-69EB-4C79-A90E-F628BBF5FF74}" ShortID="709924421">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pipes_Puzzle_Match" ID="{526818B1-8535-4B82-A158-8FEADC1E5797}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pipe_Puzzle_Fail" ID="{B7DD5F98-6BB9-4883-B4BC-50105E125F29}">
+					<ChildrenList>
+						<Action Name="" ID="{9ED62817-44BF-46D8-B61E-DD5C36641651}" ShortID="709719567">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pipe_Puzlle_Fail" ID="{2AD9AA70-09BB-4314-8AAE-503249404894}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Tetris_Puzzle_Clicks" ID="{5E0B7883-B015-40E3-B0C8-5E3A034F4E8F}">
+					<ChildrenList>
+						<Action Name="" ID="{0DF3A1D8-D9B7-49FB-A422-4F29E39D5185}" ShortID="965775576">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tetris_Puzzle_Clicks" ID="{B0E5D67D-CB42-46D5-9939-8CB5944D0BB1}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sliding_Block_Puzzle" ID="{F4DDADFD-6E99-44AD-89A4-6ADE5C957EB7}">
+					<ChildrenList>
+						<Action Name="" ID="{8B9323C2-6009-4992-A023-F0A2CABA807F}" ShortID="836517014">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sliding_Blocks" ID="{516F49C9-540E-4F6A-A148-AB86D6AAEA69}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pnumatic_Door_UP" ID="{1DDEB795-E414-4DD4-8132-FD07DA1743F5}">
+					<ChildrenList>
+						<Action Name="" ID="{29E506AD-7BB5-434F-801D-2B0265A8A64E}" ShortID="772645227">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pnumatic_Door_UP" ID="{D56A2F1A-9CCA-430A-B041-DE4939BAAB71}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pnumatic_Door_Down" ID="{3350C5C3-D6C0-4C24-B38E-FB4B921C0A8A}">
+					<ChildrenList>
+						<Action Name="" ID="{9333BC85-2292-4CEC-B4F0-591ABADC8A9F}" ShortID="244809397">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pnumatic_Door_Down" ID="{9F769ACB-2CFD-49BA-8048-5EA0BA17C02B}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Simon_Says_A" ID="{D2B361C2-E9BD-4CD1-A3A7-45312CA14D15}">
+					<ChildrenList>
+						<Action Name="" ID="{430FDF7B-E3B1-4BC1-9D58-EBD3AAD1C2BE}" ShortID="658992910">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Simon_Says_Puzzle_A" ID="{492D187E-E448-4E03-895F-41C26AFFEA96}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Simon_Says_B" ID="{CEE4B750-D227-4A62-AE94-2192132EC5C7}">
+					<ChildrenList>
+						<Action Name="" ID="{9DC36234-380A-4CD8-8F85-4C66161EAA16}" ShortID="957622842">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Simon_Says_Puzzle_B" ID="{D89093ED-0683-4CCF-A866-D3FFF3125D9F}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Simon_Says_C" ID="{BE011786-1A71-427F-A4DC-1BFD6F001061}">
+					<ChildrenList>
+						<Action Name="" ID="{7CB5F692-A3C5-45DA-971B-F7C545715C2F}" ShortID="1040610536">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Simon_Says_Puzzle_C" ID="{E56857A3-62C3-4BA2-92CB-D0D5F69FAADF}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Simon_Says_D" ID="{A2BC3F2D-A578-4DA5-9DE5-59E2A557AAFB}">
+					<ChildrenList>
+						<Action Name="" ID="{3B43B19D-FDC0-43B5-BFBA-8B4A106B4A1B}" ShortID="190923464">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Simon_Says_Puzzle_D" ID="{F7E5FDF3-D324-4DFD-959C-67FFA764791F}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Simon_Says_Complete" ID="{EB5ED818-BA8D-4FEC-9267-69438412D35B}">
+					<ChildrenList>
+						<Action Name="" ID="{93D0A4AA-251E-4541-9974-66B1929C8268}" ShortID="1013352350">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Simon_Says_Puzzle_Completed" ID="{03C9844B-613A-41EB-B980-61876859D33C}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Simon_Says_Fail" ID="{41B49FD2-72CE-4DF2-8D90-58465772CD95}">
+					<ChildrenList>
+						<Action Name="" ID="{6D1C9A9C-A6E4-4508-96E9-E6F9827E721F}" ShortID="462498896">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Simon_Says_Puzzle_Fail" ID="{0FA3D6DB-3824-48F3-8846-E8A2AF02E321}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

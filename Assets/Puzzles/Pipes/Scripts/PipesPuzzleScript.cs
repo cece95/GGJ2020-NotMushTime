@@ -4,44 +4,69 @@ using UnityEngine;
 using System.Linq;
 
 
-public class PipesPuzzleScript : MonoBehaviour
+public class PipesPuzzleScript : Puzzle
 {
+    [SerializeField]
+    private bool debugMode = false;
 
-    public static Node[,] nodes = new Node[7,7];
+    public PipeTile prefab;
+
+    public Sprite[] sprites;
+
+    public static Node[,] nodes = new Node[5,5];
+    private int boardWidth = 5;
+    private int boardHeight = 5;
+
+    private PlayerController selector, rotator;
+
+    private int selectedX = 2;
+    private int selectedY = 2;
+
+    public override void StartPuzzle(Player[] players)
+    {
+        base.StartPuzzle(players);
+
+        selector = players[0].GetPlayerController();
+        rotator = players[1].GetPlayerController();
+    }
+
+    private void Awake()
+    {
+        if(debugMode)
+        {
+            selector = PlayerInput.Instance.Player1;
+            rotator = PlayerInput.Instance.Player2;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        //generate an 2d array of nodes
-        
+        Transform contentTransform = transform.Find("Content");
 
-        for (int i = 0; i <= 6; i++)
+        for (int i = 0; i < 5; i++)
         {
-            for (int j = 0; j <= 6; j++)
+            for (int j = 0; j < 5; j++)
             {
-                print("i = " + i + ";  j = " + j);
                 nodes[i,j] = new Node(new Vector2Int(i, j));
             }
         }
 
-        for (int i = 0; i <= 6; i++)
+        for (int i = 0; i < 5; i++)
         {
-            for (int j = 0; j <= 6; j++)
+            for (int j = 0; j < 5; j++)
             {
-                print("i = " + i + ";  j = " + j);
+               
                 nodes[i,j].updateNeighbours();
             }
         }
 
 
         //randomly generate start and end nodes
-
-
         Node start, end = nodes[0,0];
-        
-        int randomStart = Random.Range(0, 6);
-        int randomEnd = Random.Range(0, 6);
+        int randomStart = Random.Range(0, 4);
+        int randomEnd = Random.Range(0, 4);
 
-        //randomly generate start node
         if (Random.value > .5)
         {
             start = nodes[0,randomStart];
@@ -54,152 +79,456 @@ public class PipesPuzzleScript : MonoBehaviour
         //randomly generate end node
         if (Random.value > .5)
         {
-            end = nodes[6,randomEnd];
+            end = nodes[4,randomEnd];
         }
         else
         {
-            start = nodes[randomEnd,6];
+            start = nodes[randomEnd,4];
         }
-
-
 
         //find a path through the pipes that uses every pipe once at maximum
 
         List<Node> visited = new List<Node>();
 
-
-
         //start at the starting node
         Node current = start;
-
-        visited.Add(current);
-
+        Node previous;
+        Node next;
+        int length = 0;
+        int collissions = 0;
 
         while (!current.Equals(end))
         {
-
-
+            
+            collissions = 0;
             //pick a random connected node
             //check to see if we have moved to it before
             //if not, move to that node
-            if (!visited.Contains(current.getConnections()[Random.Range(0, 3)])) // if we have not visited the randomly selected node
+
+            length = current.getConnections().Count();
+
+            Node randomNode = current.getConnections()[Random.Range(0, length)];
+
+            if (visited.Contains(randomNode) == false) // if we have not visited the randomly selected node
             {
-                current = current.getConnections()[Random.Range(0, 3)]; //move to the randomly selected node
+                visited.Add(current);
+                current = randomNode; //move to the randomly selected node
             }
 
-            visited.Add(current);
-
             //go back to the start if we run in to a dead end
+            length = current.getConnections().Count();
 
-            int length = current.getConnections().Count();
-            int collissions = 0;
 
-            for(int i = 0; i< length; i++)
+            for (int i = 0; i < length; i++)
             {
-                if (visited.Contains(current.getConnections()[i])) { collissions++; }
+                
+                if (visited.Contains(current.getConnections()[i]))
+                {
+                    collissions++;
+                }
             }
             if (collissions == length)
             {
-                print("pathfinding resetting");
+
                 //set the current node to the start
                 current = start;
                 //clear the visited list
                 visited.Clear();
+               
+            }
+            
+        }
+
+        visited.Add(end);
+
+        visited.Reverse();
+
+        for (int i = 1; i < visited.Count -1; i++)
+        {
+            //get the node at index of i in the list of visited nodes
+            current = visited[i];
+
+            //get the nodes in front and behind it
+            previous = visited[i - 1];
+            next = visited[i + 1];
+            
+            //check to see if this piece has to be straight of bent
+
+            if((current.getPosition() - previous.getPosition()) + (current.getPosition() - next.getPosition()) == new Vector2Int(0,0)) //the connection is straight
+            {
+                double r = Random.value;
+
+                if (r < 0.1)
+                {
+                    current.setTile('x');
+                }
+                else if (r > 0.45)
+                {
+                    current.setTile('i');
+                }
+                else
+                {
+                    current.setTile('t');
+                }
             }
 
+            else // the connection is bent
+            {
+                double r = Random.value;
+
+                if(r < 0.1)
+                {
+                    current.setTile('x');
+                }
+                else if( r > 0.45)
+                {
+                    current.setTile('l');
+                }
+                else
+                {
+                    current.setTile('t');
+                }
+
+            }
+
+           
         }
 
-        foreach (Node n in visited) {
-            print(n.getPosition().ToString() + "\n");
-        }
-        
-        //check to see if we are at the end node -- loop if not
-
-        //if all of the connected nodes have been visited, reset the list of visited nodes and start again
-
-        //if we are at the end node, record the path that we took to get there
-
-
-
-        //based on the path, place tiles that form the path
+        start.setTile('s');
+        end.setTile('e');
+     
 
         //if there are any empty tiles, randomly generate the piece to go in to them
 
-        //once the grid is full, rotate all the tiles a random number of times (between 0 and 3)
+        foreach (Node n in nodes)
+        {
+            if(n.getTile().Equals(null))
+            {
+                double r = Random.value;
+
+                if (r < 0.07)
+                {
+                    n.setTile('x');
+                }
+                else if ( 0.5> r && r > 0.07)
+                {
+                    n.setTile('l');
+                }
+                else if(0.65 > r && r > 0.5)
+                {
+                    n.setTile('t');
+                }
+                else
+                {
+                    n.setTile('i');
+                }
+            }
+
+            //rotate every node a random number of times
+            for (int i = 0; i< Random.Range(1, 4); i++)
+            {
+                n.Spin();
+            }
+
+            //
+            PipeTile newtile = Instantiate(prefab, new Vector3(n.getPosition().x, n.getPosition().y), Quaternion.identity);
 
 
+            //place blocks in correct tiles
+            {
 
+                if (n.getTile().Equals('s'))
+                {
+                    newtile.SetSprite(sprites[0]);
+                    
+                }
+                else if (n.getTile().Equals('e'))
+                {
+                    newtile.SetSprite(sprites[1]);
+                }
+                else if (n.getTile().Equals('i'))
+                {
+                    newtile.SetSprite(sprites[2]);
+                }
+                else if (n.getTile().Equals('l'))
+                {
+                    newtile.SetSprite(sprites[3]);
+                }
+                else if (n.getTile().Equals('t'))
+                {
+                    newtile.SetSprite(sprites[4]);
+                }
+                else if (n.getTile().Equals('x'))
+                {
+                    newtile.SetSprite(sprites[5]);
+                }
 
-        //fill all the other nodes with random pipes
-        //rotate all the nodes a random number of times
+            }
+
+            //rotate blocks to correct orientation
+            newtile.SetRotation(n.getRotation() * 90);
+            newtile.transform.SetParent(contentTransform);
+            n.PipeNode = newtile;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        //if a block is selected, rotate it and update the blocks it is connected to
+        if(selector == null || rotator == null)
+        {
+            return;
+        }
 
+        //if the player presses the green button, rotate the 
+        if (selector.HorizontalPress > 0)
+        {
+            selectedX = Mathf.Clamp(selectedX + 1, 0, boardWidth - 1);
+            UpdateSelection();
+        }
+        if (selector.HorizontalPress < 0)
+        {
+            selectedX = Mathf.Clamp(selectedX - 1, 0, boardWidth - 1);
+            UpdateSelection();
+        }
+        if (selector.VerticalPress > 0)
+        {
+            selectedY = Mathf.Clamp(selectedY + 1, 0, boardHeight - 1);
+            UpdateSelection();
+        }
+        if (selector.VerticalPress < 0)
+        {
+            selectedY = Mathf.Clamp(selectedY - 1, 0, boardHeight - 1);
+            UpdateSelection();
+        }
+
+        if(rotator.IsGreenDown())
+        {
+            // TODO: Rotate piece
+            Node currentNode = nodes[selectedX, selectedY];
+
+            currentNode.Spin();
+
+            currentNode.PipeNode.desiredRotation = currentNode.getRotation() * 90.0f;
+            // nodes[selectedY, selectedX].PipeNode.Rotate() ???
+            // Rotate sprite as well
+        }
+    }
+
+    void UpdateSelection()
+    {
+        for(int x = 0; x < 5; ++x)
+        {
+            for(int y = 0; y < 5; ++y)
+            {
+                nodes[x, y].PipeNode.SetSelected(false);
+            }
+        }
+
+        nodes[selectedX, selectedY].PipeNode.SetSelected(true);
+        // foreach(node ... )
+        // remove selection
+
+        // nodes[selectedX, selectedY].select();
     }
 }
 
 public class Node
 {
+    private char tile;
     private Vector2Int position;
     private List<Node> connections = new List<Node>();
+    private int rotation = 0;
+    private List<Vector2Int> connectionDirections = new List<Vector2Int>();
+
+    public PipeTile PipeNode;
 
     public Node(Vector2Int position)
     {
         this.position = position;
+    } // function that created a node at location "position"
 
-       
-    }
+    public int getRotation() { return rotation; }
 
-
+    // function used in initial setup to connect all adjacent nodes to one another
     public void updateNeighbours()
     {
         //add connected nodes to list of connections
         
         if(this.position.x > 0)
         {
+           
             this.connections.Add(PipesPuzzleScript.nodes[this.position.x - 1,this.position.y]);
         }
 
-        if (this.position.x < 6)
+        if (this.position.x < 4)
         {
-            Debug.Log(this.position.x);
+            
             this.connections.Add(PipesPuzzleScript.nodes[this.position.x + 1,this.position.y]);
         }
         if (this.position.y > 0)
         {
+           
             this.connections.Add(PipesPuzzleScript.nodes[this.position.x,this.position.y - 1]);
         }
 
-        if (this.position.y < 6)
+        if (this.position.y < 4)
         {
+            
             this.connections.Add(PipesPuzzleScript.nodes[this.position.x,this.position.y + 1]);
         }
+        
+    } 
 
-        
-        
-        
-        
-    }
+    // function that lists the nodes connected to the current node
     public List<Node> getConnections()
     {
         return this.connections;
-    }
+    } 
 
+
+    // function that returns the position of the current node
     public Vector2Int getPosition()
     {
         return this.position;
-    }
-}
+    } 
 
-public class Tile
-{
-    
-    public Tile()
+    //function to set the tile type
+    public void setTile(char type)
     {
-
+        this.tile = type;
     }
+
+    public char getTile()
+    {
+        return this.tile;
+    } //function for getting the type of tile the selected node is
+
+    public List<Vector2Int> getConnectionDirections()
+    {
+        return connectionDirections;
+    } //function that returns the directions in which the node is trying to connect with other nodes
+
+    public void setConnections(List<Vector2Int> Connections)
+    {
+        this.connections.Clear();
+        foreach (Vector2Int c in Connections)
+        {
+            connectionDirections = Connections;
+
+            int x = this.getPosition().x + c.x;
+            int y = this.getPosition().y + c.y;
+
+            
+            if (x>0 && x<4 && y>0 && y<4)
+            {
+                this.connections.Add(PipesPuzzleScript.nodes[this.getPosition().x + c.x, this.getPosition().y + c.y]);
+            }
+        }
+       
+
+    } //function to change which nodes the current node is connected to
+
+    public void Spin()
+    {
+        
+        List<Vector2Int> connections = new List<Vector2Int>() {Vector2Int.up, Vector2Int.down, Vector2Int.left, Vector2Int.right};
+        List<Vector2Int> connected = new List<Vector2Int>();
+
+        if (this.tile.Equals('l'))
+        {
+            if (rotation == 0)
+            {
+                connected.Add(Vector2Int.up);
+                connected.Add(Vector2Int.right);
+
+            }
+
+            if (rotation == 1)
+            {
+                connected.Add(Vector2Int.down);
+                connected.Add(Vector2Int.right);
+            }
+            if (rotation == 2)
+            {
+                connected.Add(Vector2Int.down);
+                connected.Add(Vector2Int.left);
+            }
+            if (rotation == 3)
+            {
+                connected.Add(Vector2Int.up);
+                connected.Add(Vector2Int.left);
+            }
+
+            setConnections(connected);
+            rotation++;
+            if (rotation == 4) { rotation = 0; }
+
+        }
+
+        if (this.tile.Equals('i'))
+        {
+            if (rotation == 0)
+            {
+                connected.Add(Vector2Int.up);
+                connected.Add(Vector2Int.down);
+
+            }
+
+            if (rotation == 1)
+            {
+                connected.Add(Vector2Int.left);
+                connected.Add(Vector2Int.right);
+            }
+
+            setConnections(connected);
+            rotation++;
+            if (rotation == 2) { rotation = 0; }
+
+
+        }
+
+        if (this.tile.Equals('t'))
+        {
+            if (rotation == 0)
+            {
+                connected.Add(Vector2Int.up);
+                connected.Add(Vector2Int.right);
+                connected.Add(Vector2Int.down);
+
+            }
+
+            if (rotation == 1)
+            {
+                connected.Add(Vector2Int.down);
+                connected.Add(Vector2Int.left);
+                connected.Add(Vector2Int.right);
+            }
+            if (rotation == 2)
+            {
+                connected.Add(Vector2Int.up);
+                connected.Add(Vector2Int.left);
+                connected.Add(Vector2Int.down);
+
+            }
+
+            if (rotation == 3)
+            {
+                connected.Add(Vector2Int.up);
+                connected.Add(Vector2Int.left);
+                connected.Add(Vector2Int.right);
+            }
+            setConnections(connected);
+            rotation++;
+            if (rotation == 4) { rotation = 0; }
+
+
+        }
+
+        if (this.tile.Equals('x')) { setConnections(connections); }
+
+       
+
+    } //function to rotate the selected node 90 degrees clockwise
+
 }
+

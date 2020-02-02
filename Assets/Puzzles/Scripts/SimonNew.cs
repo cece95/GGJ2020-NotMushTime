@@ -26,7 +26,15 @@ public class SimonNew : Puzzle
     int movecount = 0;
     float timecounter = 0.0f;
     float timestore;
+    bool playSound = true; 
     Component PI;
+
+    TriggerSSBlue triggerBlue;
+    TriggerSSRed triggerRed;
+    TriggerSSYellow triggerYellow;
+    TriggerSSGreen triggerGreen;
+    TriggerSSCompleted triggerCompleted;
+    TriggerSSFailed triggerFailed;
 
     PlayerController playerController, playerController1;
 
@@ -37,9 +45,25 @@ public class SimonNew : Puzzle
         playerController = players[0].GetPlayerController();
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
+    }
+
+    private void Start()
+    {
+        triggerRed = GetComponent<TriggerSSRed>();
+        triggerBlue = GetComponent<TriggerSSBlue>();
+        triggerGreen = GetComponent<TriggerSSGreen>();
+        triggerYellow = GetComponent<TriggerSSYellow>();
+        triggerCompleted = GetComponent<TriggerSSCompleted>();
+        triggerFailed = GetComponent<TriggerSSFailed>();
+    }
+
+    // Start is called before the first frame update
+    void Awake()
+    {
+
+
         SetTimer();
         /*red.enabled = false;
         blue.enabled = false;
@@ -196,6 +220,7 @@ public class SimonNew : Puzzle
                 blue.color = new Color(1f, 1f, 1f, 0f);
                 green.color = new Color(1f, 1f, 1f, 0f);
                 yellow.color = new Color(1f, 1f, 1f, 0f);
+                if(triggerRed && playSound) triggerRed.Trigger();
             }
             if (puz[puzzleposition] == 1)
             {
@@ -203,6 +228,7 @@ public class SimonNew : Puzzle
                 red.color = new Color(1f, 1f, 1f, 0f);
                 green.color = new Color(1f, 1f, 1f, 0f);
                 yellow.color = new Color(1f, 1f, 1f, 0f);
+                if(triggerBlue && playSound) triggerBlue.Trigger();
             }
             if (puz[puzzleposition] == 2)
             {
@@ -210,6 +236,7 @@ public class SimonNew : Puzzle
                 red.color = new Color(1f, 1f, 1f, 0f);
                 blue.color = new Color(1f, 1f, 1f, 0f);
                 yellow.color = new Color(1f, 1f, 1f, 0f);
+                if(triggerGreen && playSound) triggerGreen.Trigger();
             }
             if (puz[puzzleposition] == 3)
             {
@@ -217,7 +244,10 @@ public class SimonNew : Puzzle
                 red.color = new Color(1f, 1f, 1f, 0f);
                 blue.color = new Color(1f, 1f, 1f, 0f);
                 green.color = new Color(1f, 1f, 1f, 0f);
+                if(triggerYellow && playSound) triggerYellow.Trigger();
             }
+
+            playSound = false;
         }
         else
         {
@@ -225,6 +255,8 @@ public class SimonNew : Puzzle
             blue.color = new Color(1f, 1f, 1f, 0f);
             green.color = new Color(1f, 1f, 1f, 0f);
             yellow.color = new Color(1f, 1f, 1f, 0f);
+
+            playSound = true;
         }
 
     }
@@ -240,24 +272,28 @@ public class SimonNew : Puzzle
             if (playerController.IsRedDown())
             {
                 timestore = timecounter;
+                if(triggerRed) triggerRed.Trigger();
                 ans.SetValue(0, movecount);
                 movecount++;
             }
             if (playerController.IsBlueDown())
             {
                 timestore = timecounter;
+                if(triggerBlue) triggerBlue.Trigger();
                 ans.SetValue(1, movecount);
                 movecount++;
             }
             if (playerController.IsGreenDown())
             {
                 timestore = timecounter;
+                if(triggerGreen) triggerGreen.Trigger();
                 ans.SetValue(2, movecount);
                 movecount++;
             }
             if (playerController.IsYellowDown())
             {
                 timestore = timecounter;
+                if(triggerYellow) triggerYellow.Trigger();
                 ans.SetValue(3, movecount);
                 movecount++;
             }
@@ -350,6 +386,7 @@ public class SimonNew : Puzzle
             movecount = 0;
             displayswitch = true;
             play = false;
+            if(triggerFailed) triggerFailed.Trigger();
             /*for (int j = 0; j < ans.Length; j++)
             {
                 Array.Clear(ans, j, ans.Length);
@@ -357,6 +394,7 @@ public class SimonNew : Puzzle
         }
         if (puztrack > 2)
         {
+            if(triggerCompleted) triggerCompleted.Trigger();
             Debug.Log("Ultimate Win!");
             OnCompleted();
         }
