@@ -259,25 +259,40 @@ public class PipesPuzzleScript : Puzzle
         if (selector.HorizontalPress > 0)
         {
             selectedX = Mathf.Clamp(selectedX + 1, 0, boardWidth - 1);
+            UpdateSelection();
         }
         if (selector.HorizontalPress < 0)
         {
             selectedX = Mathf.Clamp(selectedX - 1, 0, boardWidth - 1);
+            UpdateSelection();
         }
         if (selector.VerticalPress > 0)
         {
             selectedX = Mathf.Clamp(selectedY + 1, 0, boardWidth - 1);
+            UpdateSelection();
         }
         if (selector.VerticalPress < 0)
         {
             selectedX = Mathf.Clamp(selectedY - 1, 0, boardWidth - 1);
+            UpdateSelection();
         }
 
         if(rotator.IsGreenDown())
         {
             // TODO: Rotate piece
+
+            nodes[selectedX, selectedY].Spin();
             // nodes[selectedY, selectedX].PipeNode.Rotate() ???
+            // Rotate sprite as well
         }
+    }
+
+    void UpdateSelection()
+    {
+        // foreach(node ... )
+        // remove selection
+
+        // nodes[selectedX, selectedY].select();
     }
 }
 
