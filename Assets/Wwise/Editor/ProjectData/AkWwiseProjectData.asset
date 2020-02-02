@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4d87d1d28f13964985243f7dbc5d5e82
     GuidInternal: 
-    m_lastTime: -8586210008844775808
+    m_lastTime: -8586209958444775808
     List:
     - name: Reverb
       guid: a01721411f4c2541a0228710a74f5e53
@@ -42,7 +42,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2e563b88421c0c4189e8c672fb883ad1
     GuidInternal: 
-    m_lastTime: -8586210006584775808
+    m_lastTime: -8586209907844775808
     List:
     - name: Ambience
       guid: 5ef76c1bc2fc334f9669bcd90cfe662b
@@ -76,7 +76,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2af0d1b482278845bbee084276577987
     GuidInternal: 
-    m_lastTime: -8586209996294775808
+    m_lastTime: -8586209890944775808
     List:
     - name: Interactive_Music
       guid: 6d2c3d1c86d9fc4b8c1a0669a6ba4d78
@@ -102,6 +102,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Shroom_Bounce
+      guid: d4516221480de841920a3b7fac67c4cc
+      id: 1380635400
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Shroom_Bounce
+        ObjectType: 3
+      Path: Default Work Unit/Shroom_Bounce
+      maxAttenuation: 0
+      maxDuration: 0.943605
+      minDuration: 0.22
     - name: Shroom_Steps
       guid: ebe6e5b44d96cb4b9f5d9c513026ca9a
       id: 785153393
@@ -112,7 +124,7 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Shroom_Steps
       maxAttenuation: 0
-      maxDuration: 0.349963
+      maxDuration: 0.277912
       minDuration: 0.106869
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu

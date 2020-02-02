@@ -36,6 +36,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Shroom_Bounce" ID="{216251D4-0D48-41E8-920A-3B7FAC67C4CC}">
+					<ChildrenList>
+						<Action Name="" ID="{609A2654-3E54-44A3-A5B1-F36BE7CE55A9}" ShortID="324310394">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shroom_Bounce" ID="{6E91BEA2-44A5-4428-96C7-EDCB13AD3221}" WorkUnitID="{3E8B178F-9AED-4177-9FE5-13A15286F5FB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

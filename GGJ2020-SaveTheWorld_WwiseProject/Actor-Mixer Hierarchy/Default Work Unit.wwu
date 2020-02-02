@@ -139,16 +139,6 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="Shroom_Bounce" ID="{6E91BEA2-44A5-4428-96C7-EDCB13AD3221}" ShortID="749713913">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
-						</Reference>
-					</ReferenceList>
-				</RandomSequenceContainer>
 				<SwitchContainer Name="Shroom_Steps_Switch" ID="{1707F487-E1AA-45BB-B9D4-A4E4AC3F4BFD}" ShortID="146548632">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -570,6 +560,229 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<RandomSequenceContainer Name="Shroom_Bounce" ID="{6E91BEA2-44A5-4428-96C7-EDCB13AD3221}" ShortID="749713913">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{E88D6C39-419F-4A8A-B029-4FC173D5CE1B}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{3DE0ECF8-949A-4000-85B0-D30B0633C13E}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="1"/>
+											<Property Name="Min" Type="Real64" Value="-1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Shrooms_Bouncing_Head_1" ID="{09DFA77E-2F95-4255-AE40-F6D64D7572D7}" ShortID="385223038">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shrooms_Bouncing_Head_1" ID="{41A2E8CA-FC38-4CA9-9390-05F877262BFE}" ShortID="781391874">
+									<Language>SFX</Language>
+									<AudioFile>Shrooms_Bouncing_Head_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shrooms_Bouncing_Head_1" ID="{41A2E8CA-FC38-4CA9-9390-05F877262BFE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shrooms_Bouncing_Head_2" ID="{3765A17A-68CD-4052-BA35-1BBC5C14C9EB}" ShortID="51925949">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shrooms_Bouncing_Head_2" ID="{83703A72-FF47-4252-907A-3E74815B0B46}" ShortID="393207477">
+									<Language>SFX</Language>
+									<AudioFile>Shrooms_Bouncing_Head_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shrooms_Bouncing_Head_2" ID="{83703A72-FF47-4252-907A-3E74815B0B46}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shrooms_Bouncing_Head_3" ID="{39941A22-1EC9-4750-8D70-44C4C0D564FB}" ShortID="1033754994">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shrooms_Bouncing_Head_3" ID="{71BDC370-E209-4C32-A36E-7641140BD863}" ShortID="980806326">
+									<Language>SFX</Language>
+									<AudioFile>Shrooms_Bouncing_Head_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shrooms_Bouncing_Head_3" ID="{71BDC370-E209-4C32-A36E-7641140BD863}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shrooms_Bouncing_Head_4" ID="{F2D3C8AC-3BCA-4611-A8C9-2230BE0E420F}" ShortID="1041577542">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shrooms_Bouncing_Head_4" ID="{FB3FFBB5-AF58-44CB-A6FE-1A3C19C314CE}" ShortID="91478988">
+									<Language>SFX</Language>
+									<AudioFile>Shrooms_Bouncing_Head_4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shrooms_Bouncing_Head_4" ID="{FB3FFBB5-AF58-44CB-A6FE-1A3C19C314CE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shrooms_Bouncing_Head_5" ID="{46938F94-B609-43F4-8533-9255B597A2DD}" ShortID="832332434">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shrooms_Bouncing_Head_5" ID="{31927773-B54E-425F-9026-01DA5447E862}" ShortID="260642758">
+									<Language>SFX</Language>
+									<AudioFile>Shrooms_Bouncing_Head_5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shrooms_Bouncing_Head_5" ID="{31927773-B54E-425F-9026-01DA5447E862}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shrooms_Bouncing_Head_6" ID="{26721379-0C2F-4644-A902-26EC80BB4278}" ShortID="404300198">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shrooms_Bouncing_Head_6" ID="{2A61E958-5297-48D4-8DCD-827983394387}" ShortID="1071488859">
+									<Language>SFX</Language>
+									<AudioFile>Shrooms_Bouncing_Head_6.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shrooms_Bouncing_Head_6" ID="{2A61E958-5297-48D4-8DCD-827983394387}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce_Tail_1" ID="{A2FCECA5-1190-4272-9587-0D33D3AE8AD7}" ShortID="87388269">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce_Tail_1" ID="{BA9385EA-2774-4A2F-89F9-908A8D32C106}" ShortID="545498230">
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce_Tail_1.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="569188611"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce_Tail_1" ID="{BA9385EA-2774-4A2F-89F9-908A8D32C106}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce_Tail_2" ID="{A67BAFED-3C45-4E95-AAE9-AE3DC894CC64}" ShortID="153245423">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce_Tail_2" ID="{36C98E7D-0CE8-4DAC-AB9A-EC901CF9ED8D}" ShortID="1057481924">
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce_Tail_2.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="848196077"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce_Tail_2" ID="{36C98E7D-0CE8-4DAC-AB9A-EC901CF9ED8D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce_Tail_3" ID="{28748F79-D66D-4B30-B573-7381E56E1FBE}" ShortID="585722378">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Shrooms" ID="{A7996FD9-0D87-488B-BAE5-4CA24CFD5B49}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce_Tail_3" ID="{48251734-67AC-426A-8E87-764C8CACB029}" ShortID="816890196">
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce_Tail_3.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="651133254"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce_Tail_3" ID="{48251734-67AC-426A-8E87-764C8CACB029}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

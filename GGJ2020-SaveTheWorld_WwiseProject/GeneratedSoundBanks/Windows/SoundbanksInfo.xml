@@ -69,64 +69,101 @@
 			<ShortName>Shrooms</ShortName>
 			<Path>Shrooms.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1380635400" Name="Shroom_Bounce" ObjectPath="\Events\Default Work Unit\Shroom_Bounce" DurationType="OneShot" DurationMin="0.220000" DurationMax="0.943605"/>
 				<Event Id="785153393" Name="Shroom_Steps" ObjectPath="\Events\Default Work Unit\Shroom_Steps" DurationType="OneShot" DurationMin="0.106869" DurationMax="0.277912"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="91478988" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_4.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_4_10C4C929.wem</Path>
+				</File>
 				<File Id="108645341" Language="SFX">
 					<ShortName>Shroom_Step_01.wav</ShortName>
-					<Path>SFX/Shroom_Step_01_7DD75476.wem</Path>
+					<Path>SFX/Shroom_Step_01_66608D6F.wem</Path>
 				</File>
 				<File Id="214543282" Language="SFX">
 					<ShortName>Shroom_Step_07.wav</ShortName>
-					<Path>SFX/Shroom_Step_07_363DC68C.wem</Path>
+					<Path>SFX/Shroom_Step_07_90D622A5.wem</Path>
 				</File>
 				<File Id="247946552" Language="SFX">
 					<ShortName>Shroom_Step_13.wav</ShortName>
-					<Path>SFX/Shroom_Step_13_4AB840A7.wem</Path>
+					<Path>SFX/Shroom_Step_13_BCFE92A3.wem</Path>
+				</File>
+				<File Id="260642758" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_5.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_5_10C4C929.wem</Path>
 				</File>
 				<File Id="312163290" Language="SFX">
 					<ShortName>Shroom_Step_14.wav</ShortName>
-					<Path>SFX/Shroom_Step_14_6CFE0F96.wem</Path>
+					<Path>SFX/Shroom_Step_14_D834797E.wem</Path>
 				</File>
 				<File Id="337409131" Language="SFX">
 					<ShortName>Shroom_Step_12.wav</ShortName>
-					<Path>SFX/Shroom_Step_12_471D819A.wem</Path>
+					<Path>SFX/Shroom_Step_12_59071B08.wem</Path>
 				</File>
 				<File Id="367363241" Language="SFX">
 					<ShortName>Shroom_Step_05.wav</ShortName>
-					<Path>SFX/Shroom_Step_05_41DF8A94.wem</Path>
+					<Path>SFX/Shroom_Step_05_3808CFD5.wem</Path>
 				</File>
 				<File Id="379364992" Language="SFX">
 					<ShortName>Shroom_Step_02.wav</ShortName>
-					<Path>SFX/Shroom_Step_02_800700B1.wem</Path>
+					<Path>SFX/Shroom_Step_02_593E73C9.wem</Path>
+				</File>
+				<File Id="393207477" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_2.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_2_10C4C929.wem</Path>
 				</File>
 				<File Id="415171525" Language="SFX">
 					<ShortName>Shroom_Step_06.wav</ShortName>
-					<Path>SFX/Shroom_Step_06_781B909C.wem</Path>
+					<Path>SFX/Shroom_Step_06_DE20DBC3.wem</Path>
 				</File>
 				<File Id="490055282" Language="SFX">
 					<ShortName>Shroom_Step_09.wav</ShortName>
-					<Path>SFX/Shroom_Step_09_7BCEC5F7.wem</Path>
+					<Path>SFX/Shroom_Step_09_58A0E5B5.wem</Path>
+				</File>
+				<File Id="569188611" Language="SFX">
+					<ShortName>Shroom_Bounce_Tail_1.wav</ShortName>
+					<Path>SFX/Shroom_Bounce_Tail_1_10C4C929.wem</Path>
+				</File>
+				<File Id="651133254" Language="SFX">
+					<ShortName>Shroom_Bounce_Tail_3.wav</ShortName>
+					<Path>SFX/Shroom_Bounce_Tail_3_10C4C929.wem</Path>
+				</File>
+				<File Id="781391874" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_1.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_1_10C4C929.wem</Path>
 				</File>
 				<File Id="785698507" Language="SFX">
 					<ShortName>Shroom_Step_03.wav</ShortName>
-					<Path>SFX/Shroom_Step_03_8FB7C60A.wem</Path>
+					<Path>SFX/Shroom_Step_03_B2A2C211.wem</Path>
 				</File>
 				<File Id="803809114" Language="SFX">
 					<ShortName>Shroom_Step_15.wav</ShortName>
-					<Path>SFX/Shroom_Step_15_37715372.wem</Path>
+					<Path>SFX/Shroom_Step_15_B095325D.wem</Path>
 				</File>
 				<File Id="804564581" Language="SFX">
 					<ShortName>Shroom_Step_04.wav</ShortName>
-					<Path>SFX/Shroom_Step_04_75822C93.wem</Path>
+					<Path>SFX/Shroom_Step_04_845C61A6.wem</Path>
+				</File>
+				<File Id="848196077" Language="SFX">
+					<ShortName>Shroom_Bounce_Tail_2.wav</ShortName>
+					<Path>SFX/Shroom_Bounce_Tail_2_10C4C929.wem</Path>
 				</File>
 				<File Id="916146740" Language="SFX">
 					<ShortName>Shroom_Step_08.wav</ShortName>
-					<Path>SFX/Shroom_Step_08_BF8E0B12.wem</Path>
+					<Path>SFX/Shroom_Step_08_432C93C2.wem</Path>
+				</File>
+				<File Id="980806326" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_3.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_3_10C4C929.wem</Path>
 				</File>
 				<File Id="1058851181" Language="SFX">
 					<ShortName>Shroom_Step_11.wav</ShortName>
-					<Path>SFX/Shroom_Step_11_3900AEC1.wem</Path>
+					<Path>SFX/Shroom_Step_11_5CEAC8A1.wem</Path>
+				</File>
+				<File Id="1071488859" Language="SFX">
+					<ShortName>Shrooms_Bouncing_Head_6.wav</ShortName>
+					<Path>SFX/Shrooms_Bouncing_Head_6_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
