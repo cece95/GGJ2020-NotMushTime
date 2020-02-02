@@ -80,13 +80,21 @@
 			<Path>English(US)/Shrooms.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2598333881" Name="Dialogue_Shrooms" ObjectPath="\Events\Default Work Unit\Dialogue_Shrooms" DurationType="OneShot" DurationMin="9.640000" DurationMax="9.640000"/>
-				<Event Id="1380635400" Name="Shroom_Bounce" ObjectPath="\Events\Default Work Unit\Shroom_Bounce" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1380635400" Name="Shroom_Bounce" ObjectPath="\Events\Default Work Unit\Shroom_Bounce" DurationType="OneShot" DurationMin="0.859828" DurationMax="1.140000"/>
 				<Event Id="785153393" Name="Shroom_Steps" ObjectPath="\Events\Default Work Unit\Shroom_Steps" DurationType="OneShot" DurationMin="0.106869" DurationMax="0.277912"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="108645341" Language="SFX">
 					<ShortName>Shroom_Step_01.wav</ShortName>
 					<Path>SFX/Shroom_Step_01_66608D6F.wem</Path>
+				</File>
+				<File Id="111251399" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-12.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-12_89B25EB1.wem</Path>
+				</File>
+				<File Id="189448701" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-15.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-15_426D6391.wem</Path>
 				</File>
 				<File Id="214543282" Language="SFX">
 					<ShortName>Shroom_Step_07.wav</ShortName>
@@ -112,9 +120,17 @@
 					<ShortName>Shroom_Step_02.wav</ShortName>
 					<Path>SFX/Shroom_Step_02_593E73C9.wem</Path>
 				</File>
+				<File Id="397432513" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-06.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-06_91C69A6B.wem</Path>
+				</File>
 				<File Id="415171525" Language="SFX">
 					<ShortName>Shroom_Step_06.wav</ShortName>
 					<Path>SFX/Shroom_Step_06_DE20DBC3.wem</Path>
+				</File>
+				<File Id="428784846" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-09.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-09_D210C562.wem</Path>
 				</File>
 				<File Id="490055282" Language="SFX">
 					<ShortName>Shroom_Step_09.wav</ShortName>
@@ -123,6 +139,18 @@
 				<File Id="493975409" Language="English(US)">
 					<ShortName>Dialogue_Shrooms.wav</ShortName>
 					<Path>Voices/English(US)/Dialogue_Shrooms_10C4C929.wem</Path>
+				</File>
+				<File Id="494965667" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-27.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-27_98C61724.wem</Path>
+				</File>
+				<File Id="646929000" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-24.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-24_0F6E0F70.wem</Path>
+				</File>
+				<File Id="776431258" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-21.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-21_A8965B66.wem</Path>
 				</File>
 				<File Id="785698507" Language="SFX">
 					<ShortName>Shroom_Step_03.wav</ShortName>
@@ -135,6 +163,10 @@
 				<File Id="804564581" Language="SFX">
 					<ShortName>Shroom_Step_04.wav</ShortName>
 					<Path>SFX/Shroom_Step_04_845C61A6.wem</Path>
+				</File>
+				<File Id="867287380" Language="SFX">
+					<ShortName>Shroom_Bounce-ZtpTrs2_01-18.wav</ShortName>
+					<Path>SFX/Shroom_Bounce-ZtpTrs2_01-18_A866B1A3.wem</Path>
 				</File>
 				<File Id="916146740" Language="SFX">
 					<ShortName>Shroom_Step_08.wav</ShortName>

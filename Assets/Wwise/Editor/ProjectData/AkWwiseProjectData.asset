@@ -193,8 +193,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Shroom_Bounce
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.14
+      minDuration: 0.859828
     - name: Shroom_Steps
       guid: ebe6e5b44d96cb4b9f5d9c513026ca9a
       id: 785153393

@@ -581,10 +581,10 @@
 							</ModifierList>
 						</Property>
 						<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
-						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-6</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -609,6 +609,201 @@
 							<ObjectRef Name="Reverb" ID="{412117A0-4C1F-4125-A022-8710A74F5E53}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-06" ID="{B0921ED5-A280-44C1-8F7F-DF6A5B06B908}" ShortID="1040864181">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-06" ID="{83C180F7-9D6D-461C-B5D6-587DC4333B05}" ShortID="397432513">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0104132231404959"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0219834710743801"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-06.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-06" ID="{83C180F7-9D6D-461C-B5D6-587DC4333B05}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-09" ID="{FC7A6901-9D1E-4835-B6BD-B2FFCA7D3641}" ShortID="121327514">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-09" ID="{E8DB5648-6C2A-48A6-BB39-46B3BC74095E}" ShortID="428784846">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00727272727272728"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0124675324675325"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-09.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-09" ID="{E8DB5648-6C2A-48A6-BB39-46B3BC74095E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-12" ID="{263E8754-BDCD-41C7-8A13-064DB72491D8}" ShortID="1047207834">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-12" ID="{8F64FE8F-F157-4BF8-9DCA-732DC8E1D16A}" ShortID="111251399">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0133766233766234"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0170247933884297"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-12.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-12" ID="{8F64FE8F-F157-4BF8-9DCA-732DC8E1D16A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-15" ID="{5968F92D-57CD-4C60-8D71-6B459729DE51}" ShortID="794464327">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-15" ID="{BDA821FD-D88E-44AE-8301-21CFFCCD8A3E}" ShortID="189448701">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0180637544273908"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0108382526564345"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-15.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-15" ID="{BDA821FD-D88E-44AE-8301-21CFFCCD8A3E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-18" ID="{5333F3BF-8623-4F27-B065-99D0056BE09C}" ShortID="124534747">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-18" ID="{009EC7A3-26F3-4643-84FD-453AD48BDD1E}" ShortID="867287380">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0121900157150621"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.017066022001087"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-18.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-18" ID="{009EC7A3-26F3-4643-84FD-453AD48BDD1E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-21" ID="{7BAB507B-901C-49BD-AE23-1A3D76A58E86}" ShortID="922375824">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-21" ID="{13E04D53-4200-44CB-AF08-5C4ACE0AA0A5}" ShortID="776431258">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0117931501604971"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0128652547205423"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0482447052020336"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-21.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-21" ID="{13E04D53-4200-44CB-AF08-5C4ACE0AA0A5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-24" ID="{BC1DDFB6-F69D-4965-8540-8EB4D8F0AAB7}" ShortID="69854751">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-24" ID="{5E5F3F07-CFBF-4AB3-A185-C667BB29876B}" ShortID="646929000">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0242266824085006"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0242266824085005"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-24.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-24" ID="{5E5F3F07-CFBF-4AB3-A185-C667BB29876B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Shroom_Bounce-ZtpTrs2_01-27" ID="{599E3B5A-DF7C-49D2-98C2-EC9D776F0199}" ShortID="579382302">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2D1874D-138F-4996-8524-3F7DBC5D5E82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shroom_Bounce-ZtpTrs2_01-27" ID="{3C670FA5-9C39-498B-838F-6CECA23131C7}" ShortID="494965667">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0144273907910272"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0188665879574971"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Shroom_Bounce-ZtpTrs2_01-27.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Shroom_Bounce-ZtpTrs2_01-27" ID="{3C670FA5-9C39-498B-838F-6CECA23131C7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</RandomSequenceContainer>
 				<Sound Name="Dialogue_Shrooms" ID="{4F5CB1DD-CD26-4EEF-ABC1-BF4E70C82516}" ShortID="755232110">
 					<PropertyList>
