@@ -5,8 +5,8 @@ using UnityEngine;
 public class PipeTile : MonoBehaviour
 {
     public SpriteRenderer N, S, W, E, C;
-    public int desiredRotation;
-    public int staticRotation;
+    public float desiredRotation;
+    public float staticRotation;
 
     //this variable is the current orientation of the object
     public int rotation;
