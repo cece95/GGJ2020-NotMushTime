@@ -24,7 +24,15 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
-						<Bus Name="Interactive_Music" ID="{9DB30AF7-8268-4BAF-8D16-405E57AB1784}"/>
+						<Bus Name="Interactive_Music" ID="{9DB30AF7-8268-4BAF-8D16-405E57AB1784}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

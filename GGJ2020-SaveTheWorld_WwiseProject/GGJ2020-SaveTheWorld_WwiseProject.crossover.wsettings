@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{B6ACE588-4492-4671-A4DC-5DF30AC478CA}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Z:\Volumes\Active_Projects\Game_Jam_2020\Sound_Library\Alarm_Syren"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Z:\Volumes\Active_Projects\Game_Jam_2020\Sound_Library\Music"/>
 				<Property Name="Event Action List\{1C3D2C6D-D986-4BFC-8C1A-0669A6BA4D78}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7BB3D262-79E3-45E8-AAF6-84B060D6E749}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
@@ -26,7 +26,8 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="cYikmcXyuU2r5f2BxVYi1Q=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="XvdsG8L8M0+WabzZDP5mK4u8JM0WzadGkbImTpirfNU="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="XxNnkWI1Sk+RRo8j/yssowH/////////KTLkH6ZKpkaZ3BkbebkNUwH/////////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="KTLkH6ZKpkaZ3BkbebkNUwH/////////XxNnkWI1Sk+RRo8j/yssowH/////////"/>
+				<Property Name="Interactive Music\x64_{0C3010CB-9AF4-4E87-8746-716ECF12D2ED} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP6uqqqqq6ihAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{213A18A0-3D54-4AA3-83F6-D008653FEE22} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAkGxAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{2860E011-47AE-4AE6-BF95-9C77CFFA85FC} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP33B+QXjoDRAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{6E8DDB6A-B398-432F-86B8-7D0BFE866270} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAkGxAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
@@ -58,7 +59,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_17_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_18_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_19_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="TYfR0o8TlkmFJD99vF1egg=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ802H0dKPE5ZJhSQ/fbxdXoI="/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="jxeLPu2ad0Gf5ROhUob1+w=="/>

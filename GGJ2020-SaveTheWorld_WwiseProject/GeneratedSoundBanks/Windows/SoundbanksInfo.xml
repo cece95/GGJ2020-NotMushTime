@@ -50,6 +50,10 @@
 				<Event Id="3734989563" Name="Interactive_Music" ObjectPath="\Events\Default Work Unit\Interactive_Music" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="104091088" Language="SFX">
+					<ShortName>Ouch.wav</ShortName>
+					<Path>SFX/Ouch_D79FB2B7.wem</Path>
+				</File>
 				<File Id="1012585534" Language="SFX">
 					<ShortName>overcooked.wav</ShortName>
 					<Path>SFX/overcooked_D79FB2B7.wem</Path>
