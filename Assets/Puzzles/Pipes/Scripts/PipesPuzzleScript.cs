@@ -88,7 +88,7 @@ public class PipesPuzzleScript : Puzzle
         }
 
         //find a path through the pipes that uses every pipe once at maximum
-
+        print("Path Generation Started");
         List<Node> visited = new List<Node>();
 
         //start at the starting node
@@ -141,7 +141,7 @@ public class PipesPuzzleScript : Puzzle
         }
 
         visited.Add(endNode);
-
+        print("Path Generation Copmlete");
         visited.Reverse();
 
         for (int i = 1; i < visited.Count -1; i++)
@@ -275,6 +275,7 @@ public class PipesPuzzleScript : Puzzle
 
     void FixedUpdate()
     {
+
         if(selector == null || rotator == null)
         {
             return;
@@ -504,17 +505,17 @@ public class Node
 
         if (this.tile.Equals('i'))
         {
-            if (rotation == 1)
-            {
-                connected.Add(Vector2Int.up);
-                connected.Add(Vector2Int.down);
-
-            }
-
             if (rotation == 0)
             {
                 connected.Add(Vector2Int.left);
                 connected.Add(Vector2Int.right);
+
+            }
+
+            if (rotation == 1)
+            {
+                connected.Add(Vector2Int.up);
+                connected.Add(Vector2Int.down);
             }
 
             setConnections(connected);
@@ -594,7 +595,7 @@ public class Node
 
        
 
-    } //function to rotate the selected node 90 degrees clockwise
+    } //function to rotate the selected node 90 degrees anitclockwise
 
 }
 
