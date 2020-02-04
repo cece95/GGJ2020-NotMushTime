@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scenes/Credits.unity.meta
+guid: cdd50940ee5a519478d1fc048323d480
+=======
 guid: 162eb735f72bf42f381f923ffbd93c74
+>>>>>>> 7016b1ae7114ec6d15428d5070d89d05bba93d1f:Assets/Wwise/Deployment/Plugins/Mac/Debug/AkSoundEngine.bundle/Contents/MacOS/AkSoundEngine.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
