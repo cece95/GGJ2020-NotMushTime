@@ -36,12 +36,20 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
 										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 						</Bus>
-						<Bus Name="Puzzles" ID="{BC71728F-8280-4E97-93E6-4D6D2482FE59}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

@@ -13,7 +13,7 @@
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-24</Value>
+								<Value>-14</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -143,6 +143,13 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<SwitchContainer Name="Shroom_Steps_Switch" ID="{1707F487-E1AA-45BB-B9D4-A4E4AC3F4BFD}" ShortID="146548632">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B0703AE3-82AF-4189-AA75-2B5D72D402B9}"/>
@@ -584,7 +591,7 @@
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-6</Value>
+								<Value>-2</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -833,11 +840,6 @@
 				<RandomSequenceContainer Name="Box_Dragging" ID="{5BA69A75-7C0A-402A-B4F9-4747D144DFCE}" ShortID="973726583">
 					<PropertyList>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-6</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1702,6 +1704,11 @@
 				<RandomSequenceContainer Name="Sliding_Blocks" ID="{516F49C9-540E-4F6A-A148-AB86D6AAEA69}" ShortID="969837760">
 					<PropertyList>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

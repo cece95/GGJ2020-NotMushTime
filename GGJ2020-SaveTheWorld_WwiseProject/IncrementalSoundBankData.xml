@@ -3,38 +3,60 @@
 	<Platform GUID="{99A48871-F2C5-4DB9-ABE5-FD81C55622D5}">
 		<Banks>
 			<Language ID="393239870">
+<<<<<<< Updated upstream
 				<File Name="Ambience" Hash="4109774813" Timestamp="1580647368"/>
 				<File Name="Init" Hash="1593557291" Timestamp="1580644238"/>
 				<File Name="Interactive_Music" Hash="3925133818" Timestamp="1580639840"/>
 				<File Name="Puzzles" Hash="1086697216" Timestamp="1580653190"/>
+=======
+				<File Name="Ambience" Hash="3213279458" Timestamp="1583331948"/>
+				<File Name="Init" Hash="2772119299" Timestamp="1583332533"/>
+				<File Name="Interactive_Music" Hash="2941960414" Timestamp="1583332533"/>
+				<File Name="Puzzles" Hash="2390510003" Timestamp="1583332958"/>
+>>>>>>> Stashed changes
 				<File Name="Shrooms" Hash="1423876586" Timestamp="1580618823"/>
 			</Language>
 			<Language ID="684519430">
-				<File Name="Shrooms" Hash="2500355988" Timestamp="1580648730"/>
+				<File Name="Shrooms" Hash="749057043" Timestamp="1583332314"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
+<<<<<<< Updated upstream
 				<File Name="" Hash="3966536003" Timestamp="1580653190"/>
+=======
+				<File Name="" Hash="36132379" Timestamp="1583332958"/>
+>>>>>>> Stashed changes
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{9DE44C49-D77A-4F1F-966F-D93A4374CE7E}">
 		<Banks>
 			<Language ID="393239870">
+<<<<<<< Updated upstream
 				<File Name="Ambience" Hash="4109774813" Timestamp="1580647396"/>
 				<File Name="Init" Hash="166472105" Timestamp="1580645896"/>
 				<File Name="Interactive_Music" Hash="3925133818" Timestamp="1580639839"/>
 				<File Name="Puzzles" Hash="4260837363" Timestamp="1580652682"/>
+=======
+				<File Name="Ambience" Hash="3213279458" Timestamp="1583331952"/>
+				<File Name="Init" Hash="2609168769" Timestamp="1583332553"/>
+				<File Name="Interactive_Music" Hash="2941960414" Timestamp="1583332553"/>
+				<File Name="Puzzles" Hash="2390510003" Timestamp="1583332988"/>
+>>>>>>> Stashed changes
 				<File Name="Shrooms" Hash="3172541889" Timestamp="1580618058"/>
 			</Language>
 			<Language ID="684519430">
-				<File Name="Shrooms" Hash="2500355988" Timestamp="1580648730"/>
+				<File Name="Shrooms" Hash="749057043" Timestamp="1583332318"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
+<<<<<<< Updated upstream
 				<File Name="" Hash="1777641843" Timestamp="1580652682"/>
+=======
+				<File Name="" Hash="1228127141" Timestamp="1583332988"/>
+>>>>>>> Stashed changes
 			</Language>
 		</XMLInfo>
 	</Platform>
